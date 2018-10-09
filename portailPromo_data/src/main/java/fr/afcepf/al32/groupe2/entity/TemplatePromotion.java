@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="template_promotion")
@@ -16,10 +17,13 @@ public class TemplatePromotion {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="promotion_time")
 	
+	@Column(name="promotion_time")
+	@NotNull
 	private Duration promotionTime;
+	
 	@Column(name="promotion_time_to_take_out")
+	@NotNull
 	private Duration promotionTimeToTakeOut;
 	
 	
