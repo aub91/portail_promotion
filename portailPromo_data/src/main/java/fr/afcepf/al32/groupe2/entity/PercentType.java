@@ -13,7 +13,7 @@ public class PercentType extends PromotionType {
 	@NotNull
 	private Double percentValue;
 
-	@Column(name="min_purshase_amount")
+	@Column(name="min_purchase_amount")
 	@NotNull
 	private Double minPurchaseAmount;
 
