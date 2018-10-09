@@ -1,1 +1,5 @@
-INSERT INTO core_user(id, first_name, last_name, email, phone_number) VALUES (1, 'alain', 'Therieur', 'at@gmail.com', '0102030405')
+INSERT INTO core_user(id, first_name, last_name, email, phone_number, user_type) VALUES (1, 'alain', 'Therieur', 'at@gmail.com', '0102030405', 'client')
+INSERT INTO authentication(id_user, login, password) VALUES (1, 'ath', '12345')
+INSERT INTO city(id, postal_code, name) VALUES (1, '75001', 'Paris')
+INSERT INTO address(id, number, address_type, address_complement, name, city_id) VALUES (1, 2, 'rue', null, 'machin', 1)
+INSERT INTO client_address(client_id, address_id) VALUES (1, 1)
