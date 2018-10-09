@@ -1,0 +1,1 @@
+INSERT INTO core_user(id, first_name, last_name, email, phone_number) VALUES (1, 'alain', 'Therieur', 'at@gmail.com', '0102030405')
