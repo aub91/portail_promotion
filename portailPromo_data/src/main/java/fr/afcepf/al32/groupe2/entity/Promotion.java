@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name="promotion")
 public class Promotion extends AbstractPromotion {
-	
+
 	@Column(name="name")
 	@NotBlank
 	private String name;
