@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-@Entity
-@Table(name="followingElementDate")
+//@Entity
+//@Table(name="followingElementDate")
 public class FollowingElementData {
 	
 	private IFollowableElement element;

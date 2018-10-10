@@ -15,7 +15,7 @@ import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="category_product")
-public class CategoryProduct extends AbstractPromotion implements IFollowableElement {
+public class CategoryProduct implements IFollowableElement {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

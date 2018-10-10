@@ -6,8 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="publish")
+//@Entity
+//@Table(name="publish")
 public class Publish {
 	
 	@Column(name="publish_date")
