@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="promotion")
-public class Promotion extends AbstractPromotion {
+public class Promotion extends ProductWithPromotion {
 
 	@Column(name="name")
 	@NotBlank

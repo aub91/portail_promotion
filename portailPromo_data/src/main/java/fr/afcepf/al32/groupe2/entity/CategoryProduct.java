@@ -32,6 +32,9 @@ public class CategoryProduct implements IFollowableElement {
 	@OneToMany(mappedBy="categoryMum")
 	private List<CategoryProduct> categoryDaughter;
 	
+	@OneToMany(mappedBy="element_id")
+	private List<FollowingElementData> followerData;
+	
 	public Long getId() {
 		return id;
 	}

@@ -6,17 +6,17 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToOne;
 
 @MappedSuperclass
-public abstract class AbstractPromotion extends PromotionProduct {
+public abstract class ProductWithPromotion extends Product {
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="promotion_id")
-	private PromotionProduct productWithPromotion;
+	private Product productWithPromotion;
 
-	public PromotionProduct getProductWithPromotion() {
+	public Product getProductWithPromotion() {
 		return productWithPromotion;
 	}
 
-	public void setProductWithPromotion(PromotionProduct productWithPromotion) {
+	public void setProductWithPromotion(Product productWithPromotion) {
 		this.productWithPromotion = productWithPromotion;
 	}
 

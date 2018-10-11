@@ -27,7 +27,7 @@ import fr.afcepf.al32.groupe2.util.SubscriberType;
 	    metaType = "string",
 	    metaValues = {
 	    	@MetaValue( value = FollowableElementType.CATEGORY, targetEntity = CategoryProduct.class),
-	    	@MetaValue( value = FollowableElementType.PRODUCT, targetEntity = Product.class),
+	    	@MetaValue( value = FollowableElementType.PRODUCT, targetEntity = BaseProduct.class),
 	    	@MetaValue( value = FollowableElementType.REFERENCE, targetEntity = ReferenceProduct.class),
 	    	@MetaValue( value = FollowableElementType.SHOP, targetEntity = Shop.class)
 	    	})
