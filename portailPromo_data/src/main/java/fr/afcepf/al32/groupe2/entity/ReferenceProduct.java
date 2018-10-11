@@ -48,6 +48,6 @@ public class ReferenceProduct {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
+	}	
 
 }

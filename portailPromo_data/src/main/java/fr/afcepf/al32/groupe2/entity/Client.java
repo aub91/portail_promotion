@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 
 @Entity
 @DiscriminatorValue("client")
-public class Client extends User {
+public class Client extends User implements ISubscriber{
 
 	@OneToOne(cascade= {CascadeType.ALL})
 	@JoinTable(name="client_address", joinColumns=@JoinColumn(name="client_id"), inverseJoinColumns=@JoinColumn(name="address_id"))

@@ -53,6 +53,6 @@ public class Product extends PromotionProduct implements IFollowableElement {
 	}
 	public void setRemoveDate(Date removeDate) {
 		this.removeDate = removeDate;
-	}
+	}	
 
 }

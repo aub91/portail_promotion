@@ -48,4 +48,7 @@ public class CategoryProduct implements IFollowableElement {
 		return categoryDaughter;
 	}
 
+	
+	
+
 }

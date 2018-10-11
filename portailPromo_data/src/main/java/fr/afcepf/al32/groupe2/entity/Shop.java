@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="shop")
-public class Shop {
+public class Shop implements IFollowableElement{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -122,6 +122,5 @@ public class Shop {
 	public Long getId() {
 		return id;
 	}
-	
 	
 }
