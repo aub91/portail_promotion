@@ -32,9 +32,6 @@ public class CategoryProduct implements IFollowableElement {
 	@OneToMany(mappedBy="categoryMum")
 	private List<CategoryProduct> categoryDaughter;
 	
-	@OneToMany(mappedBy="element_id")
-	private List<FollowingElementData> followerData;
-	
 	public Long getId() {
 		return id;
 	}
@@ -49,6 +46,24 @@ public class CategoryProduct implements IFollowableElement {
 
 	public List<CategoryProduct> getCategoryDaughter() {
 		return categoryDaughter;
+	}
+
+	@Override
+	public void addSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

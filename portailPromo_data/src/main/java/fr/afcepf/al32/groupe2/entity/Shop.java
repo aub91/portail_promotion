@@ -122,5 +122,23 @@ public class Shop implements IFollowableElement{
 	public Long getId() {
 		return id;
 	}
+
+	@Override
+	public void addSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

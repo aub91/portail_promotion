@@ -53,6 +53,22 @@ public class BaseProduct extends Product implements IFollowableElement {
 	}
 	public void setRemoveDate(Date removeDate) {
 		this.removeDate = removeDate;
+	}
+	
+	@Override
+	public void addSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void removeSubscriber(ISubscriber subscriber) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
 	}	
 
 }
