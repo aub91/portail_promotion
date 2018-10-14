@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name="Reason_cancel_publish_promotion")
+@Table(name="reason_cancel_publish_promotion")
 public class ReasonCancelPublishPromotion {
 
 	@Id
