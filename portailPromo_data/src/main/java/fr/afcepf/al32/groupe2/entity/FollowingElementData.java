@@ -10,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -38,6 +40,12 @@ import fr.afcepf.al32.groupe2.util.SubscriberType;
 	    metaValues = {
 	    	@MetaValue( value = SubscriberType.CLIENT, targetEntity = Client.class)
 	    	})
+@NamedQueries(value= {
+		@NamedQuery(name="FollowingElementData.getAllCurrentByUser", 
+				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriber.class = 'Client' AND fed.subscriber.id = :userId AND fed.followEndDate = null"),
+		@NamedQuery(name="FollowingElementData.getAllCurrentByUserAndElementType", 
+				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriber.class = 'Client' AND fed.subscriber.id = :userId AND fed.elementType = :type AND fed.followEndDate = null")
+})
 @Entity
 @Table(name="following_element_data")
 public class FollowingElementData {
@@ -105,7 +113,7 @@ public class FollowingElementData {
 	public void setSubscriber(ISubscriber subscriber) {
 		this.subscriber = subscriber;
 	}
-	
-	
-
+	public Long getId() {
+		return id;
+	}
 }
