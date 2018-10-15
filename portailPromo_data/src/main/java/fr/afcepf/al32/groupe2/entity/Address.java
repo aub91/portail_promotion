@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -20,14 +21,19 @@ public class Address {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
+	@Column(name="number")
+	@NotNull
 	private Integer number;
 	
 	@Column(name="address_type")
+	@NotBlank
 	private String type;
 	
 	@Column(name="address_complement")
 	private String complement;
 	
+	@Column(name="name")
+	@NotBlank
 	private String name;
 	
 	@ManyToOne(cascade= {CascadeType.PERSIST})

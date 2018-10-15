@@ -1,5 +1,7 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.Map;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapKey;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
@@ -62,6 +66,11 @@ public class Shop implements IFollowableElement{
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinTable(name="shop_address", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="address_id"))
 	private Address address;
+	
+	@OneToMany(cascade=CascadeType.ALL)
+	@JoinColumn(name="shop_id")
+	@MapKey(name="id")
+	private Map<Long, ShopRegistration> registrations;
 
 	public String getSiretNumber() {
 		return siretNumber;
