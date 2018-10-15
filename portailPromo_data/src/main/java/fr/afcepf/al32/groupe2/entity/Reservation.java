@@ -31,4 +31,6 @@ public class Reservation {
 	private Client client;
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private Evaluation evaluation;
+	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
+	private ReservationProduct reservationProduct;
 }
