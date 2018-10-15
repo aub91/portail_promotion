@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -26,6 +28,12 @@ public class ReferenceProduct {
 	private Date dateReferencing;
 	@Column(name="date_derefencing")
 	private Date dateDeferencing;
+	@JoinColumn(name="unite_de_vente")	
+	@ManyToOne
+	private SalesUnit uniteVente;
+	@JoinColumn(name="categorie_produit")	
+	@ManyToOne
+	private CategoryProduct categorieProduit;
 	
 
 	public Date getDateReferencing() {

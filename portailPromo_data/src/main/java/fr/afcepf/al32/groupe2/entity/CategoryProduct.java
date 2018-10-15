@@ -1,7 +1,9 @@
 package fr.afcepf.al32.groupe2.entity;
 
 import java.util.List;
+import java.util.Map;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
@@ -32,6 +35,11 @@ public class CategoryProduct implements IFollowableElement {
 	@OneToMany(mappedBy="categoryMum")
 	private List<CategoryProduct> categoryDaughter;
 	
+	//@JoinColumn(name="reference_produit",)	
+	@OneToMany(mappedBy="categorieProduit", cascade=CascadeType.ALL)
+	@MapKey(name="id")
+	private Map<Long,ReferenceProduct> referenceProduit;
+
 	public Long getId() {
 		return id;
 	}
