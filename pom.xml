@@ -28,6 +28,4 @@
 		<module>portailPromo_web</module>
 		<module>integration-tests</module>
 	</modules>
-
-
 </project>
