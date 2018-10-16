@@ -59,7 +59,7 @@ public class Shop implements IFollowableElement{
 	private String websiteUrl;
 	
 	@ManyToOne
-	@JoinTable(name="shopkeeper_shop", joinColumns=@JoinColumn(name="shopkeeper_id"), inverseJoinColumns=@JoinColumn(name="shop_id"))
+	@JoinTable(name="shopkeeper_shop", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="shopkeeper_id"))
 	@NotNull
 	private Shopkeeper owner;
 	
