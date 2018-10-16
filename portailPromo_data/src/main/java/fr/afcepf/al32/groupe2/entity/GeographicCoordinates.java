@@ -1,5 +1,6 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -13,9 +14,11 @@ public class GeographicCoordinates {
 	@Id
 	private Long id;
 	
+	@Column(name="longitude")
 	@NotBlank
 	private String longitude;
 	
+	@Column(name="latitude")
 	@NotBlank
 	private String latitude;
 	

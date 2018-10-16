@@ -14,39 +14,31 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name="city")
-public class City {
-	
+@Table(name="address_type")
+public class AddressType {
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	
-	@Column(name="postal_code")
-	@NotBlank
-	private String postalCode;
+	private double id;
 	
 	@Column(name="name")
 	@NotBlank
 	private String name;
-	
-	@OneToMany(mappedBy="city", cascade=CascadeType.ALL)
+
+	@OneToMany(mappedBy="addressType", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long, Address> addresses;
-
-	public String getPostalCode() {
-		return postalCode;
-	}
-
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
-	}
-
+	
 	public String getName() {
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public double getId() {
+		return id;
 	}
 
 	public Map<Long, Address> getAddresses() {
@@ -56,8 +48,7 @@ public class City {
 	public void setAddresses(Map<Long, Address> addresses) {
 		this.addresses = addresses;
 	}
-
-	public Long getId() {
-		return id;
-	}
+	
+	
+	
 }
