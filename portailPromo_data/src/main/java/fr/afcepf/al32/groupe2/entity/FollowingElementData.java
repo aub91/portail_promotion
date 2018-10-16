@@ -42,9 +42,9 @@ import fr.afcepf.al32.groupe2.util.SubscriberType;
 	    	})
 @NamedQueries(value= {
 		@NamedQuery(name="FollowingElementData.getAllCurrentByUser", 
-				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriber.class = 'Client' AND fed.subscriber.id = :userId AND fed.followEndDate = null"),
+				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriberType = 'CLIENT' AND fed.subscriber.id = :userId AND fed.followEndDate = null"),
 		@NamedQuery(name="FollowingElementData.getAllCurrentByUserAndElementType", 
-				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriber.class = 'Client' AND fed.subscriber.id = :userId AND fed.elementType = :type AND fed.followEndDate = null")
+				query="SELECT fed FROM FollowingElementData fed WHERE fed.subscriberType = 'CLIENT' AND fed.subscriber.id = :userId AND fed.elementType = :type AND fed.followEndDate = null")
 })
 @Entity
 @Table(name="following_element_data")
