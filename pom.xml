@@ -26,6 +26,7 @@
 		<module>portailPromo_data</module>
 		<module>portailPromo_service</module>
 		<module>portailPromo_web</module>
+		<module>integration-tests</module>
 	</modules>
 
 

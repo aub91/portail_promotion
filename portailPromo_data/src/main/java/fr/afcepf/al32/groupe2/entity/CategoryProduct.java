@@ -1,5 +1,6 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
 
 @Entity
 @Table(name="category_product")
@@ -39,6 +45,10 @@ public class CategoryProduct implements IFollowableElement {
 	@OneToMany(mappedBy="categorieProduit", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long,ReferenceProduct> referenceProduit;
+	
+	@Transient
+	@Autowired
+	private FollowingElementDataDao followingElementDataDao;
 
 	public Long getId() {
 		return id;
@@ -58,7 +68,13 @@ public class CategoryProduct implements IFollowableElement {
 
 	@Override
 	public void addSubscriber(ISubscriber subscriber) {
-		// TODO Auto-generated method stub
+		FollowingElementData followingElementData = new FollowingElementData();
+		
+		followingElementData.setElement(this);
+		followingElementData.setSubscriber(subscriber);
+		followingElementData.setFollowStartDate(new Date());
+		
+		followingElementDataDao.save(followingElementData);
 		
 	}
 
