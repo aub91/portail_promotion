@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="/WEB-INF/templates/archeConsommateur.xhtml">
+		<ui:define name="title">Nos produits - Promo32</ui:define>
+		<ui:define name="headcssscript">
+			<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+			<link type="text/css" rel="stylesheet" href="../css/main.css" />
+			<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
+ 			<link type="text/css" rel="stylesheet" href="styleTest.css" />
+			<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
+		</ui:define>
+		
+		<ui:define name="content">
+			<h:panelGroup id="affichagePromotion">
+				<ui:repeat var="produit" value="#{tousLesPromotions}">
+					<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
+				</ui:repeat>
+			</h:panelGroup>
+				<!-- ADD TO CART INTERACTION -->
+<!--     			<ui:include src="../../WEB-INF/components/panier-add-to-cart.xhtml"></ui:include> -->
+				
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+				<script type="text/javascript" src="../jsHamburger/main.js"></script>
+				<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
+				
+		</ui:define>	
+	</ui:composition>
+</html>

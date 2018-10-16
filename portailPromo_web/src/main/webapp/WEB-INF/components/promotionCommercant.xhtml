@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:component>
+	<section class="sectionProd">
+		<figure class="FichePromotionCommercant">
+			
+			<h:graphicImage value="../../Ressources/Images/Images_produits/#{promotion.photo}" 
+	        	 				class="image_principale"/>
+	        
+	        <figcaption>
+	        	<h3 class="nomPromotion">#{promotion.libelle}</h3>
+	        	
+	            <h3 class="conditionnement">
+	            	#{promotion.conditionnements.get(0).libelle}	
+				 </h3>
+	            <h2 class="ferme">#{promotion.commercant.raisonSociale}</h2>
+	            <h2 class="poids">
+	            	<h:outputLabel value="#{promotion.conditionnements.get(0).quantite}" >
+		            	<f:convertNumber minFractionDigits="0" maxFractionDigits="0"/>
+		            </h:outputLabel>
+	            	#{promotion.conditionnements.get(0).unite}           
+	            </h2>
+	            <h2 class="quantiteStock">#{promotion.quantiteEnStock} #{promotion.conditionnements.get(0).libelle}(s) en stock</h2>
+	            <div class="prixPromotion">
+		            <h:outputLabel value="#{promotion.prix}" >
+		            	<f:convertNumber minFractionDigits="2" maxFractionDigits="2"/>
+		            </h:outputLabel>
+					 €
+	            </div>
+	            
+	        </figcaption>
+			
+		</figure>
+		<br />
+		<h:commandButton action="#{afficherPromotionSelectionne(promotion.id)}" value="Accéder à la fiche détaillée" class="button button1" />
+	</section>
+	</ui:component>
+	
+</html>
+	

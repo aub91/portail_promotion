@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      lang="fr">
+
+<h:head>
+<!--     <meta charset="utf-8" /> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
+
+    <title><ui:insert name="title"></ui:insert></title>
+    <ui:insert name="headcssscript"></ui:insert>
+    
+    
+</h:head>
+
+<body>
+	<h:form id="form-clients">
+    <header>
+    	<h:commandLink action="#{redirectionPageAccueilGenerale()}">
+     		<h:graphicImage id="logo" value="../../Ressources/Images/Logos/Logo-small.png" />
+    	</h:commandLink>
+                <div class="navbar">
+			<div class="topnav" id="myTopNav">
+				<div id="nav-belt">
+					<div class="nav-left">
+						<a href="accueil.jsf" tabindex="8">
+							<img alt="logo_promo32" src=" logo_promo32.jpg"></a>
+
+					</div>
+					<div class="nav-center">
+						<div class="nav-search">
+							<div class="nav-search-left">
+								<select name="thelist" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'theinput')">
+							</div>
+							 
+
+							<div class="nav-search-center"><input type="text">
+								<div class="nav-search-right">
+									<input type="submit" class="nav-input" value="Go" img="iconSearch.jpg">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="nav-right">
+						<a href="accueil.jsf" tabindex="8">
+							<img alt="slogan a proposer par nico" src=" logo_promo32.jpg"></a>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="bottomnav" id="myBottomnav">
+			<div class="bottom-left">
+			
+				<a href="#home">Localisation</a>
+				<a href="#news">Perimetre</a>
+				<a href="#contact">Tous les Categories</a>
+			</div>
+			<div class="bottom-right">
+				<a href="#about">Reservations</a>
+				<a href="#about">Suivi</a>
+				<a href="#about">Profil</a>
+				<a href="#about">Connexion</a>
+
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+				 
+		</div>
+
+	
+    </header>
+    <div id="global">
+        
+        
+        <ui:insert name="content"></ui:insert>
+        
+        
+    </div>
+    
+    <footer id="realfooter">
+        <div id="apropos" class="footer">
+            <ul>
+                <li>
+                    <h3><b>A PROPOS</b></h3>
+                </li>
+                <li class="lienfooter"><a href="" alt="">Qui sommes-nous?</a></li>
+                <li class="lienfooter"><a href="" alt="">Comment rejoindre la coopérative?</a></li>
+                <li class="lienfooter"><a href="" alt="">Conditions générales de vente</a></li>
+                <li class="lienfooter"><a href="" alt="">Mentions légales</a></li>
+                <li class="lienfooter"><a href="" alt="">Signaler un abus</a></li>
+                <li class="lienfooter"><a href="" alt="">Cookies</a></li>
+            </ul>
+        </div>
+        <div id="sav" class="footer">
+            <ul>
+                <li>
+                    <h3><b>AIDE, SERVICE &amp; SAV</b></h3>
+                </li>
+                <li class="lienfooter"><a href="" alt="">Service Après-Vente</a></li>
+                <li class="lienfooter"><a href="" alt="">Besoin d'aide?</a></li>
+            </ul>
+        </div>
+        <div id="fallow" class="footer">
+            <h3><b>NOUS SUIVRE</b></h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/facebook.png" height="60" width="60" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/twitter.png" height="60" width="60" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/instagram.png" height="60" width="60" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/pinterest.png" height="60" width="60" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</h:form>
+</body>
+
+</html>

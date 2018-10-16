@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:component>
+	<figure class="FichePromotion"> 
+	<h:commandLink action="#{afficherFichePromotionDetaille(promotion.id)}">
+		<h:graphicImage value="../../Ressources/Images/Images_promotions/#{promotion.photo}" class="image_principale" />
+	</h:commandLink>
+
+
+	<div class="icons">
+
+		<a> <h:panelGroup id="petitPanier" layout="block">
+				<i class="ion-android-cart cd-add-to-cart"> 
+				<h:outputLabel
+						id="quantitePanierPromotion" class="nbArticle"
+						value="#{quantites[promotion.id]}">
+						<f:convertNumber minFractionDigits="0" maxFractionDigits="0" />
+					</h:outputLabel>
+				</i>
+			</h:panelGroup>
+		</a>
+	</div>
+
+		<h:commandLink>
+			<input class="image_minus" type="image" src="minus4.png" />
+			<f:ajax listener="#{remplirPanier(-1,promotion)}"
+				event="click" execute="@form"
+				render="icons petitPanier :form-conso:grosPanier :form-conso:prixTotalPanier :form-conso:pastille :form-conso:listeDeroulanteQuantite" />
+		</h:commandLink>
+
+		<h:commandLink>
+			<input class="image_plus" type="image" src="plus4.png" />
+			<f:ajax listener="#{mbTestPanier.remplirPanier(1,promotion)}"
+				event="click" execute="@form"s
+				render="icons petitPanier :form-conso:grosPanier :form-conso:prixTotalPanier :form-conso:pastille :form-conso:listeDeroulanteQuantite" />
+		</h:commandLink>
+	
+
+
+	<figcaption> <h:commandLink
+		action="#{afficherFichePromotionDetaille(promotion.id)}"s
+		value="#{promotion.libelle}" class="nomPromotion" />
+	<h3 class="prixPromotion">
+		#{promotion.conditionnements.get(0).libelle}</h3>
+	<h:commandLink
+		action="#{afficherFicheCommercantDetailleParIdPromotion(promotion.id)}"
+		value="#{promotion.commercant.raisonSociale}" class="commerce" />
+	<h2 class="poids">
+		<h:outputLabel value="#{promotion.conditionnements.get(0).quantite}">
+			<f:convertNumber minFractionDigits="0" maxFractionDigits="0" />
+		</h:outputLabel>
+		#{promotion.conditionnements.get(0).unite}
+	</h2>
+	<div class="prixKilo">
+		<h:outputLabel value="#{promotion.prix}">10
+			<f:convertNumber minFractionDigits="2" maxFractionDigits="2" />
+		</h:outputLabel>
+		
+	</div>
+	</figcaption> </figure>
+</ui:component>
+</html>

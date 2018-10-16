@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:component>
+	
+	<h:panelGroup styleClass="cd-cart-container" >
+	
+		<a href="#0" class="cd-cart-trigger"> Panier
+			<h:panelGroup  id="pastille" layout="block">
+				<ul class="count">
+					<li><h:outputText value="#{mbTestPanier.quantiteTotalePanier}">
+						<f:convertNumber minFractionDigits="0" maxFractionDigits="0" />
+					</h:outputText></li>
+				</ul>
+			</h:panelGroup>
+		</a>
+	
+
+		<div class="cd-cart">
+			<div class="wrapper">
+				<header>
+				<h2>Panier</h2>
+				<span class="undo"><a href="#0">Remettre article</a></span> </header>
+
+				<div class="body">
+					<ul>
+						<h:panelGroup id="grosPanier">
+						<ui:repeat id="repeater-addToCart" var="ligneCommande"
+							value="#{mbTestPanier.ligneCommandes}">
+							<li id="item" class="product">
+								<div class="product-image">
+									<a href="#0"> <img
+										src="../../Ressources/Images/Images_produits/#{ligneCommande.produit.photo.toString()}"
+										alt="placeholder" />
+									</a>
+								</div>
+								<div class="product-details">
+									<h3>
+										<h:outputLabel id="product-name"
+											value="#{ligneCommande.produit.libelle.toString()}" />
+									</h3>
+
+									<h:outputLabel id="prixLgnCmde" class="price"
+										value="#{ligneCommande.getMontantLgnCommande(ligneCommande.produit.prix)}" >
+										<f:convertNumber minFractionDigits="2" maxFractionDigits="2" /> €
+									</h:outputLabel>
+									<div class="actions">
+										<h:commandLink class="delete-item" value="Supprimer">
+											<f:ajax
+												listener="#{mbTestPanier.supprimerLgnCmd(ligneCommande)}"
+												event="click" execute="@form" render="grosPanier prixLgnCmde :form-conso:pastille :form-conso:prixTotalPanier :form-conso:affichageProduit" />
+										</h:commandLink>
+
+										<div class="quantity">
+											<label for="cd-product-#{ligneCommande.produit.id}">Quantite</label>
+											<span class="select"> 
+												<h:selectOneMenu id="listeDeroulanteQuantite" value= "#{ligneCommande.quantiteCommandee}"> 
+   														<f:ajax event="change" execute="@this" render="grosPanier prixLgnCmde :form-conso:pastille :form-conso:prixTotalPanier  :form-conso:affichageProduit" 
+   														listener="#{mbTestPanier.modifierLgnCmd(ligneCommande)}"></f:ajax>
+  														<f:selectItems value = "#{mbTestPanier.listQuantitesEnStock[ligneCommande.produit.id]}" var="i" itemLabel="#{i}" itemValue="#{i}"></f:selectItems>
+											</h:selectOneMenu> 	
+											
+											</span>
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ui:repeat>
+						</h:panelGroup>
+					</ul>
+				</div>
+
+				<footer> 
+				<h:commandLink class="checkout btn" action="#{mbTestPanier.validerPanier()}">
+					<em>Validez votre panier -  
+						<h:outputLabel id="prixTotalPanier"	class="total-panier" value="#{mbTestPanier.totalMontantCommande}">
+							<f:convertNumber minFractionDigits="2" maxFractionDigits="2" />
+						</h:outputLabel> €
+					</em>
+				</h:commandLink> 
+				</footer>
+			</div>
+		</div>
+		<!-- .cd-cart -->
+
+	</h:panelGroup>
+</ui:component>
+</html>

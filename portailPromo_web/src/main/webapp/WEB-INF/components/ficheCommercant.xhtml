@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:component>
+		<figure class="FicheCommercant">
+			<h:commandLink action="#{afficherFicheCommercantDetaille(commercant.id)}">
+				<h:graphicImage value="../../Ressources/Images/Images_commerce/#{commerce.photo}" 
+								class="image_commercant_principale"
+								alt="#{commercant.raisonSociale}"/>
+			</h:commandLink>
+	        <figcaption>
+	            <div class="nomCommerce">
+	            	<h:commandLink action="#{afficherFicheCommercantDetaille(commercant.id)}" value="#{commercant.raisonSociale}"/>	            
+	            </div>
+	            <div class="descriptionCommerce">
+	            	#{commercant.descriptionBreve}, 
+	            	#{commercant.getAdresses().get(0).getCodePostal().getVilles().get(0).getNom()}
+	            </div>
+	        </figcaption>
+    	</figure>
+	</ui:component>
+</html>
