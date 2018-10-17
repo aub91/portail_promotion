@@ -18,6 +18,12 @@ import fr.afcepf.al32.groupe2.util.SubscriberType;
 
 @Entity
 @DiscriminatorValue("client")
+@NamedNativeQueries(value= {
+		@NamedNativeQuery(name="Client.findAllFollowingFollowableElement", 
+				query="SELECT cli.id, cli.first_name, cli.last_name, cli.phone_number, cli.email, client_address.address_id FROM core_user as cli INNER JOIN client_address ON client_address.client_id = cli.id INNER JOIN following_element_data as fed ON cli.id = fed.subscriber_id "
+						+ "WHERE fed.element_id = :elementId AND fed.element_type = :elementType AND fed.follow_end_date IS NULL",resultClass=Client.class)
+		
+})
 public class Client extends User implements ISubscriber{
 
 	@OneToOne(cascade= {CascadeType.ALL})
