@@ -339,3 +339,6 @@ INSERT INTO client_address(client_id,address_id)VALUES(2,2)
 INSERT INTO client_address(client_id,address_id)VALUES(3,3)
 
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (1, 'SHOP', 1, 'CLIENT', 1, sysdate())
+
+INSERT INTO sales_unit(id,name) VALUES (1,'piece')
+INSERT INTO reference_product(id,name, date_referencing,date_derefencing,unite_de_vente,categorie_Produit) VALUES (1, 'armoire',sysdate(),null,1,1)

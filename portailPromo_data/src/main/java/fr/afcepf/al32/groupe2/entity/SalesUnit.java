@@ -25,9 +25,14 @@ public class SalesUnit {
 	@Column(name="name")
 	@NotBlank
 	private String name;	
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	@OneToMany(mappedBy="uniteVente", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long,ReferenceProduct> referenceProduit;
+
 	
 	public Long getId() {
 		return id;
