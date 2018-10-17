@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
 import fr.afcepf.al32.groupe2.entity.FollowingElementData;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
@@ -26,7 +27,16 @@ public class FollowingElementDataDaoTest {
 		
 		List<FollowingElementData> res = dao.getAllByUser(1L);
 		
+		Assert.assertEquals(2, res.size());
+
+	}
+	
+	@Test
+	public void getAllByUserAndElementTypeTest() {
+		
+		List<FollowingElementData> res = dao.getAllByUserAndElementType(1L, FollowableElementType.SHOP);
+		
 		Assert.assertEquals(1, res.size());
-		Assert.assertEquals("SHOP", res.get(0).getElementType());
+		Assert.assertEquals(FollowableElementType.SHOP, res.get(0).getElementType());
 	}
 }

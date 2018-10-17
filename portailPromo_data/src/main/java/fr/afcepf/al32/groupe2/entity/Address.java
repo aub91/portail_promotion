@@ -25,9 +25,10 @@ public class Address {
 	@NotNull
 	private Integer number;
 	
-	@Column(name="address_type")
-	@NotBlank
-	private String type;
+	@ManyToOne(cascade= {CascadeType.PERSIST})
+	@JoinColumn(name="address_type_id")
+	@NotNull
+	private AddressType addressType;
 	
 	@Column(name="address_complement")
 	private String complement;
@@ -57,14 +58,6 @@ public class Address {
 
 	public void setNumber(Integer number) {
 		this.number = number;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 
 	public String getComplement() {
@@ -111,6 +104,13 @@ public class Address {
 	public Shop getShop() {
 		return shop;
 	}
-	
+
+	public AddressType getAddressType() {
+		return addressType;
+	}
+
+	public void setAddressType(AddressType addressType) {
+		this.addressType = addressType;
+	}
 	
 }

@@ -1,5 +1,6 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -15,12 +16,15 @@ import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 
 import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
-import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Entity
 @DiscriminatorValue("client")
+@Configurable(dependencyCheck=true)
+@EnableSpringConfigured
 public class Client extends User implements ISubscriber{
 
 	@OneToOne(cascade= {CascadeType.ALL})
@@ -37,20 +41,18 @@ public class Client extends User implements ISubscriber{
 	
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
+		System.out.println(String.format("Mise à jour le %s pour Client %s", new Date(), getLastName()));
 		
 	}
 
 	@Override
 	public Map<Long, FollowingElementData> getAllFollowableElementData() {
-		List<FollowingElementData> res = followedElementDao.getAllByUser(getId());
+		List<FollowingElementData> res = followedElementDao.getAllByUser(this.getId());
 		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
 	}
 
-
-
 	@Override
-	public Map<Long, FollowingElementData> getAllFollowableElementDataByElementType(FollowableElementType type) {
+	public Map<Long, FollowingElementData> getAllFollowableElementDataByElementType(String type) {
 		List<FollowingElementData> res = followedElementDao.getAllByUserAndElementType(getId(), type);
 		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
 	}

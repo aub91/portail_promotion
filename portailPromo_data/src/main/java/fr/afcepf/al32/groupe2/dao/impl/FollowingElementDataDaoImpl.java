@@ -6,14 +6,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
 import fr.afcepf.al32.groupe2.entity.FollowingElementData;
-import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Transactional
-@Component
+@Repository
 public class FollowingElementDataDaoImpl implements FollowingElementDataDao{
 	
 	@PersistenceContext
@@ -26,7 +25,7 @@ public class FollowingElementDataDaoImpl implements FollowingElementDataDao{
 	}
 
 	@Override
-	public List<FollowingElementData> getAllByUserAndElementType(Long userId, FollowableElementType type) {
+	public List<FollowingElementData> getAllByUserAndElementType(Long userId, String type) {
 		return em.createNamedQuery("FollowingElementData.getAllCurrentByUserAndElementType", FollowingElementData.class).setParameter("userId", userId).setParameter("type", type).getResultList();
 	}
 
