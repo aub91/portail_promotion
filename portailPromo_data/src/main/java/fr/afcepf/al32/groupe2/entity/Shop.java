@@ -20,6 +20,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
+
 @Entity
 @Table(name="shop")
 public class Shop implements IFollowableElement{
@@ -149,21 +151,9 @@ public class Shop implements IFollowableElement{
 	}
 
 	@Override
-	public void addSubscriber(ISubscriber subscriber) {
+	public String getType() {
 		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void removeSubscriber(ISubscriber subscriber) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void notifySubscribers() {
-		// TODO Auto-generated method stub
-		
+		return FollowableElementType.SHOP;
 	}
 	
 }

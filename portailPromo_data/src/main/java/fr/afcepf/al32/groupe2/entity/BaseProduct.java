@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
+
 @Entity
 @Table(name="product")
 public class BaseProduct extends Product implements IFollowableElement {
@@ -54,21 +56,10 @@ public class BaseProduct extends Product implements IFollowableElement {
 	public void setRemoveDate(Date removeDate) {
 		this.removeDate = removeDate;
 	}
-	
 	@Override
-	public void addSubscriber(ISubscriber subscriber) {
+	public String getType() {
 		// TODO Auto-generated method stub
-		
+		return FollowableElementType.PRODUCT;
 	}
-	@Override
-	public void removeSubscriber(ISubscriber subscriber) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void notifySubscribers() {
-		// TODO Auto-generated method stub
-		
-	}	
 
 }

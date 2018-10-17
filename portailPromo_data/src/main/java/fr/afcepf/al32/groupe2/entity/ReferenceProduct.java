@@ -17,9 +17,11 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
+
 @Entity
 @Table(name="reference_product")
-public class ReferenceProduct {
+public class ReferenceProduct implements IFollowableElement{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -65,6 +67,11 @@ public class ReferenceProduct {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return FollowableElementType.REFERENCE;
 	}	
 
 }

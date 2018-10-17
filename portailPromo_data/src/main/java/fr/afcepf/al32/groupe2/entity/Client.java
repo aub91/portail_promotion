@@ -1,9 +1,6 @@
 package fr.afcepf.al32.groupe2.entity;
 
-import java.util.Date;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
@@ -11,20 +8,16 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.MapKey;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Transient;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
+import fr.afcepf.al32.groupe2.util.SubscriberType;
 
-import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
 
 @Entity
 @DiscriminatorValue("client")
-@Configurable(dependencyCheck=true)
-@EnableSpringConfigured
 public class Client extends User implements ISubscriber{
 
 	@OneToOne(cascade= {CascadeType.ALL})
@@ -34,28 +27,6 @@ public class Client extends User implements ISubscriber{
 	@OneToMany(mappedBy="client")
 	@MapKey(name="id")
 	private Map<Long,Reservation> reservations;
-	
-	@Autowired
-	@Transient
-	private FollowingElementDataDao followedElementDao;
-	
-	@Override
-	public void update() {
-		System.out.println(String.format("Mise à jour le %s pour Client %s", new Date(), getLastName()));
-		
-	}
-
-	@Override
-	public Map<Long, FollowingElementData> getAllFollowableElementData() {
-		List<FollowingElementData> res = followedElementDao.getAllByUser(this.getId());
-		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
-	}
-
-	@Override
-	public Map<Long, FollowingElementData> getAllFollowableElementDataByElementType(String type) {
-		List<FollowingElementData> res = followedElementDao.getAllByUserAndElementType(getId(), type);
-		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
-	}
 	
 	public Address getAddress() {
 		return address;
@@ -71,6 +42,11 @@ public class Client extends User implements ISubscriber{
 
 	public void setReservations(Map<Long, Reservation> reservations) {
 		this.reservations = reservations;
+	}
+
+	@Override
+	public String getType() {
+		return SubscriberType.CLIENT;
 	}
 
 }

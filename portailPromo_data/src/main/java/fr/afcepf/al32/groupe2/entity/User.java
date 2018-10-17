@@ -13,6 +13,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.MapKey;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -23,6 +25,12 @@ import javax.validation.constraints.NotNull;
 @Table(name="core_user")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="user_type")
+@NamedNativeQueries(value= {
+		@NamedNativeQuery(name="Client.findAllFollowingFollowableElement", 
+				query="SELECT cli.id, cli.first_name, cli.last_name, cli.phone_number, cli.email FROM core_user as cli INNER JOIN following_element_data as fed ON cli.id = fed.subscriber_id "
+						+ "WHERE cli.user_type = 'CLIENT' AND fed.element_id = 1 AND fed.element_type = 'CATEGORY' AND fed.follow_end_date IS NULL",resultClass=User.class)
+		
+})
 public abstract class User {
 	
 	@Id
