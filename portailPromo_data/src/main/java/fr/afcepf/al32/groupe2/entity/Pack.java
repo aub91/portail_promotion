@@ -2,11 +2,13 @@ package fr.afcepf.al32.groupe2.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="pack")
+@PrimaryKeyJoinColumn(name = "id")
 public class Pack extends PromotionType {
 	
 	@Column(name="number_purchased")

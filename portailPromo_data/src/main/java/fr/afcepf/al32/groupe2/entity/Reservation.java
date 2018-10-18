@@ -33,4 +33,39 @@ public class Reservation {
 	private Evaluation evaluation;
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private ReservationProduct reservationProduct;
+	public String getDateCreation() {
+		return dateCreation;
+	}
+	public void setDateCreation(String dateCreation) {
+		this.dateCreation = dateCreation;
+	}
+	public String getCodeRetrait() {
+		return codeRetrait;
+	}
+	public void setCodeRetrait(String codeRetrait) {
+		this.codeRetrait = codeRetrait;
+	}
+	public Client getClient() {
+		return client;
+	}
+	public void setClient(Client client) {
+		this.client = client;
+	}
+	public Evaluation getEvaluation() {
+		return evaluation;
+	}
+	public void setEvaluation(Evaluation evaluation) {
+		this.evaluation = evaluation;
+	}
+	public ReservationProduct getReservationProduct() {
+		return reservationProduct;
+	}
+	public void setReservationProduct(ReservationProduct reservationProduct) {
+		this.reservationProduct = reservationProduct;
+	}
+	public Long getId() {
+		return id;
+	}
+	
+	
 }

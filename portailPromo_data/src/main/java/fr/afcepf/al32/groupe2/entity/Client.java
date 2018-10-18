@@ -70,5 +70,7 @@ public class Client extends User implements ISubscriber{
 	public void setReservations(Map<Long, Reservation> reservations) {
 		this.reservations = reservations;
 	}
+	
+	
 
 }

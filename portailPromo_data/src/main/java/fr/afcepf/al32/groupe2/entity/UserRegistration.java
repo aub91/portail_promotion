@@ -23,4 +23,6 @@ public class UserRegistration extends Registration {
 	public void setDeregistrationMotive(UserDeregistrationMotive deregistrationMotive) {
 		this.deregistrationMotive = deregistrationMotive;
 	}
+	
+	
 }

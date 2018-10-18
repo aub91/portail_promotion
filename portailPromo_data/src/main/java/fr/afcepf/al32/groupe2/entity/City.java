@@ -32,6 +32,8 @@ public class City {
 	@OneToMany(mappedBy="city", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long, Address> addresses;
+	
+	
 
 	public String getPostalCode() {
 		return postalCode;
@@ -60,4 +62,5 @@ public class City {
 	public Long getId() {
 		return id;
 	}
+	
 }

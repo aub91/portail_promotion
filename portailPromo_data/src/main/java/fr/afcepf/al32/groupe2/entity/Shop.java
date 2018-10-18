@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
@@ -72,6 +73,14 @@ public class Shop implements IFollowableElement{
 	@MapKey(name="id")
 	private Map<Long, ShopRegistration> registrations;
 
+	@ManyToMany(mappedBy="shops", cascade=CascadeType.ALL)
+	@MapKey(name="id")
+	private Map<Long, Promotion> promotions;
+	
+//	@ManyToMany(cascade=CascadeType.ALL)
+//	@JoinTable(name="shop_category_product", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="category_product_id"))
+//	private CategoryProduct categoryProduct;
+	
 	public String getSiretNumber() {
 		return siretNumber;
 	}
@@ -146,6 +155,22 @@ public class Shop implements IFollowableElement{
 
 	public Long getId() {
 		return id;
+	}
+
+	public Map<Long, ShopRegistration> getRegistrations() {
+		return registrations;
+	}
+
+	public void setRegistrations(Map<Long, ShopRegistration> registrations) {
+		this.registrations = registrations;
+	}
+
+	public Map<Long, Promotion> getPromotions() {
+		return promotions;
+	}
+
+	public void setPromotions(Map<Long, Promotion> promotions) {
+		this.promotions = promotions;
 	}
 
 	@Override

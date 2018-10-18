@@ -8,8 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -22,10 +20,12 @@ public class SalesUnit {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="name")
 	@NotBlank
-	private String name;	
-	@OneToMany(mappedBy="uniteVente", cascade=CascadeType.ALL)
+	private String name;
+	
+	@OneToMany(mappedBy="salesUnit", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long,ReferenceProduct> referenceProduit;
 	
@@ -36,4 +36,13 @@ public class SalesUnit {
 	public String getName() {
 		return name;
 	}
+
+	public Map<Long, ReferenceProduct> getReferenceProduit() {
+		return referenceProduit;
+	}
+
+	public void setReferenceProduit(Map<Long, ReferenceProduct> referenceProduit) {
+		this.referenceProduit = referenceProduit;
+	}
+	
 }

@@ -2,16 +2,26 @@ package fr.afcepf.al32.groupe2.entity;
 
 import java.time.Duration;
 import java.util.Date;
+import java.util.Map;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.MapKey;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="promotion")
-public class Promotion extends ProductWithPromotion {
+@PrimaryKeyJoinColumn(name = "id")
+public class Promotion extends Product {
 
 	@Column(name="name")
 	@NotBlank
@@ -26,7 +36,7 @@ public class Promotion extends ProductWithPromotion {
 	@Column(name="limit_time_promotion")
 	@NotNull
 	private Duration LimitTimePromotion;
-	@Column(name="limit_time_take_promtion")
+	@Column(name="limit_time_take_promotion")
 	@NotNull
 	private Duration limitTimeTakePromotion;
 	@Column(name="quantity_init_available")
@@ -37,6 +47,28 @@ public class Promotion extends ProductWithPromotion {
 	@Column(name="is_cumulative")
 	@NotNull
 	private Boolean isCumulative;
+	
+	@ManyToMany(cascade=CascadeType.ALL)
+	@JoinTable(name="promotion_shop", joinColumns=@JoinColumn(name="promotion_id"),inverseJoinColumns=@JoinColumn(name="shop_id"))
+	@MapKey(name="id")
+	private Map<Long, Shop> shops;
+	
+	@OneToOne(mappedBy="promotion",cascade= {CascadeType.ALL}, optional=false)
+	@NotNull
+	private Publish publish;
+	
+	@ManyToOne(cascade= {CascadeType.ALL}, optional=false)
+	@JoinColumn(name="promotion_type_id")
+	@NotNull
+	private PromotionType promotionType;
+	
+	@ManyToOne(cascade= {CascadeType.ALL})
+	@JoinColumn(name="template_promotion_id")
+	private TemplatePromotion templatePromotion;
+	
+	@OneToOne
+	@JoinColumn(name="product_id")
+	private Product product;
 	
 	public String getName() {
 		return name;
@@ -91,6 +123,36 @@ public class Promotion extends ProductWithPromotion {
 	}
 	public void setIsCumulative(Boolean isCumulative) {
 		this.isCumulative = isCumulative;
+	}
+	public Map<Long, Shop> getShops() {
+		return shops;
+	}
+	public void setShops(Map<Long, Shop> shops) {
+		this.shops = shops;
+	}
+	public Publish getPublish() {
+		return publish;
+	}
+	public void setPublish(Publish publish) {
+		this.publish = publish;
+	}
+	public PromotionType getPromotionType() {
+		return promotionType;
+	}
+	public void setPromotionType(PromotionType promotionType) {
+		this.promotionType = promotionType;
+	}
+	public TemplatePromotion getTemplatePromotion() {
+		return templatePromotion;
+	}
+	public void setTemplatePromotion(TemplatePromotion templatePromotion) {
+		this.templatePromotion = templatePromotion;
+	}
+	public Product getProduct() {
+		return product;
+	}
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 }

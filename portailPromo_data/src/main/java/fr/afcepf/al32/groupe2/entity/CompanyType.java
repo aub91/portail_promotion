@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="company_type")
@@ -16,6 +17,7 @@ public class CompanyType {
 	private double id;
 	
 	@Column(name="name")
+	@NotBlank
 	private String name;
 
 	public String getName() {
@@ -29,8 +31,6 @@ public class CompanyType {
 	public double getId() {
 		return id;
 	}
-	
-	
 	
 	
 }

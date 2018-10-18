@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
@@ -41,10 +42,14 @@ public class CategoryProduct implements IFollowableElement {
 	@OneToMany(mappedBy="categoryMum")
 	private List<CategoryProduct> categoryDaughter;
 	
-	//@JoinColumn(name="reference_produit",)	
-	@OneToMany(mappedBy="categorieProduit", cascade=CascadeType.ALL)
+	
+	@OneToMany(mappedBy="categoriesProduit", cascade=CascadeType.ALL)
 	@MapKey(name="id")
 	private Map<Long,ReferenceProduct> referenceProduit;
+	
+//	@ManyToMany(mappedBy="categoryProduct")
+//	@MapKey(name="id")
+//	private Shop shop;
 	
 	@Transient
 	@Autowired
@@ -65,6 +70,16 @@ public class CategoryProduct implements IFollowableElement {
 	public List<CategoryProduct> getCategoryDaughter() {
 		return categoryDaughter;
 	}
+
+	
+	public Map<Long, ReferenceProduct> getReferenceProduit() {
+		return referenceProduit;
+	}
+
+	public void setReferenceProduit(Map<Long, ReferenceProduct> referenceProduit) {
+		this.referenceProduit = referenceProduit;
+	}
+
 
 	@Override
 	public void addSubscriber(ISubscriber subscriber) {

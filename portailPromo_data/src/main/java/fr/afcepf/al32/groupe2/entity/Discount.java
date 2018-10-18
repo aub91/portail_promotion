@@ -2,11 +2,13 @@ package fr.afcepf.al32.groupe2.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="discount")
+@PrimaryKeyJoinColumn(name = "id")
 public class Discount extends PromotionType {
 
 	@Column(name="discount_value")
@@ -14,7 +16,6 @@ public class Discount extends PromotionType {
 	private Double discountValue;
 
 	@Column(name="min_purchase_amount")
-	@NotNull
 	private Double minPurchaseAmount;
 
 	public Double getDiscountValue() {

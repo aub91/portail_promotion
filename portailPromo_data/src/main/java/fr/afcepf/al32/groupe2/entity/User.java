@@ -88,6 +88,21 @@ public abstract class User {
 	public Long getId() {
 		return id;
 	}
-	
+
+	public AuthenticationData getAuthenticationData() {
+		return authenticationData;
+	}
+
+	public void setAuthenticationData(AuthenticationData authenticationData) {
+		this.authenticationData = authenticationData;
+	}
+
+	public Map<Long, UserRegistration> getRegistrations() {
+		return registrations;
+	}
+
+	public void setRegistrations(Map<Long, UserRegistration> registrations) {
+		this.registrations = registrations;
+	}
 	
 }

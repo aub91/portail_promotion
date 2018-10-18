@@ -20,20 +20,27 @@ public class ReferenceProduct {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="name")
 	@NotBlank
 	private String name;
+	
 	@Column(name="date_referencing")
 	@NotNull
 	private Date dateReferencing;
+	
 	@Column(name="date_derefencing")
 	private Date dateDeferencing;
-	@JoinColumn(name="unite_de_vente")	
+	
+	@JoinColumn(name="sales_unit_id")	
 	@ManyToOne
-	private SalesUnit uniteVente;
-	@JoinColumn(name="categorie_produit")	
+	@NotNull
+	private SalesUnit salesUnit;
+	
+	@JoinColumn(name="category_produit_id")	
 	@ManyToOne
-	private CategoryProduct categorieProduit;
+	@NotNull
+	private CategoryProduct categoriesProduit;
 	
 
 	public Date getDateReferencing() {
@@ -56,6 +63,18 @@ public class ReferenceProduct {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public SalesUnit getSalesUnit() {
+		return salesUnit;
+	}
+	public void setSalesUnit(SalesUnit salesUnit) {
+		this.salesUnit = salesUnit;
+	}
+	public CategoryProduct getCategoriesProduit() {
+		return categoriesProduit;
+	}
+	public void setCategoriesProduit(CategoryProduct categoriesProduit) {
+		this.categoriesProduit = categoriesProduit;
 	}	
 
 }

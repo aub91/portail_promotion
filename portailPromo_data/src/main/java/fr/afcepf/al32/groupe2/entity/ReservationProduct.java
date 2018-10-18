@@ -27,4 +27,36 @@ public class ReservationProduct {
 	@PrimaryKeyJoinColumn
 	@NotNull
 	private Reservation reservation;
+	public Long getIdReservation() {
+		return idReservation;
+	}
+	public void setIdReservation(Long idReservation) {
+		this.idReservation = idReservation;
+	}
+	public Double getQuantiteCommandee() {
+		return quantiteCommandee;
+	}
+	public void setQuantiteCommandee(Double quantiteCommandee) {
+		this.quantiteCommandee = quantiteCommandee;
+	}
+	public Double getQuantiteRetiree() {
+		return quantiteRetiree;
+	}
+	public void setQuantiteRetiree(Double quantiteRetiree) {
+		this.quantiteRetiree = quantiteRetiree;
+	}
+	public Date getDateRetrait() {
+		return dateRetrait;
+	}
+	public void setDateRetrait(Date dateRetrait) {
+		this.dateRetrait = dateRetrait;
+	}
+	public Reservation getReservation() {
+		return reservation;
+	}
+	public void setReservation(Reservation reservation) {
+		this.reservation = reservation;
+	}
+	
+	
 }

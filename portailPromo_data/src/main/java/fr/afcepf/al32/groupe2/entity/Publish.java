@@ -2,19 +2,36 @@ package fr.afcepf.al32.groupe2.entity;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name="publish")
+@Entity
+@Table(name="publish")
 public class Publish {
+	
+	@Id
+	@Column(name="id_promotion")
+	private Long idPromotion;
 	
 	@Column(name="publish_date")
 	private Date publishDate;
 	@Column(name="cancel_publish_date")
 	private Date cancelPublishDate;
 	
+	@OneToOne
+	@PrimaryKeyJoinColumn
+	private Promotion promotion;
+	
+	@ManyToOne(cascade= {CascadeType.ALL})
+	@JoinColumn(name="reason_cancel_publish_promo_id")
+	private ReasonCancelPublishPromotion reasonCancelPublishPromotion;
 	
 	public Date getPublishDate() {
 		return publishDate;
@@ -28,6 +45,17 @@ public class Publish {
 	public void setCancelPublishDate(Date cancelPublishDate) {
 		this.cancelPublishDate = cancelPublishDate;
 	}
-	
+	public Promotion getPromotion() {
+		return promotion;
+	}
+	public void setPromotion(Promotion promotion) {
+		this.promotion = promotion;
+	}
+	public ReasonCancelPublishPromotion getReasonCancelPublishPromotion() {
+		return reasonCancelPublishPromotion;
+	}
+	public void setReasonCancelPublishPromotion(ReasonCancelPublishPromotion reasonCancelPublishPromotion) {
+		this.reasonCancelPublishPromotion = reasonCancelPublishPromotion;
+	}
 	
 }
