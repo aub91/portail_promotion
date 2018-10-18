@@ -13,25 +13,17 @@ import fr.afcepf.al32.groupe2.service.IServiceCategoryProduct;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=TestConfig.class)
+@SpringBootTest(classes = TestConfig.class)
 @AutoConfigureTestDatabase
 public class ServiceCategoryProductTest {
-		
-		@Autowired
-		private IServiceCategoryProduct servicecategoryproduct;
 
+	@Autowired
+	private IServiceCategoryProduct servicecategoryproduct;
 
 	@Test
-	public void rechercheCategoryProduitParIdentifiantTest () {
-		//@Autowired
-		
-	
-	
-			CategoryProduct su=servicecategoryproduct.rechercheCategoryProduitParIdentifiant(1L);
-			Assert.assertNotNull(su);
-		}
-
-		
-	 
+	public void rechercheCategoryProduitParIdentifiantTest() {
+		CategoryProduct su = servicecategoryproduct.rechercheCategoryProduitParIdentifiant(1L);
+		Assert.assertNotNull(su);
 	}
 
+}

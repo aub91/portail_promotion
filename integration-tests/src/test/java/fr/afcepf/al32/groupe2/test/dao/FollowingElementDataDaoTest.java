@@ -6,7 +6,6 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,6 @@ import fr.afcepf.al32.groupe2.util.SubscriberType;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
 @AutoConfigureTestDatabase
-@Ignore
 public class FollowingElementDataDaoTest {
 	@Autowired
 	private FollowingElementDataDao dao;

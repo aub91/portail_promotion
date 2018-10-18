@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
@@ -41,9 +42,9 @@ public class CategoryProduct implements IFollowableElement {
 	@MapKey(name = "id")
 	private Map<Long, ReferenceProduct> referenceProduit;
 
-	// @ManyToMany(mappedBy="categoryProduct")
-	// @MapKey(name="id")
-	// private Shop shop;
+	 @ManyToMany(mappedBy="categoryProducts")
+	 @MapKey(name="id")
+	 private Map<Long, Shop> shops;
 
 	public Long getId() {
 		return id;

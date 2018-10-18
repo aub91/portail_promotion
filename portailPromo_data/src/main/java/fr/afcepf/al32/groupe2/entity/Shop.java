@@ -79,9 +79,10 @@ public class Shop implements IFollowableElement{
 	@MapKey(name="id")
 	private Map<Long, Promotion> promotions;
 	
-//	@ManyToMany(cascade=CascadeType.ALL)
-//	@JoinTable(name="shop_category_product", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="category_product_id"))
-//	private CategoryProduct categoryProduct;
+	@ManyToMany(cascade=CascadeType.ALL)
+	@JoinTable(name="shop_category_product", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="category_product_id"))
+	@MapKey(name="id")
+	private Map<Long, CategoryProduct> categoryProducts;
 	
 	public String getSiretNumber() {
 		return siretNumber;

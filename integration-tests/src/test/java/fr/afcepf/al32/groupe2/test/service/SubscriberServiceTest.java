@@ -3,7 +3,6 @@ package fr.afcepf.al32.groupe2.test.service;
 import java.util.Map;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,6 @@ import fr.afcepf.al32.groupe2.util.FollowableElementType;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
 @AutoConfigureTestDatabase
-@Ignore
 public class SubscriberServiceTest {
 	
 	@Autowired

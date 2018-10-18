@@ -5,7 +5,6 @@ import java.util.Map;
 import javax.transaction.Transactional;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,6 @@ import fr.afcepf.al32.groupe2.test.config.TestConfig;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
 @AutoConfigureTestDatabase
-@Ignore
 public class FollowableElementServiceTest {
 	
 	@Autowired

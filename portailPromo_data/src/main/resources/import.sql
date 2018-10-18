@@ -711,5 +711,5 @@ INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(27,1)
 INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(28,1)
 
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (1, 'SHOP', 1, 'CLIENT', 1, sysdate())
-
+INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (2, 'CATEGORY', 1, 'CLIENT', 1, sysdate())
 

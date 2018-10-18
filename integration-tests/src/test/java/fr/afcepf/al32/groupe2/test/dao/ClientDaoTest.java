@@ -3,7 +3,6 @@ package fr.afcepf.al32.groupe2.test.dao;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,6 @@ public class ClientDaoTest {
 	private ICategoryProductDao categoryProductDao;
 	
 	@Test
-	@Ignore
 	public void findAllFollowingFollowableElementTest() {
 		CategoryProduct element = categoryProductDao.findOne(1L);
 		List<Client> res = clientDao.findAllFollowingFollowableElement(element);
