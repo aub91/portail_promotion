@@ -1,6 +1,5 @@
 package fr.afcepf.al32.groupe2.entity;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -11,49 +10,40 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Entity
-@Table(name="category_product")
+@Table(name = "category_product")
 public class CategoryProduct implements IFollowableElement {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	@NotBlank
 	private String name;
-	
+
 	@ManyToOne
-	@JoinColumn(name="category_mum_id")
+	@JoinColumn(name = "category_mum_id")
 	private CategoryProduct categoryMum;
-	
-	@OneToMany(mappedBy="categoryMum")
+
+	@OneToMany(mappedBy = "categoryMum")
 	private List<CategoryProduct> categoryDaughter;
-	
-	
-	@OneToMany(mappedBy="categoriesProduit", cascade=CascadeType.ALL)
-	@MapKey(name="id")
-	private Map<Long,ReferenceProduct> referenceProduit;
-	
-//	@ManyToMany(mappedBy="categoryProduct")
-//	@MapKey(name="id")
-//	private Shop shop;
-	
-	@Transient
-	@Autowired
-	private FollowingElementDataDao followingElementDataDao;
+
+	@OneToMany(mappedBy = "categoriesProduct", cascade = CascadeType.ALL)
+	@MapKey(name = "id")
+	private Map<Long, ReferenceProduct> referenceProduit;
+
+	// @ManyToMany(mappedBy="categoryProduct")
+	// @MapKey(name="id")
+	// private Shop shop;
 
 	public Long getId() {
 		return id;
@@ -71,7 +61,6 @@ public class CategoryProduct implements IFollowableElement {
 		return categoryDaughter;
 	}
 
-	
 	public Map<Long, ReferenceProduct> getReferenceProduit() {
 		return referenceProduit;
 	}
@@ -80,32 +69,10 @@ public class CategoryProduct implements IFollowableElement {
 		this.referenceProduit = referenceProduit;
 	}
 
-
 	@Override
-	public void addSubscriber(ISubscriber subscriber) {
-		FollowingElementData followingElementData = new FollowingElementData();
-		
-		followingElementData.setElement(this);
-		followingElementData.setSubscriber(subscriber);
-		followingElementData.setFollowStartDate(new Date());
-		
-		followingElementDataDao.save(followingElementData);
-		
-	}
-
-	@Override
-	public void removeSubscriber(ISubscriber subscriber) {
+	public String getType() {
 		// TODO Auto-generated method stub
-		
+		return FollowableElementType.CATEGORY;
 	}
-
-	@Override
-	public void notifySubscribers() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
-	
 
 }

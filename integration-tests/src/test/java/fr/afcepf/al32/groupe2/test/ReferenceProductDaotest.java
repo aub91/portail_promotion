@@ -1,7 +1,5 @@
 package fr.afcepf.al32.groupe2.test;
 
-import java.util.List;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,23 +8,30 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
-import fr.afcepf.al32.groupe2.entity.FollowingElementData;
+import fr.afcepf.al32.groupe2.dao.IReferenceProductDao;
+import fr.afcepf.al32.groupe2.entity.ReferenceProduct;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
 @AutoConfigureTestDatabase
-public class FollowingElementDataDaoTest {
-	@Autowired
-	private FollowingElementDataDao dao;
+public class ReferenceProductDaotest {
 	
-	@Test
-	public void getAllByUserTest() {
+	
+		@Autowired
+		private  IReferenceProductDao dao;
 		
-		List<FollowingElementData> res = dao.getAllByUser(1L);
+		@Test
+		public void findOneTest() {
+			ReferenceProduct su=dao.findOne(1L);
+			Assert.assertNotNull(su);
+		}
+		@Test
+		public void createOneTest() {
+			ReferenceProduct su=new ReferenceProduct();
+			su.setName("kilo");
+			dao.createOne(su);
+			Assert.assertEquals(2L, su.getId(), 0.1);
+		}
 		
-		Assert.assertEquals(1, res.size());
-		Assert.assertEquals("SHOP", res.get(0).getElementType());
-	}
 }

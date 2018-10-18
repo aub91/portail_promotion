@@ -59,7 +59,7 @@ public class FollowingElementData {
 	
 	@JoinColumn(name="element_id")
 	@Any(metaDef="followableElementMetaDef", metaColumn = @Column( name = "element_type" ), fetch=FetchType.LAZY)
-	@Cascade(value=org.hibernate.annotations.CascadeType.ALL)
+	@Cascade(value=org.hibernate.annotations.CascadeType.MERGE)
 	private IFollowableElement element;
 	
 	@Column(name="subscriber_type", insertable=false, updatable=false)
@@ -67,7 +67,7 @@ public class FollowingElementData {
 	
 	@JoinColumn(name="subscriber_id")
 	@Any(metaDef="subscriberMetaDef", metaColumn = @Column( name = "subscriber_type" ), fetch=FetchType.LAZY)
-	@Cascade(value=org.hibernate.annotations.CascadeType.ALL)
+	@Cascade(value=org.hibernate.annotations.CascadeType.MERGE)
 	private ISubscriber subscriber;
 	
 	@Column(name="follow_start_date")

@@ -14,21 +14,21 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name="sales_unit")
+@Table(name = "sales_unit")
 public class SalesUnit {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	@NotBlank
 	private String name;
 	
-	@OneToMany(mappedBy="salesUnit", cascade=CascadeType.ALL)
-	@MapKey(name="id")
-	private Map<Long,ReferenceProduct> referenceProduit;
-	
+	@OneToMany(mappedBy = "salesUnit", cascade = CascadeType.ALL)
+	@MapKey(name = "id")
+	private Map<Long, ReferenceProduct> referenceProduit;
+
 	public Long getId() {
 		return id;
 	}
@@ -44,5 +44,11 @@ public class SalesUnit {
 	public void setReferenceProduit(Map<Long, ReferenceProduct> referenceProduit) {
 		this.referenceProduit = referenceProduit;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 	
+	
+
 }

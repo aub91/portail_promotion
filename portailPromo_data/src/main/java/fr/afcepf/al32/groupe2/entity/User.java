@@ -45,7 +45,7 @@ public abstract class User {
 	private String phoneNumber;
 	
 	@OneToOne(mappedBy="user",cascade= {CascadeType.ALL}, optional=false)
-	@NotNull
+	
 	private AuthenticationData authenticationData;
 	
 	@OneToMany(cascade=CascadeType.ALL)

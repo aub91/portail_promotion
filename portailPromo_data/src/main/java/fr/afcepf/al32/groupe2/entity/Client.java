@@ -1,8 +1,6 @@
 package fr.afcepf.al32.groupe2.entity;
 
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
@@ -10,17 +8,22 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.MapKey;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Transient;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import fr.afcepf.al32.groupe2.util.SubscriberType;
 
-import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
-import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Entity
 @DiscriminatorValue("client")
+@NamedNativeQueries(value= {
+		@NamedNativeQuery(name="Client.findAllFollowingFollowableElement", 
+				query="SELECT cli.id, cli.first_name, cli.last_name, cli.phone_number, cli.email, client_address.address_id FROM core_user as cli INNER JOIN client_address ON client_address.client_id = cli.id INNER JOIN following_element_data as fed ON cli.id = fed.subscriber_id "
+						+ "WHERE fed.element_id = :elementId AND fed.element_type = :elementType AND fed.follow_end_date IS NULL",resultClass=Client.class)
+		
+})
 public class Client extends User implements ISubscriber{
 
 	@OneToOne(cascade= {CascadeType.ALL})
@@ -30,30 +33,6 @@ public class Client extends User implements ISubscriber{
 	@OneToMany(mappedBy="client")
 	@MapKey(name="id")
 	private Map<Long,Reservation> reservations;
-	
-	@Autowired
-	@Transient
-	private FollowingElementDataDao followedElementDao;
-	
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Map<Long, FollowingElementData> getAllFollowableElementData() {
-		List<FollowingElementData> res = followedElementDao.getAllByUser(getId());
-		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
-	}
-
-
-
-	@Override
-	public Map<Long, FollowingElementData> getAllFollowableElementDataByElementType(FollowableElementType type) {
-		List<FollowingElementData> res = followedElementDao.getAllByUserAndElementType(getId(), type);
-		return res.stream().collect(Collectors.toMap(FollowingElementData::getId, element -> element));
-	}
 	
 	public Address getAddress() {
 		return address;
@@ -72,5 +51,10 @@ public class Client extends User implements ISubscriber{
 	}
 	
 	
+
+	@Override
+	public String getType() {
+		return SubscriberType.CLIENT;
+	}
 
 }

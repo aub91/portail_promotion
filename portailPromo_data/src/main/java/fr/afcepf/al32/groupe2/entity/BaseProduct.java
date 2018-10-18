@@ -10,6 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import fr.afcepf.al32.groupe2.util.FollowableElementType;
+
 @Entity
 @Table(name="base_product")
 public class BaseProduct extends Product implements IFollowableElement {
@@ -62,7 +64,6 @@ public class BaseProduct extends Product implements IFollowableElement {
 	public void setRemoveDate(Date removeDate) {
 		this.removeDate = removeDate;
 	}
-	
 	public ReferenceProduct getReferenceProduct() {
 		return referenceProduct;
 	}
@@ -72,19 +73,9 @@ public class BaseProduct extends Product implements IFollowableElement {
 	
 	
 	@Override
-	public void addSubscriber(ISubscriber subscriber) {
-		// TODO Auto-generated method stub
-		
+	public String getType() {
+		return FollowableElementType.PRODUCT;
 	}
-	@Override
-	public void removeSubscriber(ISubscriber subscriber) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void notifySubscribers() {
-		// TODO Auto-generated method stub
-		
-	}	
+
 
 }
