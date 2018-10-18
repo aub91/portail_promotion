@@ -50,8 +50,6 @@ public class Client extends User implements ISubscriber{
 		this.reservations = reservations;
 	}
 	
-	
-
 	@Override
 	public String getType() {
 		return SubscriberType.CLIENT;

@@ -16,34 +16,42 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name="reservation")
 public class Reservation {
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="creation_date")
 	@NotBlank
 	private String dateCreation;
-	@Column(name="retrait_code")
+	
+	@Column(name="withdrawal_code")
 	@NotBlank
-	private String codeRetrait;
+	private String withdrawalCode;
+	
 	@ManyToOne(cascade= {CascadeType.PERSIST})
 	@JoinColumn(name="client_id")
 	@NotNull
 	private Client client;
+	
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private Evaluation evaluation;
+	
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private ReservationProduct reservationProduct;
+	
 	public String getDateCreation() {
 		return dateCreation;
 	}
 	public void setDateCreation(String dateCreation) {
 		this.dateCreation = dateCreation;
 	}
-	public String getCodeRetrait() {
-		return codeRetrait;
+	
+	public String getWithdrawalCode() {
+		return withdrawalCode;
 	}
-	public void setCodeRetrait(String codeRetrait) {
-		this.codeRetrait = codeRetrait;
+	public void setWithdrawalCode(String withdrawalCode) {
+		this.withdrawalCode = withdrawalCode;
 	}
 	public Client getClient() {
 		return client;

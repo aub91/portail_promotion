@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
@@ -14,19 +16,61 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name="evaluation")
 public class Evaluation {
+	
 	@Id
-	@Column(name="id_reservation")
-	private Long idReservation;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
 	@Column(name="date_creation")
 	private Date dateCreation;
-	@Column(name="note_produit")
+	
+	@Column(name="note_product")
 	private Integer noteProduit;
+	
 	@Column(name="note_interaction")
 	private String noteInteraction;
-	@Column(name="note_globale")
-	private Integer noteGlobale;
+	
+	@Column(name="overall_rating")
+	private Integer overall_rating;
+	
 	@OneToOne(cascade= {CascadeType.PERSIST})
 	@PrimaryKeyJoinColumn
 	@NotNull
 	private Reservation reservation;
+	
+	public Date getDateCreation() {
+		return dateCreation;
+	}
+	public void setDateCreation(Date dateCreation) {
+		this.dateCreation = dateCreation;
+	}
+	public Integer getNoteProduit() {
+		return noteProduit;
+	}
+	public void setNoteProduit(Integer noteProduit) {
+		this.noteProduit = noteProduit;
+	}
+	public String getNoteInteraction() {
+		return noteInteraction;
+	}
+	public void setNoteInteraction(String noteInteraction) {
+		this.noteInteraction = noteInteraction;
+	}
+
+	public Integer getOverall_rating() {
+		return overall_rating;
+	}
+	public void setOverall_rating(Integer overall_rating) {
+		this.overall_rating = overall_rating;
+	}
+	public Reservation getReservation() {
+		return reservation;
+	}
+	public void setReservation(Reservation reservation) {
+		this.reservation = reservation;
+	}
+	public Long getId() {
+		return id;
+	}
+
 }

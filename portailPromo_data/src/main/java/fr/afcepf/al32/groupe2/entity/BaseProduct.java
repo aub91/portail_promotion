@@ -1,12 +1,15 @@
 package fr.afcepf.al32.groupe2.entity;
 
 import java.util.Date;
+import java.util.Map;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapKey;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -33,6 +36,10 @@ public class BaseProduct extends Product implements IFollowableElement {
 	@JoinColumn(name="reference_product_id")
 	@NotNull
 	private ReferenceProduct referenceProduct;
+	
+	@OneToMany(mappedBy="baseProducts",cascade=CascadeType.ALL)
+	@MapKey(name="id")
+	private Map<Long, ReservationProduct> reservationProducts;
 	
 	public Double getInitPrice() {
 		return initPrice;

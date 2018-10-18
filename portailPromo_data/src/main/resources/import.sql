@@ -713,3 +713,16 @@ INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(28,1)
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (1, 'SHOP', 1, 'CLIENT', 1, sysdate())
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (2, 'CATEGORY', 1, 'CLIENT', 1, sysdate())
 
+INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(1,1,SYSDATE(),null)
+INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(2,1,SYSDATE(),SYSDATE())
+INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(3,2,SYSDATE(),null)
+
+INSERT INTO reservation_product(id,base_product_id,quantity_requested,withdrawal_date)VALUES(1,1,10,null)
+INSERT INTO reservation_product(id,base_product_id,quantity_requested,withdrawal_date)VALUES(2,1,5,SYSDATE())
+INSERT INTO reservation_product(id,base_product_id,quantity_requested,withdrawal_date)VALUES(3,2,1,null)
+
+INSERT INTO evaluation(id,date_creation,note_product,overall_rating)VALUES(1,null,null,null)
+INSERT INTO evaluation(id,date_creation,note_product,overall_rating)VALUES(2,sysdate(),3,4)
+INSERT INTO evaluation(id,date_creation,note_product,overall_rating)VALUES(3,null,null,null)
+
+

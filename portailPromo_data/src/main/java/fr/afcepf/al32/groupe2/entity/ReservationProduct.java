@@ -5,58 +5,84 @@ import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name="reservationProduct")
+@Table(name = "reservation_product")
 public class ReservationProduct {
+
 	@Id
-	@Column(name="id_reservation")
-	private Long idReservation;
-	@Column(name="quantite_commandee")
-	private Double quantiteCommandee;
-	@Column(name="quantite_retiree")
-	private Double quantiteRetiree;
-	@Column(name="date_retrait")
-	private Date dateRetrait;
-	@OneToOne(cascade= {CascadeType.PERSIST})
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@Column(name = "quantity_requested")
+	private Double quantityRequested;
+
+	@Column(name = "quantity_withdrawal")
+	private Double quantityWithdrawal;
+
+	@Column(name = "withdrawal_date")
+	private Date withdrawalDate;
+
+	@OneToOne(cascade = { CascadeType.PERSIST })
 	@PrimaryKeyJoinColumn
 	@NotNull
 	private Reservation reservation;
-	public Long getIdReservation() {
-		return idReservation;
+
+	@ManyToOne
+	@JoinColumn(name = "base_product_id")
+	private BaseProduct baseProducts;
+
+	public Double getQuantityRequested() {
+		return quantityRequested;
 	}
-	public void setIdReservation(Long idReservation) {
-		this.idReservation = idReservation;
+
+	public void setQuantityRequested(Double quantityRequested) {
+		this.quantityRequested = quantityRequested;
 	}
-	public Double getQuantiteCommandee() {
-		return quantiteCommandee;
+
+	public Double getQuantityWithdrawal() {
+		return quantityWithdrawal;
 	}
-	public void setQuantiteCommandee(Double quantiteCommandee) {
-		this.quantiteCommandee = quantiteCommandee;
+
+	public void setQuantityWithdrawal(Double quantityWithdrawal) {
+		this.quantityWithdrawal = quantityWithdrawal;
 	}
-	public Double getQuantiteRetiree() {
-		return quantiteRetiree;
+
+	public Date getWithdrawalDate() {
+		return withdrawalDate;
 	}
-	public void setQuantiteRetiree(Double quantiteRetiree) {
-		this.quantiteRetiree = quantiteRetiree;
+
+	public void setWithdrawalDate(Date withdrawalDate) {
+		this.withdrawalDate = withdrawalDate;
 	}
-	public Date getDateRetrait() {
-		return dateRetrait;
+
+	public Long getId() {
+		return id;
 	}
-	public void setDateRetrait(Date dateRetrait) {
-		this.dateRetrait = dateRetrait;
-	}
+
 	public Reservation getReservation() {
 		return reservation;
 	}
+
 	public void setReservation(Reservation reservation) {
 		this.reservation = reservation;
 	}
-	
-	
+
+	public BaseProduct getBaseProducts() {
+		return baseProducts;
+	}
+
+	public void setBaseProducts(BaseProduct baseProducts) {
+		this.baseProducts = baseProducts;
+	}
+
 }
