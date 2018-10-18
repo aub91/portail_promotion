@@ -10,9 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.groupe2.dao.FollowingElementDataDao;
+import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.FollowingElementData;
 import fr.afcepf.al32.groupe2.entity.IFollowableElement;
 import fr.afcepf.al32.groupe2.entity.ISubscriber;
+import fr.afcepf.al32.groupe2.service.EmailService;
 import fr.afcepf.al32.groupe2.service.ISubscriberService;
 
 @Component
@@ -21,10 +23,13 @@ public class SubscriberService implements ISubscriberService{
 	
 	@Autowired
 	private FollowingElementDataDao followingElementDataDao;
+	
+	@Autowired
+	private EmailService emailService;
 
 	@Override
 	public void update(ISubscriber subscriber, IFollowableElement element) {
-		System.out.println(String.format("Notif from %s %s for %s %s", element.getType(), element.getId(), subscriber.getType(), subscriber.getId()));
+		emailService.sendEmailPromotion((Client) subscriber, element);
 	}
 
 	@Override

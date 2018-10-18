@@ -12,7 +12,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.context.ServletContextAware;
 
-@SpringBootApplication(scanBasePackages="fr.afcepf.al32.groupe2")
+@SpringBootApplication(scanBasePackages= {"fr.afcepf.al32.groupe2"})
 @EntityScan(basePackages="fr.afcepf.al32.groupe2.entity")
 public class App implements ServletContextAware{
 	public static void main(String[] args) {

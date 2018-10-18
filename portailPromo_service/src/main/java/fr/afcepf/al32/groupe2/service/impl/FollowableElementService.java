@@ -60,8 +60,7 @@ public class FollowableElementService implements IFollowableElementService{
 	}
 	
 	public List<Client> getClientSubscribers(IFollowableElement element){
-//		return clientDao.findAllFollowingFollowableElement(element);
-		return null;
+		return clientDao.findAllFollowingFollowableElement(element);
 	}
 
 

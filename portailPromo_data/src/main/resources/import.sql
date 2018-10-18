@@ -266,7 +266,7 @@ INSERT INTO company_type(id,name)VALUES(11,'Société civile professionnelle (SC
 INSERT INTO company_type(id,name)VALUES(12,'Auto entrepreneur')
 INSERT INTO company_type(id,name)VALUES(13,'Micro entreprise')
 
-INSERT INTO core_user(id,first_name,last_name,email,phone_number,user_type)VALUES(1,'Larry ','Bambelle ','l.bambelle@gmail.com','0102030405','client')
+INSERT INTO core_user(id,first_name,last_name,email,phone_number,user_type)VALUES(1,'Larry ','Bambelle ','aubin.guilhem@gmail.com','0102030405','client')
 INSERT INTO core_user(id,first_name,last_name,email,phone_number,user_type)VALUES(2,'Jerry ','Kan','j.kan@gmail.com','0102313106','client')
 INSERT INTO core_user(id,first_name,last_name,email,phone_number,user_type)VALUES(3,'Al ','Kollyck','al.k@gmail.com','0532330407','client')
 INSERT INTO core_user(id,first_name,last_name,email,phone_number,user_type)VALUES(4,'Martin ','Gale','m.gale@gmail.com','0649312312','shopkeeper')
