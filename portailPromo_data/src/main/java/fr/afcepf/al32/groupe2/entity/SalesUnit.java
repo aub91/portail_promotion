@@ -9,12 +9,18 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MapKey;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "sales_unit")
+@NamedQueries({
+	@NamedQuery(name="sales_unit.findAll" , query="select s From SalesUnit s" )
+	//,@NamedQuery(name="sales_unit.findbySalesUnit" , query="select s From sales_unit s" )
+})
 public class SalesUnit {
 
 	@Id
