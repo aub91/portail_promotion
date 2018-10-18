@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +20,19 @@ public abstract class Product {
 	@Column(name = "id")
 	private Long id;
 
+	@OneToOne(mappedBy="product")
+	private Promotion promotion;
+	
 	public Long getId() {
 		return id;
+	}
+
+	public Promotion getPromotion() {
+		return promotion;
+	}
+
+	public void setPromotion(Promotion promotion) {
+		this.promotion = promotion;
 	}
 
 }
