@@ -10,6 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -17,6 +19,10 @@ import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Entity
 @Table(name="base_product")
+@NamedQueries({
+	@NamedQuery(name="BaseProduct.findAll" , query="select s From BaseProduct s" )
+	//,@NamedQuery(name="sales_unit.findbySalesUnit" , query="select s From sales_unit s" )
+})
 public class BaseProduct extends Product implements IFollowableElement {
 	
 	@Column(name="init_price")
@@ -32,7 +38,7 @@ public class BaseProduct extends Product implements IFollowableElement {
 	@Column(name="remove_date")
 	private Date removeDate;
 	
-	@ManyToOne(cascade= {CascadeType.ALL}, optional=false)
+	@ManyToOne(cascade= {CascadeType.MERGE}, optional=false)
 	@JoinColumn(name="reference_product_id")
 	@NotNull
 	private ReferenceProduct referenceProduct;
