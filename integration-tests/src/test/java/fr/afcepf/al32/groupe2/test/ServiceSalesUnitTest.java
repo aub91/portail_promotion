@@ -1,5 +1,9 @@
 package fr.afcepf.al32.groupe2.test;
 
+import java.util.List;
+
+import javax.transaction.Transactional;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,11 +34,13 @@ public void rechercheUniteDeVenteParIdentifiantTest () {
  
 }
 @Test
+@Transactional
 public void AjouterSalesUnittest() {
 	SalesUnit suc=new SalesUnit();
 	suc.setName("kilo");
-	servicesalesUnit.AjouterSalesUnit(suc);
-	Assert.assertEquals(6L, suc.getId(), 0.1);
+	servicesalesUnit.ajouterSalesUnit(suc);
+	List<SalesUnit> result = servicesalesUnit.findAll();
+	Assert.assertEquals(6, result.size());
 
 }
 }

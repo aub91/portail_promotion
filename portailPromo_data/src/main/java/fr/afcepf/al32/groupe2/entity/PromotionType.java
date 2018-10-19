@@ -23,4 +23,6 @@ public abstract class PromotionType {
 		return id;
 	}
 	
+	public abstract Double getPriceAfterPromotion(Double initPrice);
+	
 }

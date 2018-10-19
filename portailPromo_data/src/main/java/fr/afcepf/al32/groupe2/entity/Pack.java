@@ -32,5 +32,9 @@ public class Pack extends PromotionType {
 	public void setNumberOffered(Integer numberOffered) {
 		this.numberOffered = numberOffered;
 	}
+	@Override
+	public Double getPriceAfterPromotion(Double initPrice) {
+		return initPrice * numberPurchased/(numberPurchased+numberOffered);
+	}
 	
 }

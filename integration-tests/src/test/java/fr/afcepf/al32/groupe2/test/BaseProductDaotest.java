@@ -45,6 +45,13 @@ import fr.afcepf.al32.groupe2.test.config.TestConfig;
 			public void findAllTest() {
 				List<BaseProduct> su=dao1.findAll();
 				Assert.assertNotNull(su);
+				Assert.assertEquals(15L, su.size());
+			}
+			@Test
+			public void findAllValidTest() {
+				List<BaseProduct> su=dao1.findAllValid();
+				Assert.assertNotNull(su);
+				Assert.assertEquals(15L, su.size());
 			}
 			@Test
 			@Transactional
@@ -63,7 +70,7 @@ import fr.afcepf.al32.groupe2.test.config.TestConfig;
 				//14 +14 
 				//Assert.assertEquals(29L, su0.getId(), 0.1);
 				List<BaseProduct> su2=dao1.findAll();
-				Assert.assertEquals(15L, su2.size(), 0.1);
+				Assert.assertEquals(16L, su2.size(), 0.1);
 			}
 
 //INSERT INTO sales_unit(id,name)VALUES(1,'Unité')

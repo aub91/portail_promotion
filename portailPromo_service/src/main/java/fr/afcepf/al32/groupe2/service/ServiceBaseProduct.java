@@ -7,9 +7,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import fr.afcepf.al32.groupe2.dao.BaseProductDao;
 import fr.afcepf.al32.groupe2.dao.IBaseProductDao;
-import fr.afcepf.al32.groupe2.dao.ICategoryProductDao;
 import fr.afcepf.al32.groupe2.entity.BaseProduct;
 
 @Transactional
@@ -35,6 +33,12 @@ public class ServiceBaseProduct implements IServiceBaseProduct {
 	public List<BaseProduct> findAll() {
 		// TODO Auto-generated method stub
 		return baseproductdao.findAll();
+	}
+
+	@Override
+	public List<BaseProduct> findAllValid() {
+		// TODO Auto-generated method stub
+		return baseproductdao.findAllValid();
 	}
 
 }

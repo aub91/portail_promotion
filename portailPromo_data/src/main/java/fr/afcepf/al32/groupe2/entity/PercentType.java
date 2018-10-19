@@ -33,5 +33,10 @@ public class PercentType extends PromotionType {
 	public void setMinPurchaseAmount(Double minPurchaseAmount) {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
+
+	@Override
+	public Double getPriceAfterPromotion(Double initPrice) {
+		return initPrice * (1 - percentValue/100);
+	}
 	
 }

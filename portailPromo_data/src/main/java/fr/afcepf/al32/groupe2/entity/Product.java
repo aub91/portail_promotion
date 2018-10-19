@@ -1,5 +1,7 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,5 +36,9 @@ public abstract class Product {
 	public void setPromotion(Promotion promotion) {
 		this.promotion = promotion;
 	}
+	
+	abstract List<Promotion> getPromotionList();
+	
+	abstract Double getInitPrice();
 
 }

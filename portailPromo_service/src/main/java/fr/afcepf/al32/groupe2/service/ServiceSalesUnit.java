@@ -1,6 +1,8 @@
 package fr.afcepf.al32.groupe2.service;
 
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +26,18 @@ public class ServiceSalesUnit implements IserviceSalesUnit {
 	}
 
 	@Override
-	public SalesUnit AjouterSalesUnit(SalesUnit salesUnit) {
+	public SalesUnit ajouterSalesUnit(SalesUnit salesUnit) {
 		
 		salesUnitDao.createOne(salesUnit);
 	
 		return salesUnit;
 	
+	}
+
+	@Override
+	public List<SalesUnit> findAll() {
+		// TODO Auto-generated method stub
+		return salesUnitDao.findAll();
 	}
 	
 }

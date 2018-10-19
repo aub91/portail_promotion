@@ -1,6 +1,9 @@
 package fr.afcepf.al32.groupe2.test;
 
 import java.util.Date;
+import java.util.List;
+
+import javax.transaction.Transactional;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -36,6 +39,7 @@ public class ServiceBaseProductTest {
 	
 
 	@Test
+	@Transactional
 	public void ajouterBaseProductTest() {
 		BaseProduct su0=new BaseProduct();
 		ReferenceProduct su1=servicereferenceproduit.findOne(11L);
@@ -45,7 +49,9 @@ public class ServiceBaseProductTest {
 		su0.setDescription("buffet");
 		su0.setImage("www.buffet.fr");
 		servicebaseproduct.AjouterBaseProduct(su0);
-		Assert.assertEquals(29L, su0.getId(), 0.1);
+		
+		List<BaseProduct> result = servicebaseproduct.findAll();
+		Assert.assertEquals(16, result.size());
 	}
 
 	
