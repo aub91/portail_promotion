@@ -28,8 +28,7 @@
 				<div class="body">
 					<ul>
 						<h:panelGroup id="grosPanier">
-						<ui:repeat id="repeater-addToCart" var="ligneCommande"
-							value="#{mbTestPanier.ligneCommandes}">
+						<ui:repeat id="repeater-addToCart" var="ligneCommande" value="#{mbTestPanier.ligneCommandes}">
 							<li id="item" class="product">
 								<div class="product-image">
 									<a href="#0"> <img
@@ -39,19 +38,15 @@
 								</div>
 								<div class="product-details">
 									<h3>
-										<h:outputLabel id="product-name"
-											value="#{ligneCommande.produit.libelle.toString()}" />
+										<h:outputLabel id="product-name" value="#{ligneCommande.produit.libelle.toString()}" />
 									</h3>
 
-									<h:outputLabel id="prixLgnCmde" class="price"
-										value="#{ligneCommande.getMontantLgnCommande(ligneCommande.produit.prix)}" >
+									<h:outputLabel id="prixLgnCmde" class="price" value="#{ligneCommande.getMontantLgnCommande(ligneCommande.produit.prix)}" >
 										<f:convertNumber minFractionDigits="2" maxFractionDigits="2" /> €
 									</h:outputLabel>
 									<div class="actions">
 										<h:commandLink class="delete-item" value="Supprimer">
-											<f:ajax
-												listener="#{mbTestPanier.supprimerLgnCmd(ligneCommande)}"
-												event="click" execute="@form" render="grosPanier prixLgnCmde :form-conso:pastille :form-conso:prixTotalPanier :form-conso:affichageProduit" />
+											<f:ajax listener="#{mbTestPanier.supprimerLgnCmd(ligneCommande)}" event="click" execute="@form" render="grosPanier prixLgnCmde :form-conso:pastille :form-conso:prixTotalPanier :form-conso:affichageProduit" />
 										</h:commandLink>
 
 										<div class="quantity">
@@ -62,9 +57,7 @@
    														listener="#{mbTestPanier.modifierLgnCmd(ligneCommande)}"></f:ajax>
   														<f:selectItems value = "#{mbTestPanier.listQuantitesEnStock[ligneCommande.produit.id]}" var="i" itemLabel="#{i}" itemValue="#{i}"></f:selectItems>
 											</h:selectOneMenu> 	
-											
 											</span>
-
 										</div>
 									</div>
 								</div>

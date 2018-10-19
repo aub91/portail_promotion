@@ -4,7 +4,7 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 
-	<ui:composition template="/WEB-INF/templates/archeConsommateur.xhtml">
+	<ui:composition template="/WEB-INF/templates/archeClient.xhtml">
 		<ui:define name="title">Nos produits - Promo32</ui:define>
 		<ui:define name="headcssscript">
 			<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
@@ -16,12 +16,14 @@
 		
 		<ui:define name="content">
 			<h:panelGroup id="affichagePromotion">
-				<ui:repeat var="produit" value="#{tousLesPromotions}">
-					<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
+				<ui:repeat var="produit" value="#{catalogBean.products}">
+					<h:outputText value="#{produit}"></h:outputText>
+					<input type="submit"/>
+					tata
 				</ui:repeat>
+				toto
 			</h:panelGroup>
-				<!-- ADD TO CART INTERACTION -->
-<!--     			<ui:include src="../../WEB-INF/components/panier-add-to-cart.xhtml"></ui:include> -->
+				
 				
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 				<script type="text/javascript" src="../jsHamburger/main.js"></script>

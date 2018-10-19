@@ -1,7 +1,9 @@
 package fr.afcepf.al32.groupe2.web.productlist;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
@@ -18,14 +20,15 @@ public class CatalogBean {
 	@Autowired
 	private ICatalogService catalogService;
 
-	private List<BaseProduct> products; 
+	private List<Long> products = new ArrayList<>(); 
 	public CatalogBean() {
 		
 	}
 	
+	@PostConstruct
 	public void initCatalogProduits() {
 		
-		products = catalogService.getAllDisplayableProduct();
+		products.add(2L);
 		
 	}
 	 
@@ -37,13 +40,14 @@ public class CatalogBean {
 		this.catalogService = catalogService;
 	}
 
-	public List<BaseProduct> getProducts() {
+	public List<Long> getProducts() {
 		return products;
 	}
 
-	public void setProducts(List<BaseProduct> products) {
+	public void setProducts(List<Long> products) {
 		this.products = products;
 	}
+
 	
 
 }

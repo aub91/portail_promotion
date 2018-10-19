@@ -3,13 +3,13 @@
 .btnRetour {
     display: inline-block;
     border-radius: 4px;
-    background-color: #3b67e4;
+    background-color: #ac54ac;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
     padding: 5px;
-    width: 180px;
+    width: 100px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -335,7 +335,7 @@ body {
 .desc1 h5 {
 	margin-top: 2%;
 	font-size: 1.6em;
-	color: #3b67e4;
+	color:#ac54ac;
 	line-height: 1.5em;
 	text-shadow: 0 1px 0 #ffffff;
 }
@@ -348,7 +348,7 @@ body {
 }
 
 .desc1 h5 a:hover {
-	color: #3b67e4;
+	color: #ac54ac;
 }
 
 .desc1 p {
@@ -358,7 +358,7 @@ body {
 }
 
 .desc1 p:hover {
-	color: #3b67e4;
+	color: #ac54ac;
 }
 
 /* start available */
@@ -450,7 +450,7 @@ body {
 }
 
 .share_nav li a:hover {
-	background: #3b67e4;
+	background: #ac54ac;
 }
 
 .share li img {
@@ -473,7 +473,7 @@ body {
 }
 
 .btnAjoutPanier:hover {
-	background: #3b67e4;
+	background: #ac54ac;
 }
 
 .span_right {
@@ -486,6 +486,7 @@ body {
 	position: relative;
 	margin: 40px auto;
 	z-index: 1;
+	width: 80vw;
 }
 
 .tabs input {
@@ -513,7 +514,7 @@ body {
 	font-family: 'Roboto';
 	cursor: pointer;
 	background: #FAFAFA;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	line-height: 4vw;
 	height: 4vw;
 	position: relative;
@@ -556,7 +557,7 @@ body {
 }
 
 .tabs input:hover+label {
-	background: #3b67e4;
+	background: #ac54acs;
 	color: #ffffff;
 	font-weight: normal;
 }
@@ -584,7 +585,7 @@ body {
 
 .tabs input:checked+label {
 	cursor: pointer;
-	color: #3b67e4;
+	color: #ac54ac;
 	background: #fff;
 	z-index: 6;
 }
@@ -597,7 +598,8 @@ body {
 	background: #fff;
 	position: relative;
 	width: 100%;
-	min-height: 450px;
+	height: 20vw;
+	width: 80vw;
 	z-index: 5;
 	border: 1px solid rgb(223, 223, 223);
 	box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px
@@ -644,7 +646,7 @@ body {
 }
 
 .content div h2, .content div h3 {
-	color: #3b67e4;
+	color: #ac54ac;
 }
 
 .content div p {
@@ -684,7 +686,7 @@ body {
 .content-3 {
 	font-size: 12pt;
 	overflow: auto;
-	max-height: 300px;
+	max-height: 20vw;
 	max-width: 1208px;
 }
 
