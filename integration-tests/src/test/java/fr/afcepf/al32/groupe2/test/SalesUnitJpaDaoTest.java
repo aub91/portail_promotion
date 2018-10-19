@@ -1,4 +1,6 @@
 package fr.afcepf.al32.groupe2.test;
+import javax.transaction.Transactional;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+//import org.springframework.transaction.annotation.Transactional;
 
 import fr.afcepf.al32.groupe2.dao.ISalesUnitDao;
 import fr.afcepf.al32.groupe2.entity.SalesUnit;
@@ -24,14 +27,14 @@ public class SalesUnitJpaDaoTest {
 		Assert.assertNotNull(su);
 	}
 	
-//	@Test
-//	@Transactional
-//	public void createOneTest() {
-//		SalesUnit su=new SalesUnit();
-//		su.setName("kilo");
-//		dao.createOne(su);
-//		Assert.assertEquals(2L, su.getId(), 0.1);
-//	}
+	@Test
+	@Transactional
+	public void createOneTest() {
+		SalesUnit su=new SalesUnit();
+		su.setName("kilo");
+		dao.createOne(su);
+		Assert.assertEquals(6L, su.getId(), 0.1);
+	}
 	
 
 }

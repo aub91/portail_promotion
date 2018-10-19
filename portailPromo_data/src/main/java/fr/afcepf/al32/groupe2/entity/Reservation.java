@@ -1,5 +1,7 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
@@ -15,6 +19,10 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="reservation")
+@NamedQueries({
+	@NamedQuery(name="Reservation.findAll" , query="select r From Reservation r" )
+
+})
 public class Reservation {
 	
 	@Id
@@ -23,7 +31,7 @@ public class Reservation {
 	
 	@Column(name="creation_date")
 	@NotBlank
-	private String dateCreation;
+	private Date dateCreation;
 	
 	@Column(name="withdrawal_code")
 	@NotBlank
@@ -40,10 +48,10 @@ public class Reservation {
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private ReservationProduct reservationProduct;
 	
-	public String getDateCreation() {
+	public Date getDateCreation() {
 		return dateCreation;
 	}
-	public void setDateCreation(String dateCreation) {
+	public void setDateCreation(@NotBlank Date dateCreation) {
 		this.dateCreation = dateCreation;
 	}
 	
