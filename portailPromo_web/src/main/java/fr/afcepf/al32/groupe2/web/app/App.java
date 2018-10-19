@@ -7,6 +7,7 @@ import org.apache.myfaces.webapp.StartupServletContextListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -36,5 +37,6 @@ public class App implements ServletContextAware{
 	@Override
 	public void setServletContext(ServletContext servletContext) {
 		servletContext.setInitParameter("com.sun.faces.forceLoadConfiguration", Boolean.TRUE.toString());
+		servletContext.setInitParameter("javax.faces.FACELETS_SKIP_COMMENTS", "true");
 	}
 }

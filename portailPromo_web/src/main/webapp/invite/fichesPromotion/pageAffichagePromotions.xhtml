@@ -17,11 +17,9 @@
 		<ui:define name="content">
 			<h:panelGroup id="affichagePromotion">
 				<ui:repeat var="produit" value="#{catalogBean.products}">
-					<h:outputText value="#{produit}"></h:outputText>
+					<h:outputText value="#{produit.referenceProduct.name}"></h:outputText>
 					<input type="submit"/>
-					tata
 				</ui:repeat>
-				toto
 			</h:panelGroup>
 				
 				

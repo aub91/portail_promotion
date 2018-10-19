@@ -6,21 +6,25 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.faces.event.ComponentSystemEvent;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 import fr.afcepf.al32.groupe2.entity.BaseProduct;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
 
-@ManagedBean
-@SessionScoped
+@Component
+@RequestScope
 public class CatalogBean {
 	
 	@Autowired
 	private ICatalogService catalogService;
 
-	private List<Long> products = new ArrayList<>(); 
+	private List<BaseProduct> products = new ArrayList<>(); 
+	
 	public CatalogBean() {
 		
 	}
@@ -28,8 +32,7 @@ public class CatalogBean {
 	@PostConstruct
 	public void initCatalogProduits() {
 		
-		products.add(2L);
-		
+		products = catalogService.getAllDisplayableProduct();
 	}
 	 
 	public ICatalogService getCatalogService() {
@@ -40,14 +43,13 @@ public class CatalogBean {
 		this.catalogService = catalogService;
 	}
 
-	public List<Long> getProducts() {
+	public List<BaseProduct> getProducts() {
 		return products;
 	}
 
-	public void setProducts(List<Long> products) {
+	public void setProducts(List<BaseProduct> products) {
 		this.products = products;
 	}
-
 	
 
 }
