@@ -18,7 +18,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table(name = "sales_unit")
 @NamedQueries({
-	@NamedQuery(name="sales_unit.findAll" , query="select s From SalesUnit s" )
+	@NamedQuery(name="SalesUnit.findAll" , query="select s From SalesUnit s" )
 	//,@NamedQuery(name="sales_unit.findbySalesUnit" , query="select s From sales_unit s" )
 })
 public class SalesUnit {

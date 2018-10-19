@@ -39,4 +39,10 @@ public class PercentType extends PromotionType {
 		System.out.println("promotion en percentage");
 	}
 
+
+	@Override
+	public Double getPriceAfterPromotion(Double initPrice) {
+		return initPrice * (1 - percentValue/100);
+	}
+
 }

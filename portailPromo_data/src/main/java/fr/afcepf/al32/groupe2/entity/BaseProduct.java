@@ -1,6 +1,8 @@
 package fr.afcepf.al32.groupe2.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 import javax.persistence.CascadeType;
@@ -20,7 +22,8 @@ import fr.afcepf.al32.groupe2.util.FollowableElementType;
 @Entity
 @Table(name="base_product")
 @NamedQueries({
-	@NamedQuery(name="BaseProduct.findAll" , query="select s From BaseProduct s" )
+	@NamedQuery(name="BaseProduct.findAll" , query="select s From BaseProduct s" ),
+	@NamedQuery(name="BaseProduct.findAllValid" , query="select s From BaseProduct s WHERE s.removeDate = null" )
 	//,@NamedQuery(name="sales_unit.findbySalesUnit" , query="select s From sales_unit s" )
 })
 public class BaseProduct extends Product implements IFollowableElement {
@@ -47,6 +50,7 @@ public class BaseProduct extends Product implements IFollowableElement {
 	@MapKey(name="id")
 	private Map<Long, ReservationProduct> reservationProducts;
 	
+	@Override
 	public Double getInitPrice() {
 		return initPrice;
 	}
@@ -88,6 +92,17 @@ public class BaseProduct extends Product implements IFollowableElement {
 	@Override
 	public String getType() {
 		return FollowableElementType.PRODUCT;
+	}
+	
+	public List<Promotion> getPromotionList(){
+		List<Promotion> result = new ArrayList<>();
+		
+		if(getPromotion() != null) {
+			result.addAll(getPromotion().getPromotionList());
+		}
+		
+		
+		return result;
 	}
 
 

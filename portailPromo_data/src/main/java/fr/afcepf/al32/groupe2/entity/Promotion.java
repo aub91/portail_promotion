@@ -1,7 +1,11 @@
 package fr.afcepf.al32.groupe2.entity;
 
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 import javax.persistence.CascadeType;
@@ -35,7 +39,7 @@ public class Promotion extends Product {
 	private Date dateRemove;
 	@Column(name="limit_time_promotion")
 	@NotNull
-	private Duration LimitTimePromotion;
+	private Duration limitTimePromotion;
 	@Column(name="limit_time_take_promotion")
 	@NotNull
 	private Duration limitTimeTakePromotion;
@@ -95,10 +99,10 @@ public class Promotion extends Product {
 		this.dateRemove = dateRemove;
 	}
 	public Duration getLimitTimePromotion() {
-		return LimitTimePromotion;
+		return limitTimePromotion;
 	}
 	public void setLimitTimePromotion(Duration limitTimePromotion) {
-		LimitTimePromotion = limitTimePromotion;
+		this.limitTimePromotion = limitTimePromotion;
 	}
 	public Duration getLimitTimeTakePromotion() {
 		return limitTimeTakePromotion;
@@ -153,6 +157,30 @@ public class Promotion extends Product {
 	}
 	public void setProduct(Product product) {
 		this.product = product;
+	}
+	
+	@Override
+	List<Promotion> getPromotionList() {
+		List<Promotion> result = new ArrayList<>();
+		if(getPromotion() != null) {
+			result.addAll(getPromotion().getPromotionList());
+		}
+		if(publish.getPublishDate() != null) {
+			LocalDateTime publishTime = publish.getPublishDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+			if(LocalDateTime.now().isAfter(publishTime) && LocalDateTime.now().isBefore(publishTime.plus(limitTimePromotion))) {
+				result.add(this);
+			}
+		}
+		
+		return result;
+	}
+	
+	public Double getPriceAfterPromotion() {
+		return promotionType.getPriceAfterPromotion(getInitPrice());
+	}
+	@Override
+	Double getInitPrice() {
+		return getProduct().getInitPrice();
 	}
 
 }

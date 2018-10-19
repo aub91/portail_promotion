@@ -25,5 +25,5 @@ public abstract class PromotionType {
 	
 	public abstract void type();
 	
-	
+	public abstract Double getPriceAfterPromotion(Double initPrice);
 }

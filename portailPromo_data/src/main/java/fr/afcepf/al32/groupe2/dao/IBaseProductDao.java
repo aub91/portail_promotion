@@ -8,4 +8,5 @@ public interface IBaseProductDao {
 	BaseProduct findOne(Long idUnite);
 	BaseProduct createOne(BaseProduct baseProduct);
 	List<BaseProduct> findAll();
+	List<BaseProduct> findAllValid();
 }
