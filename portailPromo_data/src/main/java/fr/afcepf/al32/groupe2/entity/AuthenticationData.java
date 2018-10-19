@@ -6,11 +6,13 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="authentication")
+@Table(name="authentication",
+uniqueConstraints= @UniqueConstraint(columnNames="login"))
 public class AuthenticationData {
 	
 	@Id
