@@ -33,4 +33,10 @@ public class Pack extends PromotionType {
 		this.numberOffered = numberOffered;
 	}
 	
+	@Override
+	public void type() {
+		System.out.println("promotion pack");
+		
+	}
+	
 }

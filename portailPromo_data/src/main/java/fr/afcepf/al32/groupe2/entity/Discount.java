@@ -33,6 +33,12 @@ public class Discount extends PromotionType {
 	public void setMinPurchaseAmount(Double minPurchaseAmount) {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
+
+	@Override
+	public void type() {
+		System.out.println("promotion discount");
+	
+	}
 	
 	
 }

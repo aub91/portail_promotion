@@ -7,15 +7,15 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name="percent_type")
+@Table(name = "percent_type")
 @PrimaryKeyJoinColumn(name = "id")
 public class PercentType extends PromotionType {
-	
-	@Column(name="percent_value")
+
+	@Column(name = "percent_value")
 	@NotNull
 	private Double percentValue;
 
-	@Column(name="min_purchase_amount")
+	@Column(name = "min_purchase_amount")
 	private Double minPurchaseAmount;
 
 	public Double getPercentValue() {
@@ -33,5 +33,10 @@ public class PercentType extends PromotionType {
 	public void setMinPurchaseAmount(Double minPurchaseAmount) {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
-	
+
+	@Override
+	public void type() {
+		System.out.println("promotion en percentage");
+	}
+
 }

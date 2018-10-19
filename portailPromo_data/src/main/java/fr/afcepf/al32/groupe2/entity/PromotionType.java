@@ -23,4 +23,7 @@ public abstract class PromotionType {
 		return id;
 	}
 	
+	public abstract void type();
+	
+	
 }
