@@ -40,5 +40,13 @@ public abstract class Product {
 	abstract List<Promotion> getPromotionList();
 	
 	abstract Double getInitPrice();
+	
+	public Product getLastProduct() {
+		Product result = this;
+		if(getPromotion() != null) {
+			result=getPromotion().getLastProduct();
+		}
+		return result;
+	}
 
 }

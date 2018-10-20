@@ -181,6 +181,6 @@ public class Promotion extends Product {
 	@Override
 	Double getInitPrice() {
 		return getProduct().getInitPrice();
-	}
+	}	
 
 }

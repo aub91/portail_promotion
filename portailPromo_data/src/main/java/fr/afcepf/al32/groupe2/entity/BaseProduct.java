@@ -99,11 +99,7 @@ public class BaseProduct extends Product implements IFollowableElement {
 		
 		if(getPromotion() != null) {
 			result.addAll(getPromotion().getPromotionList());
-		}
-		
-		
+		}		
 		return result;
 	}
-
-
 }

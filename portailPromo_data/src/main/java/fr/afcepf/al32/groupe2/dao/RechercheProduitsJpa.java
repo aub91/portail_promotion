@@ -94,25 +94,14 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 		if(!(rqDateRemove==null))
 			rqwhere.add("(ProductWithPromotion.dateRemove LIKE"+" %"+rqDateRemove+"% "+")");
 		if(!(rqLimitTimePromotion==null))
-			rqwhere.add("(ProductWithPromotion.rqLimitTimePromotion==$rqLimitTimePromotion)");
+			rqwhere.add("(ProductWithPromotion.rqLimitTimePromotion LIKE"+" '%"+rqLimitTimePromotion+"%' "+")");
 		if(!(rqLimitTimePromotion==null))
-			rqwhere.add("(ProductWithPromotion.rqLimitTimeTakPromotion==$rqLimitTimeTak)");
+			rqwhere.add("(ProductWithPromotion.rqLimitTimeTakPromotion LIKE"+" '%"+rqLimitTimeTakePromotion+"%' "+")");
 		if(!(rqQuantityAvailable==0))
-			rqwhere.add("(ProductWithPromotion.rqQuantityAvailable==$rqQuantityAvailable)");
+			rqwhere.add("(ProductWithPromotion.rqQuantityAvailable LIKE"+" '%"+rqQuantityAvailable+"%' "+")");
 		if(!(rqIsCumulative==null))
-			rqwhere.add("(ProductWithPromotion.rqIsCumulative==$rqIsCumulative)");
+			rqwhere.add("(ProductWithPromotion.rqIsCumulative LIKE"+" '%"+rqIsCumulative+"%')");
 		// traitement des tags dans une liste de tags (table dans la base.
-		// TODO traitement des tags dans une liste de tags (table dans la base).
-//		if(!(rqListTags==null))
-//		{
-//			rqwhere.add("? IN Product.name OR ? IN Product.description");
-//			// teste si cette option est la première ou s'il faut rajouter le lien " AND " avant
-////			if(rqname.indexOf("WHERE")>-1)	rqname=rqname+" AND "; else rqname=rqname+" WHERE (";
-//			rqFinale=rqFinale+"(INNERJOIN)";
-//			rqwhere.add("(INNERJOIN)");
-//			rqFinale=rqFinale+");";
-//		}
-		// teste si un filtrage est demandé ou non pour terminer la requete par ); ou ;.
 
 		if(rqwhere.isEmpty()) rqFinale=rqFinale+";";
 		else {
