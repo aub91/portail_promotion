@@ -18,6 +18,7 @@
 			<h:panelGroup id="affichagePromotion">
 				<ui:repeat var="produit" value="#{catalogBean.products}">
 					<h:outputText value="#{produit.referenceProduct.name}"></h:outputText>
+					<ui:insert></ui:insert>
 					<input type="submit"/>
 				</ui:repeat>
 			</h:panelGroup>

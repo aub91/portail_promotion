@@ -1,0 +1,11066 @@
+[
+  {
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "BANNOST VILLEGAGNON"
+	},
+	{
+			"code_postal": 77118,
+			"coordonnees_gps": [
+				48.3962434685,
+				3.16889442918
+			],
+			"nom_commune": "BAZOCHES LES BRAY"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "BLENNES"
+	},
+	{
+			"code_postal": 77590,
+			"coordonnees_gps": [
+				48.4860029495,
+				2.72692404848
+			],
+			"nom_commune": "BOIS LE ROI"
+	},
+	{
+			"code_postal": 77780,
+			"coordonnees_gps": [
+				48.334846204,
+				2.70118147516
+			],
+			"nom_commune": "BOURRON MARLOTTE"
+	},
+	{
+			"code_postal": 77620,
+			"coordonnees_gps": [
+				48.1721615922,
+				2.86730865487
+			],
+			"nom_commune": "BRANSLES"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "BREAU"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "BUTHIERS"
+	},
+	{
+			"code_postal": 77173,
+			"coordonnees_gps": [
+				48.7235256788,
+				2.6769970058
+			],
+			"nom_commune": "CHEVRY COSSIGNY"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "CONDE STE LIBIAIRE"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "COURTACON"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "FORGES"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "GIREMOUTIERS"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "GRANDPUITS BAILLY CARROIS"
+	},
+	{
+			"code_postal": 77220,
+			"coordonnees_gps": [
+				48.7441435085,
+				2.75833565592
+			],
+			"nom_commune": "GRETZ ARMAINVILLIERS"
+	},
+	{
+			"code_postal": 77166,
+			"coordonnees_gps": [
+				48.6689119155,
+				2.65738604224
+			],
+			"nom_commune": "GRISY SUISNES"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "HONDEVILLIERS"
+	},
+	{
+			"code_postal": 77640,
+			"coordonnees_gps": [
+				48.9061273296,
+				3.10099022317
+			],
+			"nom_commune": "JOUARRE"
+	},
+	{
+			"code_postal": 77150,
+			"coordonnees_gps": [
+				48.7409851538,
+				2.62903924486
+			],
+			"nom_commune": "LESIGNY"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "LIZINES"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "MONTMACHOUX"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "MORET LOING ET ORVANNE"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "CHAUCONIN NEUFMONTIERS"
+	},
+	{
+			"code_postal": 77640,
+			"coordonnees_gps": [
+				48.9061273296,
+				3.10099022317
+			],
+			"nom_commune": "SIGNY SIGNETS"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "AUBERGENVILLE"
+	},
+	{
+			"code_postal": 78830,
+			"coordonnees_gps": [
+				48.6221711105,
+				1.99864954313
+			],
+			"nom_commune": "BONNELLES"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "DAMPIERRE EN YVELINES"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "DANNEMARIE"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "GALLUIS"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "GUERVILLE"
+	},
+	{
+			"code_postal": 78470,
+			"coordonnees_gps": [
+				48.7175747571,
+				2.05026286373
+			],
+			"nom_commune": "MILON LA CHAPELLE"
+	},
+	{
+			"code_postal": 78124,
+			"coordonnees_gps": [
+				48.884244051,
+				1.86268946991
+			],
+			"nom_commune": "MONTAINVILLE"
+	},
+	{
+			"code_postal": 78630,
+			"coordonnees_gps": [
+				48.9218149018,
+				1.96212376753
+			],
+			"nom_commune": "MORAINVILLIERS"
+	},
+	{
+			"code_postal": 78510,
+			"coordonnees_gps": [
+				48.9781198658,
+				2.00818427315
+			],
+			"nom_commune": "TRIEL SUR SEINE"
+	},
+	{
+			"code_postal": 78740,
+			"coordonnees_gps": [
+				49.0109765215,
+				1.96738669464
+			],
+			"nom_commune": "VAUX SUR SEINE"
+	},
+	{
+			"code_postal": 93390,
+			"coordonnees_gps": [
+				48.9081483622,
+				2.54557176505
+			],
+			"nom_commune": "CLICHY SOUS BOIS"
+	},
+	{
+			"code_postal": 93440,
+			"coordonnees_gps": [
+				48.9509287512,
+				2.42403288293
+			],
+			"nom_commune": "DUGNY"
+	},
+	{
+			"code_postal": 93370,
+			"coordonnees_gps": [
+				48.8981258496,
+				2.56699754775
+			],
+			"nom_commune": "MONTFERMEIL"
+	},
+	{
+			"code_postal": 94360,
+			"coordonnees_gps": [
+				48.839091496,
+				2.52374839829
+			],
+			"nom_commune": "BRY SUR MARNE"
+	},
+	{
+			"code_postal": 94320,
+			"coordonnees_gps": [
+				48.760796364,
+				2.38561449918
+			],
+			"nom_commune": "THIAIS"
+	},
+	{
+			"code_postal": 94800,
+			"coordonnees_gps": [
+				48.7924436118,
+				2.35977406843
+			],
+			"nom_commune": "VILLEJUIF"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "ARRONVILLE"
+	},
+	{
+			"code_postal": 95250,
+			"coordonnees_gps": [
+				49.0147161018,
+				2.19268576648
+			],
+			"nom_commune": "BEAUCHAMP"
+	},
+	{
+			"code_postal": 95260,
+			"coordonnees_gps": [
+				49.1373667054,
+				2.28877829148
+			],
+			"nom_commune": "BEAUMONT SUR OISE"
+	},
+	{
+			"code_postal": 95240,
+			"coordonnees_gps": [
+				48.9692349874,
+				2.19911393825
+			],
+			"nom_commune": "CORMEILLES EN PARISIS"
+	},
+	{
+			"code_postal": 95460,
+			"coordonnees_gps": [
+				49.0385138041,
+				2.3630123433
+			],
+			"nom_commune": "EZANVILLE"
+	},
+	{
+			"code_postal": 95680,
+			"coordonnees_gps": [
+				49.0142987876,
+				2.28971732713
+			],
+			"nom_commune": "MONTLIGNON"
+	},
+	{
+			"code_postal": 95310,
+			"coordonnees_gps": [
+				49.0444511055,
+				2.12902407572
+			],
+			"nom_commune": "ST OUEN L AUMONE"
+	},
+	{
+			"code_postal": 95490,
+			"coordonnees_gps": [
+				49.030094494,
+				2.02389531327
+			],
+			"nom_commune": "VAUREAL"
+	},
+	{
+			"code_postal": 75008,
+			"coordonnees_gps": [
+				48.8725623657,
+				2.31240969073
+			],
+			"nom_commune": "PARIS 08"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "ANDREZEL"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "AUTHON LA PLAINE"
+	},
+	{
+			"code_postal": 91160,
+			"coordonnees_gps": [
+				48.6879154099,
+				2.28155441875
+			],
+			"nom_commune": "BALLAINVILLIERS"
+	},
+	{
+			"code_postal": 91800,
+			"coordonnees_gps": [
+				48.6944519423,
+				2.51253975836
+			],
+			"nom_commune": "BRUNOY"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "FORGES LES BAINS"
+	},
+	{
+			"code_postal": 91430,
+			"coordonnees_gps": [
+				48.7339593054,
+				2.21260184658
+			],
+			"nom_commune": "IGNY"
+	},
+	{
+			"code_postal": 91490,
+			"coordonnees_gps": [
+				48.4186455247,
+				2.46228788074
+			],
+			"nom_commune": "MILLY LA FORET"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "ROINVILLIERS"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "SACLAS"
+	},
+	{
+			"code_postal": 91400,
+			"coordonnees_gps": [
+				48.7079533558,
+				2.15419618195
+			],
+			"nom_commune": "SACLAY"
+	},
+	{
+			"code_postal": 91600,
+			"coordonnees_gps": [
+				48.6839573506,
+				2.34917991911
+			],
+			"nom_commune": "SAVIGNY SUR ORGE"
+	},
+	{
+			"code_postal": 91640,
+			"coordonnees_gps": [
+				48.6224133727,
+				2.14125590005
+			],
+			"nom_commune": "VAUGRIGNEUSE"
+	},
+	{
+			"code_postal": 92270,
+			"coordonnees_gps": [
+				48.9156526901,
+				2.26727430129
+			],
+			"nom_commune": "BOIS COLOMBES"
+	},
+	{
+			"code_postal": 94300,
+			"coordonnees_gps": [
+				48.8472921582,
+				2.43775823084
+			],
+			"nom_commune": "VINCENNES"
+	},
+	{
+			"code_postal": 95410,
+			"coordonnees_gps": [
+				48.9851592656,
+				2.35040435023
+			],
+			"nom_commune": "GROSLAY"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "LONGUESSE"
+	},
+	{
+			"code_postal": 95320,
+			"coordonnees_gps": [
+				49.0185563436,
+				2.24663214737
+			],
+			"nom_commune": "ST LEU LA FORET"
+	},
+	{
+			"code_postal": 91290,
+			"coordonnees_gps": [
+				48.5844568763,
+				2.25774325874
+			],
+			"nom_commune": "ARPAJON"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "BOIS HERPIN"
+	},
+	{
+			"code_postal": 91800,
+			"coordonnees_gps": [
+				48.6944519423,
+				2.51253975836
+			],
+			"nom_commune": "BOUSSY ST ANTOINE"
+	},
+	{
+			"code_postal": 91490,
+			"coordonnees_gps": [
+				48.4186455247,
+				2.46228788074
+			],
+			"nom_commune": "DANNEMOIS"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "LIMOURS"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "PUISELET LE MARAIS"
+	},
+	{
+			"code_postal": 91130,
+			"coordonnees_gps": [
+				48.645695033,
+				2.40878195835
+			],
+			"nom_commune": "RIS ORANGIS"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "ROINVILLE"
+	},
+	{
+			"code_postal": 91780,
+			"coordonnees_gps": [
+				48.4201119171,
+				2.04444826512
+			],
+			"nom_commune": "ST HILAIRE"
+	},
+	{
+			"code_postal": 91820,
+			"coordonnees_gps": [
+				48.4347578682,
+				2.37891668976
+			],
+			"nom_commune": "VAYRES SUR ESSONNE"
+	},
+	{
+			"code_postal": 91560,
+			"coordonnees_gps": [
+				48.7201603122,
+				2.46256788969
+			],
+			"nom_commune": "CROSNE"
+	},
+	{
+			"code_postal": 91450,
+			"coordonnees_gps": [
+				48.6546477863,
+				2.47449221609
+			],
+			"nom_commune": "ETIOLLES"
+	},
+	{
+			"code_postal": 91630,
+			"coordonnees_gps": [
+				48.560156386,
+				2.2827757217
+			],
+			"nom_commune": "GUIBEVILLE"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "RICHARVILLE"
+	},
+	{
+			"code_postal": 91710,
+			"coordonnees_gps": [
+				48.5525868763,
+				2.36598245863
+			],
+			"nom_commune": "VERT LE PETIT"
+	},
+	{
+			"code_postal": 77630,
+			"coordonnees_gps": [
+				48.4243787367,
+				2.57257810234
+			],
+			"nom_commune": "BARBIZON"
+	},
+	{
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "BEZALLES"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "BOUTIGNY"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "CHAMPCENEST"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "ESBLY"
+	},
+	{
+			"code_postal": 77300,
+			"coordonnees_gps": [
+				48.406592674,
+				2.68078145585
+			],
+			"nom_commune": "FONTAINEBLEAU"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "FONTENAY TRESIGNY"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "FRESNES SUR MARNE"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "LA HOUSSAYE EN BRIE"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "ICHY"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "LOUAN VILLEGRUIS FONTAINE"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "MAISONCELLES EN GATINAIS"
+	},
+	{
+			"code_postal": 77990,
+			"coordonnees_gps": [
+				49.0218852255,
+				2.58516406928
+			],
+			"nom_commune": "MAUREGARD"
+	},
+	{
+			"code_postal": 77990,
+			"coordonnees_gps": [
+				49.0218852255,
+				2.58516406928
+			],
+			"nom_commune": "LE MESNIL AMELOT"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "MORTERY"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "OZOUER LE VOULGIS"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "LE PLESSIS AUX BOIS"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST MARS VIEUX MAISONS"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "BARBEY"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "BOUGLIGNY"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "BRAY SUR SEINE"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "BUSSY ST MARTIN"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "CHALAUTRE LA PETITE"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "LA CHAPELLE RABLAIS"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "CHATRES"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "COULOMMIERS"
+	},
+	{
+			"code_postal": 77140,
+			"coordonnees_gps": [
+				48.2750471622,
+				2.70959190478
+			],
+			"nom_commune": "DARVAULT"
+	},
+	{
+			"code_postal": 77167,
+			"coordonnees_gps": [
+				48.2322771865,
+				2.71472288232
+			],
+			"nom_commune": "FAY LES NEMOURS"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "FUBLAINES"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "GUERMANTES"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "LA MADELEINE SUR LOING"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "MAINCY"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "MAISONCELLES EN BRIE"
+	},
+	{
+			"code_postal": 77100,
+			"coordonnees_gps": [
+				48.9417341013,
+				2.89233400365
+			],
+			"nom_commune": "MEAUX"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "MEILLERAY"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "MONTCEAUX LES MEAUX"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "MONTEREAU SUR LE JARD"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "MORET LOING ET ORVANNE"
+	},
+	{
+			"code_postal": 77830,
+			"coordonnees_gps": [
+				48.4598569753,
+				2.90486661459
+			],
+			"nom_commune": "PAMFOU"
+	},
+	{
+			"code_postal": 77340,
+			"coordonnees_gps": [
+				48.7869451025,
+				2.6135089739
+			],
+			"nom_commune": "PONTAULT COMBAULT"
+	},
+	{
+			"code_postal": 77860,
+			"coordonnees_gps": [
+				48.889293661,
+				2.86625543445
+			],
+			"nom_commune": "QUINCY VOISINS"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "REBAIS"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "ROZAY EN BRIE"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "ST OUEN EN BRIE"
+	},
+	{
+			"code_postal": 77140,
+			"coordonnees_gps": [
+				48.2750471622,
+				2.70959190478
+			],
+			"nom_commune": "ST PIERRE LES NEMOURS"
+	},
+	{
+			"code_postal": 77830,
+			"coordonnees_gps": [
+				48.4598569753,
+				2.90486661459
+			],
+			"nom_commune": "VALENCE EN BRIE"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "VIEUX CHAMPAGNE"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "VOULANGIS"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "VULAINES LES PROVINS"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "ANDELU"
+	},
+	{
+			"code_postal": 78570,
+			"coordonnees_gps": [
+				48.9796109181,
+				2.04393218537
+			],
+			"nom_commune": "ANDRESY"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "BOUAFLE"
+	},
+	{
+			"code_postal": 78310,
+			"coordonnees_gps": [
+				48.7604855324,
+				1.91898209487
+			],
+			"nom_commune": "COIGNIERES"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "FAVRIEUX"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "FLACOURT"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "GRESSEY"
+	},
+	{
+			"code_postal": 78820,
+			"coordonnees_gps": [
+				49.0006712804,
+				1.84049263155
+			],
+			"nom_commune": "JUZIERS"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "MAREIL LE GUYON"
+	},
+	{
+			"code_postal": 78600,
+			"coordonnees_gps": [
+				48.9430101305,
+				2.14143556123
+			],
+			"nom_commune": "LE MESNIL LE ROI"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "SAILLY"
+	},
+	{
+			"code_postal": 78117,
+			"coordonnees_gps": [
+				48.7426119196,
+				2.10563873194
+			],
+			"nom_commune": "TOUSSUS LE NOBLE"
+	},
+	{
+			"code_postal": 78640,
+			"coordonnees_gps": [
+				48.8210314117,
+				1.88134330227
+			],
+			"nom_commune": "VILLIERS ST FREDERIC"
+	},
+	{
+			"code_postal": 78220,
+			"coordonnees_gps": [
+				48.8027347247,
+				2.17103281984
+			],
+			"nom_commune": "VIROFLAY"
+	},
+	{
+			"code_postal": 78960,
+			"coordonnees_gps": [
+				48.7588159702,
+				2.0488584635
+			],
+			"nom_commune": "VOISINS LE BRETONNEUX"
+	},
+	{
+			"code_postal": 93120,
+			"coordonnees_gps": [
+				48.9327015423,
+				2.39963456624
+			],
+			"nom_commune": "LA COURNEUVE"
+	},
+	{
+			"code_postal": 93460,
+			"coordonnees_gps": [
+				48.860886213,
+				2.5757798256
+			],
+			"nom_commune": "GOURNAY SUR MARNE"
+	},
+	{
+			"code_postal": 93100,
+			"coordonnees_gps": [
+				48.8631150275,
+				2.44833244212
+			],
+			"nom_commune": "MONTREUIL"
+	},
+	{
+			"code_postal": 93230,
+			"coordonnees_gps": [
+				48.8846043841,
+				2.43804330758
+			],
+			"nom_commune": "ROMAINVILLE"
+	},
+	{
+			"code_postal": 94260,
+			"coordonnees_gps": [
+				48.7570286866,
+				2.32584996209
+			],
+			"nom_commune": "FRESNES"
+	},
+	{
+			"code_postal": 94420,
+			"coordonnees_gps": [
+				48.8064003438,
+				2.5749391761
+			],
+			"nom_commune": "LE PLESSIS TREVISE"
+	},
+	{
+			"code_postal": 94460,
+			"coordonnees_gps": [
+				48.7530822759,
+				2.46124565223
+			],
+			"nom_commune": "VALENTON"
+	},
+	{
+			"code_postal": 94440,
+			"coordonnees_gps": [
+				48.7320439942,
+				2.55920831223
+			],
+			"nom_commune": "VILLECRESNES"
+	},
+	{
+			"code_postal": 95570,
+			"coordonnees_gps": [
+				49.0548701683,
+				2.33369100298
+			],
+			"nom_commune": "ATTAINVILLE"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "CHERENCE"
+	},
+	{
+			"code_postal": 95610,
+			"coordonnees_gps": [
+				49.0206699576,
+				2.10149054381
+			],
+			"nom_commune": "ERAGNY"
+	},
+	{
+			"code_postal": 95690,
+			"coordonnees_gps": [
+				49.140346815,
+				2.15942436133
+			],
+			"nom_commune": "FROUVILLE"
+	},
+	{
+			"code_postal": 95190,
+			"coordonnees_gps": [
+				49.0402800937,
+				2.45734698588
+			],
+			"nom_commune": "GOUSSAINVILLE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "GUIRY EN VEXIN"
+	},
+	{
+			"code_postal": 95720,
+			"coordonnees_gps": [
+				49.0481825162,
+				2.40282933292
+			],
+			"nom_commune": "LE MESNIL AUBRY"
+	},
+	{
+			"code_postal": 95000,
+			"coordonnees_gps": [
+				49.0378977963,
+				2.06061895699
+			],
+			"nom_commune": "NEUVILLE SUR OISE"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "VETHEUIL"
+	},
+	{
+			"code_postal": 75001,
+			"coordonnees_gps": [
+				48.862834158,
+				2.33616696102
+			],
+			"nom_commune": "PARIS 01"
+	},
+	{
+			"code_postal": 75013,
+			"coordonnees_gps": [
+				48.8283577313,
+				2.36214011885
+			],
+			"nom_commune": "PARIS 13"
+	},
+	{
+			"code_postal": 75020,
+			"coordonnees_gps": [
+				48.8634587721,
+				2.40123411777
+			],
+			"nom_commune": "PARIS 20"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "AUFFERVILLE"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "ARGENTIERES"
+	},
+	{
+			"code_postal": 75003,
+			"coordonnees_gps": [
+				48.8630306677,
+				2.35966713643
+			],
+			"nom_commune": "PARIS 03"
+	},
+	{
+			"code_postal": 91200,
+			"coordonnees_gps": [
+				48.7091026954,
+				2.3868160936
+			],
+			"nom_commune": "ATHIS MONS"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "CERNY"
+	},
+	{
+			"code_postal": 91360,
+			"coordonnees_gps": [
+				48.6691027635,
+				2.32253482428
+			],
+			"nom_commune": "EPINAY SUR ORGE"
+	},
+	{
+			"code_postal": 91310,
+			"coordonnees_gps": [
+				48.6316590424,
+				2.26650021218
+			],
+			"nom_commune": "LINAS"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "MAROLLES EN BEAUCE"
+	},
+	{
+			"code_postal": 91740,
+			"coordonnees_gps": [
+				48.3700823354,
+				2.00542911555
+			],
+			"nom_commune": "PUSSAY"
+	},
+	{
+			"code_postal": 92260,
+			"coordonnees_gps": [
+				48.7896302863,
+				2.28707483751
+			],
+			"nom_commune": "FONTENAY AUX ROSES"
+	},
+	{
+			"code_postal": 93310,
+			"coordonnees_gps": [
+				48.8849181509,
+				2.40614464546
+			],
+			"nom_commune": "LE PRE ST GERVAIS"
+	},
+	{
+			"code_postal": 94430,
+			"coordonnees_gps": [
+				48.7980000026,
+				2.54187225559
+			],
+			"nom_commune": "CHENNEVIERES SUR MARNE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "BELLEFONTAINE"
+	},
+	{
+			"code_postal": 95770,
+			"coordonnees_gps": [
+				49.1959926831,
+				1.69814198153
+			],
+			"nom_commune": "BUHY"
+	},
+	{
+			"code_postal": 95440,
+			"coordonnees_gps": [
+				49.0257365877,
+				2.38491446746
+			],
+			"nom_commune": "ECOUEN"
+	},
+	{
+			"code_postal": 95740,
+			"coordonnees_gps": [
+				49.0503556269,
+				2.20602188929
+			],
+			"nom_commune": "FREPILLON"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "GENAINVILLE"
+	},
+	{
+			"code_postal": 95220,
+			"coordonnees_gps": [
+				49.0082603783,
+				2.15434312371
+			],
+			"nom_commune": "HERBLAY"
+	},
+	{
+			"code_postal": 95290,
+			"coordonnees_gps": [
+				49.1073866175,
+				2.23418827484
+			],
+			"nom_commune": "L ISLE ADAM"
+	},
+	{
+			"code_postal": 95380,
+			"coordonnees_gps": [
+				49.0485279227,
+				2.5187416869
+			],
+			"nom_commune": "LOUVRES"
+	},
+	{
+			"code_postal": 95110,
+			"coordonnees_gps": [
+				48.9719496259,
+				2.25343831149
+			],
+			"nom_commune": "SANNOIS"
+	},
+	{
+			"code_postal": 95500,
+			"coordonnees_gps": [
+				48.9856270002,
+				2.45534121324
+			],
+			"nom_commune": "VAUDHERLAND"
+	},
+	{
+			"code_postal": 75015,
+			"coordonnees_gps": [
+				48.8401714342,
+				2.29321693746
+			],
+			"nom_commune": "PARIS 15"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "AULNOY"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "BOISSY LE CUTTE"
+	},
+	{
+			"code_postal": 91070,
+			"coordonnees_gps": [
+				48.6140963234,
+				2.38013275618
+			],
+			"nom_commune": "BONDOUFLE"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "BRIERES LES SCELLES"
+	},
+	{
+			"code_postal": 91380,
+			"coordonnees_gps": [
+				48.7073972153,
+				2.311761729
+			],
+			"nom_commune": "CHILLY MAZARIN"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "COURDIMANCHE SUR ESSONNE"
+	},
+	{
+			"code_postal": 91540,
+			"coordonnees_gps": [
+				48.5608303581,
+				2.41959099954
+			],
+			"nom_commune": "ECHARCON"
+	},
+	{
+			"code_postal": 91760,
+			"coordonnees_gps": [
+				48.5146150874,
+				2.34402793795
+			],
+			"nom_commune": "ITTEVILLE"
+	},
+	{
+			"code_postal": 91340,
+			"coordonnees_gps": [
+				48.6059418434,
+				2.21857687683
+			],
+			"nom_commune": "OLLAINVILLE"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "PRUNAY SUR ESSONNE"
+	},
+	{
+			"code_postal": 91940,
+			"coordonnees_gps": [
+				48.6746009432,
+				2.16779886217
+			],
+			"nom_commune": "ST JEAN DE BEAUREGARD"
+	},
+	{
+			"code_postal": 77115,
+			"coordonnees_gps": [
+				48.5423516758,
+				2.77150375047
+			],
+			"nom_commune": "BLANDY"
+	},
+	{
+			"code_postal": 77380,
+			"coordonnees_gps": [
+				48.657625449,
+				2.57531812256
+			],
+			"nom_commune": "COMBS LA VILLE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "FROMONT"
+	},
+	{
+			"code_postal": 77850,
+			"coordonnees_gps": [
+				48.4420531578,
+				2.78873977925
+			],
+			"nom_commune": "HERICY"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "LORREZ LE BOCAGE PREAUX"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "MARY SUR MARNE"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "MONTEREAU FAULT YONNE"
+	},
+	{
+			"code_postal": 77163,
+			"coordonnees_gps": [
+				48.7979316478,
+				2.90271680607
+			],
+			"nom_commune": "MORTCERF"
+	},
+	{
+			"code_postal": 77123,
+			"coordonnees_gps": [
+				48.3612793646,
+				2.50123990973
+			],
+			"nom_commune": "NOISY SUR ECOLE"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "PASSY SUR SEINE"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "PIERRE LEVEE"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "REMAUVILLE"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "STE AULDE"
+	},
+	{
+			"code_postal": 77310,
+			"coordonnees_gps": [
+				48.5292083362,
+				2.53978127085
+			],
+			"nom_commune": "ST FARGEAU PONTHIERRY"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST REMY LA VANNE"
+	},
+	{
+			"code_postal": 77240,
+			"coordonnees_gps": [
+				48.5645874906,
+				2.60004351705
+			],
+			"nom_commune": "SEINE PORT"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "SIGY"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "VENEUX LES SABLONS"
+	},
+	{
+			"code_postal": 78610,
+			"coordonnees_gps": [
+				48.7133396179,
+				1.81485270271
+			],
+			"nom_commune": "AUFFARGIS"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "BEHOUST"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "BLARU"
+	},
+	{
+			"code_postal": 78955,
+			"coordonnees_gps": [
+				48.9453564407,
+				2.02870519723
+			],
+			"nom_commune": "CARRIERES SOUS POISSY"
+	},
+	{
+			"code_postal": 78117,
+			"coordonnees_gps": [
+				48.7426119196,
+				2.10563873194
+			],
+			"nom_commune": "CHATEAUFORT"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "CHAUFOUR LES BONNIERES"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "HARGEVILLE"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "LES MESNULS"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "PORT VILLEZ"
+	},
+	{
+			"code_postal": 78510,
+			"coordonnees_gps": [
+				48.9781198658,
+				2.00818427315
+			],
+			"nom_commune": "TRIEL SUR SEINE"
+	},
+	{
+			"code_postal": 78540,
+			"coordonnees_gps": [
+				48.9651204678,
+				1.97419104222
+			],
+			"nom_commune": "VERNOUILLET"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "VILLETTE"
+	},
+	{
+			"code_postal": 92150,
+			"coordonnees_gps": [
+				48.8700470804,
+				2.21976930955
+			],
+			"nom_commune": "SURESNES"
+	},
+	{
+			"code_postal": 92420,
+			"coordonnees_gps": [
+				48.841686797,
+				2.16112497638
+			],
+			"nom_commune": "VAUCRESSON"
+	},
+	{
+			"code_postal": 93000,
+			"coordonnees_gps": [
+				48.9073872094,
+				2.43988733867
+			],
+			"nom_commune": "BOBIGNY"
+	},
+	{
+			"code_postal": 93700,
+			"coordonnees_gps": [
+				48.9233885913,
+				2.44445418535
+			],
+			"nom_commune": "DRANCY"
+	},
+	{
+			"code_postal": 93360,
+			"coordonnees_gps": [
+				48.8635953695,
+				2.51054009656
+			],
+			"nom_commune": "NEUILLY PLAISANCE"
+	},
+	{
+			"code_postal": 94110,
+			"coordonnees_gps": [
+				48.8054545839,
+				2.33403821483
+			],
+			"nom_commune": "ARCUEIL"
+	},
+	{
+			"code_postal": 94600,
+			"coordonnees_gps": [
+				48.7646580823,
+				2.41696553612
+			],
+			"nom_commune": "CHOISY LE ROI"
+	},
+	{
+			"code_postal": 95580,
+			"coordonnees_gps": [
+				49.0070961158,
+				2.30020142224
+			],
+			"nom_commune": "ANDILLY"
+	},
+	{
+			"code_postal": 95710,
+			"coordonnees_gps": [
+				49.1290552989,
+				1.69526260075
+			],
+			"nom_commune": "CHAUSSY"
+	},
+	{
+			"code_postal": 95690,
+			"coordonnees_gps": [
+				49.140346815,
+				2.15942436133
+			],
+			"nom_commune": "HEDOUVILLE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "HODENT"
+	},
+	{
+			"code_postal": 95670,
+			"coordonnees_gps": [
+				49.0808886111,
+				2.50898274174
+			],
+			"nom_commune": "MARLY LA VILLE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "LE PERCHAY"
+	},
+	{
+			"code_postal": 95220,
+			"coordonnees_gps": [
+				49.0082603783,
+				2.15434312371
+			],
+			"nom_commune": "PIERRELAYE"
+	},
+	{
+			"code_postal": 95720,
+			"coordonnees_gps": [
+				49.0481825162,
+				2.40282933292
+			],
+			"nom_commune": "LE PLESSIS GASSOT"
+	},
+	{
+			"code_postal": 95300,
+			"coordonnees_gps": [
+				49.0835669403,
+				2.10696203629
+			],
+			"nom_commune": "PONTOISE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "ST GERVAIS"
+	},
+	{
+			"code_postal": 95470,
+			"coordonnees_gps": [
+				49.0842919677,
+				2.54827429077
+			],
+			"nom_commune": "ST WITZ"
+	},
+	{
+			"code_postal": 75006,
+			"coordonnees_gps": [
+				48.8492531918,
+				2.33300877472
+			],
+			"nom_commune": "PARIS 06"
+	},
+	{
+			"code_postal": 75014,
+			"coordonnees_gps": [
+				48.8291473577,
+				2.32698552913
+			],
+			"nom_commune": "PARIS 14"
+	},
+	{
+			"code_postal": 75016,
+			"coordonnees_gps": [
+				48.8603821025,
+				2.26201220212
+			],
+			"nom_commune": "PARIS 16"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "ARMENTIERES EN BRIE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "AMPONVILLE"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "AUVERS ST GEORGES"
+	},
+	{
+			"code_postal": 91870,
+			"coordonnees_gps": [
+				48.4851550025,
+				2.0920257825
+			],
+			"nom_commune": "BOISSY LE SEC"
+	},
+	{
+			"code_postal": 91650,
+			"coordonnees_gps": [
+				48.5636207397,
+				2.17184394889
+			],
+			"nom_commune": "BREUILLET"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "DOURDAN"
+	},
+	{
+			"code_postal": 91700,
+			"coordonnees_gps": [
+				48.6398858055,
+				2.34146847544
+			],
+			"nom_commune": "FLEURY MEROGIS"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "LA FORET LE ROI"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "MAISSE"
+	},
+	{
+			"code_postal": 91120,
+			"coordonnees_gps": [
+				48.714670201,
+				2.22882062662
+			],
+			"nom_commune": "PALAISEAU"
+	},
+	{
+			"code_postal": 91220,
+			"coordonnees_gps": [
+				48.6039242304,
+				2.3152152775
+			],
+			"nom_commune": "LE PLESSIS PATE"
+	},
+	{
+			"code_postal": 91400,
+			"coordonnees_gps": [
+				48.7079533558,
+				2.15419618195
+			],
+			"nom_commune": "SACLAY"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "ST CYR SOUS DOURDAN"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "ST ESCOBILLE"
+	},
+	{
+			"code_postal": 91940,
+			"coordonnees_gps": [
+				48.6746009432,
+				2.16779886217
+			],
+			"nom_commune": "ST JEAN DE BEAUREGARD"
+	},
+	{
+			"code_postal": 91770,
+			"coordonnees_gps": [
+				48.5370542716,
+				2.32337001511
+			],
+			"nom_commune": "ST VRAIN"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "VALPUISEAUX"
+	},
+	{
+			"code_postal": 91430,
+			"coordonnees_gps": [
+				48.7339593054,
+				2.21260184658
+			],
+			"nom_commune": "VAUHALLAN"
+	},
+	{
+			"code_postal": 92300,
+			"coordonnees_gps": [
+				48.8951336953,
+				2.28682447096
+			],
+			"nom_commune": "LEVALLOIS PERRET"
+	},
+	{
+			"code_postal": 93500,
+			"coordonnees_gps": [
+				48.8984397601,
+				2.40883983631
+			],
+			"nom_commune": "PANTIN"
+	},
+	{
+			"code_postal": 93200,
+			"coordonnees_gps": [
+				48.9296140653,
+				2.35920270384
+			],
+			"nom_commune": "ST DENIS"
+	},
+	{
+			"code_postal": 94380,
+			"coordonnees_gps": [
+				48.7736342302,
+				2.48825429698
+			],
+			"nom_commune": "BONNEUIL SUR MARNE"
+	},
+	{
+			"code_postal": 94120,
+			"coordonnees_gps": [
+				48.8510089992,
+				2.47454061171
+			],
+			"nom_commune": "FONTENAY SOUS BOIS"
+	},
+	{
+			"code_postal": 94440,
+			"coordonnees_gps": [
+				48.7320439942,
+				2.55920831223
+			],
+			"nom_commune": "MAROLLES EN BRIE"
+	},
+	{
+			"code_postal": 94290,
+			"coordonnees_gps": [
+				48.7321875577,
+				2.41059838063
+			],
+			"nom_commune": "VILLENEUVE LE ROI"
+	},
+	{
+			"code_postal": 95120,
+			"coordonnees_gps": [
+				48.9883041761,
+				2.25629551186
+			],
+			"nom_commune": "ERMONT"
+	},
+	{
+			"code_postal": 95650,
+			"coordonnees_gps": [
+				49.0831465949,
+				2.02625716292
+			],
+			"nom_commune": "GENICOURT"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "MAUDETOUR EN VEXIN"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "WY DIT JOLI VILLAGE"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "AUGERS EN BRIE"
+	},
+	{
+			"code_postal": 77167,
+			"coordonnees_gps": [
+				48.2322771865,
+				2.71472288232
+			],
+			"nom_commune": "BAGNEAUX SUR LOING"
+	},
+	{
+			"code_postal": 91210,
+			"coordonnees_gps": [
+				48.677993062,
+				2.42118499004
+			],
+			"nom_commune": "DRAVEIL"
+	},
+	{
+			"code_postal": 91540,
+			"coordonnees_gps": [
+				48.5608303581,
+				2.41959099954
+			],
+			"nom_commune": "FONTENAY LE VICOMTE"
+	},
+	{
+			"code_postal": 91640,
+			"coordonnees_gps": [
+				48.6224133727,
+				2.14125590005
+			],
+			"nom_commune": "JANVRY"
+	},
+	{
+			"code_postal": 91280,
+			"coordonnees_gps": [
+				48.6057166854,
+				2.51721713178
+			],
+			"nom_commune": "ST PIERRE DU PERRAY"
+	},
+	{
+			"code_postal": 91530,
+			"coordonnees_gps": [
+				48.5543371976,
+				2.10205368335
+			],
+			"nom_commune": "LE VAL ST GERMAIN"
+	},
+	{
+			"code_postal": 91330,
+			"coordonnees_gps": [
+				48.7164530971,
+				2.4933117108
+			],
+			"nom_commune": "YERRES"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "ABBEVILLE LA RIVIERE"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "ANGERVILLIERS"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "BOUTERVILLIERS"
+	},
+	{
+			"code_postal": 91830,
+			"coordonnees_gps": [
+				48.5482208788,
+				2.48758633681
+			],
+			"nom_commune": "LE COUDRAY MONTCEAUX"
+	},
+	{
+			"code_postal": 91940,
+			"coordonnees_gps": [
+				48.6746009432,
+				2.16779886217
+			],
+			"nom_commune": "GOMETZ LE CHATEL"
+	},
+	{
+			"code_postal": 91810,
+			"coordonnees_gps": [
+				48.5839284064,
+				2.36727037813
+			],
+			"nom_commune": "VERT LE GRAND"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "BOMBON"
+	},
+	{
+			"code_postal": 77240,
+			"coordonnees_gps": [
+				48.5645874906,
+				2.60004351705
+			],
+			"nom_commune": "CESSON"
+	},
+	{
+			"code_postal": 77460,
+			"coordonnees_gps": [
+				48.1889258767,
+				2.77893143311
+			],
+			"nom_commune": "CHAINTREAUX"
+	},
+	{
+			"code_postal": 77420,
+			"coordonnees_gps": [
+				48.8481383447,
+				2.59602539852
+			],
+			"nom_commune": "CHAMPS SUR MARNE"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "CHATEAUBLEAU"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "CONCHES SUR GONDOIRE"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "BEAUMONT DU GATINAIS"
+	},
+	{
+			"code_postal": 77350,
+			"coordonnees_gps": [
+				48.5350739052,
+				2.60727189442
+			],
+			"nom_commune": "BOISSISE LA BERTRAND"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "CHAMPDEUIL"
+	},
+	{
+			"code_postal": 77154,
+			"coordonnees_gps": [
+				48.4891565609,
+				3.02294060118
+			],
+			"nom_commune": "COUTENCON"
+	},
+	{
+			"code_postal": 77183,
+			"coordonnees_gps": [
+				48.8166135478,
+				2.65568100478
+			],
+			"nom_commune": "CROISSY BEAUBOURG"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "MAUPERTHUIS"
+	},
+	{
+			"code_postal": 77350,
+			"coordonnees_gps": [
+				48.5350739052,
+				2.60727189442
+			],
+			"nom_commune": "LE MEE SUR SEINE"
+	},
+	{
+			"code_postal": 77144,
+			"coordonnees_gps": [
+				48.8764616468,
+				2.75749686803
+			],
+			"nom_commune": "MONTEVRAIN"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "NANTEAU SUR ESSONNE"
+	},
+	{
+			"code_postal": 77100,
+			"coordonnees_gps": [
+				48.9417341013,
+				2.89233400365
+			],
+			"nom_commune": "NANTEUIL LES MEAUX"
+	},
+	{
+			"code_postal": 77280,
+			"coordonnees_gps": [
+				49.0831743052,
+				2.65347938812
+			],
+			"nom_commune": "OTHIS"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "PRECY SUR MARNE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "RUMONT"
+	},
+	{
+			"code_postal": 77169,
+			"coordonnees_gps": [
+				48.8249765475,
+				3.16311202199
+			],
+			"nom_commune": "ST GERMAIN SOUS DOUE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "SANCY LES PROVINS"
+	},
+	{
+			"code_postal": 77460,
+			"coordonnees_gps": [
+				48.1889258767,
+				2.77893143311
+			],
+			"nom_commune": "SOUPPES SUR LOING"
+	},
+	{
+			"code_postal": 77360,
+			"coordonnees_gps": [
+				48.870149545,
+				2.63599296332
+			],
+			"nom_commune": "VAIRES SUR MARNE"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "VERNEUIL L ETANG"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "VILLEBEON"
+	},
+	{
+			"code_postal": 77154,
+			"coordonnees_gps": [
+				48.4891565609,
+				3.02294060118
+			],
+			"nom_commune": "VILLENEUVE LES BORDES"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "AUTEUIL"
+	},
+	{
+			"code_postal": 78890,
+			"coordonnees_gps": [
+				48.8233853015,
+				1.75829198183
+			],
+			"nom_commune": "GARANCIERES"
+	},
+	{
+			"code_postal": 78711,
+			"coordonnees_gps": [
+				48.9750839165,
+				1.71186276145
+			],
+			"nom_commune": "MANTES LA VILLE"
+	},
+	{
+			"code_postal": 78600,
+			"coordonnees_gps": [
+				48.9430101305,
+				2.14143556123
+			],
+			"nom_commune": "LE MESNIL LE ROI"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "NEAUPHLETTE"
+	},
+	{
+			"code_postal": 78300,
+			"coordonnees_gps": [
+				48.9238513521,
+				2.02821434005
+			],
+			"nom_commune": "POISSY"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "PRUNAY EN YVELINES"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "TACOIGNIERES"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "LE TARTRE GAUDRAN"
+	},
+	{
+			"code_postal": 92390,
+			"coordonnees_gps": [
+				48.9370038707,
+				2.3254720877
+			],
+			"nom_commune": "VILLENEUVE LA GARENNE"
+	},
+	{
+			"code_postal": 93170,
+			"coordonnees_gps": [
+				48.869693461,
+				2.42282027746
+			],
+			"nom_commune": "BAGNOLET"
+	},
+	{
+			"code_postal": 93800,
+			"coordonnees_gps": [
+				48.95503927,
+				2.31470709398
+			],
+			"nom_commune": "EPINAY SUR SEINE"
+	},
+	{
+			"code_postal": 94200,
+			"coordonnees_gps": [
+				48.8126036229,
+				2.38769451134
+			],
+			"nom_commune": "IVRY SUR SEINE"
+	},
+	{
+			"code_postal": 94160,
+			"coordonnees_gps": [
+				48.8414086049,
+				2.41818317859
+			],
+			"nom_commune": "ST MANDE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "ARTHIES"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "BERVILLE"
+	},
+	{
+			"code_postal": 95850,
+			"coordonnees_gps": [
+				49.0746281693,
+				2.42764597482
+			],
+			"nom_commune": "JAGNY SOUS BOIS"
+	},
+	{
+			"code_postal": 95280,
+			"coordonnees_gps": [
+				49.0112311928,
+				2.03342738029
+			],
+			"nom_commune": "JOUY LE MOUTIER"
+	},
+	{
+			"code_postal": 95590,
+			"coordonnees_gps": [
+				49.1078677101,
+				2.28470413018
+			],
+			"nom_commune": "NOINTEL"
+	},
+	{
+			"code_postal": 95380,
+			"coordonnees_gps": [
+				49.0485279227,
+				2.5187416869
+			],
+			"nom_commune": "PUISEUX EN FRANCE"
+	},
+	{
+			"code_postal": 95780,
+			"coordonnees_gps": [
+				49.0867183905,
+				1.64440422629
+			],
+			"nom_commune": "LA ROCHE GUYON"
+	},
+	{
+			"code_postal": 95700,
+			"coordonnees_gps": [
+				49.0063802146,
+				2.51398787772
+			],
+			"nom_commune": "ROISSY EN FRANCE"
+	},
+	{
+			"code_postal": 75002,
+			"coordonnees_gps": [
+				48.8683234515,
+				2.3432977179
+			],
+			"nom_commune": "PARIS 02"
+	},
+	{
+			"code_postal": 75005,
+			"coordonnees_gps": [
+				48.844407753,
+				2.350655453
+			],
+			"nom_commune": "PARIS 05"
+	},
+	{
+			"code_postal": 75009,
+			"coordonnees_gps": [
+				48.8769274899,
+				2.33736632955
+			],
+			"nom_commune": "PARIS 09"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "AMILLIS"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "ARVILLE"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "AUBEPIERRE OZOUER LE REPOS"
+	},
+	{
+			"code_postal": 75007,
+			"coordonnees_gps": [
+				48.8561051636,
+				2.31254406306
+			],
+			"nom_commune": "PARIS 07"
+	},
+	{
+			"code_postal": 91670,
+			"coordonnees_gps": [
+				48.3099539715,
+				2.00495721135
+			],
+			"nom_commune": "ANGERVILLE"
+	},
+	{
+			"code_postal": 91490,
+			"coordonnees_gps": [
+				48.4186455247,
+				2.46228788074
+			],
+			"nom_commune": "COURANCES"
+	},
+	{
+			"code_postal": 91510,
+			"coordonnees_gps": [
+				48.5117436099,
+				2.26036943723
+			],
+			"nom_commune": "JANVILLE SUR JUINE"
+	},
+	{
+			"code_postal": 91620,
+			"coordonnees_gps": [
+				48.6612886154,
+				2.24603935989
+			],
+			"nom_commune": "NOZAY"
+	},
+	{
+			"code_postal": 91700,
+			"coordonnees_gps": [
+				48.6398858055,
+				2.34146847544
+			],
+			"nom_commune": "STE GENEVIEVE DES BOIS"
+	},
+	{
+			"code_postal": 91910,
+			"coordonnees_gps": [
+				48.5358095636,
+				2.18105811506
+			],
+			"nom_commune": "ST SULPICE DE FAVIERES"
+	},
+	{
+			"code_postal": 91160,
+			"coordonnees_gps": [
+				48.6879154099,
+				2.28155441875
+			],
+			"nom_commune": "SAULX LES CHARTREUX"
+	},
+	{
+			"code_postal": 92400,
+			"coordonnees_gps": [
+				48.8983884255,
+				2.25522376319
+			],
+			"nom_commune": "COURBEVOIE"
+	},
+	{
+			"code_postal": 93420,
+			"coordonnees_gps": [
+				48.9594041186,
+				2.53661738011
+			],
+			"nom_commune": "VILLEPINTE"
+	},
+	{
+			"code_postal": 93430,
+			"coordonnees_gps": [
+				48.9567205255,
+				2.34508496615
+			],
+			"nom_commune": "VILLETANEUSE"
+	},
+	{
+			"code_postal": 94310,
+			"coordonnees_gps": [
+				48.7428085691,
+				2.39544879484
+			],
+			"nom_commune": "ORLY"
+	},
+	{
+			"code_postal": 94440,
+			"coordonnees_gps": [
+				48.7320439942,
+				2.55920831223
+			],
+			"nom_commune": "SANTENY"
+	},
+	{
+			"code_postal": 94370,
+			"coordonnees_gps": [
+				48.7657010886,
+				2.53346938213
+			],
+			"nom_commune": "SUCY EN BRIE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "LA CHAPELLE EN VEXIN"
+	},
+	{
+			"code_postal": 95750,
+			"coordonnees_gps": [
+				49.1561369779,
+				1.91918704594
+			],
+			"nom_commune": "CHARS"
+	},
+	{
+			"code_postal": 95780,
+			"coordonnees_gps": [
+				49.0867183905,
+				1.64440422629
+			],
+			"nom_commune": "HAUTE ISLE"
+	},
+	{
+			"code_postal": 95280,
+			"coordonnees_gps": [
+				49.0112311928,
+				2.03342738029
+			],
+			"nom_commune": "JOUY LE MOUTIER"
+	},
+	{
+			"code_postal": 95540,
+			"coordonnees_gps": [
+				49.0543404407,
+				2.17434065342
+			],
+			"nom_commune": "MERY SUR OISE"
+	},
+	{
+			"code_postal": 95000,
+			"coordonnees_gps": [
+				49.0378977963,
+				2.06061895699
+			],
+			"nom_commune": "PONTOISE"
+	},
+	{
+			"code_postal": 95590,
+			"coordonnees_gps": [
+				49.1078677101,
+				2.28470413018
+			],
+			"nom_commune": "PRESLES"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "SANTEUIL"
+	},
+	{
+			"code_postal": 75011,
+			"coordonnees_gps": [
+				48.8593266337,
+				2.37986086805
+			],
+			"nom_commune": "PARIS 11"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "ANNET SUR MARNE"
+	},
+	{
+			"code_postal": 91440,
+			"coordonnees_gps": [
+				48.6930082592,
+				2.15803236368
+			],
+			"nom_commune": "BURES SUR YVETTE"
+	},
+	{
+			"code_postal": 91210,
+			"coordonnees_gps": [
+				48.677993062,
+				2.42118499004
+			],
+			"nom_commune": "DRAVEIL"
+	},
+	{
+			"code_postal": 91660,
+			"coordonnees_gps": [
+				48.3164697421,
+				2.08354530112
+			],
+			"nom_commune": "MEREVILLE"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "ORVEAU"
+	},
+	{
+			"code_postal": 94390,
+			"coordonnees_gps": [
+				48.7243019764,
+				2.36018622898
+			],
+			"nom_commune": "PARAY VIEILLE POSTE"
+	},
+	{
+			"code_postal": 91630,
+			"coordonnees_gps": [
+				48.560156386,
+				2.2827757217
+			],
+			"nom_commune": "AVRAINVILLE"
+	},
+	{
+			"code_postal": 91460,
+			"coordonnees_gps": [
+				48.6460859736,
+				2.2061891096
+			],
+			"nom_commune": "MARCOUSSIS"
+	},
+	{
+			"code_postal": 91490,
+			"coordonnees_gps": [
+				48.4186455247,
+				2.46228788074
+			],
+			"nom_commune": "ONCY SUR ECOLE"
+	},
+	{
+			"code_postal": 91400,
+			"coordonnees_gps": [
+				48.7079533558,
+				2.15419618195
+			],
+			"nom_commune": "ORSAY"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "ST CYR LA RIVIERE"
+	},
+	{
+			"code_postal": 91180,
+			"coordonnees_gps": [
+				48.5987466717,
+				2.26387037566
+			],
+			"nom_commune": "ST GERMAIN LES ARPAJON"
+	},
+	{
+			"code_postal": 91250,
+			"coordonnees_gps": [
+				48.6186905603,
+				2.50655101918
+			],
+			"nom_commune": "SAINTRY SUR SEINE"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "VILLECONIN"
+	},
+	{
+			"code_postal": 92160,
+			"coordonnees_gps": [
+				48.7498937997,
+				2.29904436066
+			],
+			"nom_commune": "ANTONY"
+	},
+	{
+			"code_postal": 77700,
+			"coordonnees_gps": [
+				48.8632419628,
+				2.79709040394
+			],
+			"nom_commune": "BAILLY ROMAINVILLIERS"
+	},
+	{
+			"code_postal": 77310,
+			"coordonnees_gps": [
+				48.5292083362,
+				2.53978127085
+			],
+			"nom_commune": "BOISSISE LE ROI"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "CRECY LA CHAPELLE"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "CREVECOEUR EN BRIE"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "DAMPMART"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "DHUISY"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "DOUE"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "GRESSY"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "GUERCHEVILLE"
+	},
+	{
+			"code_postal": 77515,
+			"coordonnees_gps": [
+				48.791262965,
+				2.99641701486
+			],
+			"nom_commune": "HAUTEFEUILLE"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "JAULNES"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "JOUY SUR MORIN"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "MAROLLES EN BRIE"
+	},
+	{
+			"code_postal": 77290,
+			"coordonnees_gps": [
+				48.979596619,
+				2.61891087151
+			],
+			"nom_commune": "MITRY MORY"
+	},
+	{
+			"code_postal": 77350,
+			"coordonnees_gps": [
+				48.5350739052,
+				2.60727189442
+			],
+			"nom_commune": "BOISSETTES"
+	},
+	{
+			"code_postal": 77500,
+			"coordonnees_gps": [
+				48.8836002438,
+				2.59608427563
+			],
+			"nom_commune": "CHELLES"
+	},
+	{
+			"code_postal": 77290,
+			"coordonnees_gps": [
+				48.979596619,
+				2.61891087151
+			],
+			"nom_commune": "COMPANS"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "GRANDPUITS BAILLY CARROIS"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "ISLES LES VILLENOY"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "LIZY SUR OURCQ"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "LUMIGNY NESLES ORMEAUX"
+	},
+	{
+			"code_postal": 77145,
+			"coordonnees_gps": [
+				49.0701288323,
+				3.02511074107
+			],
+			"nom_commune": "MAY EN MULTIEN"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "MOISENAY"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "NOISY RUDIGNON"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "PERTHES"
+	},
+	{
+			"code_postal": 77181,
+			"coordonnees_gps": [
+				48.9151571578,
+				2.61878172318
+			],
+			"nom_commune": "LE PIN"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "RECLOSES"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "ST CYR SUR MORIN"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "ST GERMAIN LAVAL"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "ST LEGER"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "ST SAUVEUR SUR ECOLE"
+	},
+	{
+			"code_postal": 77169,
+			"coordonnees_gps": [
+				48.8249765475,
+				3.16311202199
+			],
+			"nom_commune": "ST SIMEON"
+	},
+	{
+			"code_postal": 77111,
+			"coordonnees_gps": [
+				48.6502963027,
+				2.71437354828
+			],
+			"nom_commune": "SOIGNOLLES EN BRIE"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "SOISY BOUY"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "VILLIERS SUR MORIN"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "AUTOUILLET"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "BAZAINVILLE"
+	},
+	{
+			"code_postal": 78390,
+			"coordonnees_gps": [
+				48.8043941773,
+				2.01866204781
+			],
+			"nom_commune": "BOIS D ARCY"
+	},
+	{
+			"code_postal": 78340,
+			"coordonnees_gps": [
+				48.8190038285,
+				1.98403362537
+			],
+			"nom_commune": "LES CLAYES SOUS BOIS"
+	},
+	{
+			"code_postal": 78280,
+			"coordonnees_gps": [
+				48.7729816592,
+				2.07605378449
+			],
+			"nom_commune": "GUYANCOURT"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "JOUY MAUVOISIN"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "LAINVILLE EN VEXIN"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "MITTAINVILLE"
+	},
+	{
+			"code_postal": 78640,
+			"coordonnees_gps": [
+				48.8210314117,
+				1.88134330227
+			],
+			"nom_commune": "NEAUPHLE LE VIEUX"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "ORPHIN"
+	},
+	{
+			"code_postal": 78610,
+			"coordonnees_gps": [
+				48.7133396179,
+				1.81485270271
+			],
+			"nom_commune": "LE PERRAY EN YVELINES"
+	},
+	{
+			"code_postal": 92000,
+			"coordonnees_gps": [
+				48.8962161446,
+				2.2068493546
+			],
+			"nom_commune": "NANTERRE"
+	},
+	{
+			"code_postal": 92410,
+			"coordonnees_gps": [
+				48.8215001664,
+				2.17605556891
+			],
+			"nom_commune": "VILLE D AVRAY"
+	},
+	{
+			"code_postal": 93380,
+			"coordonnees_gps": [
+				48.9601575752,
+				2.36349767904
+			],
+			"nom_commune": "PIERREFITTE SUR SEINE"
+	},
+	{
+			"code_postal": 93400,
+			"coordonnees_gps": [
+				48.9096159679,
+				2.33315490092
+			],
+			"nom_commune": "ST OUEN"
+	},
+	{
+			"code_postal": 93240,
+			"coordonnees_gps": [
+				48.9567913169,
+				2.3856852173
+			],
+			"nom_commune": "STAINS"
+	},
+	{
+			"code_postal": 95710,
+			"coordonnees_gps": [
+				49.1290552989,
+				1.69526260075
+			],
+			"nom_commune": "AMBLEVILLE"
+	},
+	{
+			"code_postal": 95100,
+			"coordonnees_gps": [
+				48.95173377,
+				2.24070535988
+			],
+			"nom_commune": "ARGENTEUIL"
+	},
+	{
+			"code_postal": 95400,
+			"coordonnees_gps": [
+				49.0014583896,
+				2.40751013382
+			],
+			"nom_commune": "ARNOUVILLE"
+	},
+	{
+			"code_postal": 95560,
+			"coordonnees_gps": [
+				49.0667555208,
+				2.29836937772
+			],
+			"nom_commune": "BAILLET EN FRANCE"
+	},
+	{
+			"code_postal": 95870,
+			"coordonnees_gps": [
+				48.9263133058,
+				2.21169036009
+			],
+			"nom_commune": "BEZONS"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "BREANCON"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "CHAUMONTEL"
+	},
+	{
+			"code_postal": 95560,
+			"coordonnees_gps": [
+				49.0667555208,
+				2.29836937772
+			],
+			"nom_commune": "CHAUVRY"
+	},
+	{
+			"code_postal": 95530,
+			"coordonnees_gps": [
+				48.9743528726,
+				2.17813705819
+			],
+			"nom_commune": "LA FRETTE SUR SEINE"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "MARINES"
+	},
+	{
+			"code_postal": 95340,
+			"coordonnees_gps": [
+				49.1610028463,
+				2.26428490236
+			],
+			"nom_commune": "PERSAN"
+	},
+	{
+			"code_postal": 75116,
+			"coordonnees_gps": [
+				48.8603821025,
+				2.26201220212
+			],
+			"nom_commune": "PARIS 16"
+	},
+	{
+			"code_postal": 75018,
+			"coordonnees_gps": [
+				48.8923628559,
+				2.34785432498
+			],
+			"nom_commune": "PARIS 18"
+	},
+	{
+			"code_postal": 77630,
+			"coordonnees_gps": [
+				48.4243787367,
+				2.57257810234
+			],
+			"nom_commune": "ARBONNE LA FORET"
+	},
+	{
+			"code_postal": 75019,
+			"coordonnees_gps": [
+				48.8868704923,
+				2.38465309568
+			],
+			"nom_commune": "PARIS 19"
+	},
+	{
+			"code_postal": 91850,
+			"coordonnees_gps": [
+				48.5126253695,
+				2.29601584294
+			],
+			"nom_commune": "BOURAY SUR JUINE"
+	},
+	{
+			"code_postal": 91650,
+			"coordonnees_gps": [
+				48.5636207397,
+				2.17184394889
+			],
+			"nom_commune": "BREUX JOUY"
+	},
+	{
+			"code_postal": 91640,
+			"coordonnees_gps": [
+				48.6224133727,
+				2.14125590005
+			],
+			"nom_commune": "BRIIS SOUS FORGES"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "BUNO BONNEVAUX"
+	},
+	{
+			"code_postal": 91750,
+			"coordonnees_gps": [
+				48.5147670198,
+				2.45459432239
+			],
+			"nom_commune": "CHAMPCUEIL"
+	},
+	{
+			"code_postal": 91160,
+			"coordonnees_gps": [
+				48.6879154099,
+				2.28155441875
+			],
+			"nom_commune": "CHAMPLAN"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "ETAMPES"
+	},
+	{
+			"code_postal": 91640,
+			"coordonnees_gps": [
+				48.6224133727,
+				2.14125590005
+			],
+			"nom_commune": "FONTENAY LES BRIIS"
+	},
+	{
+			"code_postal": 91290,
+			"coordonnees_gps": [
+				48.5844568763,
+				2.25774325874
+			],
+			"nom_commune": "LA NORVILLE"
+	},
+	{
+			"code_postal": 91250,
+			"coordonnees_gps": [
+				48.6186905603,
+				2.50655101918
+			],
+			"nom_commune": "ST GERMAIN LES CORBEIL"
+	},
+	{
+			"code_postal": 92290,
+			"coordonnees_gps": [
+				48.7683241133,
+				2.26382535631
+			],
+			"nom_commune": "CHATENAY MALABRY"
+	},
+	{
+			"code_postal": 92320,
+			"coordonnees_gps": [
+				48.8030902828,
+				2.2864012174
+			],
+			"nom_commune": "CHATILLON"
+	},
+	{
+			"code_postal": 92140,
+			"coordonnees_gps": [
+				48.7967176819,
+				2.25385173895
+			],
+			"nom_commune": "CLAMART"
+	},
+	{
+			"code_postal": 93320,
+			"coordonnees_gps": [
+				48.9077599592,
+				2.50325789732
+			],
+			"nom_commune": "LES PAVILLONS SOUS BOIS"
+	},
+	{
+			"code_postal": 94550,
+			"coordonnees_gps": [
+				48.7667771551,
+				2.35266828544
+			],
+			"nom_commune": "CHEVILLY LARUE"
+	},
+	{
+			"code_postal": 94460,
+			"coordonnees_gps": [
+				48.7530822759,
+				2.46124565223
+			],
+			"nom_commune": "VALENTON"
+	},
+	{
+			"code_postal": 94400,
+			"coordonnees_gps": [
+				48.7885568869,
+				2.39425728394
+			],
+			"nom_commune": "VITRY SUR SEINE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "AMBLEVILLE"
+	},
+	{
+			"code_postal": 95000,
+			"coordonnees_gps": [
+				49.0378977963,
+				2.06061895699
+			],
+			"nom_commune": "CERGY"
+	},
+	{
+			"code_postal": 95380,
+			"coordonnees_gps": [
+				49.0485279227,
+				2.5187416869
+			],
+			"nom_commune": "CHENNEVIERES LES LOUVRES"
+	},
+	{
+			"code_postal": 95470,
+			"coordonnees_gps": [
+				49.0842919677,
+				2.54827429077
+			],
+			"nom_commune": "FOSSES"
+	},
+	{
+			"code_postal": 95340,
+			"coordonnees_gps": [
+				49.1610028463,
+				2.26428490236
+			],
+			"nom_commune": "RONQUEROLLES"
+	},
+	{
+			"code_postal": 95390,
+			"coordonnees_gps": [
+				49.0210602804,
+				2.2702548944
+			],
+			"nom_commune": "ST PRIX"
+	},
+	{
+			"code_postal": 95470,
+			"coordonnees_gps": [
+				49.0842919677,
+				2.54827429077
+			],
+			"nom_commune": "VEMARS"
+	},
+	{
+			"code_postal": 75012,
+			"coordonnees_gps": [
+				48.8347421662,
+				2.42053665524
+			],
+			"nom_commune": "PARIS 12"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "BABY"
+	},
+	{
+			"code_postal": 91440,
+			"coordonnees_gps": [
+				48.6930082592,
+				2.15803236368
+			],
+			"nom_commune": "BURES SUR YVETTE"
+	},
+	{
+			"code_postal": 91100,
+			"coordonnees_gps": [
+				48.598553411,
+				2.4642298382
+			],
+			"nom_commune": "CORBEIL ESSONNES"
+	},
+	{
+			"code_postal": 91830,
+			"coordonnees_gps": [
+				48.5482208788,
+				2.48758633681
+			],
+			"nom_commune": "LE COUDRAY MONTCEAUX"
+	},
+	{
+			"code_postal": 91160,
+			"coordonnees_gps": [
+				48.6879154099,
+				2.28155441875
+			],
+			"nom_commune": "LONGJUMEAU"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "MORIGNY CHAMPIGNY"
+	},
+	{
+			"code_postal": 91190,
+			"coordonnees_gps": [
+				48.709665031,
+				2.12766544978
+			],
+			"nom_commune": "ST AUBIN"
+	},
+	{
+			"code_postal": 91100,
+			"coordonnees_gps": [
+				48.598553411,
+				2.4642298382
+			],
+			"nom_commune": "VILLABE"
+	},
+	{
+			"code_postal": 91220,
+			"coordonnees_gps": [
+				48.6039242304,
+				2.3152152775
+			],
+			"nom_commune": "BRETIGNY SUR ORGE"
+	},
+	{
+			"code_postal": 91780,
+			"coordonnees_gps": [
+				48.4201119171,
+				2.04444826512
+			],
+			"nom_commune": "CHALO ST MARS"
+	},
+	{
+			"code_postal": 91750,
+			"coordonnees_gps": [
+				48.5147670198,
+				2.45459432239
+			],
+			"nom_commune": "CHEVANNES"
+	},
+	{
+			"code_postal": 91080,
+			"coordonnees_gps": [
+				48.6218955408,
+				2.41247245997
+			],
+			"nom_commune": "COURCOURONNES"
+	},
+	{
+			"code_postal": 91000,
+			"coordonnees_gps": [
+				48.6292552888,
+				2.44052205012
+			],
+			"nom_commune": "EVRY"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "LES MOLIERES"
+	},
+	{
+			"code_postal": 91390,
+			"coordonnees_gps": [
+				48.6562305326,
+				2.35134021542
+			],
+			"nom_commune": "MORSANG SUR ORGE"
+	},
+	{
+			"code_postal": 91840,
+			"coordonnees_gps": [
+				48.4785443532,
+				2.48152885944
+			],
+			"nom_commune": "SOISY SUR ECOLE"
+	},
+	{
+			"code_postal": 91140,
+			"coordonnees_gps": [
+				48.6888194138,
+				2.23030867411
+			],
+			"nom_commune": "VILLEJUST"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "BEAUTHEIL"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "BOISSY AUX CAILLES"
+	},
+	{
+			"code_postal": 77169,
+			"coordonnees_gps": [
+				48.8249765475,
+				3.16311202199
+			],
+			"nom_commune": "BOISSY LE CHATEL"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "BUSSY ST MARTIN"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "LA CHAPELLE MOUTILS"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "CHARNY"
+	},
+	{
+			"code_postal": 77111,
+			"coordonnees_gps": [
+				48.6502963027,
+				2.71437354828
+			],
+			"nom_commune": "SOLERS"
+	},
+	{
+			"code_postal": 77131,
+			"coordonnees_gps": [
+				48.7378222694,
+				3.01127649042
+			],
+			"nom_commune": "TOUQUIN"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "VANVILLE"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "VAUX SUR LUNAIN"
+	},
+	{
+			"code_postal": 77114,
+			"coordonnees_gps": [
+				48.4693763813,
+				3.34027903986
+			],
+			"nom_commune": "VILLIERS SUR SEINE"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "VINANTES"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "ARNOUVILLE LES MANTES"
+	},
+	{
+			"code_postal": 78830,
+			"coordonnees_gps": [
+				48.6221711105,
+				1.99864954313
+			],
+			"nom_commune": "BULLION"
+	},
+	{
+			"code_postal": 78150,
+			"coordonnees_gps": [
+				48.8291874065,
+				2.12052828501
+			],
+			"nom_commune": "LE CHESNAY"
+	},
+	{
+			"code_postal": 78620,
+			"coordonnees_gps": [
+				48.8670748647,
+				2.06001000731
+			],
+			"nom_commune": "L ETANG LA VILLE"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "GRANDCHAMP"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "HARDRICOURT"
+	},
+	{
+			"code_postal": 78430,
+			"coordonnees_gps": [
+				48.8588744837,
+				2.1134161115
+			],
+			"nom_commune": "LOUVECIENNES"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "PERDREAUVILLE"
+	},
+	{
+			"code_postal": 78300,
+			"coordonnees_gps": [
+				48.9238513521,
+				2.02821434005
+			],
+			"nom_commune": "POISSY"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "PRUNAY EN YVELINES"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "ST ILLIERS LE BOIS"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "TILLY"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "LA VILLENEUVE EN CHEVRIE"
+	},
+	{
+			"code_postal": 91670,
+			"coordonnees_gps": [
+				48.3099539715,
+				2.00495721135
+			],
+			"nom_commune": "ANGERVILLE"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "ARRANCOURT"
+	},
+	{
+			"code_postal": 91790,
+			"coordonnees_gps": [
+				48.5492269874,
+				2.21255361309
+			],
+			"nom_commune": "BOISSY SOUS ST YON"
+	},
+	{
+			"code_postal": 91880,
+			"coordonnees_gps": [
+				48.4325540428,
+				2.27884287517
+			],
+			"nom_commune": "BOUVILLE"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "BROUY"
+	},
+	{
+			"code_postal": 91740,
+			"coordonnees_gps": [
+				48.3700823354,
+				2.00542911555
+			],
+			"nom_commune": "CHALOU MOULINEUX"
+	},
+	{
+			"code_postal": 91450,
+			"coordonnees_gps": [
+				48.6546477863,
+				2.47449221609
+			],
+			"nom_commune": "SOISY SUR SEINE"
+	},
+	{
+			"code_postal": 91480,
+			"coordonnees_gps": [
+				48.6761652188,
+				2.54624238092
+			],
+			"nom_commune": "VARENNES JARCY"
+	},
+	{
+			"code_postal": 91620,
+			"coordonnees_gps": [
+				48.6612886154,
+				2.24603935989
+			],
+			"nom_commune": "LA VILLE DU BOIS"
+	},
+	{
+			"code_postal": 92340,
+			"coordonnees_gps": [
+				48.7804118277,
+				2.31747787876
+			],
+			"nom_commune": "BOURG LA REINE"
+	},
+	{
+			"code_postal": 92110,
+			"coordonnees_gps": [
+				48.9036376273,
+				2.30599418937
+			],
+			"nom_commune": "CLICHY"
+	},
+	{
+			"code_postal": 92230,
+			"coordonnees_gps": [
+				48.9345124152,
+				2.29467414472
+			],
+			"nom_commune": "GENNEVILLIERS"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "CHAUFFOUR LES ETRECHY"
+	},
+	{
+			"code_postal": 91660,
+			"coordonnees_gps": [
+				48.3164697421,
+				2.08354530112
+			],
+			"nom_commune": "ESTOUCHES"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "FONTAINE LA RIVIERE"
+	},
+	{
+			"code_postal": 91630,
+			"coordonnees_gps": [
+				48.560156386,
+				2.2827757217
+			],
+			"nom_commune": "MAROLLES EN HUREPOIX"
+	},
+	{
+			"code_postal": 91730,
+			"coordonnees_gps": [
+				48.5235985286,
+				2.21810391449
+			],
+			"nom_commune": "TORFOU"
+	},
+	{
+			"code_postal": 75017,
+			"coordonnees_gps": [
+				48.8872660268,
+				2.30686780021
+			],
+			"nom_commune": "PARIS 17"
+	},
+	{
+			"code_postal": 94140,
+			"coordonnees_gps": [
+				48.7961692844,
+				2.42129188527
+			],
+			"nom_commune": "ALFORTVILLE"
+	},
+	{
+			"code_postal": 94270,
+			"coordonnees_gps": [
+				48.8088832334,
+				2.35629106776
+			],
+			"nom_commune": "LE KREMLIN BICETRE"
+	},
+	{
+			"code_postal": 95570,
+			"coordonnees_gps": [
+				49.0548701683,
+				2.33369100298
+			],
+			"nom_commune": "BOUFFEMONT"
+	},
+	{
+			"code_postal": 95380,
+			"coordonnees_gps": [
+				49.0485279227,
+				2.5187416869
+			],
+			"nom_commune": "EPIAIS LES LOUVRES"
+	},
+	{
+			"code_postal": 95140,
+			"coordonnees_gps": [
+				48.9703086597,
+				2.40500499402
+			],
+			"nom_commune": "GARGES LES GONESSE"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "LE HEAULME"
+	},
+	{
+			"code_postal": 95280,
+			"coordonnees_gps": [
+				49.0112311928,
+				2.03342738029
+			],
+			"nom_commune": "JOUY LE MOUTIER"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "BASSEVELLE"
+	},
+	{
+			"code_postal": 77590,
+			"coordonnees_gps": [
+				48.4860029495,
+				2.72692404848
+			],
+			"nom_commune": "CHARTRETTES"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "CHAUMES EN BRIE"
+	},
+	{
+			"code_postal": 77173,
+			"coordonnees_gps": [
+				48.7235256788,
+				2.6769970058
+			],
+			"nom_commune": "CHEVRY COSSIGNY"
+	},
+	{
+			"code_postal": 77730,
+			"coordonnees_gps": [
+				48.9602103424,
+				3.21952971251
+			],
+			"nom_commune": "CITRY"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "COCHEREL"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "CONGIS SUR THEROUANNE"
+	},
+	{
+			"code_postal": 77840,
+			"coordonnees_gps": [
+				49.0796099088,
+				3.11275376018
+			],
+			"nom_commune": "COULOMBS EN VALOIS"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "CRECY LA CHAPELLE"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "DORMELLES"
+	},
+	{
+			"code_postal": 77820,
+			"coordonnees_gps": [
+				48.5045041989,
+				2.83445609947
+			],
+			"nom_commune": "LES ECRENNES"
+	},
+	{
+			"code_postal": 77690,
+			"coordonnees_gps": [
+				48.32561464,
+				2.75158001552
+			],
+			"nom_commune": "LA GENEVRAYE"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "GURCY LE CHATEL"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "LESCHEROLLES"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "MAROLLES SUR SEINE"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "MONTIGNY LE GUESDIER"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "NANTEAU SUR LUNAIN"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "RUBELLES"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "ST BRICE"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "ST GERMAIN SUR ECOLE"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "ST THIBAULT DES VIGNES"
+	},
+	{
+			"code_postal": 77115,
+			"coordonnees_gps": [
+				48.5423516758,
+				2.77150375047
+			],
+			"nom_commune": "SIVRY COURTRY"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "URY"
+	},
+	{
+			"code_postal": 77174,
+			"coordonnees_gps": [
+				48.8118209596,
+				2.82523717272
+			],
+			"nom_commune": "VILLENEUVE ST DENIS"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "VILLENOY"
+	},
+	{
+			"code_postal": 95850,
+			"coordonnees_gps": [
+				49.0746281693,
+				2.42764597482
+			],
+			"nom_commune": "MAREIL EN FRANCE"
+	},
+	{
+			"code_postal": 95770,
+			"coordonnees_gps": [
+				49.1959926831,
+				1.69814198153
+			],
+			"nom_commune": "MONTREUIL SUR EPTE"
+	},
+	{
+			"code_postal": 95480,
+			"coordonnees_gps": [
+				49.0191135363,
+				2.16069060879
+			],
+			"nom_commune": "PIERRELAYE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "SEUGY"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "THEUVILLE"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "CRAVENT"
+	},
+	{
+			"code_postal": 78810,
+			"coordonnees_gps": [
+				48.8749563511,
+				1.96917098756
+			],
+			"nom_commune": "FEUCHEROLLES"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "FONTENAY ST PERE"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "LOMMOYE"
+	},
+	{
+			"code_postal": 78124,
+			"coordonnees_gps": [
+				48.884244051,
+				1.86268946991
+			],
+			"nom_commune": "MAREIL SUR MAULDRE"
+	},
+	{
+			"code_postal": 78580,
+			"coordonnees_gps": [
+				48.9115359215,
+				1.85464080314
+			],
+			"nom_commune": "MAULE"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "ROLLEBOISE"
+	},
+	{
+			"code_postal": 77210,
+			"coordonnees_gps": [
+				48.417089136,
+				2.75506799012
+			],
+			"nom_commune": "AVON"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "BEAUCHERY ST MARTIN"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "BERNAY VILBERT"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "CHAILLY EN BIERE"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "CHANTELOUP EN BRIE"
+	},
+	{
+			"code_postal": 77169,
+			"coordonnees_gps": [
+				48.8249765475,
+				3.16311202199
+			],
+			"nom_commune": "CHAUFFRY"
+	},
+	{
+			"code_postal": 77860,
+			"coordonnees_gps": [
+				48.889293661,
+				2.86625543445
+			],
+			"nom_commune": "COUILLY PONT AUX DAMES"
+	},
+	{
+			"code_postal": 77840,
+			"coordonnees_gps": [
+				49.0796099088,
+				3.11275376018
+			],
+			"nom_commune": "CROUY SUR OURCQ"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "DIANT"
+	},
+	{
+			"code_postal": 77830,
+			"coordonnees_gps": [
+				48.4598569753,
+				2.90486661459
+			],
+			"nom_commune": "ECHOUBOULAINS"
+	},
+	{
+			"code_postal": 77126,
+			"coordonnees_gps": [
+				48.4261598514,
+				3.09512447411
+			],
+			"nom_commune": "EGLIGNY"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "ESMANS"
+	},
+	{
+			"code_postal": 77150,
+			"coordonnees_gps": [
+				48.7409851538,
+				2.62903924486
+			],
+			"nom_commune": "FEROLLES ATTILLY"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "FONTAINE FOURCHES"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "LA GRANDE PAROISSE"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "JABLINES"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "LUMIGNY NESLES ORMEAUX"
+	},
+	{
+			"code_postal": 77133,
+			"coordonnees_gps": [
+				48.4532100891,
+				2.828016762
+			],
+			"nom_commune": "MACHAULT"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "PALEY"
+	},
+	{
+			"code_postal": 91740,
+			"coordonnees_gps": [
+				48.3700823354,
+				2.00542911555
+			],
+			"nom_commune": "CONGERVILLE THIONVILLE"
+	},
+	{
+			"code_postal": 92140,
+			"coordonnees_gps": [
+				48.7967176819,
+				2.25385173895
+			],
+			"nom_commune": "CLAMART"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "LES GRANGES LE ROI"
+	},
+	{
+			"code_postal": 91510,
+			"coordonnees_gps": [
+				48.5117436099,
+				2.26036943723
+			],
+			"nom_commune": "LARDY"
+	},
+	{
+			"code_postal": 91310,
+			"coordonnees_gps": [
+				48.6316590424,
+				2.26650021218
+			],
+			"nom_commune": "LEUVILLE SUR ORGE"
+	},
+	{
+			"code_postal": 91780,
+			"coordonnees_gps": [
+				48.4201119171,
+				2.04444826512
+			],
+			"nom_commune": "MEROBERT"
+	},
+	{
+			"code_postal": 91400,
+			"coordonnees_gps": [
+				48.7079533558,
+				2.15419618195
+			],
+			"nom_commune": "ORSAY"
+	},
+	{
+			"code_postal": 91240,
+			"coordonnees_gps": [
+				48.632621365,
+				2.31165782908
+			],
+			"nom_commune": "ST MICHEL SUR ORGE"
+	},
+	{
+			"code_postal": 91940,
+			"coordonnees_gps": [
+				48.6746009432,
+				2.16779886217
+			],
+			"nom_commune": "LES ULIS"
+	},
+	{
+			"code_postal": 92220,
+			"coordonnees_gps": [
+				48.7988494711,
+				2.30977111957
+			],
+			"nom_commune": "BAGNEUX"
+	},
+	{
+			"code_postal": 92290,
+			"coordonnees_gps": [
+				48.7683241133,
+				2.26382535631
+			],
+			"nom_commune": "CHATENAY MALABRY"
+	},
+	{
+			"code_postal": 92370,
+			"coordonnees_gps": [
+				48.8072497774,
+				2.1917994859
+			],
+			"nom_commune": "CHAVILLE"
+	},
+	{
+			"code_postal": 77118,
+			"coordonnees_gps": [
+				48.3962434685,
+				3.16889442918
+			],
+			"nom_commune": "BALLOY"
+	},
+	{
+			"code_postal": 77170,
+			"coordonnees_gps": [
+				48.6935707994,
+				2.63183347569
+			],
+			"nom_commune": "BRIE COMTE ROBERT"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "CHATEAU LANDON"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "DAGNY"
+	},
+	{
+			"code_postal": 77620,
+			"coordonnees_gps": [
+				48.1721615922,
+				2.86730865487
+			],
+			"nom_commune": "EGREVILLE"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "FORFRY"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "LAGNY SUR MARNE"
+	},
+	{
+			"code_postal": 77148,
+			"coordonnees_gps": [
+				48.4464731085,
+				2.99106042028
+			],
+			"nom_commune": "LAVAL EN BRIE"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "MARCHEMORET"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "NANTOUILLET"
+	},
+	{
+			"code_postal": 77131,
+			"coordonnees_gps": [
+				48.7378222694,
+				3.01127649042
+			],
+			"nom_commune": "PEZARCHES"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "LE PLESSIS L EVEQUE"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "POIGNY"
+	},
+	{
+			"code_postal": 77730,
+			"coordonnees_gps": [
+				48.9602103424,
+				3.21952971251
+			],
+			"nom_commune": "SAACY SUR MARNE"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "SANCY"
+	},
+	{
+			"code_postal": 77123,
+			"coordonnees_gps": [
+				48.3612793646,
+				2.50123990973
+			],
+			"nom_commune": "TOUSSON"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "USSY SUR MARNE"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "VILLENEUVE SOUS DAMMARTIN"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "ADAINVILLE"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "BAZOCHES SUR GUYONNE"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "BUCHELAY"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "CONDE SUR VESGRE"
+	},
+	{
+			"code_postal": 78680,
+			"coordonnees_gps": [
+				48.9479879015,
+				1.81338517582
+			],
+			"nom_commune": "EPONE"
+	},
+	{
+			"code_postal": 78280,
+			"coordonnees_gps": [
+				48.7729816592,
+				2.07605378449
+			],
+			"nom_commune": "GUYANCOURT"
+	},
+	{
+			"code_postal": 78940,
+			"coordonnees_gps": [
+				48.8051176494,
+				1.74709379357
+			],
+			"nom_commune": "MILLEMONT"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "MONTALET LE BOIS"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "ORCEMONT"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "ORGERUS"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "BAULNE"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "BOULLAY LES TROUX"
+	},
+	{
+			"code_postal": 91820,
+			"coordonnees_gps": [
+				48.4347578682,
+				2.37891668976
+			],
+			"nom_commune": "BOUTIGNY SUR ESSONNE"
+	},
+	{
+			"code_postal": 91730,
+			"coordonnees_gps": [
+				48.5235985286,
+				2.21810391449
+			],
+			"nom_commune": "CHAMARANDE"
+	},
+	{
+			"code_postal": 91860,
+			"coordonnees_gps": [
+				48.6886159559,
+				2.51717131334
+			],
+			"nom_commune": "EPINAY SOUS SENART"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "LA FORET STE CROIX"
+	},
+	{
+			"code_postal": 91630,
+			"coordonnees_gps": [
+				48.560156386,
+				2.2827757217
+			],
+			"nom_commune": "LEUDEVILLE"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "MESPUITS"
+	},
+	{
+			"code_postal": 91930,
+			"coordonnees_gps": [
+				48.3476477675,
+				2.03765545303
+			],
+			"nom_commune": "MONNERVILLE"
+	},
+	{
+			"code_postal": 91310,
+			"coordonnees_gps": [
+				48.6316590424,
+				2.26650021218
+			],
+			"nom_commune": "MONTLHERY"
+	},
+	{
+			"code_postal": 91250,
+			"coordonnees_gps": [
+				48.6186905603,
+				2.50655101918
+			],
+			"nom_commune": "MORSANG SUR SEINE"
+	},
+	{
+			"code_postal": 91530,
+			"coordonnees_gps": [
+				48.5543371976,
+				2.10205368335
+			],
+			"nom_commune": "SERMAISE"
+	},
+	{
+			"code_postal": 91700,
+			"coordonnees_gps": [
+				48.6398858055,
+				2.34146847544
+			],
+			"nom_commune": "VILLIERS SUR ORGE"
+	},
+	{
+			"code_postal": 92600,
+			"coordonnees_gps": [
+				48.915464529,
+				2.28801082145
+			],
+			"nom_commune": "ASNIERES SUR SEINE"
+	},
+	{
+			"code_postal": 92100,
+			"coordonnees_gps": [
+				48.8364966292,
+				2.23867632216
+			],
+			"nom_commune": "BOULOGNE BILLANCOURT"
+	},
+	{
+			"code_postal": 91680,
+			"coordonnees_gps": [
+				48.5994935107,
+				2.17708550813
+			],
+			"nom_commune": "COURSON MONTELOUP"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "GUILLERVAL"
+	},
+	{
+			"code_postal": 91650,
+			"coordonnees_gps": [
+				48.5636207397,
+				2.17184394889
+			],
+			"nom_commune": "ST YON"
+	},
+	{
+			"code_postal": 91270,
+			"coordonnees_gps": [
+				48.703950195,
+				2.42770739921
+			],
+			"nom_commune": "VIGNEUX SUR SEINE"
+	},
+	{
+			"code_postal": 91360,
+			"coordonnees_gps": [
+				48.6691027635,
+				2.32253482428
+			],
+			"nom_commune": "VILLEMOISSON SUR ORGE"
+	},
+	{
+			"code_postal": 92380,
+			"coordonnees_gps": [
+				48.8454061837,
+				2.18760213327
+			],
+			"nom_commune": "GARCHES"
+	},
+	{
+			"code_postal": 92130,
+			"coordonnees_gps": [
+				48.8232529299,
+				2.26429719337
+			],
+			"nom_commune": "ISSY LES MOULINEAUX"
+	},
+	{
+			"code_postal": 93210,
+			"coordonnees_gps": [
+				48.9296140653,
+				2.35920270384
+			],
+			"nom_commune": "ST DENIS"
+	},
+	{
+			"code_postal": 94340,
+			"coordonnees_gps": [
+				48.8194565588,
+				2.47055350311
+			],
+			"nom_commune": "JOINVILLE LE PONT"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "BRIGNANCOURT"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "GADANCOURT"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "BUSSY ST GEORGES"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "CLOS FONTAINE"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "GOUVERNES"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "LUMIGNY NESLES ORMEAUX"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "MOUSSEAUX LES BRAY"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "MOUSSY LE NEUF"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "NEUFMOUTIERS EN BRIE"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "LE PLESSIS PLACY"
+	},
+	{
+			"code_postal": 77515,
+			"coordonnees_gps": [
+				48.791262965,
+				2.99641701486
+			],
+			"nom_commune": "POMMEUSE"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "POMPONNE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST BARTHELEMY"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "ST GERMAIN LAXIS"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "ST HILLIERS"
+	},
+	{
+			"code_postal": 77171,
+			"coordonnees_gps": [
+				48.5414685058,
+				3.39619308726
+			],
+			"nom_commune": "SOURDUN"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "VAUCOURTOIS"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "VILLEMER"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "VILLEROY"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "OMERVILLE"
+	},
+	{
+			"code_postal": 95210,
+			"coordonnees_gps": [
+				48.9693159337,
+				2.28466574486
+			],
+			"nom_commune": "ST GRATIEN"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "VILLIERS ST GEORGES"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "VILLUIS"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "VOULX"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "CERNAY LA VILLE"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "DAMPIERRE EN YVELINES"
+	},
+	{
+			"code_postal": 78990,
+			"coordonnees_gps": [
+				48.7781495042,
+				1.96078632541
+			],
+			"nom_commune": "ELANCOURT"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "GAZERAN"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "GOUPILLIERES"
+	},
+	{
+			"code_postal": 78520,
+			"coordonnees_gps": [
+				49.019152235,
+				1.69317391224
+			],
+			"nom_commune": "GUERNES"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "LA HAUTEVILLE"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "HOUDAN"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "MONDREVILLE"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "PORCHEVILLE"
+	},
+	{
+			"code_postal": 78210,
+			"coordonnees_gps": [
+				48.8064735796,
+				2.0656262845
+			],
+			"nom_commune": "ST CYR L ECOLE"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "THOIRY"
+	},
+	{
+			"code_postal": 77220,
+			"coordonnees_gps": [
+				48.7441435085,
+				2.75833565592
+			],
+			"nom_commune": "FAVIERES"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "ISLES LES MELDEUSES"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "LEUDON EN BRIE"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "MONDREVILLE"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "MOUY SUR SEINE"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "CHAUCONIN NEUFMONTIERS"
+	},
+	{
+			"code_postal": 77139,
+			"coordonnees_gps": [
+				49.0542002868,
+				2.91324246435
+			],
+			"nom_commune": "PUISIEUX"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "BOINVILLE EN MANTOIS"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "BOINVILLE LE GAILLARD"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "BOISSETS"
+	},
+	{
+			"code_postal": 78610,
+			"coordonnees_gps": [
+				48.7133396179,
+				1.81485270271
+			],
+			"nom_commune": "LES BREVIAIRES"
+	},
+	{
+			"code_postal": 78530,
+			"coordonnees_gps": [
+				48.7726273347,
+				2.12495794932
+			],
+			"nom_commune": "BUC"
+	},
+	{
+			"code_postal": 78420,
+			"coordonnees_gps": [
+				48.911760159,
+				2.17840498304
+			],
+			"nom_commune": "CARRIERES SUR SEINE"
+	},
+	{
+			"code_postal": 78570,
+			"coordonnees_gps": [
+				48.9796109181,
+				2.04393218537
+			],
+			"nom_commune": "CHANTELOUP LES VIGNES"
+	},
+	{
+			"code_postal": 78520,
+			"coordonnees_gps": [
+				49.019152235,
+				1.69317391224
+			],
+			"nom_commune": "FOLLAINVILLE DENNEMONT"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "HERMERAY"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "LONGNES"
+	},
+	{
+			"code_postal": 78160,
+			"coordonnees_gps": [
+				48.8656792122,
+				2.09169348981
+			],
+			"nom_commune": "MARLY LE ROI"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "ST ILLIERS LA VILLE"
+	},
+	{
+			"code_postal": 78610,
+			"coordonnees_gps": [
+				48.7133396179,
+				1.81485270271
+			],
+			"nom_commune": "ST LEGER EN YVELINES"
+	},
+	{
+			"code_postal": 78000,
+			"coordonnees_gps": [
+				48.8023412582,
+				2.11714488156
+			],
+			"nom_commune": "VERSAILLES"
+	},
+	{
+			"code_postal": 91610,
+			"coordonnees_gps": [
+				48.521926036,
+				2.38777609557
+			],
+			"nom_commune": "BALLANCOURT SUR ESSONNE"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "GIRONVILLE SUR ESSONNE"
+	},
+	{
+			"code_postal": 91400,
+			"coordonnees_gps": [
+				48.7079533558,
+				2.15419618195
+			],
+			"nom_commune": "GOMETZ LA VILLE"
+	},
+	{
+			"code_postal": 91350,
+			"coordonnees_gps": [
+				48.6569579897,
+				2.38743847429
+			],
+			"nom_commune": "GRIGNY"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "GUIGNEVILLE SUR ESSONNE"
+	},
+	{
+			"code_postal": 91310,
+			"coordonnees_gps": [
+				48.6316590424,
+				2.26650021218
+			],
+			"nom_commune": "LONGPONT SUR ORGE"
+	},
+	{
+			"code_postal": 91420,
+			"coordonnees_gps": [
+				48.70235449,
+				2.3370579024
+			],
+			"nom_commune": "MORANGIS"
+	},
+	{
+			"code_postal": 91530,
+			"coordonnees_gps": [
+				48.5543371976,
+				2.10205368335
+			],
+			"nom_commune": "ST MAURICE MONTCOURONNE"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "SOUZY LA BRICHE"
+	},
+	{
+			"code_postal": 91890,
+			"coordonnees_gps": [
+				48.4684848047,
+				2.42141567255
+			],
+			"nom_commune": "VIDELLES"
+	},
+	{
+			"code_postal": 91680,
+			"coordonnees_gps": [
+				48.5994935107,
+				2.17708550813
+			],
+			"nom_commune": "BRUYERES LE CHATEL"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "CHATIGNONVILLE"
+	},
+	{
+			"code_postal": 91430,
+			"coordonnees_gps": [
+				48.7339593054,
+				2.21260184658
+			],
+			"nom_commune": "IGNY"
+	},
+	{
+			"code_postal": 91300,
+			"coordonnees_gps": [
+				48.7275197703,
+				2.2747102429
+			],
+			"nom_commune": "MASSY"
+	},
+	{
+			"code_postal": 91750,
+			"coordonnees_gps": [
+				48.5147670198,
+				2.45459432239
+			],
+			"nom_commune": "NAINVILLE LES ROCHES"
+	},
+	{
+			"code_postal": 91550,
+			"coordonnees_gps": [
+				48.7243019764,
+				2.36018622898
+			],
+			"nom_commune": "PARAY VIEILLE POSTE"
+	},
+	{
+			"code_postal": 91470,
+			"coordonnees_gps": [
+				48.6369515369,
+				2.06831882052
+			],
+			"nom_commune": "PECQUEUSE"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "VILLENEUVE SUR AUVERS"
+	},
+	{
+			"code_postal": 91170,
+			"coordonnees_gps": [
+				48.6699861036,
+				2.37373132613
+			],
+			"nom_commune": "VIRY CHATILLON"
+	},
+	{
+			"code_postal": 92700,
+			"coordonnees_gps": [
+				48.9228285289,
+				2.24714560937
+			],
+			"nom_commune": "COLOMBES"
+	},
+	{
+			"code_postal": 75010,
+			"coordonnees_gps": [
+				48.8759734307,
+				2.36068494701
+			],
+			"nom_commune": "PARIS 10"
+	},
+	{
+			"code_postal": 93190,
+			"coordonnees_gps": [
+				48.9202959655,
+				2.53498349051
+			],
+			"nom_commune": "LIVRY GARGAN"
+	},
+	{
+			"code_postal": 93160,
+			"coordonnees_gps": [
+				48.8359828216,
+				2.56524933143
+			],
+			"nom_commune": "NOISY LE GRAND"
+	},
+	{
+			"code_postal": 93270,
+			"coordonnees_gps": [
+				48.939044766,
+				2.53067518881
+			],
+			"nom_commune": "SEVRAN"
+	},
+	{
+			"code_postal": 94450,
+			"coordonnees_gps": [
+				48.7454489962,
+				2.48939333385
+			],
+			"nom_commune": "LIMEIL BREVANNES"
+	},
+	{
+			"code_postal": 94880,
+			"coordonnees_gps": [
+				48.7742764728,
+				2.55417449488
+			],
+			"nom_commune": "NOISEAU"
+	},
+	{
+			"code_postal": 94490,
+			"coordonnees_gps": [
+				48.785408155,
+				2.53852149199
+			],
+			"nom_commune": "ORMESSON SUR MARNE"
+	},
+	{
+			"code_postal": 95430,
+			"coordonnees_gps": [
+				49.0811077214,
+				2.16105485374
+			],
+			"nom_commune": "AUVERS SUR OISE"
+	},
+	{
+			"code_postal": 95800,
+			"coordonnees_gps": [
+				49.0404241863,
+				2.0356184662
+			],
+			"nom_commune": "CERGY"
+	},
+	{
+			"code_postal": 95130,
+			"coordonnees_gps": [
+				48.9926867479,
+				2.22747200568
+			],
+			"nom_commune": "FRANCONVILLE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "BOULANCOURT"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "CESSOY EN MONTOIS"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "LA CHAPELLE GAUTHIER"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "LA CHAPELLE LA REINE"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "LA CHAPELLE ST SULPICE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "CHARTRONGES"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "CHOISY EN BRIE"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "JAIGNES"
+	},
+	{
+			"code_postal": 77139,
+			"coordonnees_gps": [
+				49.0542002868,
+				2.91324246435
+			],
+			"nom_commune": "MARCILLY"
+	},
+	{
+			"code_postal": 77140,
+			"coordonnees_gps": [
+				48.2750471622,
+				2.70959190478
+			],
+			"nom_commune": "MONTCOURT FROMONVILLE"
+	},
+	{
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "PECY"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "ST FIACRE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST MARTIN DU BOSCHET"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "ST MERY"
+	},
+	{
+			"code_postal": 77920,
+			"coordonnees_gps": [
+				48.4560557931,
+				2.75252560303
+			],
+			"nom_commune": "SAMOIS SUR SEINE"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "VILLEMAREUIL"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "VILLEVAUDE"
+	},
+	{
+			"code_postal": 95180,
+			"coordonnees_gps": [
+				49.0273000331,
+				1.97386966143
+			],
+			"nom_commune": "MENUCOURT"
+	},
+	{
+			"code_postal": 95400,
+			"coordonnees_gps": [
+				49.0014583896,
+				2.40751013382
+			],
+			"nom_commune": "VILLIERS LE BEL"
+	},
+	{
+			"code_postal": 77190,
+			"coordonnees_gps": [
+				48.5045043002,
+				2.61429281246
+			],
+			"nom_commune": "VILLIERS EN BIERE"
+	},
+	{
+			"code_postal": 77870,
+			"coordonnees_gps": [
+				48.4316298407,
+				2.76933878495
+			],
+			"nom_commune": "VULAINES SUR SEINE"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "LA BOISSIERE ECOLE"
+	},
+	{
+			"code_postal": 78955,
+			"coordonnees_gps": [
+				48.9453564407,
+				2.02870519723
+			],
+			"nom_commune": "CARRIERES SOUS POISSY"
+	},
+	{
+			"code_postal": 78690,
+			"coordonnees_gps": [
+				48.7275992987,
+				1.8882726457
+			],
+			"nom_commune": "LES ESSARTS LE ROI"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "GROSROUVRE"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "MENERVILLE"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "MULCENT"
+	},
+	{
+			"code_postal": 78560,
+			"coordonnees_gps": [
+				48.881651817,
+				2.10990010942
+			],
+			"nom_commune": "LE PORT MARLY"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "RICHEBOURG"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "ROSAY"
+	},
+	{
+			"code_postal": 78640,
+			"coordonnees_gps": [
+				48.8210314117,
+				1.88134330227
+			],
+			"nom_commune": "ST GERMAIN DE LA GRANGE"
+	},
+	{
+			"code_postal": 78860,
+			"coordonnees_gps": [
+				48.8631666578,
+				2.01892251697
+			],
+			"nom_commune": "ST NOM LA BRETECHE"
+	},
+	{
+			"code_postal": 78690,
+			"coordonnees_gps": [
+				48.7275992987,
+				1.8882726457
+			],
+			"nom_commune": "ST REMY L HONORE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "ACHERES LA FORET"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "AUBEPIERRE OZOUER LE REPOS"
+	},
+	{
+			"code_postal": 77177,
+			"coordonnees_gps": [
+				48.8903763139,
+				2.63870656579
+			],
+			"nom_commune": "BROU SUR CHANTEREINE"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "CHAILLY EN BRIE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "CHEVRU"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "COULOMMES"
+	},
+	{
+			"code_postal": 77184,
+			"coordonnees_gps": [
+				48.8191814737,
+				2.61008151215
+			],
+			"nom_commune": "EMERAINVILLE"
+	},
+	{
+			"code_postal": 77133,
+			"coordonnees_gps": [
+				48.4532100891,
+				2.828016762
+			],
+			"nom_commune": "FERICY"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "LA FERTE SOUS JOUARRE"
+	},
+	{
+			"code_postal": 77590,
+			"coordonnees_gps": [
+				48.4860029495,
+				2.72692404848
+			],
+			"nom_commune": "FONTAINE LE PORT"
+	},
+	{
+			"code_postal": 77910,
+			"coordonnees_gps": [
+				48.9999569179,
+				2.91840604341
+			],
+			"nom_commune": "GERMIGNY L EVEQUE"
+	},
+	{
+			"code_postal": 77840,
+			"coordonnees_gps": [
+				49.0796099088,
+				3.11275376018
+			],
+			"nom_commune": "GERMIGNY SOUS COULOMBS"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "GRISY SUR SEINE"
+	},
+	{
+			"code_postal": 77100,
+			"coordonnees_gps": [
+				48.9417341013,
+				2.89233400365
+			],
+			"nom_commune": "MAREUIL LES MEAUX"
+	},
+	{
+			"code_postal": 77171,
+			"coordonnees_gps": [
+				48.5414685058,
+				3.39619308726
+			],
+			"nom_commune": "MELZ SUR SEINE"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "MONTENILS"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "MORET LOING ET ORVANNE"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "MORMANT"
+	},
+	{
+			"code_postal": 77186,
+			"coordonnees_gps": [
+				48.8464272863,
+				2.61915509749
+			],
+			"nom_commune": "NOISIEL"
+	},
+	{
+			"code_postal": 77134,
+			"coordonnees_gps": [
+				48.4594107059,
+				3.22513517687
+			],
+			"nom_commune": "LES ORMES SUR VOULZIE"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "PENCHARD"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "LE PLESSIS FEU AUSSOUX"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "POMPONNE"
+	},
+	{
+			"code_postal": 77148,
+			"coordonnees_gps": [
+				48.4464731085,
+				2.99106042028
+			],
+			"nom_commune": "SALINS"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "SAMMERON"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "THOURY FEROTTES"
+	},
+	{
+			"code_postal": 77200,
+			"coordonnees_gps": [
+				48.8536259253,
+				2.65078543729
+			],
+			"nom_commune": "TORCY"
+	},
+	{
+			"code_postal": 77670,
+			"coordonnees_gps": [
+				48.4047875044,
+				2.85078204772
+			],
+			"nom_commune": "VERNOU LA CELLE SUR SEINE"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "LA FALAISE"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "FONTENAY MAUVOISIN"
+	},
+	{
+			"code_postal": 78750,
+			"coordonnees_gps": [
+				48.881418905,
+				2.07698099175
+			],
+			"nom_commune": "MAREIL MARLY"
+	},
+	{
+			"code_postal": 78180,
+			"coordonnees_gps": [
+				48.7795996738,
+				2.0299480585
+			],
+			"nom_commune": "MONTIGNY LE BRETONNEUX"
+	},
+	{
+			"code_postal": 78500,
+			"coordonnees_gps": [
+				48.9397247823,
+				2.17441540243
+			],
+			"nom_commune": "SARTROUVILLE"
+	},
+	{
+			"code_postal": 78190,
+			"coordonnees_gps": [
+				48.7759760878,
+				1.99412661835
+			],
+			"nom_commune": "TRAPPES"
+	},
+	{
+			"code_postal": 78320,
+			"coordonnees_gps": [
+				48.7362483478,
+				1.95125411115
+			],
+			"nom_commune": "LA VERRIERE"
+	},
+	{
+			"code_postal": 91570,
+			"coordonnees_gps": [
+				48.7564805382,
+				2.20696199549
+			],
+			"nom_commune": "BIEVRES"
+	},
+	{
+			"code_postal": 91720,
+			"coordonnees_gps": [
+				48.372712922,
+				2.35808534023
+			],
+			"nom_commune": "BOIGNEVILLE"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "BLANDY"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "CORBREUSE"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "MONDEVILLE"
+	},
+	{
+			"code_postal": 91540,
+			"coordonnees_gps": [
+				48.5608303581,
+				2.41959099954
+			],
+			"nom_commune": "ORMOY"
+	},
+	{
+			"code_postal": 91370,
+			"coordonnees_gps": [
+				48.75027628,
+				2.25164599856
+			],
+			"nom_commune": "VERRIERES LE BUISSON"
+	},
+	{
+			"code_postal": 92250,
+			"coordonnees_gps": [
+				48.9070465246,
+				2.24485945089
+			],
+			"nom_commune": "LA GARENNE COLOMBES"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "D HUISON LONGUEVILLE"
+	},
+	{
+			"code_postal": 91590,
+			"coordonnees_gps": [
+				48.4761402435,
+				2.34338039421
+			],
+			"nom_commune": "LA FERTE ALAIS"
+	},
+	{
+			"code_postal": 91190,
+			"coordonnees_gps": [
+				48.709665031,
+				2.12766544978
+			],
+			"nom_commune": "GIF SUR YVETTE"
+	},
+	{
+			"code_postal": 91730,
+			"coordonnees_gps": [
+				48.5235985286,
+				2.21810391449
+			],
+			"nom_commune": "MAUCHAMPS"
+	},
+	{
+			"code_postal": 91540,
+			"coordonnees_gps": [
+				48.5608303581,
+				2.41959099954
+			],
+			"nom_commune": "MENNECY"
+	},
+	{
+			"code_postal": 91490,
+			"coordonnees_gps": [
+				48.4186455247,
+				2.46228788074
+			],
+			"nom_commune": "MOIGNY SUR ECOLE"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "ORMOY LA RIVIERE"
+	},
+	{
+			"code_postal": 91530,
+			"coordonnees_gps": [
+				48.5543371976,
+				2.10205368335
+			],
+			"nom_commune": "ST CHERON"
+	},
+	{
+			"code_postal": 91190,
+			"coordonnees_gps": [
+				48.709665031,
+				2.12766544978
+			],
+			"nom_commune": "VILLIERS LE BACLE"
+	},
+	{
+			"code_postal": 92210,
+			"coordonnees_gps": [
+				48.8429394128,
+				2.2083054219
+			],
+			"nom_commune": "ST CLOUD"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "AINCOURT"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "CHARMONT"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "FREMAINVILLE"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "GRISY LES PLATRES"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "LUZARCHES"
+	},
+	{
+			"code_postal": 77515,
+			"coordonnees_gps": [
+				48.791262965,
+				2.99641701486
+			],
+			"nom_commune": "LA CELLE SUR MORIN"
+	},
+	{
+			"code_postal": 77167,
+			"coordonnees_gps": [
+				48.2322771865,
+				2.71472288232
+			],
+			"nom_commune": "CHATENOY"
+	},
+	{
+			"code_postal": 77126,
+			"coordonnees_gps": [
+				48.4261598514,
+				3.09512447411
+			],
+			"nom_commune": "COURCELLES EN BASSEE"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "COURTOMER"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "LA CROIX EN BRIE"
+	},
+	{
+			"code_postal": 77166,
+			"coordonnees_gps": [
+				48.6689119155,
+				2.65738604224
+			],
+			"nom_commune": "EVRY GREGY SUR YERRE"
+	},
+	{
+			"code_postal": 77114,
+			"coordonnees_gps": [
+				48.4693763813,
+				3.34027903986
+			],
+			"nom_commune": "GOUAIX"
+	},
+	{
+			"code_postal": 77000,
+			"coordonnees_gps": [
+				48.5229543545,
+				2.67825416798
+			],
+			"nom_commune": "LIVRY SUR SEINE"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "MEIGNEUX"
+	},
+	{
+			"code_postal": 77730,
+			"coordonnees_gps": [
+				48.9602103424,
+				3.21952971251
+			],
+			"nom_commune": "MERY SUR MARNE"
+	},
+	{
+			"code_postal": 77730,
+			"coordonnees_gps": [
+				48.9602103424,
+				3.21952971251
+			],
+			"nom_commune": "NANTEUIL SUR MARNE"
+	},
+	{
+			"code_postal": 77114,
+			"coordonnees_gps": [
+				48.4693763813,
+				3.34027903986
+			],
+			"nom_commune": "NOYEN SUR SEINE"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "RAMPILLON"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "RUPEREUX"
+	},
+	{
+			"code_postal": 77170,
+			"coordonnees_gps": [
+				48.6935707994,
+				2.63183347569
+			],
+			"nom_commune": "SERVON"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "THORIGNY SUR MARNE"
+	},
+	{
+			"code_postal": 77240,
+			"coordonnees_gps": [
+				48.5645874906,
+				2.60004351705
+			],
+			"nom_commune": "VERT ST DENIS"
+	},
+	{
+			"code_postal": 95580,
+			"coordonnees_gps": [
+				49.0070961158,
+				2.30020142224
+			],
+			"nom_commune": "MARGENCY"
+	},
+	{
+			"code_postal": 95690,
+			"coordonnees_gps": [
+				49.140346815,
+				2.15942436133
+			],
+			"nom_commune": "NESLES LA VALLEE"
+	},
+	{
+			"code_postal": 95350,
+			"coordonnees_gps": [
+				49.0078529263,
+				2.34646436487
+			],
+			"nom_commune": "ST BRICE SOUS FORET"
+	},
+	{
+			"code_postal": 95470,
+			"coordonnees_gps": [
+				49.0842919677,
+				2.54827429077
+			],
+			"nom_commune": "SURVILLIERS"
+	},
+	{
+			"code_postal": 95500,
+			"coordonnees_gps": [
+				48.9856270002,
+				2.45534121324
+			],
+			"nom_commune": "LE THILLAY"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "VALLANGOUJARD"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "VOULTON"
+	},
+	{
+			"code_postal": 78290,
+			"coordonnees_gps": [
+				48.8786239272,
+				2.13607514646
+			],
+			"nom_commune": "CROISSY SUR SEINE"
+	},
+	{
+			"code_postal": 78740,
+			"coordonnees_gps": [
+				49.0109765215,
+				1.96738669464
+			],
+			"nom_commune": "EVECQUEMONT"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "FLINS SUR SEINE"
+	},
+	{
+			"code_postal": 78840,
+			"coordonnees_gps": [
+				49.0584919382,
+				1.63612899817
+			],
+			"nom_commune": "FRENEUSE"
+	},
+	{
+			"code_postal": 78360,
+			"coordonnees_gps": [
+				48.9173237175,
+				2.13949842115
+			],
+			"nom_commune": "MONTESSON"
+	},
+	{
+			"code_postal": 78730,
+			"coordonnees_gps": [
+				48.5709913793,
+				1.96381832135
+			],
+			"nom_commune": "PONTHEVRARD"
+	},
+	{
+			"code_postal": 78940,
+			"coordonnees_gps": [
+				48.8051176494,
+				1.74709379357
+			],
+			"nom_commune": "LA QUEUE LES YVELINES"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "LA BROSSE MONTCEAUX"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "BURCY"
+	},
+	{
+			"code_postal": 77139,
+			"coordonnees_gps": [
+				49.0542002868,
+				2.91324246435
+			],
+			"nom_commune": "DOUY LA RAMEE"
+	},
+	{
+			"code_postal": 77164,
+			"coordonnees_gps": [
+				48.8197885569,
+				2.70933036195
+			],
+			"nom_commune": "FERRIERES EN BRIE"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "GARENTREVILLE"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "GURCY LE CHATEL"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "JUTIGNY"
+	},
+	{
+			"code_postal": 77171,
+			"coordonnees_gps": [
+				48.5414685058,
+				3.39619308726
+			],
+			"nom_commune": "LECHELLE"
+	},
+	{
+			"code_postal": 77550,
+			"coordonnees_gps": [
+				48.6199078529,
+				2.63560162952
+			],
+			"nom_commune": "LIMOGES FOURCHES"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "LOUAN VILLEGRUIS FONTAINE"
+	},
+	{
+			"code_postal": 77690,
+			"coordonnees_gps": [
+				48.32561464,
+				2.75158001552
+			],
+			"nom_commune": "MONTIGNY SUR LOING"
+	},
+	{
+			"code_postal": 77140,
+			"coordonnees_gps": [
+				48.2750471622,
+				2.70959190478
+			],
+			"nom_commune": "NEMOURS"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST MARS VIEUX MAISONS"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "ST SAUVEUR LES BRAY"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "TREUZY LEVELAY"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "VERDELOT"
+	},
+	{
+			"code_postal": 77670,
+			"coordonnees_gps": [
+				48.4047875044,
+				2.85078204772
+			],
+			"nom_commune": "VERNOU LA CELLE SUR SEINE"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "VILLENEUVE SUR BELLOT"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "VILLEVAUDE"
+	},
+	{
+			"code_postal": 78650,
+			"coordonnees_gps": [
+				48.853666314,
+				1.86642479384
+			],
+			"nom_commune": "BEYNES"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "CIVRY LA FORET"
+	},
+	{
+			"code_postal": 78920,
+			"coordonnees_gps": [
+				48.9461356808,
+				1.92079973197
+			],
+			"nom_commune": "ECQUEVILLY"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "GOMMECOURT"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "ISSOU"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "MAGNANVILLE"
+	},
+	{
+			"code_postal": 78590,
+			"coordonnees_gps": [
+				48.8425372745,
+				2.05184137552
+			],
+			"nom_commune": "NOISY LE ROI"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "ORVILLIERS"
+	},
+	{
+			"code_postal": 77500,
+			"coordonnees_gps": [
+				48.8836002438,
+				2.59608427563
+			],
+			"nom_commune": "CHELLES"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "CHEVRY EN SEREINE"
+	},
+	{
+			"code_postal": 77700,
+			"coordonnees_gps": [
+				48.8632419628,
+				2.79709040394
+			],
+			"nom_commune": "COUPVRAY"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "CUISY"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "FOUJU"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "LONGPERRIER"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "LOUAN VILLEGRUIS FONTAINE"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "MONTIGNY LENCOUP"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "MORET LOING ET ORVANNE"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "MOUROUX"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "PAROY"
+	},
+	{
+			"code_postal": 77310,
+			"coordonnees_gps": [
+				48.5292083362,
+				2.53978127085
+			],
+			"nom_commune": "PRINGY"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "ROUVRES"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "STE COLOMBE"
+	},
+	{
+			"code_postal": 77310,
+			"coordonnees_gps": [
+				48.5292083362,
+				2.53978127085
+			],
+			"nom_commune": "ST FARGEAU PONTHIERRY"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "ST MARD"
+	},
+	{
+			"code_postal": 77220,
+			"coordonnees_gps": [
+				48.7441435085,
+				2.75833565592
+			],
+			"nom_commune": "TOURNAN EN BRIE"
+	},
+	{
+			"code_postal": 78570,
+			"coordonnees_gps": [
+				48.9796109181,
+				2.04393218537
+			],
+			"nom_commune": "ANDRESY"
+	},
+	{
+			"code_postal": 78113,
+			"coordonnees_gps": [
+				48.7269719682,
+				1.6475078387
+			],
+			"nom_commune": "BOURDONNE"
+	},
+	{
+			"code_postal": 78130,
+			"coordonnees_gps": [
+				48.9830853894,
+				1.92106334899
+			],
+			"nom_commune": "CHAPET"
+	},
+	{
+			"code_postal": 78330,
+			"coordonnees_gps": [
+				48.8176233654,
+				2.04685945275
+			],
+			"nom_commune": "FONTENAY LE FLEURY"
+	},
+	{
+			"code_postal": 78112,
+			"coordonnees_gps": [
+				48.8852120834,
+				2.05407503005
+			],
+			"nom_commune": "FOURQUEUX"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "LIMETZ VILLEZ"
+	},
+	{
+			"code_postal": 78114,
+			"coordonnees_gps": [
+				48.7411308441,
+				2.05157793037
+			],
+			"nom_commune": "MAGNY LES HAMEAUX"
+	},
+	{
+			"code_postal": 78670,
+			"coordonnees_gps": [
+				48.943861939,
+				1.99265985453
+			],
+			"nom_commune": "MEDAN"
+	},
+	{
+			"code_postal": 78970,
+			"coordonnees_gps": [
+				48.9531128559,
+				1.78304633175
+			],
+			"nom_commune": "MEZIERES SUR SEINE"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "ST MARTIN DES CHAMPS"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "LE TREMBLAY SUR MAULDRE"
+	},
+	{
+			"code_postal": 91830,
+			"coordonnees_gps": [
+				48.5482208788,
+				2.48758633681
+			],
+			"nom_commune": "AUVERNAUX"
+	},
+	{
+			"code_postal": 91690,
+			"coordonnees_gps": [
+				48.3609334789,
+				2.12492559974
+			],
+			"nom_commune": "BOISSY LA RIVIERE"
+	},
+	{
+			"code_postal": 91520,
+			"coordonnees_gps": [
+				48.5769913812,
+				2.22093679196
+			],
+			"nom_commune": "EGLY"
+	},
+	{
+			"code_postal": 91580,
+			"coordonnees_gps": [
+				48.493877819,
+				2.18164362927
+			],
+			"nom_commune": "ETRECHY"
+	},
+	{
+			"code_postal": 91090,
+			"coordonnees_gps": [
+				48.5966711314,
+				2.42431627705
+			],
+			"nom_commune": "LISSES"
+	},
+	{
+			"code_postal": 91230,
+			"coordonnees_gps": [
+				48.6960101717,
+				2.46195353676
+			],
+			"nom_commune": "MONTGERON"
+	},
+	{
+			"code_postal": 91410,
+			"coordonnees_gps": [
+				48.4943712381,
+				1.9962087834
+			],
+			"nom_commune": "PLESSIS ST BENOIST"
+	},
+	{
+			"code_postal": 91480,
+			"coordonnees_gps": [
+				48.6761652188,
+				2.54624238092
+			],
+			"nom_commune": "QUINCY SOUS SENART"
+	},
+	{
+			"code_postal": 91190,
+			"coordonnees_gps": [
+				48.709665031,
+				2.12766544978
+			],
+			"nom_commune": "ST AUBIN"
+	},
+	{
+			"code_postal": 91740,
+			"coordonnees_gps": [
+				48.3700823354,
+				2.00542911555
+			],
+			"nom_commune": "CONGERVILLE THIONVILLE"
+	},
+	{
+			"code_postal": 91250,
+			"coordonnees_gps": [
+				48.6186905603,
+				2.50655101918
+			],
+			"nom_commune": "TIGERY"
+	},
+	{
+			"code_postal": 91150,
+			"coordonnees_gps": [
+				48.3976372242,
+				2.19700639301
+			],
+			"nom_commune": "CHAMPMOTTEUX"
+	},
+	{
+			"code_postal": 91630,
+			"coordonnees_gps": [
+				48.560156386,
+				2.2827757217
+			],
+			"nom_commune": "CHEPTAINVILLE"
+	},
+	{
+			"code_postal": 91260,
+			"coordonnees_gps": [
+				48.6916199435,
+				2.37474050395
+			],
+			"nom_commune": "JUVISY SUR ORGE"
+	},
+	{
+			"code_postal": 91160,
+			"coordonnees_gps": [
+				48.6879154099,
+				2.28155441875
+			],
+			"nom_commune": "LONGJUMEAU"
+	},
+	{
+			"code_postal": 91140,
+			"coordonnees_gps": [
+				48.6888194138,
+				2.23030867411
+			],
+			"nom_commune": "VILLEBON SUR YVETTE"
+	},
+	{
+			"code_postal": 91320,
+			"coordonnees_gps": [
+				48.7299903097,
+				2.32956070279
+			],
+			"nom_commune": "WISSOUS"
+	},
+	{
+			"code_postal": 75004,
+			"coordonnees_gps": [
+				48.8542262543,
+				2.35736312527
+			],
+			"nom_commune": "PARIS 04"
+	},
+	{
+			"code_postal": 92170,
+			"coordonnees_gps": [
+				48.8217649306,
+				2.28743996329
+			],
+			"nom_commune": "VANVES"
+	},
+	{
+			"code_postal": 93450,
+			"coordonnees_gps": [
+				48.9374451959,
+				2.32575278947
+			],
+			"nom_commune": "L ILE ST DENIS"
+	},
+	{
+			"code_postal": 94130,
+			"coordonnees_gps": [
+				48.8364035754,
+				2.4820398446
+			],
+			"nom_commune": "NOGENT SUR MARNE"
+	},
+	{
+			"code_postal": 95550,
+			"coordonnees_gps": [
+				49.0374755181,
+				2.19888886036
+			],
+			"nom_commune": "BESSANCOURT"
+	},
+	{
+			"code_postal": 95500,
+			"coordonnees_gps": [
+				48.9856270002,
+				2.45534121324
+			],
+			"nom_commune": "BONNEUIL EN FRANCE"
+	},
+	{
+			"code_postal": 95720,
+			"coordonnees_gps": [
+				49.0481825162,
+				2.40282933292
+			],
+			"nom_commune": "BOUQUEVAL"
+	},
+	{
+			"code_postal": 95190,
+			"coordonnees_gps": [
+				49.0402800937,
+				2.45734698588
+			],
+			"nom_commune": "CHATENAY EN FRANCE"
+	},
+	{
+			"code_postal": 95170,
+			"coordonnees_gps": [
+				48.9720784312,
+				2.32647855462
+			],
+			"nom_commune": "DEUIL LA BARRE"
+	},
+	{
+			"code_postal": 95880,
+			"coordonnees_gps": [
+				48.9698387143,
+				2.30410164938
+			],
+			"nom_commune": "ENGHIEN LES BAINS"
+	},
+	{
+			"code_postal": 95220,
+			"coordonnees_gps": [
+				49.0082603783,
+				2.15434312371
+			],
+			"nom_commune": "HERBLAY"
+	},
+	{
+			"code_postal": 95300,
+			"coordonnees_gps": [
+				49.0835669403,
+				2.10696203629
+			],
+			"nom_commune": "LIVILLIERS"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "BELLOT"
+	},
+	{
+			"code_postal": 77430,
+			"coordonnees_gps": [
+				48.4090474802,
+				2.80758778322
+			],
+			"nom_commune": "CHAMPAGNE SUR SEINE"
+	},
+	{
+			"code_postal": 77660,
+			"coordonnees_gps": [
+				48.947885441,
+				3.02624344893
+			],
+			"nom_commune": "CHANGIS SUR MARNE"
+	},
+	{
+			"code_postal": 77570,
+			"coordonnees_gps": [
+				48.1729853259,
+				2.64931159934
+			],
+			"nom_commune": "CHENOU"
+	},
+	{
+			"code_postal": 77090,
+			"coordonnees_gps": [
+				48.8280688136,
+				2.67763564393
+			],
+			"nom_commune": "COLLEGIEN"
+	},
+	{
+			"code_postal": 77181,
+			"coordonnees_gps": [
+				48.9151571578,
+				2.61878172318
+			],
+			"nom_commune": "COURTRY"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "COUTEVROULT"
+	},
+	{
+			"code_postal": 77163,
+			"coordonnees_gps": [
+				48.7979316478,
+				2.90271680607
+			],
+			"nom_commune": "DAMMARTIN SUR TIGEAUX"
+	},
+	{
+			"code_postal": 77139,
+			"coordonnees_gps": [
+				49.0542002868,
+				2.91324246435
+			],
+			"nom_commune": "ETREPILLY"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "GESVRES LE CHAPITRE"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "GUIGNES"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "LONGUEVILLE"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "MISY SUR YONNE"
+	},
+	{
+			"code_postal": 77178,
+			"coordonnees_gps": [
+				49.0712863864,
+				2.81026251267
+			],
+			"nom_commune": "OISSERY"
+	},
+	{
+			"code_postal": 77167,
+			"coordonnees_gps": [
+				48.2322771865,
+				2.71472288232
+			],
+			"nom_commune": "POLIGNY"
+	},
+	{
+			"code_postal": 77810,
+			"coordonnees_gps": [
+				48.4043165887,
+				2.78049278049
+			],
+			"nom_commune": "THOMERY"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "VILLEMARECHAL"
+	},
+	{
+			"code_postal": 95560,
+			"coordonnees_gps": [
+				49.0667555208,
+				2.29836937772
+			],
+			"nom_commune": "MAFFLIERS"
+	},
+	{
+			"code_postal": 95160,
+			"coordonnees_gps": [
+				48.9920553677,
+				2.32124546377
+			],
+			"nom_commune": "MONTMORENCY"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "NOISY SUR OISE"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "VILLERS EN ARTHIES"
+	},
+	{
+			"code_postal": 95840,
+			"coordonnees_gps": [
+				49.0653892741,
+				2.2420258849
+			],
+			"nom_commune": "VILLIERS ADAM"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "YEBLES"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "ABLIS"
+	},
+	{
+			"code_postal": 78240,
+			"coordonnees_gps": [
+				48.8975283122,
+				2.02796979095
+			],
+			"nom_commune": "AIGREMONT"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "AUFFREVILLE BRASSEUIL"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "LA CELLE LES BORDES"
+	},
+	{
+			"code_postal": 78120,
+			"coordonnees_gps": [
+				48.6165414495,
+				1.85994599568
+			],
+			"nom_commune": "CLAIREFONTAINE EN YVELINES"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "EMANCE"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "GOUSSONVILLE"
+	},
+	{
+			"code_postal": 78350,
+			"coordonnees_gps": [
+				48.7655340154,
+				2.15902519445
+			],
+			"nom_commune": "JOUY EN JOSAS"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "MERE"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "NEZEL"
+	},
+	{
+			"code_postal": 78150,
+			"coordonnees_gps": [
+				48.8291874065,
+				2.12052828501
+			],
+			"nom_commune": "ROCQUENCOURT"
+	},
+	{
+			"code_postal": 78710,
+			"coordonnees_gps": [
+				48.9968477595,
+				1.60769084206
+			],
+			"nom_commune": "ROSNY SUR SEINE"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "BERNAY VILBERT"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "BETON BAZOCHES"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "BOULEURS"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "BUSSIERES"
+	},
+	{
+			"code_postal": 77144,
+			"coordonnees_gps": [
+				48.8764616468,
+				2.75749686803
+			],
+			"nom_commune": "CHALIFERT"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "CLAYE SOUILLY"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "CLAYE SOUILLY"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "COURCHAMP"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "POINCY"
+	},
+	{
+			"code_postal": 77550,
+			"coordonnees_gps": [
+				48.6199078529,
+				2.63560162952
+			],
+			"nom_commune": "REAU"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "ST OUEN SUR MORIN"
+	},
+	{
+			"code_postal": 77163,
+			"coordonnees_gps": [
+				48.7979316478,
+				2.90271680607
+			],
+			"nom_commune": "TIGEAUX"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "LA TRETOIRE"
+	},
+	{
+			"code_postal": 77470,
+			"coordonnees_gps": [
+				48.9379174307,
+				2.95705670409
+			],
+			"nom_commune": "TRILPORT"
+	},
+	{
+			"code_postal": 77910,
+			"coordonnees_gps": [
+				48.9999569179,
+				2.91840604341
+			],
+			"nom_commune": "VARREDDES"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "VENDREST"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "VILLIERS SOUS GREZ"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "VIMPELLES"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "VOINSLES"
+	},
+	{
+			"code_postal": 78380,
+			"coordonnees_gps": [
+				48.8637892909,
+				2.13732683237
+			],
+			"nom_commune": "BOUGIVAL"
+	},
+	{
+			"code_postal": 78760,
+			"coordonnees_gps": [
+				48.7906207752,
+				1.90681294761
+			],
+			"nom_commune": "JOUARS PONTCHARTRAIN"
+	},
+	{
+			"code_postal": 78580,
+			"coordonnees_gps": [
+				48.9115359215,
+				1.85464080314
+			],
+			"nom_commune": "JUMEAUVILLE"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "MAULETTE"
+	},
+	{
+			"code_postal": 78730,
+			"coordonnees_gps": [
+				48.5709913793,
+				1.96381832135
+			],
+			"nom_commune": "ROCHEFORT EN YVELINES"
+	},
+	{
+			"code_postal": 78450,
+			"coordonnees_gps": [
+				48.8376725842,
+				2.00127278452
+			],
+			"nom_commune": "VILLEPREUX"
+	},
+	{
+			"code_postal": 92120,
+			"coordonnees_gps": [
+				48.8152695492,
+				2.31739229511
+			],
+			"nom_commune": "MONTROUGE"
+	},
+	{
+			"code_postal": 92500,
+			"coordonnees_gps": [
+				48.8694433502,
+				2.17774350372
+			],
+			"nom_commune": "RUEIL MALMAISON"
+	},
+	{
+			"code_postal": 93300,
+			"coordonnees_gps": [
+				48.9126312095,
+				2.38445065454
+			],
+			"nom_commune": "AUBERVILLIERS"
+	},
+	{
+			"code_postal": 93290,
+			"coordonnees_gps": [
+				48.9785410017,
+				2.55473541662
+			],
+			"nom_commune": "TREMBLAY EN FRANCE"
+	},
+	{
+			"code_postal": 94220,
+			"coordonnees_gps": [
+				48.8223756473,
+				2.40805462767
+			],
+			"nom_commune": "CHARENTON LE PONT"
+	},
+	{
+			"code_postal": 94510,
+			"coordonnees_gps": [
+				48.7776236893,
+				2.5836227171
+			],
+			"nom_commune": "LA QUEUE EN BRIE"
+	},
+	{
+			"code_postal": 94370,
+			"coordonnees_gps": [
+				48.7657010886,
+				2.53346938213
+			],
+			"nom_commune": "SUCY EN BRIE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "AVERNES"
+	},
+	{
+			"code_postal": 95840,
+			"coordonnees_gps": [
+				49.0653892741,
+				2.2420258849
+			],
+			"nom_commune": "BETHEMONT LA FORET"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "GOUZANGREZ"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "MOUSSY"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "ST MARTIN DU TERTRE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "SERAINCOURT"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "VIENNE EN ARTHIES"
+	},
+	{
+			"code_postal": 95570,
+			"coordonnees_gps": [
+				49.0548701683,
+				2.33369100298
+			],
+			"nom_commune": "VILLAINES SOUS BOIS"
+	},
+	{
+			"code_postal": 92350,
+			"coordonnees_gps": [
+				48.7805420361,
+				2.25983416504
+			],
+			"nom_commune": "LE PLESSIS ROBINSON"
+	},
+	{
+			"code_postal": 92310,
+			"coordonnees_gps": [
+				48.8214320054,
+				2.20990136244
+			],
+			"nom_commune": "SEVRES"
+	},
+	{
+			"code_postal": 93220,
+			"coordonnees_gps": [
+				48.8817476544,
+				2.54495090705
+			],
+			"nom_commune": "GAGNY"
+	},
+	{
+			"code_postal": 94480,
+			"coordonnees_gps": [
+				48.7245551904,
+				2.42140786252
+			],
+			"nom_commune": "ABLON SUR SEINE"
+	},
+	{
+			"code_postal": 94350,
+			"coordonnees_gps": [
+				48.8262201661,
+				2.54547356875
+			],
+			"nom_commune": "VILLIERS SUR MARNE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "ASNIERES SUR OISE"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "CLERY EN VEXIN"
+	},
+	{
+			"code_postal": 95650,
+			"coordonnees_gps": [
+				49.0831465949,
+				2.02625716292
+			],
+			"nom_commune": "COURCELLES SUR VIOSNE"
+	},
+	{
+			"code_postal": 95830,
+			"coordonnees_gps": [
+				49.1160885298,
+				2.01080695268
+			],
+			"nom_commune": "FREMECOURT"
+	},
+	{
+			"code_postal": 95360,
+			"coordonnees_gps": [
+				48.9700090136,
+				2.34667166791
+			],
+			"nom_commune": "MONTMAGNY"
+	},
+	{
+			"code_postal": 95560,
+			"coordonnees_gps": [
+				49.0667555208,
+				2.29836937772
+			],
+			"nom_commune": "MONTSOULT"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "NUCOURT"
+	},
+	{
+			"code_postal": 95770,
+			"coordonnees_gps": [
+				49.1959926831,
+				1.69814198153
+			],
+			"nom_commune": "ST CLAIR SUR EPTE"
+	},
+	{
+			"code_postal": 95200,
+			"coordonnees_gps": [
+				48.9904943685,
+				2.38141962338
+			],
+			"nom_commune": "SARCELLES"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "VIGNY"
+	},
+	{
+			"code_postal": 95380,
+			"coordonnees_gps": [
+				49.0485279227,
+				2.5187416869
+			],
+			"nom_commune": "VILLERON"
+	},
+	{
+			"code_postal": 95720,
+			"coordonnees_gps": [
+				49.0481825162,
+				2.40282933292
+			],
+			"nom_commune": "VILLIERS LE SEC"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "BEAUCHERY ST MARTIN"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "BOITRON"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "CHAMPEAUX"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "LA CHAPELLE IGER"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "CHENOISE"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "CHEVRAINVILLIERS"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "COURQUETAINE"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "DAMMARTIN EN GOELE"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "FLEURY EN BIERE"
+	},
+	{
+			"code_postal": 77166,
+			"coordonnees_gps": [
+				48.6689119155,
+				2.65738604224
+			],
+			"nom_commune": "GRISY SUISNES"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "LESCHES"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "MONTGE EN GOELE"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "CHAUCONIN NEUFMONTIERS"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "ROUILLY"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "SABLONNIERES"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "ST ANGE LE VIEL"
+	},
+	{
+			"code_postal": 77510,
+			"coordonnees_gps": [
+				48.8662025287,
+				3.27608944566
+			],
+			"nom_commune": "ST DENIS LES REBAIS"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "ST LOUP DE NAUD"
+	},
+	{
+			"code_postal": 77123,
+			"coordonnees_gps": [
+				48.3612793646,
+				2.50123990973
+			],
+			"nom_commune": "LE VAUDOUE"
+	},
+	{
+			"code_postal": 77000,
+			"coordonnees_gps": [
+				48.5229543545,
+				2.67825416798
+			],
+			"nom_commune": "VAUX LE PENIL"
+	},
+	{
+			"code_postal": 78870,
+			"coordonnees_gps": [
+				48.8368156736,
+				2.08134847066
+			],
+			"nom_commune": "BAILLY"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "BRUEIL EN VEXIN"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "GARGENVILLE"
+	},
+	{
+			"code_postal": 78280,
+			"coordonnees_gps": [
+				48.7729816592,
+				2.07605378449
+			],
+			"nom_commune": "GUYANCOURT"
+	},
+	{
+			"code_postal": 78800,
+			"coordonnees_gps": [
+				48.9266017706,
+				2.1865630557
+			],
+			"nom_commune": "HOUILLES"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "MONTFORT L AMAURY"
+	},
+	{
+			"code_postal": 78640,
+			"coordonnees_gps": [
+				48.8210314117,
+				1.88134330227
+			],
+			"nom_commune": "NEAUPHLE LE CHATEAU"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "PARAY DOUAVILLE"
+	},
+	{
+			"code_postal": 78520,
+			"coordonnees_gps": [
+				49.019152235,
+				1.69317391224
+			],
+			"nom_commune": "ST MARTIN LA GARENNE"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "SEPTEUIL"
+	},
+	{
+			"code_postal": 77171,
+			"coordonnees_gps": [
+				48.5414685058,
+				3.39619308726
+			],
+			"nom_commune": "CHALAUTRE LA GRANDE"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "CHALMAISON"
+	},
+	{
+			"code_postal": 77910,
+			"coordonnees_gps": [
+				48.9999569179,
+				2.91840604341
+			],
+			"nom_commune": "CHAMBRY"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "LES CHAPELLES BOURBON"
+	},
+	{
+			"code_postal": 77700,
+			"coordonnees_gps": [
+				48.8632419628,
+				2.79709040394
+			],
+			"nom_commune": "CHESSY"
+	},
+	{
+			"code_postal": 77170,
+			"coordonnees_gps": [
+				48.6935707994,
+				2.63183347569
+			],
+			"nom_commune": "COUBERT"
+	},
+	{
+			"code_postal": 77540,
+			"coordonnees_gps": [
+				48.6871810178,
+				2.97337841043
+			],
+			"nom_commune": "COURPALAY"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "CUCHARMOY"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "LA FERTE GAUCHER"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "FONTAINS"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "FONTENAILLES"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "GIRONVILLE"
+	},
+	{
+			"code_postal": 77114,
+			"coordonnees_gps": [
+				48.4693763813,
+				3.34027903986
+			],
+			"nom_commune": "HERME"
+	},
+	{
+			"code_postal": 77127,
+			"coordonnees_gps": [
+				48.6260881297,
+				2.55027058367
+			],
+			"nom_commune": "LIEUSAINT"
+	},
+	{
+			"code_postal": 77610,
+			"coordonnees_gps": [
+				48.733632054,
+				2.85536623292
+			],
+			"nom_commune": "MARLES EN BRIE"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "MONTRY"
+	},
+	{
+			"code_postal": 77680,
+			"coordonnees_gps": [
+				48.7896457179,
+				2.66063704289
+			],
+			"nom_commune": "ROISSY EN BRIE"
+	},
+	{
+			"code_postal": 77860,
+			"coordonnees_gps": [
+				48.889293661,
+				2.86625543445
+			],
+			"nom_commune": "ST GERMAIN SUR MORIN"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "ST JUST EN BRIE"
+	},
+	{
+			"code_postal": 77178,
+			"coordonnees_gps": [
+				49.0712863864,
+				2.81026251267
+			],
+			"nom_commune": "ST PATHUS"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "ST SOUPPLETS"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "VARENNES SUR SEINE"
+	},
+	{
+			"code_postal": 77480,
+			"coordonnees_gps": [
+				48.4107576867,
+				3.29924400161
+			],
+			"nom_commune": "VILLENAUXE LA PETITE"
+	},
+	{
+			"code_postal": 78580,
+			"coordonnees_gps": [
+				48.9115359215,
+				1.85464080314
+			],
+			"nom_commune": "BAZEMONT"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "BREVAL"
+	},
+	{
+			"code_postal": 78240,
+			"coordonnees_gps": [
+				48.8975283122,
+				2.02796979095
+			],
+			"nom_commune": "CHAMBOURCY"
+	},
+	{
+			"code_postal": 78460,
+			"coordonnees_gps": [
+				48.6939321598,
+				2.02878492296
+			],
+			"nom_commune": "CHEVREUSE"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "JAMBVILLE"
+	},
+	{
+			"code_postal": 78320,
+			"coordonnees_gps": [
+				48.7362483478,
+				1.95125411115
+			],
+			"nom_commune": "LEVIS ST NOM"
+	},
+	{
+			"code_postal": 78600,
+			"coordonnees_gps": [
+				48.9430101305,
+				2.14143556123
+			],
+			"nom_commune": "MAISONS LAFFITTE"
+	},
+	{
+			"code_postal": 78840,
+			"coordonnees_gps": [
+				49.0584919382,
+				1.63612899817
+			],
+			"nom_commune": "MOISSON"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "ORSONVILLE"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "OSMOY"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "PRUNAY LE TEMPLE"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "ST HILARION"
+	},
+	{
+			"code_postal": 93260,
+			"coordonnees_gps": [
+				48.8814307657,
+				2.41995218789
+			],
+			"nom_commune": "LES LILAS"
+	},
+	{
+			"code_postal": 94520,
+			"coordonnees_gps": [
+				48.7018918505,
+				2.55461467284
+			],
+			"nom_commune": "MANDRES LES ROSES"
+	},
+	{
+			"code_postal": 94210,
+			"coordonnees_gps": [
+				48.7989796618,
+				2.49424383679
+			],
+			"nom_commune": "ST MAUR DES FOSSES"
+	},
+	{
+			"code_postal": 95750,
+			"coordonnees_gps": [
+				49.1561369779,
+				1.91918704594
+			],
+			"nom_commune": "LE BELLAY EN VEXIN"
+	},
+	{
+			"code_postal": 95710,
+			"coordonnees_gps": [
+				49.1290552989,
+				1.69526260075
+			],
+			"nom_commune": "BRAY ET LU"
+	},
+	{
+			"code_postal": 95000,
+			"coordonnees_gps": [
+				49.0378977963,
+				2.06061895699
+			],
+			"nom_commune": "CERGY"
+	},
+	{
+			"code_postal": 95300,
+			"coordonnees_gps": [
+				49.0835669403,
+				2.10696203629
+			],
+			"nom_commune": "ENNERY"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "EPIAIS RHUS"
+	},
+	{
+			"code_postal": 95130,
+			"coordonnees_gps": [
+				48.9926867479,
+				2.22747200568
+			],
+			"nom_commune": "LE PLESSIS BOUCHARD"
+	},
+	{
+			"code_postal": 95700,
+			"coordonnees_gps": [
+				49.0063802146,
+				2.51398787772
+			],
+			"nom_commune": "ROISSY EN FRANCE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "SAGY"
+	},
+	{
+			"code_postal": 95230,
+			"coordonnees_gps": [
+				48.9883061292,
+				2.30107479116
+			],
+			"nom_commune": "SOISY SOUS MONTMORENCY"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "US"
+	},
+	{
+			"code_postal": 92350,
+			"coordonnees_gps": [
+				48.7805420361,
+				2.25983416504
+			],
+			"nom_commune": "LE PLESSIS ROBINSON"
+	},
+	{
+			"code_postal": 92500,
+			"coordonnees_gps": [
+				48.8694433502,
+				2.17774350372
+			],
+			"nom_commune": "RUEIL MALMAISON"
+	},
+	{
+			"code_postal": 93600,
+			"coordonnees_gps": [
+				48.9461334622,
+				2.49331125191
+			],
+			"nom_commune": "AULNAY SOUS BOIS"
+	},
+	{
+			"code_postal": 93410,
+			"coordonnees_gps": [
+				48.9327361643,
+				2.58211595176
+			],
+			"nom_commune": "VAUJOURS"
+	},
+	{
+			"code_postal": 94170,
+			"coordonnees_gps": [
+				48.8421585181,
+				2.50411322591
+			],
+			"nom_commune": "LE PERREUX SUR MARNE"
+	},
+	{
+			"code_postal": 94150,
+			"coordonnees_gps": [
+				48.7496203927,
+				2.35222837968
+			],
+			"nom_commune": "RUNGIS"
+	},
+	{
+			"code_postal": 94190,
+			"coordonnees_gps": [
+				48.7418949096,
+				2.44899755238
+			],
+			"nom_commune": "VILLENEUVE ST GEORGES"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "ABLEIGES"
+	},
+	{
+			"code_postal": 95000,
+			"coordonnees_gps": [
+				49.0378977963,
+				2.06061895699
+			],
+			"nom_commune": "BOISEMONT"
+	},
+	{
+			"code_postal": 95820,
+			"coordonnees_gps": [
+				49.160702308,
+				2.32978969094
+			],
+			"nom_commune": "BRUYERES SUR OISE"
+	},
+	{
+			"code_postal": 95430,
+			"coordonnees_gps": [
+				49.0811077214,
+				2.16105485374
+			],
+			"nom_commune": "BUTRY SUR OISE"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "COMMENY"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "CONDECOURT"
+	},
+	{
+			"code_postal": 95800,
+			"coordonnees_gps": [
+				49.0404241863,
+				2.0356184662
+			],
+			"nom_commune": "COURDIMANCHE"
+	},
+	{
+			"code_postal": 95330,
+			"coordonnees_gps": [
+				49.0300393883,
+				2.32333965677
+			],
+			"nom_commune": "DOMONT"
+	},
+	{
+			"code_postal": 95810,
+			"coordonnees_gps": [
+				49.1547915448,
+				2.08597899535
+			],
+			"nom_commune": "MENOUVILLE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "LE PLESSIS LUZARCHES"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "ST CYR EN ARTHIES"
+	},
+	{
+			"code_postal": 77910,
+			"coordonnees_gps": [
+				48.9999569179,
+				2.91840604341
+			],
+			"nom_commune": "BARCY"
+	},
+	{
+			"code_postal": 77930,
+			"coordonnees_gps": [
+				48.4690092081,
+				2.55644926131
+			],
+			"nom_commune": "CELY"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "CERNEUX"
+	},
+	{
+			"code_postal": 77820,
+			"coordonnees_gps": [
+				48.5045041989,
+				2.83445609947
+			],
+			"nom_commune": "CHATILLON LA BORDE"
+	},
+	{
+			"code_postal": 77124,
+			"coordonnees_gps": [
+				48.9687525452,
+				2.84384652509
+			],
+			"nom_commune": "CREGY LES MEAUX"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "CRISENOY"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "DONNEMARIE DONTILLY"
+	},
+	{
+			"code_postal": 77157,
+			"coordonnees_gps": [
+				48.4599807515,
+				3.26360313949
+			],
+			"nom_commune": "EVERLY"
+	},
+	{
+			"code_postal": 77515,
+			"coordonnees_gps": [
+				48.791262965,
+				2.99641701486
+			],
+			"nom_commune": "FAREMOUTIERS"
+	},
+	{
+			"code_postal": 77940,
+			"coordonnees_gps": [
+				48.3010302243,
+				2.97851595666
+			],
+			"nom_commune": "FLAGY"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "GASTINS"
+	},
+	{
+			"code_postal": 77880,
+			"coordonnees_gps": [
+				48.30681243,
+				2.67755960336
+			],
+			"nom_commune": "GREZ SUR LOING"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "GUERARD"
+	},
+	{
+			"code_postal": 77165,
+			"coordonnees_gps": [
+				49.02999445,
+				2.80817344589
+			],
+			"nom_commune": "IVERNY"
+	},
+	{
+			"code_postal": 77138,
+			"coordonnees_gps": [
+				48.9786989638,
+				3.18137472607
+			],
+			"nom_commune": "LUZANCY"
+	},
+	{
+			"code_postal": 77700,
+			"coordonnees_gps": [
+				48.8632419628,
+				2.79709040394
+			],
+			"nom_commune": "MAGNY LE HONGRE"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "MAISON ROUGE"
+	},
+	{
+			"code_postal": 77151,
+			"coordonnees_gps": [
+				48.6966917246,
+				3.44415386672
+			],
+			"nom_commune": "MONTCEAUX LES PROVINS"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "MONTDAUPHIN"
+	},
+	{
+			"code_postal": 77122,
+			"coordonnees_gps": [
+				49.0101609027,
+				2.83216418246
+			],
+			"nom_commune": "MONTHYON"
+	},
+	{
+			"code_postal": 77370,
+			"coordonnees_gps": [
+				48.5606029777,
+				3.03744473884
+			],
+			"nom_commune": "NANGIS"
+	},
+	{
+			"code_postal": 77890,
+			"coordonnees_gps": [
+				48.1786433192,
+				2.5341392437
+			],
+			"nom_commune": "OBSONVILLE"
+	},
+	{
+			"code_postal": 77330,
+			"coordonnees_gps": [
+				48.763895872,
+				2.6807024784
+			],
+			"nom_commune": "OZOIR LA FERRIERE"
+	},
+	{
+			"code_postal": 77210,
+			"coordonnees_gps": [
+				48.417089136,
+				2.75506799012
+			],
+			"nom_commune": "SAMOREAU"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "SOGNOLLES EN MONTOIS"
+	},
+	{
+			"code_postal": 77174,
+			"coordonnees_gps": [
+				48.8118209596,
+				2.82523717272
+			],
+			"nom_commune": "VILLENEUVE LE COMTE"
+	},
+	{
+			"code_postal": 78410,
+			"coordonnees_gps": [
+				48.9601241693,
+				1.86465256885
+			],
+			"nom_commune": "AUBERGENVILLE"
+	},
+	{
+			"code_postal": 78650,
+			"coordonnees_gps": [
+				48.853666314,
+				1.86642479384
+			],
+			"nom_commune": "BEYNES"
+	},
+	{
+			"code_postal": 78170,
+			"coordonnees_gps": [
+				48.8470786513,
+				2.13575321605
+			],
+			"nom_commune": "LA CELLE ST CLOUD"
+	},
+	{
+			"code_postal": 78400,
+			"coordonnees_gps": [
+				48.8965449448,
+				2.15335185761
+			],
+			"nom_commune": "CHATOU"
+	},
+	{
+			"code_postal": 78910,
+			"coordonnees_gps": [
+				48.8500627477,
+				1.67789030017
+			],
+			"nom_commune": "FLEXANVILLE"
+	},
+	{
+			"code_postal": 78950,
+			"coordonnees_gps": [
+				48.7795112259,
+				1.67689608055
+			],
+			"nom_commune": "GAMBAIS"
+	},
+	{
+			"code_postal": 78730,
+			"coordonnees_gps": [
+				48.5709913793,
+				1.96381832135
+			],
+			"nom_commune": "LONGVILLIERS"
+	},
+	{
+			"code_postal": 78114,
+			"coordonnees_gps": [
+				48.7411308441,
+				2.05157793037
+			],
+			"nom_commune": "MAGNY LES HAMEAUX"
+	},
+	{
+			"code_postal": 77176,
+			"coordonnees_gps": [
+				48.5856002138,
+				2.56311279324
+			],
+			"nom_commune": "NANDY"
+	},
+	{
+			"code_postal": 77167,
+			"coordonnees_gps": [
+				48.2322771865,
+				2.71472288232
+			],
+			"nom_commune": "ORMESSON"
+	},
+	{
+			"code_postal": 77220,
+			"coordonnees_gps": [
+				48.7441435085,
+				2.75833565592
+			],
+			"nom_commune": "PRESLES EN BRIE"
+	},
+	{
+			"code_postal": 77660,
+			"coordonnees_gps": [
+				48.947885441,
+				3.02624344893
+			],
+			"nom_commune": "ST JEAN LES DEUX JUMEAUX"
+	},
+	{
+			"code_postal": 77120,
+			"coordonnees_gps": [
+				48.7888234084,
+				3.09542739342
+			],
+			"nom_commune": "SAINTS"
+	},
+	{
+			"code_postal": 77650,
+			"coordonnees_gps": [
+				48.5152037389,
+				3.24054822685
+			],
+			"nom_commune": "SAVINS"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "SEPT SORTS"
+	},
+	{
+			"code_postal": 77700,
+			"coordonnees_gps": [
+				48.8632419628,
+				2.79709040394
+			],
+			"nom_commune": "SERRIS"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "TROCY EN MULTIEN"
+	},
+	{
+			"code_postal": 77250,
+			"coordonnees_gps": [
+				48.3334508388,
+				2.82847916513
+			],
+			"nom_commune": "VILLECERF"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "BENNECOURT"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "BOINVILLIERS"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "BOISSY MAUVOISIN"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "COURGENT"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "DROCOURT"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "GAMBAISEUIL"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "JEUFOSSE"
+	},
+	{
+			"code_postal": 78350,
+			"coordonnees_gps": [
+				48.7655340154,
+				2.15902519445
+			],
+			"nom_commune": "LES LOGES EN JOSAS"
+	},
+	{
+			"code_postal": 78780,
+			"coordonnees_gps": [
+				48.9987117472,
+				2.05346510271
+			],
+			"nom_commune": "MAURECOURT"
+	},
+	{
+			"code_postal": 78320,
+			"coordonnees_gps": [
+				48.7362483478,
+				1.95125411115
+			],
+			"nom_commune": "LE MESNIL ST DENIS"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "MEZY SUR SEINE"
+	},
+	{
+			"code_postal": 78730,
+			"coordonnees_gps": [
+				48.5709913793,
+				1.96381832135
+			],
+			"nom_commune": "ST ARNOULT EN YVELINES"
+	},
+	{
+			"code_postal": 78980,
+			"coordonnees_gps": [
+				48.9416314677,
+				1.55443275469
+			],
+			"nom_commune": "LE TERTRE ST DENIS"
+	},
+	{
+			"code_postal": 93470,
+			"coordonnees_gps": [
+				48.917508483,
+				2.57625656428
+			],
+			"nom_commune": "COUBRON"
+	},
+	{
+			"code_postal": 93130,
+			"coordonnees_gps": [
+				48.8912402494,
+				2.45891586026
+			],
+			"nom_commune": "NOISY LE SEC"
+	},
+	{
+			"code_postal": 95650,
+			"coordonnees_gps": [
+				49.0831465949,
+				2.02625716292
+			],
+			"nom_commune": "BOISSY L AILLERIE"
+	},
+	{
+			"code_postal": 95570,
+			"coordonnees_gps": [
+				49.0548701683,
+				2.33369100298
+			],
+			"nom_commune": "MOISSELLES"
+	},
+	{
+			"code_postal": 95260,
+			"coordonnees_gps": [
+				49.1373667054,
+				2.28877829148
+			],
+			"nom_commune": "MOURS"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "NEUILLY EN VEXIN"
+	},
+	{
+			"code_postal": 95760,
+			"coordonnees_gps": [
+				49.0979523574,
+				2.18039661688
+			],
+			"nom_commune": "VALMONDOIS"
+	},
+	{
+			"code_postal": 92190,
+			"coordonnees_gps": [
+				48.8040544516,
+				2.22691872954
+			],
+			"nom_commune": "MEUDON"
+	},
+	{
+			"code_postal": 92200,
+			"coordonnees_gps": [
+				48.8855663756,
+				2.26645990318
+			],
+			"nom_commune": "NEUILLY SUR SEINE"
+	},
+	{
+			"code_postal": 93340,
+			"coordonnees_gps": [
+				48.8963138877,
+				2.51858297837
+			],
+			"nom_commune": "LE RAINCY"
+	},
+	{
+			"code_postal": 93110,
+			"coordonnees_gps": [
+				48.8745435446,
+				2.48670478198
+			],
+			"nom_commune": "ROSNY SOUS BOIS"
+	},
+	{
+			"code_postal": 94700,
+			"coordonnees_gps": [
+				48.8058570543,
+				2.4381304073
+			],
+			"nom_commune": "MAISONS ALFORT"
+	},
+	{
+			"code_postal": 94410,
+			"coordonnees_gps": [
+				48.818049358,
+				2.43718026115
+			],
+			"nom_commune": "ST MAURICE"
+	},
+	{
+			"code_postal": 95660,
+			"coordonnees_gps": [
+				49.1422115093,
+				2.22865466079
+			],
+			"nom_commune": "CHAMPAGNE SUR OISE"
+	},
+	{
+			"code_postal": 95650,
+			"coordonnees_gps": [
+				49.0831465949,
+				2.02625716292
+			],
+			"nom_commune": "PUISEUX PONTOISE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "VIARMES"
+	},
+	{
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "BANNOST VILLEGAGNON"
+	},
+	{
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "BOISDON"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "LA CHAPELLE MOUTILS"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "CHARMENTRAY"
+	},
+	{
+			"code_postal": 77126,
+			"coordonnees_gps": [
+				48.4261598514,
+				3.09512447411
+			],
+			"nom_commune": "CHATENAY SUR SEINE"
+	},
+	{
+			"code_postal": 77166,
+			"coordonnees_gps": [
+				48.6689119155,
+				2.65738604224
+			],
+			"nom_commune": "EVRY GREGY SUR YERRE"
+	},
+	{
+			"code_postal": 77118,
+			"coordonnees_gps": [
+				48.3962434685,
+				3.16889442918
+			],
+			"nom_commune": "GRAVON"
+	},
+	{
+			"code_postal": 77970,
+			"coordonnees_gps": [
+				48.6629667533,
+				3.14093688522
+			],
+			"nom_commune": "JOUY LE CHATEL"
+	},
+	{
+			"code_postal": 77760,
+			"coordonnees_gps": [
+				48.2952371456,
+				2.54278715647
+			],
+			"nom_commune": "LARCHANT"
+	},
+	{
+			"code_postal": 77710,
+			"coordonnees_gps": [
+				48.2430767523,
+				2.88428828636
+			],
+			"nom_commune": "LORREZ LE BOCAGE PREAUX"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "LUISETAINES"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "MONS EN MONTOIS"
+	},
+	{
+			"code_postal": 77670,
+			"coordonnees_gps": [
+				48.4047875044,
+				2.85078204772
+			],
+			"nom_commune": "ST MAMMES"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "THIEUX"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "TRILBARDOU"
+	},
+	{
+			"code_postal": 77450,
+			"coordonnees_gps": [
+				48.9197013165,
+				2.80318191468
+			],
+			"nom_commune": "VIGNELY"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "VILLE ST JACQUES"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "BOISSY SANS AVOIR"
+	},
+	{
+			"code_postal": 78121,
+			"coordonnees_gps": [
+				48.8823296337,
+				1.92062168641
+			],
+			"nom_commune": "CRESPIERES"
+	},
+	{
+			"code_postal": 78160,
+			"coordonnees_gps": [
+				48.8656792122,
+				2.09169348981
+			],
+			"nom_commune": "MARLY LE ROI"
+	},
+	{
+			"code_postal": 78550,
+			"coordonnees_gps": [
+				48.8059624153,
+				1.62530918633
+			],
+			"nom_commune": "MAULETTE"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "MERICOURT"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "POIGNY LA FORET"
+	},
+	{
+			"code_postal": 78730,
+			"coordonnees_gps": [
+				48.5709913793,
+				1.96381832135
+			],
+			"nom_commune": "STE MESME"
+	},
+	{
+			"code_postal": 78860,
+			"coordonnees_gps": [
+				48.8631666578,
+				2.01892251697
+			],
+			"nom_commune": "ST NOM LA BRETECHE"
+	},
+	{
+			"code_postal": 78470,
+			"coordonnees_gps": [
+				48.7175747571,
+				2.05026286373
+			],
+			"nom_commune": "ST REMY LES CHEVREUSE"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "SENLISSE"
+	},
+	{
+			"code_postal": 78230,
+			"coordonnees_gps": [
+				48.8943723497,
+				2.1057199648
+			],
+			"nom_commune": "LE PECQ"
+	},
+	{
+			"code_postal": 78110,
+			"coordonnees_gps": [
+				48.89356401,
+				2.12981922298
+			],
+			"nom_commune": "LE VESINET"
+	},
+	{
+			"code_postal": 92800,
+			"coordonnees_gps": [
+				48.8837267791,
+				2.23798819786
+			],
+			"nom_commune": "PUTEAUX"
+	},
+	{
+			"code_postal": 92330,
+			"coordonnees_gps": [
+				48.7768435541,
+				2.29818849146
+			],
+			"nom_commune": "SCEAUX"
+	},
+	{
+			"code_postal": 94230,
+			"coordonnees_gps": [
+				48.7911645648,
+				2.33171907473
+			],
+			"nom_commune": "CACHAN"
+	},
+	{
+			"code_postal": 94100,
+			"coordonnees_gps": [
+				48.7989796618,
+				2.49424383679
+			],
+			"nom_commune": "ST MAUR DES FOSSES"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "BELLOY EN FRANCE"
+	},
+	{
+			"code_postal": 95340,
+			"coordonnees_gps": [
+				49.1610028463,
+				2.26428490236
+			],
+			"nom_commune": "BERNES SUR OISE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "LASSY"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "MAGNY EN VEXIN"
+	},
+	{
+			"code_postal": 95630,
+			"coordonnees_gps": [
+				49.0775759075,
+				2.21403948928
+			],
+			"nom_commune": "MERIEL"
+	},
+	{
+			"code_postal": 95590,
+			"coordonnees_gps": [
+				49.1078677101,
+				2.28470413018
+			],
+			"nom_commune": "NERVILLE LA FORET"
+	},
+	{
+			"code_postal": 95620,
+			"coordonnees_gps": [
+				49.1222554248,
+				2.20125148071
+			],
+			"nom_commune": "PARMAIN"
+	},
+	{
+			"code_postal": 92430,
+			"coordonnees_gps": [
+				48.830772096,
+				2.16611369469
+			],
+			"nom_commune": "MARNES LA COQUETTE"
+	},
+	{
+			"code_postal": 93150,
+			"coordonnees_gps": [
+				48.939273181,
+				2.46125619205
+			],
+			"nom_commune": "LE BLANC MESNIL"
+	},
+	{
+			"code_postal": 94000,
+			"coordonnees_gps": [
+				48.7836775841,
+				2.45497922897
+			],
+			"nom_commune": "CRETEIL"
+	},
+	{
+			"code_postal": 95420,
+			"coordonnees_gps": [
+				49.1378230096,
+				1.7800854585
+			],
+			"nom_commune": "BANTHELU"
+	},
+	{
+			"code_postal": 95830,
+			"coordonnees_gps": [
+				49.1160885298,
+				2.01080695268
+			],
+			"nom_commune": "CORMEILLES EN VEXIN"
+	},
+	{
+			"code_postal": 95370,
+			"coordonnees_gps": [
+				48.9938447776,
+				2.19378028588
+			],
+			"nom_commune": "MONTIGNY LES CORMEILLES"
+	},
+	{
+			"code_postal": 95450,
+			"coordonnees_gps": [
+				49.0801559247,
+				1.9139084291
+			],
+			"nom_commune": "THEMERICOURT"
+	},
+	{
+			"code_postal": 77390,
+			"coordonnees_gps": [
+				48.6400377042,
+				2.79774834492
+			],
+			"nom_commune": "BEAUVOIR"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "CANNES ECLUSE"
+	},
+	{
+			"code_postal": 77580,
+			"coordonnees_gps": [
+				48.8615810668,
+				2.95011085183
+			],
+			"nom_commune": "LA HAUTE MAISON"
+	},
+	{
+			"code_postal": 77220,
+			"coordonnees_gps": [
+				48.7441435085,
+				2.75833565592
+			],
+			"nom_commune": "LIVERDY EN BRIE"
+	},
+	{
+			"code_postal": 77185,
+			"coordonnees_gps": [
+				48.8339453672,
+				2.63405301625
+			],
+			"nom_commune": "LOGNES"
+	},
+	{
+			"code_postal": 77550,
+			"coordonnees_gps": [
+				48.6199078529,
+				2.63560162952
+			],
+			"nom_commune": "MOISSY CRAMAYEL"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "MOUSSY LE VIEUX"
+	},
+	{
+			"code_postal": 77140,
+			"coordonnees_gps": [
+				48.2750471622,
+				2.70959190478
+			],
+			"nom_commune": "NONVILLE"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "OCQUERRE"
+	},
+	{
+			"code_postal": 77340,
+			"coordonnees_gps": [
+				48.7869451025,
+				2.6135089739
+			],
+			"nom_commune": "PONTAULT COMBAULT"
+	},
+	{
+			"code_postal": 77160,
+			"coordonnees_gps": [
+				48.5896767151,
+				3.24326653179
+			],
+			"nom_commune": "PROVINS"
+	},
+	{
+			"code_postal": 77515,
+			"coordonnees_gps": [
+				48.791262965,
+				2.99641701486
+			],
+			"nom_commune": "ST AUGUSTIN"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "ST MARTIN DES CHAMPS"
+	},
+	{
+			"code_postal": 77440,
+			"coordonnees_gps": [
+				49.0212011816,
+				3.05011291504
+			],
+			"nom_commune": "TANCROU"
+	},
+	{
+			"code_postal": 77130,
+			"coordonnees_gps": [
+				48.3779377733,
+				2.96426271153
+			],
+			"nom_commune": "LA TOMBE"
+	},
+	{
+			"code_postal": 77139,
+			"coordonnees_gps": [
+				49.0542002868,
+				2.91324246435
+			],
+			"nom_commune": "VINCY MANOEUVRE"
+	},
+	{
+			"code_postal": 78580,
+			"coordonnees_gps": [
+				48.9115359215,
+				1.85464080314
+			],
+			"nom_commune": "LES ALLUETS LE ROI"
+	},
+	{
+			"code_postal": 78450,
+			"coordonnees_gps": [
+				48.8376725842,
+				2.00127278452
+			],
+			"nom_commune": "CHAVENAY"
+	},
+	{
+			"code_postal": 78460,
+			"coordonnees_gps": [
+				48.6939321598,
+				2.02878492296
+			],
+			"nom_commune": "CHOISEL"
+	},
+	{
+			"code_postal": 78111,
+			"coordonnees_gps": [
+				48.9108779555,
+				1.61854818373
+			],
+			"nom_commune": "DAMMARTIN EN SERVE"
+	},
+	{
+			"code_postal": 78810,
+			"coordonnees_gps": [
+				48.8749563511,
+				1.96917098756
+			],
+			"nom_commune": "DAVRON"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "FLINS NEUVE EGLISE"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "MEULAN EN YVELINES"
+	},
+	{
+			"code_postal": 78790,
+			"coordonnees_gps": [
+				48.8921487904,
+				1.67421696367
+			],
+			"nom_commune": "MONTCHAUVET"
+	},
+	{
+			"code_postal": 78590,
+			"coordonnees_gps": [
+				48.8425372745,
+				2.05184137552
+			],
+			"nom_commune": "RENNEMOULIN"
+	},
+	{
+			"code_postal": 78720,
+			"coordonnees_gps": [
+				48.6724843894,
+				1.96251286173
+			],
+			"nom_commune": "ST FORGET"
+	},
+	{
+			"code_postal": 78480,
+			"coordonnees_gps": [
+				48.9869978522,
+				1.96306359686
+			],
+			"nom_commune": "VERNEUIL SUR SEINE"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "VERT"
+	},
+	{
+			"code_postal": 78670,
+			"coordonnees_gps": [
+				48.943861939,
+				1.99265985453
+			],
+			"nom_commune": "VILLENNES SUR SEINE"
+	},
+	{
+			"code_postal": 77183,
+			"coordonnees_gps": [
+				48.8166135478,
+				2.65568100478
+			],
+			"nom_commune": "CROISSY BEAUBOURG"
+	},
+	{
+			"code_postal": 77190,
+			"coordonnees_gps": [
+				48.5045043002,
+				2.61429281246
+			],
+			"nom_commune": "DAMMARIE LES LYS"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "FRETOY"
+	},
+	{
+			"code_postal": 77230,
+			"coordonnees_gps": [
+				49.0375720104,
+				2.68011471653
+			],
+			"nom_commune": "JUILLY"
+	},
+	{
+			"code_postal": 77550,
+			"coordonnees_gps": [
+				48.6199078529,
+				2.63560162952
+			],
+			"nom_commune": "LISSY"
+	},
+	{
+			"code_postal": 77560,
+			"coordonnees_gps": [
+				48.6366559441,
+				3.38263980516
+			],
+			"nom_commune": "LES MARETS"
+	},
+	{
+			"code_postal": 77000,
+			"coordonnees_gps": [
+				48.5229543545,
+				2.67825416798
+			],
+			"nom_commune": "MELUN"
+	},
+	{
+			"code_postal": 77320,
+			"coordonnees_gps": [
+				48.7632652303,
+				3.31883214084
+			],
+			"nom_commune": "MONTOLIVET"
+	},
+	{
+			"code_postal": 77750,
+			"coordonnees_gps": [
+				48.9148071078,
+				3.22989278872
+			],
+			"nom_commune": "ORLY SUR MORIN"
+	},
+	{
+			"code_postal": 77000,
+			"coordonnees_gps": [
+				48.5229543545,
+				2.67825416798
+			],
+			"nom_commune": "LA ROCHETTE"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "ST MESMES"
+	},
+	{
+			"code_postal": 77176,
+			"coordonnees_gps": [
+				48.5856002138,
+				2.56311279324
+			],
+			"nom_commune": "SAVIGNY LE TEMPLE"
+	},
+	{
+			"code_postal": 77520,
+			"coordonnees_gps": [
+				48.4787752425,
+				3.12194735393
+			],
+			"nom_commune": "THENISY"
+	},
+	{
+			"code_postal": 77141,
+			"coordonnees_gps": [
+				48.6974710032,
+				3.08222071028
+			],
+			"nom_commune": "VAUDOY EN BRIE"
+	},
+	{
+			"code_postal": 78260,
+			"coordonnees_gps": [
+				48.9716145916,
+				2.08821497883
+			],
+			"nom_commune": "ACHERES"
+	},
+	{
+			"code_postal": 78650,
+			"coordonnees_gps": [
+				48.853666314,
+				1.86642479384
+			],
+			"nom_commune": "BEYNES"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "BONNIERES SUR SEINE"
+	},
+	{
+			"code_postal": 78150,
+			"coordonnees_gps": [
+				48.8291874065,
+				2.12052828501
+			],
+			"nom_commune": "LE CHESNAY"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "GAILLON SUR MONTCIENT"
+	},
+	{
+			"code_postal": 78440,
+			"coordonnees_gps": [
+				49.0236826177,
+				1.79343875467
+			],
+			"nom_commune": "GUITRANCOURT"
+	},
+	{
+			"code_postal": 78520,
+			"coordonnees_gps": [
+				49.019152235,
+				1.69317391224
+			],
+			"nom_commune": "LIMAY"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "MANTES LA JOLIE"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "MARCQ"
+	},
+	{
+			"code_postal": 78310,
+			"coordonnees_gps": [
+				48.7604855324,
+				1.91898209487
+			],
+			"nom_commune": "MAUREPAS"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "OINVILLE SUR MONTCIENT"
+	},
+	{
+			"code_postal": 78630,
+			"coordonnees_gps": [
+				48.9218149018,
+				1.96212376753
+			],
+			"nom_commune": "ORGEVAL"
+	},
+	{
+			"code_postal": 78470,
+			"coordonnees_gps": [
+				48.7175747571,
+				2.05026286373
+			],
+			"nom_commune": "ST LAMBERT"
+	},
+	{
+			"code_postal": 78120,
+			"coordonnees_gps": [
+				48.6165414495,
+				1.85994599568
+			],
+			"nom_commune": "SONCHAMP"
+	},
+	{
+			"code_postal": 78850,
+			"coordonnees_gps": [
+				48.844252131,
+				1.93267960779
+			],
+			"nom_commune": "THIVERVAL GRIGNON"
+	},
+	{
+			"code_postal": 78510,
+			"coordonnees_gps": [
+				48.9781198658,
+				2.00818427315
+			],
+			"nom_commune": "TRIEL SUR SEINE"
+	},
+	{
+			"code_postal": 78490,
+			"coordonnees_gps": [
+				48.7796365302,
+				1.79456166504
+			],
+			"nom_commune": "VICQ"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "VIEILLE EGLISE EN YVELINES"
+	},
+	{
+			"code_postal": 78770,
+			"coordonnees_gps": [
+				48.8635257362,
+				1.79608711913
+			],
+			"nom_commune": "VILLIERS LE MAHIEU"
+	},
+	{
+			"code_postal": 93350,
+			"coordonnees_gps": [
+				48.9360294977,
+				2.42725334124
+			],
+			"nom_commune": "LE BOURGET"
+	},
+	{
+			"code_postal": 94470,
+			"coordonnees_gps": [
+				48.7472376073,
+				2.5259450582
+			],
+			"nom_commune": "BOISSY ST LEGER"
+	},
+	{
+			"code_postal": 94500,
+			"coordonnees_gps": [
+				48.8176869619,
+				2.51584557843
+			],
+			"nom_commune": "CHAMPIGNY SUR MARNE"
+	},
+	{
+			"code_postal": 94240,
+			"coordonnees_gps": [
+				48.7760896848,
+				2.33669657104
+			],
+			"nom_commune": "L HAY LES ROSES"
+	},
+	{
+			"code_postal": 95600,
+			"coordonnees_gps": [
+				48.9906752112,
+				2.27748227881
+			],
+			"nom_commune": "EAUBONNE"
+	},
+	{
+			"code_postal": 95270,
+			"coordonnees_gps": [
+				49.1142163164,
+				2.39836244814
+			],
+			"nom_commune": "EPINAY CHAMPLATREUX"
+	},
+	{
+			"code_postal": 95500,
+			"coordonnees_gps": [
+				48.9856270002,
+				2.45534121324
+			],
+			"nom_commune": "GONESSE"
+	},
+	{
+			"code_postal": 95640,
+			"coordonnees_gps": [
+				49.1530667957,
+				1.99234967968
+			],
+			"nom_commune": "HARAVILLIERS"
+	},
+	{
+			"code_postal": 95690,
+			"coordonnees_gps": [
+				49.140346815,
+				2.15942436133
+			],
+			"nom_commune": "LABBEVILLE"
+	},
+	{
+			"code_postal": 95650,
+			"coordonnees_gps": [
+				49.0831465949,
+				2.02625716292
+			],
+			"nom_commune": "MONTGEROULT"
+	},
+	{
+			"code_postal": 92240,
+			"coordonnees_gps": [
+				48.8165665198,
+				2.29609038322
+			],
+			"nom_commune": "MALAKOFF"
+	},
+	{
+			"code_postal": 92360,
+			"coordonnees_gps": [
+				48.8040544516,
+				2.22691872954
+			],
+			"nom_commune": "MEUDON"
+	},
+	{
+			"code_postal": 93140,
+			"coordonnees_gps": [
+				48.9023023139,
+				2.48350884591
+			],
+			"nom_commune": "BONDY"
+	},
+	{
+			"code_postal": 93330,
+			"coordonnees_gps": [
+				48.8626619903,
+				2.54037328221
+			],
+			"nom_commune": "NEUILLY SUR MARNE"
+	},
+	{
+			"code_postal": 93250,
+			"coordonnees_gps": [
+				48.8845420906,
+				2.50909327603
+			],
+			"nom_commune": "VILLEMOMBLE"
+	},
+	{
+			"code_postal": 94500,
+			"coordonnees_gps": [
+				48.8176869619,
+				2.51584557843
+			],
+			"nom_commune": "CHAMPIGNY SUR MARNE"
+	},
+	{
+			"code_postal": 94250,
+			"coordonnees_gps": [
+				48.812983845,
+				2.3432244613
+			],
+			"nom_commune": "GENTILLY"
+	},
+	{
+			"code_postal": 94520,
+			"coordonnees_gps": [
+				48.7018918505,
+				2.55461467284
+			],
+			"nom_commune": "PERIGNY"
+	},
+	{
+			"code_postal": 95510,
+			"coordonnees_gps": [
+				49.0827502548,
+				1.71387285188
+			],
+			"nom_commune": "AMENUCOURT"
+	},
+	{
+			"code_postal": 95190,
+			"coordonnees_gps": [
+				49.0402800937,
+				2.45734698588
+			],
+			"nom_commune": "FONTENAY EN PARISIS"
+	},
+	{
+			"code_postal": 95300,
+			"coordonnees_gps": [
+				49.0835669403,
+				2.10696203629
+			],
+			"nom_commune": "HEROUVILLE"
+	},
+	{
+			"code_postal": 95520,
+			"coordonnees_gps": [
+				49.0683132357,
+				2.06358209883
+			],
+			"nom_commune": "OSNY"
+	},
+	{
+			"code_postal": 95350,
+			"coordonnees_gps": [
+				49.0078529263,
+				2.34646436487
+			],
+			"nom_commune": "PISCOP"
+	},
+	{
+			"code_postal": 95150,
+			"coordonnees_gps": [
+				49.0267578618,
+				2.22200242367
+			],
+			"nom_commune": "TAVERNY"
+	},
+	{
+			"code_postal": 77400,
+			"coordonnees_gps": [
+				48.8816806976,
+				2.70264618038
+			],
+			"nom_commune": "CARNETIN"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "CHAMIGNY"
+	},
+	{
+			"code_postal": 77820,
+			"coordonnees_gps": [
+				48.5045041989,
+				2.83445609947
+			],
+			"nom_commune": "LE CHATELET EN BRIE"
+	},
+	{
+			"code_postal": 77184,
+			"coordonnees_gps": [
+				48.8191814737,
+				2.61008151215
+			],
+			"nom_commune": "EMERAINVILLE"
+	},
+	{
+			"code_postal": 77600,
+			"coordonnees_gps": [
+				48.8361794738,
+				2.73226890342
+			],
+			"nom_commune": "JOSSIGNY"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "MESSY"
+	},
+	{
+			"code_postal": 77135,
+			"coordonnees_gps": [
+				48.7962351515,
+				2.7076583399
+			],
+			"nom_commune": "PONTCARRE"
+	},
+	{
+			"code_postal": 77720,
+			"coordonnees_gps": [
+				48.5850477632,
+				2.89649549396
+			],
+			"nom_commune": "QUIERS"
+	},
+	{
+			"code_postal": 77260,
+			"coordonnees_gps": [
+				48.9692370904,
+				3.12481512651
+			],
+			"nom_commune": "REUIL EN BRIE"
+	},
+	{
+			"code_postal": 77630,
+			"coordonnees_gps": [
+				48.4243787367,
+				2.57257810234
+			],
+			"nom_commune": "ST MARTIN EN BIERE"
+	},
+	{
+			"code_postal": 77270,
+			"coordonnees_gps": [
+				48.9416412171,
+				2.61698901012
+			],
+			"nom_commune": "VILLEPARISIS"
+	},
+	{
+			"code_postal": 77410,
+			"coordonnees_gps": [
+				48.9493778355,
+				2.7161171355
+			],
+			"nom_commune": "VILLEVAUDE"
+	},
+	{
+			"code_postal": 77950,
+			"coordonnees_gps": [
+				48.5738526106,
+				2.69879445507
+			],
+			"nom_commune": "VOISENON"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "ALLAINVILLE"
+	},
+	{
+			"code_postal": 78126,
+			"coordonnees_gps": [
+				48.9287058595,
+				1.84181126526
+			],
+			"nom_commune": "AULNAY SUR MAULDRE"
+	},
+	{
+			"code_postal": 78930,
+			"coordonnees_gps": [
+				48.9393577295,
+				1.72733973535
+			],
+			"nom_commune": "BREUIL BOIS ROBERT"
+	},
+	{
+			"code_postal": 78700,
+			"coordonnees_gps": [
+				49.0000390697,
+				2.09915995955
+			],
+			"nom_commune": "CONFLANS STE HONORINE"
+	},
+	{
+			"code_postal": 78690,
+			"coordonnees_gps": [
+				48.7275992987,
+				1.8882726457
+			],
+			"nom_commune": "LES ESSARTS LE ROI"
+	},
+	{
+			"code_postal": 78580,
+			"coordonnees_gps": [
+				48.9115359215,
+				1.85464080314
+			],
+			"nom_commune": "HERBEVILLE"
+	},
+	{
+			"code_postal": 78130,
+			"coordonnees_gps": [
+				48.9830853894,
+				1.92106334899
+			],
+			"nom_commune": "LES MUREAUX"
+	},
+	{
+			"code_postal": 78370,
+			"coordonnees_gps": [
+				48.8126445844,
+				1.94672191272
+			],
+			"nom_commune": "PLAISIR"
+	},
+	{
+			"code_postal": 78125,
+			"coordonnees_gps": [
+				48.6430372045,
+				1.73672193818
+			],
+			"nom_commune": "RAIZEUX"
+	},
+	{
+			"code_postal": 78100,
+			"coordonnees_gps": [
+				48.9409298615,
+				2.0992045515
+			],
+			"nom_commune": "ST GERMAIN EN LAYE"
+	},
+	{
+			"code_postal": 78660,
+			"coordonnees_gps": [
+				48.5043951327,
+				1.85801812038
+			],
+			"nom_commune": "ST MARTIN DE BRETHENCOURT"
+	},
+	{
+			"code_postal": 78200,
+			"coordonnees_gps": [
+				48.9657827811,
+				1.64662201232
+			],
+			"nom_commune": "SOINDRES"
+	},
+	{
+			"code_postal": 78140,
+			"coordonnees_gps": [
+				48.7839368553,
+				2.19726816302
+			],
+			"nom_commune": "VELIZY VILLACOUBLAY"
+	},
+	{
+			"code_postal": 78270,
+			"coordonnees_gps": [
+				49.0329490091,
+				1.54187293209
+			],
+			"nom_commune": "MOUSSEAUX SUR SEINE"
+	},
+	{
+			"code_postal": 78120,
+			"coordonnees_gps": [
+				48.6165414495,
+				1.85994599568
+			],
+			"nom_commune": "RAMBOUILLET"
+	},
+	{
+			"code_postal": 78470,
+			"coordonnees_gps": [
+				48.7175747571,
+				2.05026286373
+			],
+			"nom_commune": "ST REMY LES CHEVREUSE"
+	},
+	{
+			"code_postal": 78650,
+			"coordonnees_gps": [
+				48.853666314,
+				1.86642479384
+			],
+			"nom_commune": "SAULX MARCHAIS"
+	},
+	{
+			"code_postal": 78250,
+			"coordonnees_gps": [
+				49.017629668,
+				1.88919336875
+			],
+			"nom_commune": "TESSANCOURT SUR AUBETTE"
+	},
+	{
+			"code_postal": 78540,
+			"coordonnees_gps": [
+				48.9651204678,
+				1.97419104222
+			],
+			"nom_commune": "VERNOUILLET"
+	}
+]

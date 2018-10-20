@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/WEB-INF/templates/archeClient.xhtml">
+
+	<ui:define name="title">#{nompromo}</ui:define>
+	<ui:define name="headcssscript">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<link rel='stylesheet prefetch'
+			href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' />
+		<link rel='stylesheet prefetch'
+			href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' />
+		<link rel='stylesheet prefetch'
+			href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic' />
+		<link rel='stylesheet prefetch'
+			href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' />
+		<link rel='stylesheet prefetch'
+			href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700,900' />
+
+		<link type="text/css" rel="stylesheet" href="css/fichePromotionDetailleeCommercant.css" />
+		<link type="text/css" rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
+		<link type="text/css" rel="stylesheet"
+			href="../fichesPromotion/styleTest.css" />
+
+
+	</ui:define>
+
+	<ui:define name="content">
+		<div class="btnRetour">
+			<h:commandButton action="#{retournerPagePrecedente()}" value="Retour"
+				style="background-color: #2abb6d;vertical-align: middle;border: none;color: #fff;font-size: 23px;margin-left: 30px;" />
+			<span></span>
+		</div>
+		<div class="main_bg">
+			<div class="wrap">
+				<div class="main">
+					<div class="single">
+						<div class="left_content">
+							<div class="span1_of_1">
+								<div class="product-view">
+									<div class="product-essential">
+										<div class="product-img-box">
+											<div class="more-views" style="float: left;">
+												<div class="more-views-container"></div>
+											</div>
+											<div class="product-image">
+												<img
+													src="../../Ressources/Images/Images_promotions/#{promotionSelectionne.photo}"
+													alt="#{promotionSelectionne.libelle}" />
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="span1_of_1_des">
+								<div class="desc1">
+									<h3>
+										#{promotionSelectionne.libelle} -
+										#{mbPagePromotionDetaille.promotionSelectionne.unites.get(0).libelle}
+										<h:outputLabel
+											value="#{promotionSelectionne.unites.get(0).quantite}">
+											<f:convertNumber minFractionDigits="0" maxFractionDigits="0" />
+										</h:outputLabel>
+										#{mbPagePromotionDetaille.promotionSelectionne.unites.get(0).unite}
+
+									</h3>
+									<h:commandLink
+										action="#{afficherFicheCommercantDetaille(promotionSelectionne.commercant.id)}">
+										<p>Promotion chez #{raisonSociale} par
+											#{commercant.nomCommerce} #{commercant.adrCommerce }</p>
+									</h:commandLink>
+									<h5>
+										<h:outputLabel
+											value="#{promotionSelectionne.prix}">
+											<f:convertNumber minFractionDigits="2" maxFractionDigits="2" />
+										</h:outputLabel>
+										€
+									</h5>
+									<div class="available">
+
+										<ul>
+											<li>Quantité : <h:selectOneMenu
+													id="listeDeroulanteFichePromotion"
+													value="#{mbTestPanier.quantiteSelectionnee}">
+													<f:selectItems
+														value="#{quantitesEnStockCommandables}"
+														var="i" itemLabel="#{i}" itemValue="#{i}"></f:selectItems>
+												</h:selectOneMenu>
+											</li>
+										</ul>
+										<h:commandButton class="btnAjoutPanier"
+											value="Ajouter au panier">
+											<f:ajax event="click" execute="@form"
+												listener="#{remplirPanierByList(.promotionSelectionne)}"
+												render="grosPanier prixLgnCmde :form-conso:pastille :form-conso:prixTotalPanier :form-conso:affichagePromotion"></f:ajax>
+										</h:commandButton>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<!-- start tabs -->
+							<section class="tabs"> <input id="tab-1" type="radio"
+								name="radio-set" class="tab-selector-1" checked="checked" /> <label
+								for="tab-1" class="tab-label-1">Description détaillée</label> <input
+								id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+							<label for="tab-2" class="tab-label-2">Infos Commerces</label> <input
+								id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+							<label for="tab-3" class="tab-label-3">Avis</label>
+
+							<div class="clear-shadow"></div>
+
+							<div class="content">
+								<div class="content-1">
+									<p class="para top">
+										<span></span>#{description}
+									</p>
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+								<div class="content-2">
+									<p class="para">
+										<span>#{raisonSociale}</span> #{descriptionDetaillee}
+									</p>
+									<ul class="qua_nav">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+
+
+
+								<div class="content-3">
+
+									<blockquote>
+										<header class="avisClient"> 
+										<span data-rating='5'> <i class="ion-star"></i> <i class="ion-star"></i> <iclass="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+										</span> <strong>Titre Avis</strong> <span> 20 Octobre 2018</span> <span>Par
+											<em>Ramya</em>
+										</span>
+										<p>Description Avis</p>
+										</header>
+									</blockquote>
+
+									<blockquote>
+										<header class="avisClient"> <span data-rating='4'>
+											<i class="ion-star"></i> <i class="ion-star"></i> <i
+											class="ion-star"></i> <i class="ion-star"></i> <i
+											class="ion-star"></i>
+										</span> <strong>Titre Avis</strong> <span> 20 Octobre 2018</span> <span>Par
+											<em>Aubin</em>
+										</span>
+										<p>Description Avis</p>
+										</header>
+									</blockquote>
+
+									<blockquote>
+										<header class="avisClient"> <span data-rating='0'> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+										</span> <strong>Titre Avis</strong> <span> 18 Octobre 2018</span> 
+										<span>Par <em>Nicolas</em> </span>
+										<p>Description Avis</p>
+										</header>
+									</blockquote>
+								</div>
+							</div>
+							</section>
+							<!-- end tabs -->
+						</div>
+						<!-- start sidebar -->
+
+						<!-- end sidebar -->
+						<div class="clear"></div>
+					</div>
+					<!-- end content -->
+				</div>
+			</div>
+		</div>
+
+		<ui:include src="../../WEB-INF/components/panier-add-to-cart.xhtml"></ui:include>
+
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script
+			src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
+		<script type="text/javascript" src="../jsHamburger/main.js"></script>
+
+	</ui:define>
+
+
+
+</ui:composition>
+
+
+
+</html>

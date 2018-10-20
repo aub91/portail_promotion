@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition template="/WEB-INF/templates/archeClient.xhtml">
+	<ui:define name="title">Reservation Commercant</ui:define>
+	<ui:define name="headcssscript">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="css/styleGererReservationClient.css" />
+		<link type="text/css" rel="stylesheet" href="css/archeCommercant.css" />
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+
+	</ui:define>
+	<ui:define name="content">
+		<h1>
+			Reservation présentes dans votre <span>Commerce <h:outputLabel value="#{nomCommerce}"  /></span>
+		</h1>
+
+		<table class="tableauCommercant">
+
+			<tr>
+				
+				<th>Numéro de reservation </th>
+				<th>Informations Clients</th>
+				<th>Date Reservation</th>
+				<th>Statut</th>
+			</tr>
+<ui:repeat layout="inline" id="repeater" var="reservation"
+					value="#{listReservation}">
+			<tr>
+				<td>
+				<span>N° Reservation: CL-2018-10-</span><h:outputLabel  value="#{reservation.id}"/><br/> 
+				</td>
+				
+			
+				<td>
+				<span>Nom: </span><h:outputLabel value="#{reservation.client.nom}" /><span> </span><h:outputLabel value="#{reservation.client.prenom}" /><br/>
+				<span>Tel: </span><h:outputLabel value="#{reservation.client.tel1}" /><br/>
+				<span>Mail: </span><h:outputLabel value="#{reservation.client.mail}" /><br/> 
+				</td>
+				
+				
+				<td>
+				<span>Date de Reservation </span><h:outputLabel value="#{reservation.date}"  />/<h:outputLabel value="#{reservation.month+1}"/>/<h:outputLabel value="#{reservation.year+1900}"  /><br/>
+				<span>Nombre de jours restant </span><h:outputLabel value="#{joursRestants}" />
+				</td>
+				
+							
+				<td align="center">
+					<div class="btn-group">
+		<!-- 					<input type="button" value="Récupéré" class="btnRecup" id="btn-recup"/> -->
+						<input type="button" value="Récupéré" class="btnRecup" onclick="rendreDisable(this)"/>
+					</div>
+				</td>
+			</tr>
+</ui:repeat>
+				
+
+		</table>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="gererReservation.js"></script>
+		
+		<script
+			src='http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'></script>
+
+		<script type="text/javascript">
+			function rendreDisable(elem){
+				elem.disabled = true;
+			}
+</script>
+	</ui:define>
+</ui:composition>
+</html>

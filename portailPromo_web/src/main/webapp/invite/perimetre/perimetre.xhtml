@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html" lang="fr">
+ 
+<ui:composition template="/WEB-INF/templates/archeConsommateur.xhtml">
+
+
+	<ui:define name="headcssscript">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<!-- Resource style Breacrumb -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+		<!-- Resource style tout le reste -->
+		
+		
+
+		<!--  Ressource style page -->
+	
+	
+		
+	</ui:define>
+	<ui:define name="content">
+
+
+	
+
+
+	 
+			
+				<div id="box-info-slidecontainer">
+				<label class="distance" id="lblDistanceKm" value=""></label><br/>
+				<span class="distance">1km</span>
+					<input type="range" min="1" max="20" step="1" class="slider" id="myRange" list="tickmarks" />
+				<span class="distance">20km</span>		
+				</div>
+			
+		<!-- Resource from Internet -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+		<!-- Resource js page -->
+		<script type="text/javascript" src="js/perimetre.js"></script>
+		<script src="js/maintable.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCZdpXr9Kvru7X_JMlnAT3z4rTgLMgrw"></script>
+		<script type="text/javascript">		
+			var commerce = [#{mbChoixPRConso.jsonPointRelais()}];
+			var client = [#{mbChoixPRConso.jsonConsommateur()}];
+			myMap();
+		</script>
+
+		<!-- Resource js communes -->
+		<script type="text/javascript" src="../jsBreadCrumbs/styleBreadCrumbs.js"></script>
+		<script type="text/javascript" src="../jsHamburger/main.js"></script>
+	</ui:define>
+
+
+</ui:composition>
+</html>

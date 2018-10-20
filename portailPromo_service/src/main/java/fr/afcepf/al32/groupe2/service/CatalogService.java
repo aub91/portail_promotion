@@ -23,5 +23,4 @@ public class CatalogService implements ICatalogService {
 		List<BaseProduct> list = productService.findAllValid();
 		return list.stream().filter(product -> product.getPromotionList().size() != 0).collect(Collectors.toList());
 	}
-
 }

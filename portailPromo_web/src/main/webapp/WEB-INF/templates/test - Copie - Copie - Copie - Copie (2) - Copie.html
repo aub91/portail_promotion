@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://xmlns.jcp.org/jsf/html"
+ xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../Ressources/css/w3.css">
+
+
+</head>
+
+
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="topnav w3-mobile w3-purple w3-row-padding " id="myTopNav">
+				<div class="w3-bar w3-purple w3-mobile">
+					<div class="w3-dropdown-hover w3-purple w3-mobile w3-col s2 ">
+						<a href="#" class="w3-bar-item w3-button w3-hover-purple w3-mobile w3-purple"><img style="width: 70%; height: 70%;"
+							 src="../../Ressources/Images/Logos/promo32_logo.png" /></a>
+					</div>
+					<div class="w3-purple w3-mobile w3-row w3-col s7 w3-padding-24">
+						<div class="w3-dropdown-hover w3-light-gray w3-medium w3-text-purple w3-mobile w3-col s2">
+							<button class="w3-button w3-block"><b>Catégories </b><i class="fa fa-caret-down"></i></button>
+							<div class="w3-dropdown-content w3-bar-block w3-dark-grey" style="width:100%">
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+							</div>
+						</div>
+						<div>
+							<input type="text" class="w3-bar-item w3-input w3-col s9" placeholder="Search..">
+							<a href="#" class="w3-bar-item w3-button w3-light-gray w3-medium w3-text-purple w3-col s1"><b>Go</b></a>
+						</div>
+					</div>
+					<div class="w3-purple w3-mobile w3-col s3">
+						<a href="#" class="w3-bar-item w3-button w3-purple"><img style="width: 70%; height: 70%;" src="../../Ressources/Images/slogan/Promo_slogan.png" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="bottomnavrr w3-bar w3-purple w3-row w3-mobile w3-padding-small" id="myBottomnav">
+				<div class="w3-bar w3-bar-item w3-purple w3-mobile w3-col s7">
+					<div class="w3-dropdown-hover w3-mobile">
+						<button class="w3-button w3-purple w3-padding-16">Localisation <i class="fa fa-caret-down"></i></button>
+						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+						</div>
+					</div>
+					<div class="w3-dropdown-hover w3-purple w3-mobile">
+						<a href=""></a>
+						<div class="w3-center"><label id="lblDistanceKm" value=""></label></div>
+						<span>1km</span>
+						<input type="range" min="1" max="20" step="1" class="slider" id="myRange" list="tickmarks" />
+						<span>20km</span>
+					</div>
+					<div class="w3-dropdown-hover w3-purple w3-mobile">
+						<button class="w3-button w3-padding-16">Tous les categories <i class="fa fa-caret-down"></i></button>
+						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+							<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
+					<div class="w3-right w3-purple">
+						<div class="w3-dropdown-hover w3-mobile">
+							<button class="w3-button w3-purple w3-padding-16">Reservations <i class="fa fa-caret-down"></i></button>
+							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+							</div>
+						</div>
+						<div class="w3-dropdown-hover w3-mobile">
+							<button class="w3-button w3-padding-16">Suivi <i class="fa fa-caret-down"></i></button>
+							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+							</div>
+						</div>
+						<div class="w3-dropdown-hover w3-mobile">
+							<button class="w3-button w3-padding-16">Profil <i class="fa fa-caret-down"></i></button>
+							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+							</div>
+						</div>
+						<div class="w3-dropdown-hover w3-mobile">
+							<button class="w3-button w3-padding-16">Connexion <i class="fa fa-caret-down"></i></button>
+							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+								<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-sidebar w3-col s2" style="height : 100%;">
+					<div class="w3-bar-block w3-light-grey" width="20px">
+							<a href="#" class="w3-bar-item w3-button">Liste des réservations</a>
+							<a href="#" class="w3-bar-item w3-button">Liste des templates</a>
+							<a href="#" class="w3-bar-item w3-button">Liste des produits en promotions</a>
+						  </div>
+			</div>
+			<div class="w3-col s10">
+				<span>inserer le contenu de la page ici</span>
+			</div>
+		</div>
+	</header>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../Ressources/js/scriptArcheClient.js"></script>
+	<script type="text/javascript" src="../../Ressources/js/jquery.easy-autocomplete.js"></script>
+	<script type="text/javascript" src="../../Ressources/js/maintable.js"></script>
+	<script type="text/javascript" src="../../Ressources/js/modernizr.js"></script>
+	<script type="text/javascript" src="../../Ressources/js/scriptPerimetre.js"></script>
+</body>
+
+</html>
