@@ -40,4 +40,10 @@ public class PromotionDao implements IPromotionDao {
 		return null;
 	}
 
+	@Override
+	public List<Promotion> findAllValid() {
+		
+		return em.createNamedQuery("Promotion.findAllValid", Promotion.class).getResultList();
+	}
+
 }

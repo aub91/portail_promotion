@@ -40,5 +40,7 @@ public abstract class Product {
 	abstract List<Promotion> getPromotionList();
 	
 	abstract Double getInitPrice();
+	
+	abstract BaseProduct getBaseProduct();
 
 }

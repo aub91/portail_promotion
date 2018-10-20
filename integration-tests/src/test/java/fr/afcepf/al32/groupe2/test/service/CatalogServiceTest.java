@@ -10,7 +10,7 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.afcepf.al32.groupe2.entity.BaseProduct;
+import fr.afcepf.al32.groupe2.entity.Promotion;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
 
@@ -24,10 +24,10 @@ public class CatalogServiceTest {
 	
 	@Test
 	public void getAllDisplayableProductTest() {
-		List<BaseProduct> result = catalogService.getAllDisplayableProduct();
+		List<Promotion> result = catalogService.getAllDisplayablePromotion();
 		
 		Assert.assertNotNull(result);
-		Assert.assertEquals(14, result.size());
+		Assert.assertEquals(10, result.size());
 	}
 
 }

@@ -104,6 +104,10 @@ public class BaseProduct extends Product implements IFollowableElement {
 		
 		return result;
 	}
+	@Override
+	BaseProduct getBaseProduct() {
+		return this;
+	}
 
 
 }
