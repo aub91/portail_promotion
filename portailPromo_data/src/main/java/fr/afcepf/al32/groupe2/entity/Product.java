@@ -41,6 +41,7 @@ public abstract class Product {
 	
 	abstract Double getInitPrice();
 	
+
 	public Product getLastProduct() {
 		Product result = this;
 		if(getPromotion() != null) {
@@ -48,5 +49,8 @@ public abstract class Product {
 		}
 		return result;
 	}
+
+	abstract BaseProduct getBaseProduct();
+
 
 }

@@ -13,6 +13,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.MapKey;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -23,6 +25,11 @@ import javax.validation.constraints.NotNull;
 @Table(name="core_user")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="user_type")
+@NamedQueries(value= {
+		@NamedQuery(name="User.findByLoginAndPassword", 
+				query="SELECT us FROM User us INNER JOIN FETCH us.authenticationData ad WHERE ad.login = :login AND ad.password = :password")
+		
+})
 public abstract class User {
 	
 	@Id

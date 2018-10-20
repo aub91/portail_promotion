@@ -38,4 +38,16 @@ public class PromotionDao implements IPromotionDao {
 		return entityManager.createNamedQuery("Promotion.findAllValid",Promotion.class).getResultList();
 	}
 
+	@Override
+	public void save(Promotion p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Long numero) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

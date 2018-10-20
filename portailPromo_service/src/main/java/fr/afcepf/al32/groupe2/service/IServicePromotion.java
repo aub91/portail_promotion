@@ -9,4 +9,5 @@ public interface IServicePromotion {
 	List<Promotion> findAllValid();
 	Promotion recherchePromotionParIdentifiant(Long idUnite);
 	Promotion AjouterPromotion(Promotion promotion);
+
 }

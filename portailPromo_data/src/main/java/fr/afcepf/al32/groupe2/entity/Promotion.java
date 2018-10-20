@@ -16,6 +16,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -25,6 +27,10 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name="promotion")
 @PrimaryKeyJoinColumn(name = "id")
+@NamedQueries({
+	@NamedQuery(name="Promotion.findAll" , query="select s From Promotion s" ),
+	@NamedQuery(name="Promotion.findAllValid" , query="select s From Promotion s WHERE s.dateRemove = null AND quantityRemaining > 0" )
+})
 public class Promotion extends Product {
 
 	@Column(name="name")
@@ -182,5 +188,12 @@ public class Promotion extends Product {
 	Double getInitPrice() {
 		return getProduct().getInitPrice();
 	}	
+
+	@Override
+	BaseProduct getBaseProduct() {
+		// TODO Auto-generated method stub
+		return getProduct().getBaseProduct();
+	}
+
 
 }

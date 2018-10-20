@@ -4,16 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
-import javax.faces.event.ComponentSystemEvent;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
-import fr.afcepf.al32.groupe2.entity.BaseProduct;
+import fr.afcepf.al32.groupe2.entity.Promotion;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
 
 @Component
@@ -23,7 +19,7 @@ public class CatalogBean {
 	@Autowired
 	private ICatalogService catalogService;
 
-	private List<BaseProduct> products = new ArrayList<>(); 
+	private List<Promotion> promotions = new ArrayList<>(); 
 	
 	public CatalogBean() {
 		
@@ -32,7 +28,7 @@ public class CatalogBean {
 	@PostConstruct
 	public void initCatalogProduits() {
 		
-		products = catalogService.getAllDisplayableProduct();
+		promotions = catalogService.getAllDisplayablePromotion();
 	}
 	 
 	public ICatalogService getCatalogService() {
@@ -43,13 +39,15 @@ public class CatalogBean {
 		this.catalogService = catalogService;
 	}
 
-	public List<BaseProduct> getProducts() {
-		return products;
+	public List<Promotion> getPromotions() {
+		return promotions;
 	}
 
-	public void setProducts(List<BaseProduct> products) {
-		this.products = products;
+	public void setPromotions(List<Promotion> promotions) {
+		this.promotions = promotions;
 	}
+
+	
 	
 
 }

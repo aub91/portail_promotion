@@ -13,7 +13,6 @@ import fr.afcepf.al32.groupe2.entity.Pack;
 import fr.afcepf.al32.groupe2.entity.PercentType;
 import fr.afcepf.al32.groupe2.entity.PromotionType;
 
-@Inheritance
 @Component
 public class PromotionTypeFactory {
 

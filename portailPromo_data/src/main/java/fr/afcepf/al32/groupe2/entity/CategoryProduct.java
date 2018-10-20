@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapKey;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
@@ -21,6 +23,9 @@ import fr.afcepf.al32.groupe2.util.FollowableElementType;
 
 @Entity
 @Table(name = "category_product")
+@NamedQueries({
+	@NamedQuery(name="CategoryProduct.findAllRootCategories" , query="SELECT cat FROM CategoryProduct cat WHERE cat.categoryMum = null" )
+})
 public class CategoryProduct implements IFollowableElement {
 
 	@Id

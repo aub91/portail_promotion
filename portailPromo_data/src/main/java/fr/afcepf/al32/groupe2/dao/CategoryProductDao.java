@@ -1,5 +1,7 @@
 package fr.afcepf.al32.groupe2.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
@@ -19,6 +21,12 @@ public class CategoryProductDao implements ICategoryProductDao{
 	public CategoryProduct findOne(Long idcategorie) {
 		
 		return entityManager.find(CategoryProduct.class, idcategorie);
+	}
+
+
+	@Override
+	public List<CategoryProduct> findAllRootCategories() {
+		return entityManager.createNamedQuery("CategoryProduct.findAllRootCategories", CategoryProduct.class).getResultList();
 	}
 
 }

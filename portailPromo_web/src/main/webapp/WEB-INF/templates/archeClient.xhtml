@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 	<link rel="stylesheet" type="text/css" href="../../Ressources/css/w3.css"/>
 
 	<title>
@@ -18,7 +17,7 @@
 </h:head>
 
 <body>
-	<h:form id="form-clients"> 
+
 		<header>
 			<div class="navbar">
 				<div class="topnav w3-mobile w3-purple w3-row-padding" id="myTopNav">
@@ -74,38 +73,38 @@
 
 					<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
 						<div class="w3-right w3-purple">
-							<div class="w3-dropdown-hover w3-mobile">
+							<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
 								<button class="w3-btn w3-purple w3-padding-16">Reservations <i class="fa fa-caret-down"></i></button>
 								<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 								</div>
-							</div>
-							<div class="w3-dropdown-hover w3-mobile">
-								<button class="w3-btn w3-padding-16">Suivi <i class="fa fa-caret-down"></i></button>
+							</h:panelGroup>
+							<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
+								<button class="w3-btn w3-purple w3-padding-16" >Suivi <i class="fa fa-caret-down"></i></button>
 								<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 								</div>
-							</div>
-							<div class="w3-dropdown-hover w3-mobile">
-								<button class="w3-btn w3-padding-16">Profil <i class="fa fa-caret-down"></i></button>
+							</h:panelGroup>
+							<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
+								<button class="w3-btn w3-purple w3-padding-16">Profil <i class="fa fa-caret-down"></i></button>
 								<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 								</div>
-							</div>
-							<div class="w3-dropdown-hover w3-mobile">
-								<button class="w3-btn w3-padding-16">Connexion <i class="fa fa-caret-down"></i></button>
+							</h:panelGroup>
+							<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{empty connectionBean.loggedUser}">
+								<button class="w3-btn w3-purple w3-padding-16">Connexion <i class="fa fa-caret-down"></i></button>
 								<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a>
+									<a href="/invite/connexion/simpleConnexion.xhtml" class="w3-bar-item w3-btn w3-mobile">Client</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a>
 									<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 								</div>
-							</div>
+							</h:panelGroup>
 						</div>
 					</div>
 				</div>
@@ -114,7 +113,7 @@
 
 
 
-		<div id="global">
+		<div id="global" class="w3-content">
 			<ui:insert name="content"></ui:insert>
 		</div>
 
@@ -174,7 +173,7 @@
 				</ul>
 			</div>
 		</footer>
-	</h:form>
+
 	<ui:insert name="headscript"></ui:insert>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
