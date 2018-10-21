@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:component>
+	<figure class="FichePromotion w3-mobile w3-col s3 l3 w3-row">
+	<div class="w3-col s12"
+		onclick="document.getElementById('id_#{promotion.id}').style.display='block'">
+		<div class="product-image">
+			<img class="w3-image"
+				src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"
+				alt="Promotions" title="Promotion" />
+		</div>
+	</div>
+	<div class="w3-col s12 w3-row">
+		<div class="w3-col s12 w3-center w3-padding-16">
+			<h:outputLabel id="lblTitrePromotion_#{promotion.id}"
+				class="w3-mobile w3-large" value="#{promotion.name}" />
+			<br />
+			<h:outputLabel id="lblTitreProduit_#{promotion.id}" class="w3-mobile w3-large"
+				value="#{promotion.getBaseProduct().referenceProduct.name}"></h:outputLabel>
+		</div>
+
+		<div class="w3-col s12 w3-center">
+			<h:outputLabel id="lblPrixInitial_#{promotion.id}" class="w3-mobile w3-large"
+				style="text-decoration:line-through;"
+				value="#{promotion.getInitPrice()}">
+				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
+			</h:outputLabel>
+			<h:outputText class="w3-mobile w3-large"
+				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"
+				style="text-decoration:line-through;" />
+			<br />
+			<h:outputLabel class="w3-text-red w3-mobile w3-xlarge"
+				id="lblPrixDeduit_#{promotion.id}"
+				value="#{promotion.getPriceAfterPromotion()}">
+				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
+			</h:outputLabel>
+			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
+				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+		</div>
+		<div class="w3-col s12 w3-center w3-padding-16">
+			<label>Durée de la promotion: </label>
+			<h:outputLabel id="lblDureePromotion_#{promotion.id}" class=""
+				value="#{promotion.getBaseProduct().referenceProduct.name}" />
+		</div>
+		<div class="w3-col s12 w3-center">
+			<label>Délai de retrait pour le produit: </label>
+			<h:outputLabel id="lblDelaiRetrait_#{promotion.id}" class=""
+				value="#{promotion.getBaseProduct().referenceProduct.name}" />
+		</div>
+	</div>
+	<div class="w3-row w3-col s12 w3-padding-16">
+		<h:form class="w3-col s12 w3-row">
+			<h:selectOneMenu value="#{bookBean.quantityBooked}"
+				class="w3-select w3-col s3 w3-padding-16">
+				<f:convertNumber></f:convertNumber>
+				<f:selectItem itemValue="1" itemLabel="1" />
+				<f:selectItem itemValue="2" itemLabel="2" />
+				<f:selectItem itemValue="3" itemLabel="3" />
+				<f:selectItem itemValue="4" itemLabel="4" />
+				<f:selectItem itemValue="5" itemLabel="5" />
+				<f:selectItem itemValue="6" itemLabel="6" />
+				<f:selectItem itemValue="7" itemLabel="7" />
+				<f:selectItem itemValue="8" itemLabel="8" />
+				<f:selectItem itemValue="9" itemLabel="9" />
+				<f:selectItem itemValue="10" itemLabel="10" />
+			</h:selectOneMenu>
+			<h:outputLabel class="w3-col s3 w3-padding-16"
+				value="#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+			<h:commandButton action="#{bookBean.book(promotion)}"
+				value="Réserver"
+				class="w3-button w3-purple w3-hover-dark-grey w3-col s6 w3-padding-16" />
+		</h:form>
+	</div>
+
+	<div id="id_#{promotion.id}" class="w3-modal">
+		<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+			<header class="w3-container"> <span
+				onclick="document.getElementById('id_#{promotion.id}').style.display='none'"
+				class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+			</header>
+			<div>
+
+
+				<div class="left_content w3-row ">
+					<div class="w3-center">
+						<div class="span1_of_1 w3-mobile w3-col s6">
+							<div class="product-view">
+								<div class="product-essential">
+									<div class="product-img-box">
+										<div class="more-views" style="float: left;">
+											<div class="more-views-container"></div>
+										</div>
+										<div class="product-image">
+											<img
+												src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"
+												alt="Promotions" title="Promotion" />
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="span1_of_1_des w3-mobile w3-col s6">
+							<div class="desc1">
+								<div class="w3-left w3-xxlarge">
+									<h:outputText id="lblDescriptionBreve_#{promotion.id}"
+										value="#{promotion.name}" />
+									<h:outputText id="lblTitrePromotionBis_#{promotion.id}"
+										value="#{promotion.getBaseProduct().referenceProduct.name}" />
+								</div>
+								<div class="w3-center w3-large">
+									<h:outputText id="lblPrixInitialBis_#{promotion.id}"
+										value="#{promotion.getInitPrice()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+									<h:outputText class="w3-text-red w3-mobile w3-large"
+										id="lblPrixDeduitBis_#{promotion.id}"
+										value="#{promotion.getPriceAfterPromotion()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+								</div>
+								<div class="w3-center w3-large">
+									<label id="lblDureePromotionBis_#{promotion.id}" value="">DureePromotion</label>
+								</div>
+								<div class="w3-center w3-large">
+									<label id="lblDelaiRetraitBis_#{promotion.id}" value="">DelaiRetrait</label>
+								</div>
+								<div class="w3-row">
+									<div class="w3-left available w3-col s6">
+										<ul>
+											<li>Quantité : <select>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+											</select>
+											</li>
+										</ul>
+									</div>
+									<div class="btn_form w3-right available w3-col s6">
+										<form>
+											<ul>
+												<li><input type="submit" class="w3-mobile"
+													style="width: 80px" value="Reserver" title="" /> <input
+													type="submit" class="w3-mobile" style="width: 80px"
+													value="Suivre" title="" /></li>
+											</ul>
+
+										</form>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-bar w3-border-bottom">
+				<button class="tablink w3-bar-item w3-button"
+					onclick="openCity(event, 'Description_Detaille_#{promotion.id}')">Description
+					Detaillé</button>
+				<button class="tablink w3-bar-item w3-button"
+					onclick="openCity(event, 'Info_Commerce_#{promotion.id}')">Informations
+					Commerce</button>
+				<button class="tablink w3-bar-item w3-button"
+					onclick="openCity(event, 'Avis_#{promotion.id}')">Avis</button>
+			</div>
+
+			<div id="Description_Detaille_#{promotion.id}"
+				class="w3-container city">
+				<p class="para top w3-mobile">
+					<span class="w3-mobile">Sous titre eventuel</span> Description
+					detaillé
+				</p>
+				<ul>
+					<li class="w3-mobile">Article 1:</li>
+					<li class="w3-mobile">Article 2:</li>
+					<li class="w3-mobile">Article 3:</li>
+					<li class="w3-mobile">Article 4:</li>
+
+				</ul>
+			</div>
+
+			<div id="Info_Commerce_#{promotion.id}" class="w3-container city">
+				<p class="para w3-mobile">
+					<span class="w3-mobile">Nom Commerce</span>Description eventuel du
+					commerce
+				</p>
+				<ul class="qua_nav w3-mobile">
+					<li class="w3-mobile">Adresse</li>
+					<li class="w3-mobile">Tel</li>
+					<li class="w3-mobile">Email</li>
+				</ul>
+			</div>
+
+			<div id="Avis_#{promotion.id}" class="w3-container city">
+				<blockquote class="w3-mobile">
+					<header class="avisClient w3-mobile"> <span
+						data-rating='5'> <i class="ion-star"></i> <i
+						class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+						<i class="ion-star"></i>
+					</span> <strong class="w3-mobile">Titre Avis</strong> <span
+						class="w3-mobile"> 20 Octobre 2018</span> <span class="w3-mobile">
+						Par <em>Ramya</em>
+					</span>
+					<p>Description Avis</p>
+					</header>
+				</blockquote>
+
+				<blockquote class="w3-mobile">
+					<header class="avisClient w3-mobile"> <span
+						data-rating='4'> <i class="ion-star"></i> <i
+						class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+						<i class="ion-star"></i>
+					</span> <strong class="w3-mobile">Titre Avis</strong> <span
+						class="w3-mobile"> 20 Octobre 2018</span> <span class="w3-mobile">Par
+						<em>Aubin</em>
+					</span>
+					<p class="w3-mobile">Description Avis</p>
+					q </header>
+				</blockquote>
+
+				<blockquote class="w3-mobile w3-s">
+					<header class=" w3-mobile avisClient"> <span
+						data-rating='0'> <i class="ion-star"></i> <i
+						class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+						<i class="ion-star"></i>
+					</span> <strong class="w3-mobile">Titre Avis</strong> <span
+						class="w3-mobile"> 18 Octobre 2018</span> <span class="w3-mobile">Par
+						<em>Nicolas</em>
+					</span>
+					<p class="w3-mobile">Description Avis</p>
+					</header>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+	</figure>
+
+
+</ui:component>
+
+</html>

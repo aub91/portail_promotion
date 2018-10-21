@@ -15,10 +15,10 @@
 
 	<ui:define name="content">
 	<div style="margin-left: 14vw; " >
-		<h:panelGroup id="affichagePromotion" >
+		<h:panelGroup id="affichagePromotion" layout="block">
 			<ui:repeat var="promotion" value="#{catalogBean.promotions}">
 				
-				<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
+				<ui:include src="../../WEB-INF/components/promotion3.xhtml"/>
 			</ui:repeat>
 		</h:panelGroup>
 </div>
