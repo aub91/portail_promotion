@@ -15,8 +15,6 @@ import fr.afcepf.al32.groupe2.entity.Promotion;
 @Component
 @Transactional
 public class CatalogService implements ICatalogService {
-
-
 	@Autowired
 	IServicePromotion promotionService;
 	
