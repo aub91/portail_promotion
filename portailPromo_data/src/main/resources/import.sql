@@ -249,7 +249,7 @@ INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_un
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(10,'Manteaux',SYSDATE(),null,1,227)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(11,'Pantalons',SYSDATE(),null,1,228)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(12,'Cravates',SYSDATE(),null,1,229)
-INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(13,'caleçon',SYSDATE(),null,1,230)
+INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(13,'Caleçon',SYSDATE(),null,1,230)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(14,'Bandeau de sport',SYSDATE(),null,1,231)
 
 INSERT INTO company_type(id,name)VALUES(1,'EURL Entreprise individuelle ou unipersonnelle à responsabilité limitée')
@@ -713,6 +713,7 @@ INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(25,5)
 INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(26,5)
 INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(27,1)
 INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(28,1)
+INSERT INTO promotion_shop(promotion_id,shop_id)VALUES(29,1)
 
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (1, 'SHOP', 1, 'CLIENT', 1, sysdate())
 INSERT INTO following_element_data(id, element_type, element_id, subscriber_type, subscriber_id, follow_start_date) VALUES (2, 'CATEGORY', 1, 'CLIENT', 1, sysdate())

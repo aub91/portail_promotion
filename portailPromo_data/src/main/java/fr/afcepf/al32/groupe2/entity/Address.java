@@ -3,6 +3,7 @@ package fr.afcepf.al32.groupe2.entity;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,7 +26,7 @@ public class Address {
 	@NotNull
 	private Integer number;
 	
-	@ManyToOne(cascade= {CascadeType.PERSIST})
+	@ManyToOne(cascade= {CascadeType.MERGE}, fetch=FetchType.EAGER)
 	@JoinColumn(name="address_type_id")
 	@NotNull
 	private AddressType addressType;
@@ -37,7 +38,7 @@ public class Address {
 	@NotBlank
 	private String name;
 	
-	@ManyToOne(cascade= {CascadeType.PERSIST})
+	@ManyToOne(cascade= {CascadeType.PERSIST}, fetch=FetchType.EAGER)
 	@JoinColumn(name="city_id")
 	@NotNull
 	private City city;

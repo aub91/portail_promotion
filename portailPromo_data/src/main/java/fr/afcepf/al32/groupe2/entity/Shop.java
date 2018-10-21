@@ -5,6 +5,7 @@ import java.util.Map;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -66,7 +67,7 @@ public class Shop implements IFollowableElement{
 	@NotNull
 	private Shopkeeper owner;
 	
-	@OneToOne(cascade=CascadeType.ALL)
+	@OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinTable(name="shop_address", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="address_id"))
 	private Address address;
 	

@@ -11,6 +11,7 @@ import java.util.Map;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -58,7 +59,7 @@ public class Promotion extends Product {
 	@NotNull
 	private Boolean isCumulative;
 	
-	@ManyToMany(cascade=CascadeType.ALL)
+	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinTable(name="promotion_shop", joinColumns=@JoinColumn(name="promotion_id"),inverseJoinColumns=@JoinColumn(name="shop_id"))
 	@MapKey(name="id")
 	private Map<Long, Shop> shops;
@@ -193,6 +194,10 @@ public class Promotion extends Product {
 	public BaseProduct getBaseProduct() {
 		// TODO Auto-generated method stub
 		return getProduct().getBaseProduct();
+	}
+	
+	public List<Shop> getShopList(){
+		return new ArrayList<>(getShops().values());
 	}
 
 
