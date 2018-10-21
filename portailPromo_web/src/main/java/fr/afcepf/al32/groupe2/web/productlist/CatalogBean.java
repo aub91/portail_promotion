@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
+import fr.afcepf.al32.groupe2.entity.CategoryProduct;
 import fr.afcepf.al32.groupe2.entity.Promotion;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
 
@@ -19,16 +20,28 @@ public class CatalogBean {
 	@Autowired
 	private ICatalogService catalogService;
 
-	private List<Promotion> promotions = new ArrayList<>(); 
+	private List<Promotion> promotions = new ArrayList<>();
+	
+	private List<CategoryProduct> categories;
+	
+	private CategoryProduct selectedCategory;
+	
+	private String searchField;
 	
 	public CatalogBean() {
 		
 	}
 	
+	public String search() {
+		return null;
+	}
+	
 	@PostConstruct
 	public void initCatalogProduits() {
 		
-		promotions = catalogService.getAllDisplayablePromotion();
+		promotions = getAllPromotions();
+		
+		categories = getAllRootCategories();
 	}
 	 
 	public ICatalogService getCatalogService() {
@@ -46,4 +59,34 @@ public class CatalogBean {
 	public void setPromotions(List<Promotion> promotions) {
 		this.promotions = promotions;
 	}
+	public List<Promotion> getAllPromotions(){
+		return catalogService.getAllDisplayablePromotion();
+	}
+	
+	public List<CategoryProduct> getAllRootCategories(){
+		return catalogService.getAllRootCategories();
+	}
+
+	public List<CategoryProduct> getCategories() {
+		return categories;
+	}
+
+	public CategoryProduct getSelectedCategory() {
+		return selectedCategory;
+	}
+
+	public void setSelectedCategory(CategoryProduct selectedCategory) {
+		this.selectedCategory = selectedCategory;
+	}
+
+	public String getSearchField() {
+		return searchField;
+	}
+
+	public void setSearchField(String searchField) {
+		this.searchField = searchField;
+	}
+	
+	
+	
 }

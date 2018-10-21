@@ -1,14 +1,9 @@
 package fr.afcepf.al32.groupe2.service.factory;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import fr.afcepf.al32.groupe2.entity.Pack;
 
-@Component
 public class PackFactory implements IPackFactory {
 	
-	@Autowired
 	private static PackFactory packFactory;
 	
 	private Integer numberPurchased;

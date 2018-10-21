@@ -1,17 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
- xmlns:h="http://java.sun.com/jsf/html" lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html" lang="fr">
 
 <h:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="../../Ressources/css/w3.css" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../Ressources/css/w3.css" />
-	<link rel="stylesheet" type="text/css" href="../../Ressources/css/styleArcheClient.css" />
-
-	<title>
-		<ui:insert name="title"></ui:insert>
-	</title>
+	<title><ui:insert name="title"></ui:insert></title>
 	<ui:insert name="headcssscript"></ui:insert>
 
 
@@ -20,40 +20,51 @@
 <body class="w3-row">
 
 	<header class="w3-col s12">
-		<div class="navbar">
-			<div class="topnav w3-mobile w3-purple w3-row-padding" id="myTopNav">
-				<div class="w3-bar w3-purple w3-mobile">
-					<div class="w3-dropdown-hover w3-purple w3-mobile w3-col s2 ">
-						<a href="#" class="w3-bar-item w3-btn w3-mobile w3-purple"><img style="width: 70%; height: 70%;" src="../../Ressources/Images/Logos/promo32_logo.png" /></a>
-					</div>
-					<div class="w3-purple w3-mobile w3-row w3-col s7 w3-padding-24">
-						<div class="w3-dropdown-hover w3-light-gray w3-medium w3-text-purple w3-mobile w3-col s2">
-							<button class="w3-btn w3-block">
-								<b>Catégories </b><i class="fa fa-caret-down"></i>
-							</button>
-							<div class="w3-dropdown-content w3-bar-block w3-dark-grey" style="width: 100%">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-									2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-							</div>
-						</div>
+	<div class="navbar">
+		<div class="topnav w3-mobile w3-purple w3-row-padding" id="myTopNav">
+			<div class="w3-bar w3-purple w3-mobile">
+				<div class="w3-dropdown-hover w3-purple w3-mobile w3-col s2 ">
+					<a href="#" class="w3-bar-item w3-btn w3-mobile w3-purple"><img
+						style="width: 70%; height: 70%;"
+						src="../../Ressources/Images/Logos/promo32_logo.png" /></a>
+				</div>
+				<div class="w3-purple w3-mobile w3-row w3-col s7 w3-padding-24">
+					<h:form>
+						<h:selectOneMenu id="escape02"
+							value="#{catalogBean.selectedCategory}"
+							class="w3-select w3-dark-grey w3-mobile w3-col s2">
+							<f:selectItem itemLabel="Catégorie" itemValue="null"></f:selectItem>
+							<f:selectItems value="#{catalogBean.categories}" var="category"
+								itemValue="#{category}" itemLabel="#{category.name}" />
+						</h:selectOneMenu>
 						<div>
-							<input type="text" class="w3-bar-item w3-input w3-col s9" placeholder="Search.." /> <a href="#" class="w3-bar-item w3-btn w3-light-gray w3-medium w3-text-purple w3-col s1"><b>Go</b></a>
+							<h:inputText class="w3-bar-item w3-input w3-col s9"
+								placeholder="Search.." value="#{catalogBean.searchField}" />
+							<h:commandButton action="#{catalogBean.search}"
+								class="w3-bar-item w3-btn w3-light-gray w3-medium w3-text-purple w3-col s1"
+								value="Go"></h:commandButton>
+
 						</div>
-					</div>
-					<div class="w3-purple w3-mobile w3-col s3">
-						<a href="#" class="w3-bar-item w3-btn w3-purple"><img style="width: 70%; height: 70%;" src="../../Ressources/Images/slogan/Promo_slogan.png" /></a>
-					</div>
+					</h:form>
+				</div>
+				<div class="w3-purple w3-mobile w3-col s3">
+					<a href="#" class="w3-bar-item w3-btn w3-purple"><img
+						style="width: 70%; height: 70%;"
+						src="../../Ressources/Images/slogan/Promo_slogan.png" /></a>
 				</div>
 			</div>
-			<div class="bottomnavrr w3-bar w3-purple w3-row w3-mobile w3-padding-small" id="myBottomnav">
+			<div
+				class="bottomnavrr w3-bar w3-purple w3-row w3-mobile w3-padding-small"
+				id="myBottomnav">
 				<div class="w3-bar w3-bar-item w3-purple w3-mobile w3-col s7">
 					<div class="w3-dropdown-hover w3-mobile">
 						<button class="w3-btn w3-purple w3-padding-16">
 							Localisation <i class="fa fa-caret-down"></i>
 						</button>
 						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-							<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-								2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+							<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
+								href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
+								href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 						</div>
 					</div>
 					<div class="w3-dropdown-hover w3-purple w3-mobile">
@@ -61,128 +72,146 @@
 						<div class="w3-center">
 							<label id="lblDistanceKm" value=""></label>
 						</div>
-						<span>1km</span> <input type="range" min="1" max="20" step="1" class="slider" id="myRange" list="tickmarks" />
-						<span>20km</span>
+						<span>1km</span> <input type="range" min="1" max="20" step="1"
+							class="slider" id="myRange" list="tickmarks" /> <span>20km</span>
 					</div>
 					<div class="w3-dropdown-hover w3-purple w3-mobile">
 						<button class="w3-btn w3-padding-16">
 							Tous les categories <i class="fa fa-caret-down"></i>
 						</button>
 						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-							<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-								2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+							<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
+								href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
+								href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
 					<div class="w3-right w3-purple">
-						<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
+						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+							rendered="#{not empty connectionBean.loggedUser}">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Reservations <i class="fa fa-caret-down"></i>
 							</button>
 							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-									2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 							</div>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
+						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+							rendered="#{not empty connectionBean.loggedUser}">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Suivi <i class="fa fa-caret-down"></i>
 							</button>
 							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-									2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 							</div>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{not empty connectionBean.loggedUser}">
+						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+							rendered="#{not empty connectionBean.loggedUser}">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Profil <i class="fa fa-caret-down"></i>
 							</button>
 							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link
-									2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
+									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 							</div>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile" rendered="#{empty connectionBean.loggedUser}">
+						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+							rendered="#{empty connectionBean.loggedUser}">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Connexion <i class="fa fa-caret-down"></i>
 							</button>
 							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="/invite/connexion/simpleConnexion.xhtml" class="w3-bar-item w3-btn w3-mobile">Client</a> <a href="#"
-								 class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
+								<a href="/invite/connexion/simpleConnexion.xhtml"
+									class="w3-bar-item w3-btn w3-mobile">Client</a> <a href="#"
+									class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a href="#"
+									class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 							</div>
 						</h:panelGroup>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</header>
-
-
 
 	<div id="global" class=" w3-center w3-col s12">
 		<ui:insert name="content"></ui:insert>
 	</div>
 
 	<footer id="realfooter" class="w3-col s12">
-		<div id="apropos" class="footer">
-			<ul>
-				<li>
-					<h3>
-						<b>A PROPOS</b>
-					</h3>
-				</li>
-				<li class="lienfooter"><a href="" alt="">Qui sommes-nous?</a></li>
-				<li class="lienfooter"><a href="" alt="">Comment rejoindre
-						la coopérative?</a></li>
-				<li class="lienfooter"><a href="" alt="">Conditions
-						générales de vente</a></li>
-				<li class="lienfooter"><a href="" alt="">Mentions légales</a></li>
-				<li class="lienfooter"><a href="" alt="">Signaler un abus</a></li>
-				<li class="lienfooter"><a href="" alt="">Cookies</a></li>
-			</ul>
-		</div>
-		<div id="sav" class="footer">
-			<ul>
-				<li>
-					<h3>
-						<b>AIDE, SERVICE &amp; SAV</b>
-					</h3>
-				</li>
-				<li class="lienfooter"><a href="" alt="">Service Après-Vente</a></li>
-				<li class="lienfooter"><a href="" alt="">Besoin d'aide?</a></li>
-			</ul>
-		</div>
-		<div id="fallow" class="footer">
-			<h3>
-				<b>NOUS SUIVRE</b>
-			</h3>
-			<ul>
-				<li><a href="#"> <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/facebook.png" height="60"
-						 width="60" />
-					</a></li>
-				<li><a href="#"> <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/twitter.png" height="60"
-						 width="60" />
-					</a></li>
-				<li><a href="#"> <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/instagram.png"
-						 height="60" width="60" />
-					</a></li>
-				<li><a href="#"> <img class="socialicons" src="../../Ressources/Images/Image_footerArcheClient/pinterest.png"
-						 height="60" width="60" />
-					</a></li>
-			</ul>
-		</div>
+	<div id="apropos" class="footer">
+		<ul>
+			<li>
+				<h3>
+					<b>A PROPOS</b>
+				</h3>
+			</li>
+			<li class="lienfooter"><a href="" alt="">Qui sommes-nous?</a></li>
+			<li class="lienfooter"><a href="" alt="">Comment rejoindre
+					la coopérative?</a></li>
+			<li class="lienfooter"><a href="" alt="">Conditions
+					générales de vente</a></li>
+			<li class="lienfooter"><a href="" alt="">Mentions légales</a></li>
+			<li class="lienfooter"><a href="" alt="">Signaler un abus</a></li>
+			<li class="lienfooter"><a href="" alt="">Cookies</a></li>
+		</ul>
+	</div>
+
+	<div id="sav" class="footer">
+		<ul>
+			<li>
+				<h3>
+					<b>AIDE, SERVICE &amp; SAV</b>
+				</h3>
+			</li>
+			<li class="lienfooter"><a href="" alt="">Service Après-Vente</a></li>
+			<li class="lienfooter"><a href="" alt="">Besoin d'aide?</a></li>
+		</ul>
+	</div>
+	<div id="fallow" class="footer">
+		<h3>
+			<b>NOUS SUIVRE</b>
+		</h3>
+		<ul>
+			<li><a href="#"> <img class="socialicons"
+					src="../../Ressources/Images/Image_footerArcheClient/facebook.png"
+					height="60" width="60" />
+			</a></li>
+			<li><a href="#"> <img class="socialicons"
+					src="../../Ressources/Images/Image_footerArcheClient/twitter.png"
+					height="60" width="60" />
+			</a></li>
+			<li><a href="#"> <img class="socialicons"
+					src="../../Ressources/Images/Image_footerArcheClient/instagram.png"
+					height="60" width="60" />
+			</a></li>
+			<li><a href="#"> <img class="socialicons"
+					src="../../Ressources/Images/Image_footerArcheClient/pinterest.png"
+					height="60" width="60" />
+			</a></li>
+		</ul>
+	</div>
 	</footer>
 
 	<ui:insert name="headscript"></ui:insert>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-	<script type="text/javascript" src="../../Ressources/js/scriptArcheClient.js"></script>
-	<script type="text/javascript" src="../../Ressources/js/jquery.easy-autocomplete.js"></script>
+	<script type="text/javascript"
+		src="../../Ressources/js/scriptArcheClient.js"></script>
+	<script type="text/javascript"
+		src="../../Ressources/js/jquery.easy-autocomplete.js"></script>
 	<script type="text/javascript" src="../../Ressources/js/maintable.js"></script>
 	<script type="text/javascript" src="../../Ressources/js/modernizr.js"></script>
-	<script type="text/javascript" src="../../Ressources/js/scriptPerimetre.js"></script>
+	<script type="text/javascript"
+		src="../../Ressources/js/scriptPerimetre.js"></script>
 </body>
 
 </html>

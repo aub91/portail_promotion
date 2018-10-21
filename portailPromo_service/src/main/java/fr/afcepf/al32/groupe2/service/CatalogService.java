@@ -10,6 +10,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import fr.afcepf.al32.groupe2.dao.ICategoryProductDao;
+import fr.afcepf.al32.groupe2.entity.CategoryProduct;
 import fr.afcepf.al32.groupe2.entity.Promotion;
 
 @Component
@@ -17,6 +19,9 @@ import fr.afcepf.al32.groupe2.entity.Promotion;
 public class CatalogService implements ICatalogService {
 	@Autowired
 	IServicePromotion promotionService;
+	
+	@Autowired
+	IServiceCategoryProduct categoryService;
 	
 	@Override
 	public List<Promotion> getAllDisplayablePromotion() {
@@ -28,4 +33,11 @@ public class CatalogService implements ICatalogService {
 				})
 				.collect(Collectors.toList());
 	}
+
+	@Override
+	public List<CategoryProduct> getAllRootCategories() {
+		return categoryService.getAllRootCategories();
+	}
+	
+	
 }
