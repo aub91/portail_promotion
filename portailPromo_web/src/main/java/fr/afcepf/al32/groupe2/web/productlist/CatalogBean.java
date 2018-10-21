@@ -1,6 +1,7 @@
 package fr.afcepf.al32.groupe2.web.productlist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -35,11 +36,20 @@ public class CatalogBean {
 	}
 	
 	public String search() {
-		return null;
+		List<String> keyWords = Arrays.asList(searchField.split(" "));
+		if(!keyWords.isEmpty()) {
+			promotions = catalogService.searchByCategoryAndKeyWords(selectedCategory, keyWords);
+		} else if (selectedCategory != null) {
+			searchByCategory(selectedCategory);
+		}
+		return "/invite/fichesPromotion/pageAffichagePromotions";
 	}
 	
-	public String searchByCategorie(CategoryProduct category) {
-		return null;
+	public String searchByCategory(CategoryProduct category) {
+		if(category != null) {
+			promotions = catalogService.searchByCategory(category);
+		}
+		return "/invite/fichesPromotion/pageAffichagePromotions";
 	}
 	
 	@PostConstruct

@@ -1,5 +1,6 @@
 package fr.afcepf.al32.groupe2.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.groupe2.dao.IPromotionDao;
+import fr.afcepf.al32.groupe2.entity.BaseProduct;
 import fr.afcepf.al32.groupe2.entity.Promotion;
 
 @Transactional
@@ -40,6 +42,24 @@ public class ServicePromotion implements IServicePromotion {
 	public Promotion AjouterPromotion(Promotion promotion) {
 		promotiondao.createOne(promotion);
 		return promotion;
+	}
+
+	@Override
+	public List<Promotion> getAllValidPromotionByProduct(List<BaseProduct> products) {
+		List<Promotion> validPromos = promotiondao.findAllValid();
+		
+		List<Promotion> result = new ArrayList<>();
+		
+		for (Promotion promotion : validPromos) {
+			for (BaseProduct product : products) {
+				if(product.getId().equals(promotion.getBaseProduct().getId())) {
+					result.add(promotion);
+					break;
+				}
+			}
+		}
+		
+		return result;
 	}
 
 }

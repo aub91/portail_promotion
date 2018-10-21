@@ -23,7 +23,7 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 	private String baseRequest = "SELECT base_product.id, base_product.init_price,"
 			+ " base_product.description,"
 			+ " base_product.add_date,"
-			+ " base_product.remove_date"
+			+ " base_product.remove_date, base_product.image, base_product.reference_product_id"
 			+ " FROM base_product INNER JOIN reference_product "
 			+ "ON base_product.reference_product_id= reference_product.id "
 			+ "WHERE base_product.remove_date IS NULL";
@@ -74,7 +74,7 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 			} else {
 				rqdFinale+=";";
 			}
-			return ((List<BaseProduct>) entityManager.createNativeQuery(rqdFinale).getResultList());
+			return (List<BaseProduct>) entityManager.createNativeQuery(rqdFinale, BaseProduct.class).getResultList();
 	}
 	@SuppressWarnings("unchecked")
 	@Override

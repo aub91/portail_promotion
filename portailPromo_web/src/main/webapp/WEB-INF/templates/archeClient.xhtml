@@ -35,7 +35,7 @@
 						<h:selectOneMenu id="escape02"
 							value="#{catalogBean.selectedCategory}"
 							class="w3-select w3-dark-grey w3-mobile w3-col s2">
-							<f:selectItem itemLabel="Catégorie" itemValue="null"></f:selectItem>
+							<f:selectItem itemLabel="Catégorie" itemValue="#{null}"></f:selectItem>
 							<f:selectItems value="#{catalogBean.categories}" var="category"
 								itemValue="#{category}" itemLabel="#{category.name}" />
 						</h:selectOneMenu>
