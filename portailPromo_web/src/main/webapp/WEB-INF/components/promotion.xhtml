@@ -8,7 +8,7 @@
 		<div class="">
 			<div class="single">
 				<div class="left_content">
-					<div class="w3-center w3-row" onclick="document.getElementById('id_#{produit.id}').style.display='block'">
+					<div class="w3-center w3-row" onclick="document.getElementById('id_#{promotion.id}').style.display='block'">
 						<div class="span1_of_1 w3-mobile w3-col s6">
 							<div class="product-view">
 								<div class="product-essential">
@@ -28,22 +28,22 @@
 						<div class="span1_of_1_des w3-mobile w3-col s6">
 							<div class="desc1">
 								<div class="w3-left w3-xlarge w3-mobile">
-									<h:outputLabel id="lblTitrePromotion" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+									<h:outputLabel id="lblTitrePromotion" class="w3-mobile w3-left" value="#{promotion.name}"/><br />
 
-									<h:outputLabel id="lblTitreProduit" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+									<h:outputLabel id="lblTitreProduit" class="w3-mobile w3-left" value="#{promotion.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
 								</div>
 
 								<div class="w3-center w3-large">
-									<h:outputLabel id="lblPrixInitial" class="w3-mobile " style="text-decoration:line-through;" value="#{produit.getInitPrice()}">PrixInitial</h:outputLabel><br/>
-									<h:outputLabel class="w3-text-red w3-mobile w3-large" id="lblPrixDeduit" value="#{produit.getBaseProduct().referenceProduct.name}">PrixDeduit</h:outputLabel><br/>
+									<h:outputLabel id="lblPrixInitial" class="w3-mobile " style="text-decoration:line-through;" value="#{promotion.getInitPrice()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"/><br/>
+									<h:outputLabel class="w3-text-red w3-mobile w3-large" id="lblPrixDeduit" value="#{promotion.getPriceAfterPromotion()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"/><br/>
 								</div>
 								<div class="w3-center w3-mobile w3-medium">
 									<label>Durée Promotion: </label>
-									<h:outputLabel id="lblDureePromotion" class ="" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br/>
+									<h:outputLabel id="lblDureePromotion" class ="" value="#{promotion.getBaseProduct().referenceProduct.name}"/><br/>
 								</div>
 								<div class="w3-center w3-marge">
 									<label>Délai Retrait: </label>
-									<h:outputLabel id="lblDelaiRetrait" class="" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+									<h:outputLabel id="lblDelaiRetrait" class="" value="#{promotion.getBaseProduct().referenceProduct.name}"/><br />
 								</div>
 
 								<div class="clear"></div>
@@ -52,11 +52,10 @@
 					</div>
 				</div>
 
-				<div id="id_#{produit.id}" class="w3-modal">
+				<div id="id_#{promotion.id}" class="w3-modal">
 					<div class="w3-modal-content w3-card-4 w3-animate-zoom">
 						<header class="w3-container">
-							<span onclick="document.getElementById('id_#{produit.id}').style.display='none'" class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-							<h2>Header</h2>
+							<span onclick="document.getElementById('id_#{promotion.id}').style.display='none'" class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
 						</header>
 						<div>
 
@@ -82,14 +81,12 @@
 									<div class="span1_of_1_des w3-mobile w3-col s6">
 										<div class="desc1">
 											<div class="w3-left w3-xxlarge">
-												<label id="lblTitrePromotion" value="">TitreProduit</label> -
-												<label id="lblDescriptionBreve" value="">Titre Promotion</label>
+												<h:outputText id="lblDescriptionBreve" value="#{promotion.name}"/>
+												<h:outputText id="lblTitrePromotion" value="#{promotion.getBaseProduct().referenceProduct.name}"/>
 											</div>
-
-
 											<div class="w3-center w3-large">
-												<del id="lblPrixInitial" value="">PrixInitial</del>
-												<label class="w3-text-red w3-xlarge" id="lblPrixDeduit" value="">PrixDeduit</label>
+												<h:outputLabel id="lblPrixInitial" value="#{promotion.getInitPrice()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"/>
+												<h:outputLabel class="w3-text-red w3-mobile w3-large" id="lblPrixDeduit" value="#{promotion.getPriceAfterPromotion()}€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"/>
 											</div>
 											<div class="w3-center w3-large"><label id="lblDureePromotion" value="">DureePromotion</label></div>
 											<div class="w3-center w3-large"><label id="lblDelaiRetrait" value="">DelaiRetrait</label></div>
@@ -128,13 +125,13 @@
 							</div>
 						</div>
 						<div class="w3-bar w3-border-bottom">
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description_Detaille_#{produit.id}')">Description
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description_Detaille_#{promotion.id}')">Description
 								Detaillé</button>
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Info_Commerce_#{produit.id}')">Informations Commerce</button>
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Avis_#{produit.id}')">Avis</button>
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Info_Commerce_#{promotion.id}')">Informations Commerce</button>
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Avis_#{promotion.id}')">Avis</button>
 						</div>
 
-						<div id="Description_Detaille_#{produit.id}" class="w3-container city">
+						<div id="Description_Detaille_#{promotion.id}" class="w3-container city">
 							<p class="para top w3-mobile">
 								<span class="w3-mobile">Sous titre eventuel</span> Description detaillé
 							</p>
@@ -147,7 +144,7 @@
 							</ul>
 						</div>
 
-						<div id="Info_Commerce_#{produit.id}" class="w3-container city">
+						<div id="Info_Commerce_#{promotion.id}" class="w3-container city">
 							<p class="para w3-mobile">
 								<span class="w3-mobile">Nom Commerce</span>Description eventuel du commerce
 							</p>
@@ -158,7 +155,7 @@
 							</ul>
 						</div>
 
-						<div id="Avis_#{produit.id}" class="w3-container city">
+						<div id="Avis_#{promotion.id}" class="w3-container city">
 							<blockquote class="w3-mobile">
 								<header class="avisClient w3-mobile">
 									<span data-rating='5'> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
@@ -192,10 +189,6 @@
 									<p class="w3-mobile">Description Avis</p>
 								</header>
 							</blockquote>
-						</div>
-
-						<div class="w3-container w3-light-grey w3-padding">
-							<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
 						</div>
 					</div>
 				</div>

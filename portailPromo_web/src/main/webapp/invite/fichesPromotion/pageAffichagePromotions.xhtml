@@ -16,7 +16,7 @@
 	<ui:define name="content">
 	<div style="margin-left: 14vw; " >
 		<h:panelGroup id="affichagePromotion" >
-			<ui:repeat var="produit" value="#{catalogBean.promotions}">
+			<ui:repeat var="promotion" value="#{catalogBean.promotions}">
 				
 				<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
 			</ui:repeat>
