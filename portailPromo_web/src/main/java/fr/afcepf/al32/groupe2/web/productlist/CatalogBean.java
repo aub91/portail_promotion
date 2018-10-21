@@ -1,7 +1,9 @@
 package fr.afcepf.al32.groupe2.web.productlist;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
@@ -36,12 +38,16 @@ public class CatalogBean {
 		return null;
 	}
 	
+	public String searchByCategorie(CategoryProduct category) {
+		return null;
+	}
+	
 	@PostConstruct
 	public void initCatalogProduits() {
 		
 		promotions = getAllPromotions();
 		
-		categories = getAllRootCategories();
+		categories = getAllRootCategories().stream().sorted(Comparator.comparing(CategoryProduct::getName)).collect(Collectors.toList());
 	}
 	 
 	public ICatalogService getCatalogService() {

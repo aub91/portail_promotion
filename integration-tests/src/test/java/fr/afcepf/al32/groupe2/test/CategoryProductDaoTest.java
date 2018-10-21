@@ -3,6 +3,7 @@ package fr.afcepf.al32.groupe2.test;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,19 @@ public class CategoryProductDaoTest {
 		Assert.assertNotNull(categories);
 		
 		Assert.assertEquals(26, categories.size());
+	}
+	
+	@Test
+	@Ignore
+	public void findAllRootCategoriesWithDaughter() {
+		List<CategoryProduct> categories = dao.findAllRootCategoriesWithDaughters();
+		
+		Assert.assertNotNull(categories);
+		
+		Assert.assertEquals(26, categories.size());
+		
+		Assert.assertNotNull(categories.get(0).getCategoryDaughter());
+		
 	}
 	
 	

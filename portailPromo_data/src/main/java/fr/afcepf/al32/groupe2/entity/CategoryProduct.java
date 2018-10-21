@@ -6,6 +6,7 @@ import java.util.Map;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -40,7 +41,7 @@ public class CategoryProduct implements IFollowableElement {
 	@JoinColumn(name = "category_mum_id")
 	private CategoryProduct categoryMum;
 
-	@OneToMany(mappedBy = "categoryMum")
+	@OneToMany(mappedBy = "categoryMum", fetch=FetchType.EAGER)
 	private List<CategoryProduct> categoryDaughter;
 
 	@OneToMany(mappedBy = "categoriesProduct", cascade = CascadeType.ALL)

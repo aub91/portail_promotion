@@ -29,4 +29,11 @@ public class CategoryProductDao implements ICategoryProductDao{
 		return entityManager.createNamedQuery("CategoryProduct.findAllRootCategories", CategoryProduct.class).getResultList();
 	}
 
+
+	@Override
+	public List<CategoryProduct> findAllRootCategoriesWithDaughters() {
+//		return entityManager.createNamedQuery("CategoryProduct.findAllRootCategoriesWithDaughter", CategoryProduct.class).getResultList();
+		return null;
+	}
+
 }
