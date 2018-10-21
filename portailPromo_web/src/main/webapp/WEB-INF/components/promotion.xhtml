@@ -3,14 +3,12 @@
  xmlns:h="http://java.sun.com/jsf/html">
 
 <ui:component>
-	<figure class="FichePromotion">
-		<h:commandLink action="#{afficherFichePromotionDetaille(promotion.id)}">
-			<h:graphicImage value="../../Ressources/Images/Images_promotions/#{promotion.photo}" class="image_principale" />
-		</h:commandLink>
-		<div class=" w3-row">
+	<figure class="FichePromotion w3-mobile w3-col s3 l3 ">
+
+		<div class="">
 			<div class="single">
 				<div class="left_content">
-					<div class="w3-center">
+					<div class="w3-center w3-row">
 						<div class="span1_of_1 w3-mobile w3-col s6">
 							<div class="product-view">
 								<div class="product-essential">
@@ -19,7 +17,7 @@
 											<div class="more-views-container"></div>
 										</div>
 										<div class="product-image">
-											<img src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png" alt="Promotions" title="Promotion" />
+											<img style="width: 75%;" src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"  alt="Promotions" title="Promotion" />
 										</div>
 
 									</div>
@@ -28,54 +26,63 @@
 						</div>
 						<div class="span1_of_1_des w3-mobile w3-col s6">
 							<div class="desc1">
-								<div class="w3-left w3-xxlarge">
-									<label id="lblTitrePromotion" value="">TitreProduit</label> -
-									<label id="lblDescriptionBreve" value="">Titre Promotion</label>
+								<div class="w3-left w3-xlarge w3-mobile">
+									<h:outputLabel id="lblTitrePromotion" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br/>
+									
+									<h:outputLabel id="lblTitreProduit" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br/>
 								</div>
-
 
 								<div class="w3-center w3-large">
-									<del id="lblPrixInitial" value="">PrixInitial</del>
-									<label class="w3-text-red w3-xlarge" id="lblPrixDeduit" value="">PrixDeduit</label>
+									<h:outputLabel id="lblPrixInitial" class="w3-mobile " style="text-decoration:line-through;" value="#{produit.getPrixInit}">PrixInitial</h:outputLabel><br/>
+									<h:outputLabel class="w3-text-red w3-mobile w3-large" id="lblPrixDeduit" value="#{produit.getBaseProduct().referenceProduct.name}">PrixDeduit</h:outputLabel><br/>
 								</div>
-								<div class="w3-center w3-large"><label id="lblDureePromotion" value="">DureePromotion</label></div>
-								<div class="w3-center w3-large"><label id="lblDelaiRetrait" value="">DelaiRetrait</label></div>
-								<div class="w3-row">
-									<div class="w3-left available w3-col s6">
-										<ul>
-											<li>Quantité : <select>
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-													<option>6</option>
-													<option>7</option>
-													<option>8</option>
-													<option>9</option>
-													<option>10</option>
-												</select>
-											</li>
-										</ul>
-									</div>
-									<div class="btn_form w3-right available w3-col s6">
-										<form>
-											<ul>
-												<li><input type="submit" class="w3-mobile" style="width : 80px" value="Reserver" title="" />
-													<input type="submit" class="w3-mobile" style="width : 80px" value="Suivre" title="" /></li>
-											</ul>
+								<div class="w3-center w3-mobile w3-medium">
+								<label>Durée Promotion: </label>
+									<h:outputLabel id="lblDureePromotion" class ="" value="#{produit.getBaseProduct().referenceProduct. }"></h:outputLabel><br/>
+								</div>
+								<div class="w3-center w3-marge">
+								<label>Délai Retrait: </label>
+									<h:outputLabel id="lblDelaiRetrait" class ="" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br/>
+								</div>
 
-										</form>
-									</div>
-									<div class="clear"></div>
-								</div>
+								<div class="clear"></div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+
+
+				<div class="w3-row">
+					<div class="w3-center available w3-col s6">
+						<tr>
+							<td>Quantité : <select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+						      		<option>10</option>
+								</select>
+							</td>
+						</tr>
+					</div>
+					<div class="btn_form w3-right available w3-col s6">
+						<form>
+							<tr>
+								<td><input type="submit" class="w3-mobile" style="width: 80px" value="Reserver" title="" /> 
+									<input type="submit" class="w3-mobile" style="width: 80px" value="Suivre" title="" /></td>
+								</tr>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
-	</figure> 
+	</figure>
 </ui:component>
 
 </html>

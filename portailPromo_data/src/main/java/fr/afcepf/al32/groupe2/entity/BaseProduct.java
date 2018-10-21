@@ -105,7 +105,7 @@ public class BaseProduct extends Product implements IFollowableElement {
 		return result;
 	}
 	@Override
-	BaseProduct getBaseProduct() {
+	public BaseProduct getBaseProduct() {
 		return this;
 	}
 

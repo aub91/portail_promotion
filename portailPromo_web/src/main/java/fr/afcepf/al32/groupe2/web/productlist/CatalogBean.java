@@ -46,8 +46,4 @@ public class CatalogBean {
 	public void setPromotions(List<Promotion> promotions) {
 		this.promotions = promotions;
 	}
-
-	
-	
-
 }

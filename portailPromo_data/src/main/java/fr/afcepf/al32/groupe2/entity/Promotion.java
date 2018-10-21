@@ -166,7 +166,7 @@ public class Promotion extends Product {
 	}
 	
 	@Override
-	List<Promotion> getPromotionList() {
+	public List<Promotion> getPromotionList() {
 		List<Promotion> result = new ArrayList<>();
 		if(getPromotion() != null) {
 			result.addAll(getPromotion().getPromotionList());
@@ -185,11 +185,11 @@ public class Promotion extends Product {
 		return promotionType.getPriceAfterPromotion(getInitPrice());
 	}
 	@Override
-	Double getInitPrice() {
+	public Double getInitPrice() {
 		return getProduct().getInitPrice();
 	}
 	@Override
-	BaseProduct getBaseProduct() {
+	public BaseProduct getBaseProduct() {
 		// TODO Auto-generated method stub
 		return getProduct().getBaseProduct();
 	}
