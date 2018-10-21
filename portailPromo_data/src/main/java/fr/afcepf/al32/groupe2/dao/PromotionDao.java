@@ -10,16 +10,32 @@ import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.groupe2.entity.Promotion;
 
-@Component
 @Transactional
+@Component
 public class PromotionDao implements IPromotionDao {
-	
 	@PersistenceContext
-	EntityManager em;
+	private EntityManager entityManager;
 
 	@Override
-	public Promotion findOne(Long numero) {
-		return em.find(Promotion.class, numero);
+	public Promotion findOne(Long idUnite) {
+	return entityManager.find(Promotion.class, idUnite);
+	}
+
+	@Override
+	public void createOne(Promotion promotion) {
+		entityManager.persist(promotion);
+	}
+
+	@Override
+	public List<Promotion> findAll() {
+		
+		return entityManager.createNamedQuery("Promotion.findAll",Promotion.class).getResultList();
+	}
+
+	@Override
+	public List<Promotion> findAllValid() {
+
+		return entityManager.createNamedQuery("Promotion.findAllValid",Promotion.class).getResultList();
 	}
 
 	@Override
@@ -32,18 +48,6 @@ public class PromotionDao implements IPromotionDao {
 	public void delete(Long numero) {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public List<Promotion> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Promotion> findAllValid() {
-		
-		return em.createNamedQuery("Promotion.findAllValid", Promotion.class).getResultList();
 	}
 
 }

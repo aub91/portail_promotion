@@ -187,11 +187,13 @@ public class Promotion extends Product {
 	@Override
 	public Double getInitPrice() {
 		return getProduct().getInitPrice();
-	}
+	}	
+
 	@Override
 	public BaseProduct getBaseProduct() {
 		// TODO Auto-generated method stub
 		return getProduct().getBaseProduct();
 	}
+
 
 }

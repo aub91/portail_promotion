@@ -29,7 +29,7 @@ public class RequetesSQLTest {
 	@Test
 	public void rechercheProduitSurMotClesWithEmptyListTest() {
 		List<String> rqdtkeys=new ArrayList<String>();
-		
+
 		List<BaseProduct> retourSQL=(List<BaseProduct>) rechercheProduitDao.rechercherProduitSurMotsCles(rqdtkeys);
 		Assert.assertEquals(15, retourSQL.size());
 	}
