@@ -29,7 +29,6 @@
 							<div class="desc1">
 								<div class="w3-left w3-xlarge w3-mobile">
 									<h:outputLabel id="lblTitrePromotion" class="w3-mobile w3-left" value="#{promotion.name}"/><br />
-
 									<h:outputLabel id="lblTitreProduit" class="w3-mobile w3-left" value="#{promotion.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
 								</div>
 
@@ -125,10 +124,9 @@
 							</div>
 						</div>
 						<div class="w3-bar w3-border-bottom">
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description_Detaille_#{promotion.id}')">Description
-								Detaillé</button>
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Info_Commerce_#{promotion.id}')">Informations Commerce</button>
-							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Avis_#{promotion.id}')">Avis</button>
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description_Detaille_#{produit.id}')">Description Detaillé</button>
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Info_Commerce_#{produit.id}')">Informations Commerce</button>
+							<button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Avis_#{produit.id}')">Avis</button>
 						</div>
 
 						<div id="Description_Detaille_#{promotion.id}" class="w3-container city">
