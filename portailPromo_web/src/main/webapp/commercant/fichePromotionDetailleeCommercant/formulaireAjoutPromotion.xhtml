@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/archeClient.xhtml">
+	<ui:define name="title">Nos produits - Promo32</ui:define>
+	<ui:define name="headcssscript">
+		<link type="text/css" rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+		<link type="text/css" rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
+		<link type="text/css" rel="stylesheet" href="styleTest.css" />
+		<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
+	</ui:define>
+
+	<ui:define name="content">
+		<h:panelGroup id="loginPanel">
+			<h:form class="w3-container">
+				<h2 class="w3-text-purple">Ajouter une promotion</h2>
+				<p>
+					<label class="w3-text-purple"><b>Libellé du produit</b></label>
+					<h:inputText class="w3-input w3-border" id="lblproduit"
+						value="#{connectionBean.login}" />
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Catégorie du produit</b></label>
+					<h:outputLabel class="w3-input w3-border" id="catproduit"
+						value="Viandes" />
+				</p>
+				<p>
+					<div class="w3-center available w3-col s6">
+						<tr>
+							<td>Quantité : <select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+							</select>
+							</td>
+						</tr>
+					</div>
+				</p>
+				<p>
+					<div class="w3-center available w3-col s6">
+						<tr>
+							<td>Type de quantité : <select>
+									<option>Unité</option>
+									<option>Kg</option>
+									<option>gr</option>
+									<option>L</option>
+									<option>cl</option>
+							</select>
+							</td>
+						</tr>
+					</div>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>prix du produit</b></label>
+					<h:inputText class="w3-input w3-border" id="prixproduit"
+						value="100" />
+				</p>
+				<p>
+					<div class="w3-center available w3-col s6">
+						<tr>
+							<td>Type de promotion :
+							 <select>
+									<option>Remise</option>
+									<option>Pack</option>
+									<option>Pourcentage</option>
+							</select>
+							</td>
+						</tr>
+					</div>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Libellé de la
+							promotion</b></label>
+					<h:inputText class="w3-input w3-border" id="lblpromotion"
+						value="#{connectionBean.login}" />
+				</p>
+
+				<p>
+					<label class="w3-text-purple"><b>Prix avec la promotion</b></label>
+					<h:outputLabel class="w3-input w3-border" id="prixpromotion"
+						value="50" />
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>€</b></label>
+				</p>
+				<p>
+					<h:commandButton class="w3-btn w3-purple"
+						action="#{connectionBean.connect}" value="valider" />
+				</p>
+				<h:outputText style="color: red" value="#{connectionBean.message}" />
+			</h:form>
+		</h:panelGroup>
+
+
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="../jsHamburger/main.js"></script>
+		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
+
+	</ui:define>
+</ui:composition>
+</html>
