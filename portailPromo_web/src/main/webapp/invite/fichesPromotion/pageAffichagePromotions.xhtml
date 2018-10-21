@@ -10,20 +10,22 @@
 		<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
 		<link type="text/css" rel="stylesheet" href="styleTest.css" />
 		<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
+
 	</ui:define>
 
 	<ui:define name="content">
 	<div style="margin-left: 14vw; " >
 		<h:panelGroup id="affichagePromotion" >
 			<ui:repeat var="produit" value="#{catalogBean.promotions}">
+				
 				<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
 			</ui:repeat>
 		</h:panelGroup>
 </div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../jsHamburger/main.js"></script>
 		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
-
 	</ui:define>
 </ui:composition>
 

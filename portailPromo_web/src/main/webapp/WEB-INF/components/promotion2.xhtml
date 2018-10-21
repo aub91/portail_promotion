@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
+ xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:component>
+	<figure class="FichePromotion w3-mobile w3-col s3 l3 ">
+
+		<div class="">
+			<div class="single">
+				<div class="left_content">
+					<div class="w3-center w3-row" onclick="document.getElementById('modal01').style.display='block'">
+						<div class="span1_of_1 w3-mobile w3-col s6">
+							<div class="product-view">
+								<div class="product-essential">
+									<div class="product-img-box">
+										<div class="more-views" style="float: left;">
+											<div class="more-views-container"></div>
+										</div>
+										<div class="product-image">
+											<img style="width: 75%;" src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"
+											 alt="Promotions" title="Promotion" />
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="span1_of_1_des w3-mobile w3-col s6">
+							<div class="desc1">
+								<div class="w3-left w3-xlarge w3-mobile">
+									<h:outputLabel id="lblTitrePromotion" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+
+									<h:outputLabel id="lblTitreProduit" class="w3-mobile w3-left" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+								</div>
+
+								<div class="w3-center w3-large">
+									<h:outputLabel id="lblPrixInitial" class="w3-mobile " style="text-decoration:line-through;" value="#{produit.getBaseProduct().referenceProduct.name}">PrixInitial</h:outputLabel><br />
+									<h:outputLabel class="w3-text-red w3-mobile w3-large" id="lblPrixDeduit" value="#{produit.getBaseProduct().referenceProduct.name}">PrixDeduit</h:outputLabel><br />
+								</div>
+								<div class="w3-center w3-mobile w3-medium">
+									<label>Durée Promotion: </label>
+									<h:outputLabel id="lblDureePromotion" class="" value="#{produit.getBaseProduct().referenceProduct.name }"></h:outputLabel><br />
+								</div>
+								<div class="w3-center w3-marge">
+									<label>Délai Retrait: </label>
+									<h:outputLabel id="lblDelaiRetrait" class="" value="#{produit.getBaseProduct().referenceProduct.name}"></h:outputLabel><br />
+								</div>
+
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+					<div class="main_bg" >
+				<div class="wrap"> 
+					<div class=" w3-row">
+						<div class="single">
+							<div class="left_content">
+								<div class="w3-center">
+								<div class="span1_of_1 w3-mobile w3-col s6">
+									<div class="product-view">
+										<div class="product-essential">
+											<div class="product-img-box">
+												<div class="more-views" style="float: left;">
+													<div class="more-views-container"></div>
+												</div>
+												<div class="product-image" >
+													<img width="50%; height=50%; src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png" alt="Promotions" title="Promotion" />
+												</div>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="span1_of_1_des w3-mobile w3-col s6">
+									<div class="desc1">
+										<div class="w3-left w3-xxlarge">
+											<label id="lblTitrePromotion"  value="">Titre Produit</label> -
+											<label id="lblDescriptionBreve" value="">Titre Promotion</label>
+										</div>
+		
+		
+										<div class="w3-center w3-large">
+											<del id="lblPrixInitial" value="">PrixInitial</del>
+											<label class="w3-text-red w3-xlarge" id="lblPrixDeduit" value="">PrixDeduit</label>
+										</div>
+										<div class="w3-center w3-large"><label id="lblDureePromotion" value="">DureePromotion</label></div>
+										<div class="w3-center w3-large"><label id="lblDelaiRetrait" value="">DelaiRetrait</label></div>
+										<div class="w3-row">
+											<div class="w3-left available w3-col s6">
+												<ul>
+													<li>Quantité : <select>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+															<option>6</option>
+															<option>7</option>
+															<option>8</option>
+															<option>9</option>
+															<option>10</option>
+														</select>
+													</li>
+												</ul>
+											</div>
+											<div class="btn_form w3-right available w3-col s6">
+												<form>
+													<ul>
+														<li><input type="submit" class="w3-mobile" style="width : 80px" value="Reserver" title="" />
+															<input type="submit" class="w3-mobile" style="width : 80px" value="Suivre" title="" /></li>
+													</ul>
+		
+												</form>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+								<div class="clear"></div>
+								<!-- start tabs -->
+								<section class="tabs w3-mobile">
+									<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 " checked="checked"/> <label for="tab-1"
+									 class="tab-label-1 w3-mobile">Description détaillée</label> <input id="tab-2" type="radio" name="radio-set"
+									 class="tab-selector-2"/>
+									<label for="tab-2" class="tab-label-2 w3-mobile">Infos Commerce</label> <input id="tab-3" type="radio" name="radio-set"
+									 class="tab-selector-3 w3-mobile"/>
+									<label for="tab-3" class="tab-label-3 w3-mobile">Avis</label>
+									<div class="clear-shadow"></div>
+									<div class="content w3-mobile">
+										<div class="content-1 w3-mobile">
+											<p class="para top w3-mobile">
+												<span class="w3-mobile">Sous titre eventuel</span> Description detaillé
+											</p>
+											<ul>
+												<li class="w3-mobile">Article 1:</li>
+												<li class="w3-mobile">Article 2:</li>
+												<li class="w3-mobile">Article 3:</li>
+												<li class="w3-mobile">Article 4:</li>
+		
+											</ul>
+											<div class="clear"></div>
+										</div>
+										<div class="content-2 w3-mobile">
+											<p class="para w3-mobile">
+												<span class="w3-mobile">Nom Commerce</span>Description eventuel du commerce  </p>
+											<ul class="qua_nav w3-mobile">
+												<li class="w3-mobile">Adresse</li>
+												<li class="w3-mobile">Tel</li>
+												<li class="w3-mobile">Email</li>
+											</ul>
+										</div>
+										<div class="content-3 w3-mobile">
+		
+											<blockquote class="w3-mobile">
+												<header class="avisClient w3-mobile">
+													<span data-rating='5'> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+													</span> <strong class="w3-mobile">Titre Avis</strong>
+													<span class="w3-mobile"> 20 Octobre 2018</span>
+													<span class="w3-mobile"> Par <em>Ramya</em> </span>
+													<p>Description Avis</p>
+												</header>
+											</blockquote>
+		
+											<blockquote class="w3-mobile">
+												<header class="avisClient w3-mobile">
+													<span data-rating='4'> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+													</span> <strong class="w3-mobile">Titre Avis</strong> 
+													<span class="w3-mobile"> 20 Octobre 2018</span> 
+													<span class="w3-mobile">Par <em>Aubin</em></span>
+													<p class="w3-mobile">Description Avis</p>q
+												</header>
+											</blockquote>
+		
+											<blockquote class="w3-mobile w3-s">
+												<header class=" w3-mobile avisClient">
+													<span data-rating='0'> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i> <i class="ion-star"></i>
+													</span> 
+													<strong class="w3-mobile">Titre Avis</strong> 
+													<span class="w3-mobile"> 18 Octobre 2018</span> 
+													<span  class="w3-mobile">Par <em>Nicolas</em> </span>
+													<p class="w3-mobile">Description Avis</p>
+												</header>
+											</blockquote>
+										</div>
+									</div>
+							</section>
+							</div>
+							
+							<!-- end tabs -->
+						</div>
+						<!-- start sidebar -->
+		
+						<!-- end sidebar -->
+						<div class="clear"></div>
+					</div>
+					<!-- end content -->
+				</div>
+			</div>
+
+		
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-center available w3-col s6">
+				<tr>
+					<td>Quantité : <select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+						</select>
+					</td>
+				</tr>
+			</div>
+			<div class="btn_form w3-right available w3-col s6">
+				<form>
+					<tr>
+						<td><input type="submit" class="w3-mobile" style="width: 80px" value="Reserver" title="" />
+							<input type="submit" class="w3-mobile" style="width: 80px" value="Suivre" title="" /></td>
+					</tr>
+				</form>
+			</div>
+		</div>
+
+	</figure>
+
+</ui:component>
+
+</html>

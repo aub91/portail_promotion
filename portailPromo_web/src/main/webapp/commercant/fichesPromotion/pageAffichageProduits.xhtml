@@ -15,7 +15,7 @@
 		</ui:define>
 		
 		<ui:define name="content">
-			<h:panelGroup id="affichagePromotion">
+			<h:panelGroup id="affichagePromotion" layout="block">
 				<ui:repeat var="produit" value="#{tousLesPromotions}">
 					<ui:include src="../../WEB-INF/components/promotion.xhtml"/>
 				</ui:repeat>

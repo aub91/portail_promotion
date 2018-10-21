@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.FichePromotion {
+   font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 12px;
+    margin-left: 29px;
+    min-height:250px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.2em;
+    text-align: left;
+    border: 1px solid #2ABB6D;
+    border-radius: 3px;
+}
+
+.FichePromotion *,
+.FichePromotion *:before,
+.FichePromotion *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.image_principale {
+
+    max-width: 100%;
+    vertical-align: top;
+    width: 346px;
+    height: 230px;
+    border-bottom: 1px solid #2ABB6D;
+}
+
+.image_minus {
+    width: 40px;
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    text-align: center;
+    z-index: 1;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.25em;
+    /*display: none;*/
+}
+
+.image_plus {
+    width: 40px;
+    position: absolute;
+    bottom: 35%;
+    left: 25%;
+    text-align: center;
+    z-index: 1;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.25em;
+    /*display: none;*/
+}
+
+.nbArticle {
+    border: 2px solid #2ABB6D;
+    background-color: #2ABB6D;
+    height: 40px;
+    width: 40px;
+    float: ;
+}
+
+.FichePromotion figcaption {
+    display: grid;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.FichePromotion .nomPromotion {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0 0 4px;
+    color: #2ABB6D;
+	text-decoration: none;
+}
+
+.FichePromotion .nomPromotion:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.commerce a {
+	text-decoration: none !important;
+	color: black !important;	
+}
+
+.commerce a:hover{
+	color: #2cc547;
+}
+
+.FichePromotion .prixPromotion {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0 0 4px;
+    text-align: right;
+}
+
+.FichePromotion .commerce {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #2CC547;
+    margin: 0 0 4px;
+}
+
+.FichePromotion .poids {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1rem;
+    font-weight: 200;
+    color: ;
+    margin: 0 0 4px;
+    text-align: right;
+}
+
+.FichePromotion .prixKilo {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 8px 0;
+    font-weight: 700;
+    color: #2ABB6D;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.FichePromotion .icons {
+    z-index: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: flex-start;
+   
+}
+
+.FichePromotion .icons a {
+    margin: 2px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.FichePromotion .icons a i {
+    display: block;
+    font-size: 23.52941176px;
+    line-height: 40px;
+    width: 40px;
+    background-color: #2ABB6D;
+    text-align: center;
+    color: #ffffff;
+     border-radius: 0.25em;
+}
+
+.FichePromotion .icons a i:hover {
+    background-color: #2ABB6D;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.FichePromotion:hover a,
+.FichePromotion.hover a {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    
+}
+
+.FichePromotion:hover a:nth-child(2),
+.FichePromotion.hover a:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.FichePromotion:hover a:nth-child(3),
+.FichePromotion.hover a:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.cd-cart-container ul {
+    list-style-type: none;
+}
+
+
+/* Demo purposes only 
+
+body {
+    background-color: #ffffff;
+    text-align: center;
+} */
