@@ -26,8 +26,14 @@ public class CatalogBean {
 	
 	private CategoryProduct selectedCategory;
 	
+	private String searchField;
+	
 	public CatalogBean() {
 		
+	}
+	
+	public String search() {
+		return null;
 	}
 	
 	@PostConstruct
@@ -53,7 +59,6 @@ public class CatalogBean {
 	public void setPromotions(List<Promotion> promotions) {
 		this.promotions = promotions;
 	}
-
 	public List<Promotion> getAllPromotions(){
 		return catalogService.getAllDisplayablePromotion();
 	}
@@ -73,6 +78,15 @@ public class CatalogBean {
 	public void setSelectedCategory(CategoryProduct selectedCategory) {
 		this.selectedCategory = selectedCategory;
 	}
-	
 
+	public String getSearchField() {
+		return searchField;
+	}
+
+	public void setSearchField(String searchField) {
+		this.searchField = searchField;
+	}
+	
+	
+	
 }
