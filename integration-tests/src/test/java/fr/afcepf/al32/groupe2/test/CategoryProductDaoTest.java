@@ -1,5 +1,7 @@
 package fr.afcepf.al32.groupe2.test;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,9 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import fr.afcepf.al32.groupe2.dao.ICategoryProductDao;
-import fr.afcepf.al32.groupe2.dao.ISalesUnitDao;
 import fr.afcepf.al32.groupe2.entity.CategoryProduct;
-import fr.afcepf.al32.groupe2.entity.SalesUnit;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
 
 @RunWith(SpringRunner.class)
@@ -26,5 +26,15 @@ public class CategoryProductDaoTest {
 		CategoryProduct su=dao.findOne(1L);
 		Assert.assertNotNull(su);
 	}
+	
+	@Test
+	public void findAllRootCategories() {
+		List<CategoryProduct> categories = dao.findAllRootCategories();
+		
+		Assert.assertNotNull(categories);
+		
+		Assert.assertEquals(26, categories.size());
+	}
+	
 	
 }
