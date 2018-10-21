@@ -29,4 +29,10 @@ public class ServiceCategoryProduct implements IServiceCategoryProduct {
 		return categoryProductDao.findAllRootCategories();
 	}
 
+	@Override
+	public List<CategoryProduct> getAllRootCategoriesWithDaughters() {
+		// TODO Auto-generated method stub
+		return categoryProductDao.findAllRootCategoriesWithDaughters();
+	}
+
 }

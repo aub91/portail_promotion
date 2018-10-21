@@ -10,6 +10,8 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css"
 		href="../../Ressources/css/w3.css" />
+		<link rel="stylesheet" type="text/css"
+		href="../../Ressources/css/styleArcheClient.css" />
 
 	<title><ui:insert name="title"></ui:insert></title>
 	<ui:insert name="headcssscript"></ui:insert>
@@ -77,20 +79,34 @@
 					</div>
 					<div class="w3-dropdown-hover w3-purple w3-mobile">
 						<button class="w3-btn w3-padding-16">
-							Tous les categories <i class="fa fa-caret-down"></i>
+							Toutes les catégories <i class="fa fa-caret-down"></i>
 						</button>
-						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-							<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
-								href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
-								href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-						</div>
+						<h:form class="w3-dropdown-content w3-bar-block w3-dark-grey">
+							<ui:repeat var="cat" value="#{catalogBean.categories}">
+								<h:panelGroup layout="block" class="w3-bar-item w3-mobile" >
+									<h:commandButton action="#{catalogBean.searchByCategory(cat)}"
+										value="#{cat.name}"
+										class="w3-button w3-dark-grey w3-hover-dark-grey w3-hover-text-purple"/>
+										<h:panelGroup class="fa fa-caret-down" onclick="show(this)"/>
+									<h:panelGroup layout="block" class="w3-light-grey w3-hide">
+										<ui:repeat var="subcat" value="#{cat.categoryDaughter}">
+											<h:commandButton
+												action="#{catalogBean.searchByCategory(subcat)}"
+												value="#{subcat.name}"
+												class="w3-button w3-light-grey w3-light-grey" />
+										</ui:repeat>
+									</h:panelGroup>
+								</h:panelGroup>
+
+							</ui:repeat>
+						</h:form>
 					</div>
 				</div>
 
 				<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
 					<div class="w3-right w3-purple">
 						<h:panelGroup class="w3-dropdown-hover w3-mobile"
-							rendered="#{not empty connectionBean.loggedUser}">
+							rendered="#{not empty connectionBean.loggedUser}" layout="block">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Reservations <i class="fa fa-caret-down"></i>
 							</button>
@@ -101,7 +117,7 @@
 							</div>
 						</h:panelGroup>
 						<h:panelGroup class="w3-dropdown-hover w3-mobile"
-							rendered="#{not empty connectionBean.loggedUser}">
+							rendered="#{not empty connectionBean.loggedUser}" layout="block">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Suivi <i class="fa fa-caret-down"></i>
 							</button>
@@ -112,7 +128,7 @@
 							</div>
 						</h:panelGroup>
 						<h:panelGroup class="w3-dropdown-hover w3-mobile"
-							rendered="#{not empty connectionBean.loggedUser}">
+							rendered="#{not empty connectionBean.loggedUser}" layout="block">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Profil <i class="fa fa-caret-down"></i>
 							</button>
@@ -123,7 +139,7 @@
 							</div>
 						</h:panelGroup>
 						<h:panelGroup class="w3-dropdown-hover w3-mobile"
-							rendered="#{empty connectionBean.loggedUser}">
+							rendered="#{empty connectionBean.loggedUser}" layout="block">
 							<button class="w3-btn w3-purple w3-padding-16">
 								Connexion <i class="fa fa-caret-down"></i>
 							</button>
@@ -212,6 +228,17 @@
 	<script type="text/javascript" src="../../Ressources/js/modernizr.js"></script>
 	<script type="text/javascript"
 		src="../../Ressources/js/scriptPerimetre.js"></script>
+
+	<script>
+		function show(element) {
+			var x = element.parentNode.childNodes[2];
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else{
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
 </body>
 
 </html>

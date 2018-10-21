@@ -9,4 +9,6 @@ public interface IServiceCategoryProduct {
 	CategoryProduct  rechercheCategoryProduitParIdentifiant(Long id) ;
 	
 	List<CategoryProduct> getAllRootCategories();
+	
+	List<CategoryProduct> getAllRootCategoriesWithDaughters();
 }
