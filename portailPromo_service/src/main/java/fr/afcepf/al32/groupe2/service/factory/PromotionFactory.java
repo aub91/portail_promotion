@@ -2,31 +2,14 @@ package fr.afcepf.al32.groupe2.service.factory;
 
 import java.time.Duration;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-import fr.afcepf.al32.groupe2.entity.Discount;
-import fr.afcepf.al32.groupe2.entity.Pack;
-import fr.afcepf.al32.groupe2.entity.PercentType;
 import fr.afcepf.al32.groupe2.entity.Promotion;
-import fr.afcepf.al32.groupe2.entity.PromotionType;
 
 
-@Component
+
 public class PromotionFactory implements IPromotionFactory {
 	
-	@Autowired
 	private static PromotionFactory promotionFactory;
-	
-	@Autowired
-	private IPromotionTypeFactory<Pack> typePack;
-	
-	@Autowired
-	private IPromotionTypeFactory<PercentType> typePercentType;
-	
-	@Autowired
-	private IPromotionTypeFactory<Discount> typeDiscount;
-	
+		
 	private String name;
 	private String description;
 	private Duration limitTimePromotion;
@@ -34,13 +17,19 @@ public class PromotionFactory implements IPromotionFactory {
 	private Double quantityInitAvailable;
 	private Boolean isCumulative;
 	
-	private PromotionType promotionType;
+	private String promotionType;
+	
+	private Integer numberOffered;
+	private Integer numberPurchased;
+	private Double minPurchaseAmountDiscount;
+	private Double discountValue;
+	private Double percentValue;
+	private Double minPurchaseAmountPercent;
 	
 	public static PromotionFactory getPromotionType() {
 		if(promotionFactory == null) {
 			promotionFactory = new PromotionFactory();
 			promotionFactory.initFactory();
-			
 		}
 		
 		return promotionFactory;
@@ -60,23 +49,39 @@ public class PromotionFactory implements IPromotionFactory {
 		promotion.setLimitTimeTakePromotion(limitTimeTakePromotion);
 		promotion.setQuantityInitAvailable(quantityInitAvailable);
 		promotion.setIsCumulative(isCumulative);
-		
+		switch (promotionType) {
+		case "Pack":
+			promotion.setPromotionType(PackFactory.getPackType().fabrique());
+			PackFactory.getPackType().setNumberOffered(numberOffered);
+			PackFactory.getPackType().setNumberPurchased(numberPurchased);
+			break;
+		case "Discount":
+			promotion.setPromotionType(DiscountFactory.getDiscountType().fabrique());
+			DiscountFactory.getDiscountType().setDiscountValue(discountValue);
+			DiscountFactory.getDiscountType().setMinPurchaseAmount(minPurchaseAmountDiscount);
+		case "PercentType":
+			promotion.setPromotionType(PercentTypeFactory.getPercentTypeType().fabrique());
+			PercentTypeFactory.getPercentTypeType().setPercentValue(percentValue);
+			PercentTypeFactory.getPercentTypeType().setMinPurchaseAmount(minPurchaseAmountPercent);		
+		default:
+			break;
+		}
 		return promotion;	
 	}
 
-	public IPromotionTypeFactory<Pack> CreateTypePack() {
-		
-		return typePack;
+	public PromotionFactory createTypePack() {
+		this.promotionType = "Pack";
+		return this;
 	}
 	
-	public IPromotionTypeFactory<Discount> CreateTypeDiscount() {
-		
-		return typeDiscount;
+	public PromotionFactory createTypeDiscount() {
+		this.promotionType = "Discount";
+		return this;
 	}
 	
-	public IPromotionTypeFactory<PercentType> CreateTypePercentType() {
-		
-		return typePercentType;
+	public PromotionFactory createTypePercentType() {
+		this.promotionType = "PercentType";
+		return this;
 	}
 	
 	@Override
