@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -17,7 +19,8 @@ import javax.persistence.Table;
 public class Publish {
 	
 	@Id
-	@Column(name="id_promotion")
+	@Column(name="id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long idPromotion;
 	
 	@Column(name="publish_date")
@@ -25,8 +28,8 @@ public class Publish {
 	@Column(name="cancel_publish_date")
 	private Date cancelPublishDate;
 	
-	@OneToOne
-	@PrimaryKeyJoinColumn
+	@OneToOne(cascade=CascadeType.PERSIST)
+	@JoinColumn(name="promotion_id")
 	private Promotion promotion;
 	
 	@ManyToOne(cascade= {CascadeType.ALL})
@@ -50,6 +53,7 @@ public class Publish {
 	}
 	public void setPromotion(Promotion promotion) {
 		this.promotion = promotion;
+		promotion.setPublish(this);
 	}
 	public ReasonCancelPublishPromotion getReasonCancelPublishPromotion() {
 		return reasonCancelPublishPromotion;

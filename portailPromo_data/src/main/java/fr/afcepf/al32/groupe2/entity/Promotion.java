@@ -59,7 +59,7 @@ public class Promotion extends Product {
 	@NotNull
 	private Boolean isCumulative;
 	
-	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+	@ManyToMany(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
 	@JoinTable(name="promotion_shop", joinColumns=@JoinColumn(name="promotion_id"),inverseJoinColumns=@JoinColumn(name="shop_id"))
 	@MapKey(name="id")
 	private Map<Long, Shop> shops;
@@ -77,7 +77,7 @@ public class Promotion extends Product {
 	@JoinColumn(name="template_promotion_id")
 	private TemplatePromotion templatePromotion;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.MERGE)
 	@JoinColumn(name="product_id")
 	private Product product;
 	

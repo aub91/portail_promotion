@@ -18,88 +18,73 @@
 	</ui:define>
 
 	<ui:define name="content">
-		<h:panelGroup id="loginPanel">
+		<h:panelGroup id="addPromotionPanel" class="w3-content" layout="block">
 			<h:form class="w3-container">
-				<h2 class="w3-text-purple">Ajouter une promotion</h2>
+				<h2 class="w3-text-purple">Formulaire de création d'une
+					promotion</h2>
 				<p>
-					<label class="w3-text-purple"><b>Libellé du produit</b></label>
-					<h:inputText class="w3-input w3-border" id="lblproduit"
-						value="#{connectionBean.login}" />
+					<label class="w3-text-purple"><b>Nom de la promotion</b></label>
+					<h:inputText class="w3-input w3-border" id="nom"
+						value="#{addPromotionBean.promotion.name}" />
 				</p>
 				<p>
-					<label class="w3-text-purple"><b>Catégorie du produit</b></label>
-					<h:outputLabel class="w3-input w3-border" id="catproduit"
-						value="Viandes" />
-				</p>
-				<p>
-					<div class="w3-center available w3-col s6">
-						<tr>
-							<td>Quantité : <select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-							</select>
-							</td>
-						</tr>
-					</div>
-				</p>
-				<p>
-					<div class="w3-center available w3-col s6">
-						<tr>
-							<td>Type de quantité : <select>
-									<option>Unité</option>
-									<option>Kg</option>
-									<option>gr</option>
-									<option>L</option>
-									<option>cl</option>
-							</select>
-							</td>
-						</tr>
-					</div>
-				</p>
-				<p>
-					<label class="w3-text-purple"><b>prix du produit</b></label>
-					<h:inputText class="w3-input w3-border" id="prixproduit"
-						value="100" />
-				</p>
-				<p>
-					<div class="w3-center available w3-col s6">
-						<tr>
-							<td>Type de promotion :
-							 <select>
-									<option>Remise</option>
-									<option>Pack</option>
-									<option>Pourcentage</option>
-							</select>
-							</td>
-						</tr>
-					</div>
-				</p>
-				<p>
-					<label class="w3-text-purple"><b>Libellé de la
+					<label class="w3-text-purple"><b>Description de la
 							promotion</b></label>
-					<h:inputText class="w3-input w3-border" id="lblpromotion"
-						value="#{connectionBean.login}" />
-				</p>
-
-				<p>
-					<label class="w3-text-purple"><b>Prix avec la promotion</b></label>
-					<h:outputLabel class="w3-input w3-border" id="prixpromotion"
-						value="50" />
+					<h:inputText class="w3-input w3-border" id="description"
+						value="#{addPromotionBean.promotion.description}" />
 				</p>
 				<p>
-					<label class="w3-text-purple"><b>€</b></label>
+					<label class="w3-text-purple"><b>Type de la promotion</b></label>
+					<h:selectOneMenu value="#{addPromotionBean.typePromotion}"
+						class="w3-select w3-dark-grey w3-mobile">
+						<f:selectItem itemLabel="Pourcentage" itemValue="percentage"></f:selectItem>
+						<f:selectItem itemLabel="Remise" itemValue="value"></f:selectItem>
+						<f:selectItem itemLabel="Pack" itemValue="pack"></f:selectItem>
+					</h:selectOneMenu>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Valeur du pourcentage de remise</b></label>
+					<h:inputText class="w3-input w3-border" id="percent"
+						value="#{addPromotionBean.percentValue}">
+						<f:convertNumber></f:convertNumber>
+					</h:inputText>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Montant minimum d'achat</b></label>
+					<h:inputText class="w3-input w3-border" id="montant"
+						value="#{addPromotionBean.minPurchaseAmount}">
+						<f:convertNumber></f:convertNumber>
+					</h:inputText>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Produit</b></label>
+					<h:selectOneMenu value="#{addPromotionBean.productId}"
+						class="w3-select w3-dark-grey w3-mobile">
+						<f:selectItem itemLabel="Produit" itemValue="#{null}"></f:selectItem>
+						<f:selectItems value="#{addPromotionBean.products}" var="product"
+							itemValue="#{product.id}"
+							itemLabel="#{product.referenceProduct.name}" />
+					</h:selectOneMenu>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Quantité mise en promotion</b></label>
+					<h:inputText class="w3-input w3-border" id="quantite"
+						value="#{addPromotionBean.promotion.quantityInitAvailable}">
+						<f:convertNumber></f:convertNumber>
+					</h:inputText>
+				</p>
+				<p>
+					<label class="w3-text-purple"><b>Commerce</b></label>
+					<h:selectOneMenu value="#{addPromotionBean.commerceId}"
+						class="w3-select w3-dark-grey w3-mobile">
+						<f:selectItem itemLabel="Commerce" itemValue="#{null}"></f:selectItem>
+						<f:selectItems value="#{addPromotionBean.shops}" var="shop"
+							itemValue="#{shop.id}" itemLabel="#{shop.name}" />
+					</h:selectOneMenu>
 				</p>
 				<p>
 					<h:commandButton class="w3-btn w3-purple"
-						action="#{connectionBean.connect}" value="valider" />
+						action="#{addPromotionBean.create}" value="Créer" />
 				</p>
 				<h:outputText style="color: red" value="#{connectionBean.message}" />
 			</h:form>

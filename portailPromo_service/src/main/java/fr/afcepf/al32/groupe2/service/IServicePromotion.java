@@ -9,7 +9,7 @@ public interface IServicePromotion {
 	List<Promotion> findAll();
 	List<Promotion> findAllValid();
 	Promotion recherchePromotionParIdentifiant(Long idUnite);
-	Promotion AjouterPromotion(Promotion promotion);
+	Promotion ajouterPromotion(Promotion promotion);
 	List<Promotion> getAllValidPromotionByProduct(List<BaseProduct> products);
 
 }

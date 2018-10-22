@@ -39,7 +39,7 @@ public class ServicePromotion implements IServicePromotion {
 	}
 
 	@Override
-	public Promotion AjouterPromotion(Promotion promotion) {
+	public Promotion ajouterPromotion(Promotion promotion) {
 		promotiondao.createOne(promotion);
 		return promotion;
 	}

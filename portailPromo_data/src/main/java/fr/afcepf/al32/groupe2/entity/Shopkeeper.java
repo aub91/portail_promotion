@@ -5,6 +5,7 @@ import java.util.Map;
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
 
@@ -12,7 +13,7 @@ import javax.persistence.OneToMany;
 @DiscriminatorValue(value="shopkeeper")
 public class Shopkeeper extends User{
 	
-	@OneToMany(mappedBy="owner", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="owner", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@MapKey(name="id")
 	private Map<Long, Shop> shops;
 	

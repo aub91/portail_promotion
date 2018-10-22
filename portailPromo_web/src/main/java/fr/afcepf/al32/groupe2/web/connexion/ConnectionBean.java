@@ -36,6 +36,12 @@ public class ConnectionBean {
 		
 		return suite;
 	}
+	
+	public String logout() {
+		loggedUser = null;
+		
+		return "/invite/fichesPromotion/pageAffichagePromotions";
+	}
 
 	public String getLogin() {
 		return login;

@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,8 +21,8 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name="reservation")
 @NamedQueries({
-	@NamedQuery(name="Reservation.findAll" , query="select r From Reservation r" )
-
+	@NamedQuery(name="Reservation.findAll" , query="select r From Reservation r" ),
+	@NamedQuery(name="Reservation.findAllByClient" , query="select r From Reservation r INNER JOIN r.client cli WHERE cli.id = :clientId" )
 })
 public class Reservation {
 	
@@ -30,14 +31,14 @@ public class Reservation {
 	private Long id;
 	
 	@Column(name="creation_date")
-	@NotBlank
+	@NotNull
 	private Date dateCreation;
 	
 	@Column(name="withdrawal_code")
 	@NotBlank
 	private String withdrawalCode;
 	
-	@ManyToOne(cascade= {CascadeType.PERSIST})
+	@ManyToOne(cascade= {CascadeType.MERGE})
 	@JoinColumn(name="client_id")
 	@NotNull
 	private Client client;
@@ -45,7 +46,7 @@ public class Reservation {
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private Evaluation evaluation;
 	
-	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
+	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation", fetch=FetchType.EAGER)
 	private ReservationProduct reservationProduct;
 	
 	public Date getDateCreation() {
@@ -78,6 +79,7 @@ public class Reservation {
 	}
 	public void setReservationProduct(ReservationProduct reservationProduct) {
 		this.reservationProduct = reservationProduct;
+		reservationProduct.setReservation(this);
 	}
 	public Long getId() {
 		return id;

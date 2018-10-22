@@ -16,40 +16,39 @@
 	</div>
 	<div class="w3-col s12 w3-row">
 		<div class="w3-col s12 w3-center w3-padding-16">
-			<h:outputLabel id="lblTitrePromotion_#{promotion.id}"
+			<h:outputText
 				class="w3-mobile w3-large" value="#{promotion.name}" />
 			<br />
-			<h:outputLabel id="lblTitreProduit_#{promotion.id}"
+			<h:outputText id="lblTitreProduit_#{promotion.id}"
 				class="w3-mobile w3-large"
-				value="#{promotion.getBaseProduct().referenceProduct.name}"></h:outputLabel>
+				value="#{promotion.getBaseProduct().referenceProduct.name}"/>
 		</div>
 
 		<div class="w3-col s12 w3-center">
-			<h:outputLabel id="lblPrixInitial_#{promotion.id}"
+			<h:outputText
 				class="w3-mobile w3-large" style="text-decoration:line-through;"
 				value="#{promotion.getInitPrice()}">
 				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
-			</h:outputLabel>
+			</h:outputText>
 			<h:outputText class="w3-mobile w3-large"
 				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"
 				style="text-decoration:line-through;" />
 			<br />
-			<h:outputLabel class="w3-text-red w3-mobile w3-xlarge"
-				id="lblPrixDeduit_#{promotion.id}"
+			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
 				value="#{promotion.getPriceAfterPromotion()}">
 				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
-			</h:outputLabel>
+			</h:outputText>
 			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
 				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
 		</div>
 		<div class="w3-col s12 w3-center w3-padding-16">
 			<label>Durée de la promotion: </label>
-			<h:outputLabel id="lblDureePromotion_#{promotion.id}" class=""
+			<h:outputText
 				value="#{promotion.getBaseProduct().referenceProduct.name}" />
 		</div>
 		<div class="w3-col s12 w3-center">
 			<label>Délai de retrait pour le produit: </label>
-			<h:outputLabel id="lblDelaiRetrait_#{promotion.id}" class=""
+			<h:outputText
 				value="#{promotion.getBaseProduct().referenceProduct.name}" />
 		</div>
 	</div>
@@ -69,7 +68,7 @@
 				<f:selectItem itemValue="9" itemLabel="9" />
 				<f:selectItem itemValue="10" itemLabel="10" />
 			</h:selectOneMenu>
-			<h:outputLabel class="w3-col s3 w3-padding-16"
+			<h:outputText class="w3-col s3 w3-padding-16"
 				value="#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
 			<h:commandButton action="#{bookBean.book(promotion)}"
 				value="Réserver"
@@ -90,16 +89,16 @@
 				</div>
 				<div class="w3-col s6 w3-row">
 					<div class="w3-col s12 w3-center w3-padding-16">
-						<h:outputText id="lblTitrePromotion_#{promotion.id}"
+						<h:outputText
 							class="w3-mobile w3-large" value="#{promotion.name}" />
 						<br />
-						<h:outputText id="lblTitreProduit_#{promotion.id}"
+						<h:outputText
 							class="w3-mobile w3-large"
 							value="#{promotion.getBaseProduct().referenceProduct.name}"/>
 					</div>
 
 					<div class="w3-col s12 w3-center">
-						<h:outputText id="lblPrixInitial_#{promotion.id}"
+						<h:outputText
 							class="w3-mobile w3-large" style="text-decoration:line-through;"
 							value="#{promotion.getInitPrice()}">
 							<f:convertNumber maxFractionDigits="2"></f:convertNumber>
@@ -109,7 +108,6 @@
 							style="text-decoration:line-through;" />
 						<br />
 						<h:outputText class="w3-text-red w3-mobile w3-xlarge"
-							id="lblPrixDeduit_#{promotion.id}"
 							value="#{promotion.getPriceAfterPromotion()}">
 							<f:convertNumber maxFractionDigits="2"></f:convertNumber>
 						</h:outputText>
@@ -118,12 +116,12 @@
 					</div>
 					<div class="w3-col s12 w3-center w3-padding-16">
 						<label>Durée de la promotion: </label>
-						<h:outputText id="lblDureePromotion_#{promotion.id}" class=""
+						<h:outputText
 							value="#{promotion.getBaseProduct().referenceProduct.name}" />
 					</div>
 					<div class="w3-col s12 w3-center">
 						<label>Délai de retrait pour le produit: </label>
-						<h:outputText id="lblDelaiRetrait_#{promotion.id}" class=""
+						<h:outputText
 							value="#{promotion.getBaseProduct().referenceProduct.name}" />
 					</div>
 					<div class="w3-row w3-col s12 w3-padding-16">
@@ -152,22 +150,22 @@
 					<div class="w3-row w3-col s12 w3-padding-16">
 						<div class="w3-col s12 w3-center w3-padding-16">
 							<label>Commerce: </label>
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText class=""
 								value="#{promotion.getShopList().get(0).name}" />
 							<br /> <br /> <label>Adresse: </label>
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText
 								value="#{promotion.getShopList().get(0).address.number} " />
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText
 								value="#{promotion.getShopList().get(0).address.addressType.name} " />
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText
 								value="#{promotion.getShopList().get(0).address.name} " />
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText
 								value="#{promotion.getShopList().get(0).address.city.postalCode} " />
-							<h:outputText id="lblCommerce_#{promotion.id}" class=""
+							<h:outputText
 								value="#{promotion.getShopList().get(0).address.city.name} " />
 						</div>
 						<h:form class="w3-col s12 w3-center">
-							<h:commandButton action="#{followBean.book(promotion.getShopList().get(0))}"
+							<h:commandButton action="#{followBean.follow(promotion.getShopList().get(0))}"
 								value="Suivre commerce"
 								class="w3-button w3-purple w3-hover-dark-grey w3-padding-16 w3-mobile" />
 						</h:form>

@@ -105,50 +105,35 @@
 
 				<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
 					<div class="w3-right w3-purple">
-						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
-							<button class="w3-btn w3-purple w3-padding-16">
-								Reservations <i class="fa fa-caret-down"></i>
-							</button>
-							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-							</div>
+							<a href="/client/reservationClient/gererReservationClient.xhtml" class="w3-btn w3-purple w3-padding-16">
+								Réservations
+							</a>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
-							<button class="w3-btn w3-purple w3-padding-16">
-								Suivi <i class="fa fa-caret-down"></i>
-							</button>
-							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-							</div>
+							<a href="/client/suiviClient/suiviClient.xhtml" class="w3-btn w3-purple w3-padding-16">
+								Suivi
+							</a>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
-							<button class="w3-btn w3-purple w3-padding-16">
-								Profil <i class="fa fa-caret-down"></i>
-							</button>
-							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="#" class="w3-bar-item w3-btn w3-mobile">Link 1</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a
-									href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-							</div>
+							<a href="" class="w3-btn w3-purple w3-padding-16">
+								Profil
+							</a>
 						</h:panelGroup>
-						<h:panelGroup class="w3-dropdown-hover w3-mobile"
+						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{empty connectionBean.loggedUser}" layout="block">
-							<button class="w3-btn w3-purple w3-padding-16">
-								Connexion <i class="fa fa-caret-down"></i>
-							</button>
-							<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-								<a href="/invite/connexion/simpleConnexion.xhtml"
-									class="w3-bar-item w3-btn w3-mobile">Client</a> <a href="#"
-									class="w3-bar-item w3-btn w3-mobile">Link 2</a> <a href="#"
-									class="w3-bar-item w3-btn w3-mobile">Link 3</a>
-							</div>
+							<a href="/invite/connexion/simpleConnexion.xhtml" class="w3-btn w3-purple w3-padding-16">
+								Connexion
+							</a>
+						</h:panelGroup>
+						<h:panelGroup class="w3-mobile w3-bar-item"
+							rendered="#{not empty connectionBean.loggedUser}" layout="block">
+							<h:form>
+								<h:commandButton action="#{connectionBean.logout}" value="Déconnexion" class="w3-btn w3-purple w3-padding-16"/>
+							</h:form>
 						</h:panelGroup>
 					</div>
 				</div>
@@ -157,7 +142,7 @@
 	</div>
 	</header>
 
-	<div id="global" class=" w3-center w3-col s12">
+	<div id="global" class=" w3-center w3-col s12" style="min-height: 500px">
 		<ui:insert name="content"></ui:insert>
 	</div>
 
