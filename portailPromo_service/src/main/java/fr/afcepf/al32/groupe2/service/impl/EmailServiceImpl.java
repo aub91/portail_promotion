@@ -26,13 +26,13 @@ public class EmailServiceImpl implements EmailService {
         
         if(element instanceof CategoryProduct) {
         	CategoryProduct category = (CategoryProduct) element;
-        	message.setText(String.format("Une nouvelle promotion pour la catégorie %s est disponible", category.getName()));
+        	message.setText(String.format("Une nouvelle promotion pour la catégorie %s est disponible. Venez nous rendre visite sur www.promo32.fr pour la découvrir.", category.getName()));
         } else if (element instanceof ReferenceProduct) {
         	ReferenceProduct reference = (ReferenceProduct) element;
-        	message.setText(String.format("Une nouvelle promotion pour la référence %s est disponible", reference.getName()));
+        	message.setText(String.format("Une nouvelle promotion pour la référence %s est disponible. Venez nous rendre visite sur www.promo32.fr pour la découvrir.", reference.getName()));
 		} else if (element instanceof Shop) {
         	Shop shop = (Shop) element;
-        	message.setText(String.format("Une nouvelle promotion est disponible chez le commerce %s", shop.getName()));
+        	message.setText(String.format("Une nouvelle promotion est disponible chez le commerce %s. Venez nous rendre visite sur www.promo32.fr pour la découvrir.", shop.getName()));
 		}
 
         emailSender.send(message);

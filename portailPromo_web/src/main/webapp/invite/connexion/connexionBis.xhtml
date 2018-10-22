@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
+ xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/WEB-INF/templates/archeClient.xhtml" xmlns:customer="http://java.sun.com/jsf/composite/components/customer">
+
+	<ui:define name="title">InscriptionConnexion</ui:define>
+	<ui:define name="headcssscript">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../Ressources/css/styleArcheClient.css" />
+		<script type="text/javascript" src="../../Ressources/js/scriptArcheClient.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/styleConnexion.css" />
+		<script type="text/javascript" src="js/scriptConnexion.js"></script>
+	</ui:define>
+
+	<ui:define name="content">
+		<h:form name="form-connexion">
+
+			<div id="warningConnexion">
+				<label id="warningConnexion">Veuillez vous connecter pour finaliser votre reservation.</label>
+			</div>
+			<div class="login-wrap">
+				<div class="login-html">
+
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked="checked" /><label for="tab-1" class="tab">Connexion</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2" class="tab">Inscription</label>
+					<div class="login-form">
+						<div class="sign-in-htm">
+							<div class="group">
+								<label for="user" class="label">Nom d'utilisateur</label>
+								<h:inputText id="user" class="input" value="#{mail}"></h:inputText>
+							</div>
+							<div class="group">
+								<label for="pass" class="label">Mot de passe</label>
+								<h:inputSecret id="pass" class="input" data-type="password" value="#{mdp}"></h:inputSecret>
+							</div>
+							<div class="group">
+								<input id="check" type="checkbox" class="check" checked="checked" /> 
+								<label for="check" class="resterConnecte"><span
+									 class="icon"></span> Rester connecté</label>
+							</div>
+							<div class="group">
+								<h:commandButton class="button" value="Connexion" action="#{seConnecter()}" />
+							</div>
+							<div class="hr"></div>
+							<div class="foot-lnk">
+								<a href="#forgot">Mot de passe oublié ?</a>
+							</div>
+						</div>
+						<div class="sign-up-htm">
+							<input id="tab-3" type="radio" name="tabTypeUser" class="sign-up-client" checked="checked" onclick="show1();" />
+							<label for="tab-3" class="tabTypeUser">Client</label>
+							<input id="tab-4" type="radio" name="tabTypeUser" class="sign-up-commercant" onclick="show2();" />
+							<label for="tab-4" class="tabTypeUser">Commerçant</label>
+							<div class="sign-up-user-htm">
+								<div class="sign-up-client-htm">
+									<div class="group">
+										<label for="user" class="label">Pseudonyme :</label>
+										<h:inputTextarea id="user" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="nom" class="label">Nom :</label>
+										<h:inputText id="nom" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="prenom" class="label">Prenom :</label>
+										<h:inputText id="prenom" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="ddn" class="label">Date de Naissance :</label>
+										<h:inputText id="ddn" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="nVoie" class="label">N° :</label>
+										<h:inputText id="nVoie" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="voie" class="label">Voie :</label>
+										<h:inputText id="voie" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="cmplAdr" class="label">Complement d'adresse</label>
+										<h:inputText id="cmplAdr" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="cp" class="label">Code Postal :</label>
+										<h:inputText id="cp" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="ville" class="label">Ville :</label>
+										<h:inputText id="ville" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="telephone" class="label">Telephone</label>
+										<h:inputText id="telephone" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Mot de passe</label>
+										<h:inputText id="pass" type="password" class="input" value="#{mail}" data-type="password" />
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Confirmer mot de passe</label>
+										<h:inputText id="pass" type="password" class="input" value="#{mail}" data-type="password" />
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Adresse mail</label>
+										<h:inputText id="pass" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="ddi" class="label">Date d'inscription</label>
+										<h:inputText id="ddi" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="ddd" class="label">Date de désinscription</label>
+										<h:inputText id="ddd" type="text" class="input" value="#{mail}" />
+									</div>
+
+									<div class="group">
+										<h:inputText type="submit" class="button" value="Creer Client" />
+									</div>
+									<div class="hr"></div>
+									<div class="foot-lnk">
+										<label for="tab-1"><a>Déjà membre ?</a></label>
+									</div>
+									<div class="clear"></div>
+								</div>
+
+								<div id="sign-up-commercant-htm" class="sign-up-commercant-htm">
+									<div class="group">
+										<label for="nSiret" class="label">N° SIRET :</label>
+										<h:inputText id="nSiret" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="raisonSociale" class="label">Raison Sociale :</label>
+										<h:inputText id="raisonSociale" type="combobox" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="denominationSociale" class="label">Denomination Sociale :</label>
+										<h:inputText id="denominationSociale" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="capitalSocial" class="label">Montant du Capital Social :</label>
+										<h:inputText id="capitalSocial" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="siteWeb" class="label">Site Web :</label>
+										<h:inputText id="siteWeb" class="input" />
+									</div>
+									<div class="group">
+										<label for="image" class="label">Image :</label>
+										<h:inputText id="image" value="#{mail}" class="input" />
+									</div>
+									<div class="group">
+										<label for="descriptionCommerce" class="label">Description du Commerce :</label>
+										<h:inputText id="descriptionCommerce" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="nVoie" class="label">N° :</label>
+										<h:inputText id="nVoie" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="voie" class="label">Voie :</label>
+										<h:inputText id="voie" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="cmplAdr" class="label">Complement d'adresse :</label>
+										<h:inputText id="cmplAdr" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="cp" class="label">Code Postal :</label>
+										<h:inputText id="cp" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="ville" class="label">Ville :</label>
+										<h:inputText id="ville" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="telephone" class="label">Telephone</label>
+										<h:inputText id="telephone" type="text" class="input" value="#{mail}" />
+									</div>
+									<div class="group">
+										<label for="email" class="label">Email :</label>
+										<h:inputText id="email" type="text" class="input" value="#{mail}" />
+									</div>
+
+									<div class="group">
+										<label for="pass" class="label">Mot de passe</label>
+										<h:inputText id="pass" type="password" class="input" value="#{mail}" data-type="password" />
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Répéter votre mot de passe</label>
+										<h:inputText id="pass" type="password" class="input" value="#{mail}" data-type="password" />
+									</div>
+
+									<div class="group">
+										<h:inputText type="submit" class="button" value="Creer Commercant" />
+									</div>
+									<div class="hr"></div>
+									<div class="foot-lnk">
+										<label for="tab-1"><a>Déjà membre ?</a></label>
+									</div>
+
+									<div class="clear"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</h:form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/autoFill.js"></script>
+	</ui:define>
+
+</ui:composition>
+
+</html>

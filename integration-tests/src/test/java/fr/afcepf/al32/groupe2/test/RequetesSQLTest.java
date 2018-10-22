@@ -41,7 +41,7 @@ public class RequetesSQLTest {
 		rqdtkeys.add("sport");
 		
 		List<BaseProduct> retourSQL=(List<BaseProduct>) rechercheProduitDao.rechercherProduitSurMotsCles(rqdtkeys);
-		Assert.assertEquals(4, retourSQL.size());
+		Assert.assertEquals(3, retourSQL.size());
 	}
 	
 	@Test
