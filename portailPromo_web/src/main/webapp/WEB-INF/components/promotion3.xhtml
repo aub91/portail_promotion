@@ -42,14 +42,16 @@
 				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
 		</div>
 		<div class="w3-col s12 w3-center w3-padding-16">
-			<label>Durée de la promotion: </label>
+			<label>Date de fin de la promotion: </label>
 			<h:outputText
-				value="#{promotion.getBaseProduct().referenceProduct.name}" />
+				value="#{promotion.getEndDate()}">
+				<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+			</h:outputText>
 		</div>
 		<div class="w3-col s12 w3-center">
 			<label>Délai de retrait pour le produit: </label>
 			<h:outputText
-				value="#{promotion.getBaseProduct().referenceProduct.name}" />
+				value="#{promotion.limitTimeTakePromotion.toHours()} heure(s)" />
 		</div>
 	</div>
 	<div class="w3-row w3-col s12 w3-padding-16">
@@ -115,14 +117,16 @@
 							value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
 					</div>
 					<div class="w3-col s12 w3-center w3-padding-16">
-						<label>Durée de la promotion: </label>
+						<label>Date de fin de la promotion: </label>
 						<h:outputText
-							value="#{promotion.getBaseProduct().referenceProduct.name}" />
+							value="#{promotion.getEndDate()}">
+							<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+						</h:outputText>
 					</div>
 					<div class="w3-col s12 w3-center">
 						<label>Délai de retrait pour le produit: </label>
 						<h:outputText
-							value="#{promotion.getBaseProduct().referenceProduct.name}" />
+							value="#{promotion.limitTimeTakePromotion.toHours()} heure(s)" />
 					</div>
 					<div class="w3-row w3-col s12 w3-padding-16">
 						<h:form class="w3-col s12 w3-row">

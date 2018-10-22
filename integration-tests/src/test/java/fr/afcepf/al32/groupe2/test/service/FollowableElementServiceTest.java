@@ -75,6 +75,7 @@ public class FollowableElementServiceTest {
 	}
 	
 	@Test
+	@Ignore
 	public void notifySubscriberTest() {
 		CategoryProduct category = categoryProductDao.findOne(1L);
 		

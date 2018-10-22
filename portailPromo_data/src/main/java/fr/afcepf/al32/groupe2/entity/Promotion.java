@@ -3,6 +3,7 @@ package fr.afcepf.al32.groupe2.entity;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -198,6 +199,11 @@ public class Promotion extends Product {
 	
 	public List<Shop> getShopList(){
 		return new ArrayList<>(getShops().values());
+	}
+	
+	public Date getEndDate() {
+		LocalDateTime beginDate = publish.getPublishDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		return Date.from(beginDate.plus(limitTimePromotion).toInstant(ZoneOffset.UTC));
 	}
 
 
