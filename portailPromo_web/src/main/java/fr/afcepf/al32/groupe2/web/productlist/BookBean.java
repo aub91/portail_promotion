@@ -41,6 +41,8 @@ public class BookBean {
 		reservation.setReservationProduct(reservationProduct);
 		
 		reservationService.ajouterReservation(reservation);
+		
+		quantityBooked = 1d;
 	}
 
 	public Double getQuantityBooked() {
