@@ -1,5 +1,6 @@
 package fr.afcepf.al32.groupe2.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -21,25 +22,21 @@ public class ServiceReservation implements IServiceReservation {
 
 	@Override
 	public List<Reservation> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ArrayList<>();
 	}
 
 	@Override
 	public Reservation rechercheReservationParIdentifiant(Long idUnite) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Reservation ajouterReservation(Reservation reservation) {
-		// TODO Auto-generated method stub
 		return reservationDao.createOne(reservation);
 	}
 
 	@Override
 	public List<Reservation> findAllByClient(Client client) {
-		// TODO Auto-generated method stub
 		return reservationDao.findAllByClient(client);
 	}
 

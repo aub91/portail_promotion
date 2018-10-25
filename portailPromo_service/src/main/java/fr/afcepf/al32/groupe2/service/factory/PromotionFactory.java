@@ -36,7 +36,6 @@ public class PromotionFactory implements IPromotionFactory {
 	}
 
 	private void initFactory() {
-		// TODO Auto-generated method stub
 		
 	}
 	
@@ -59,10 +58,12 @@ public class PromotionFactory implements IPromotionFactory {
 			promotion.setPromotionType(DiscountFactory.getDiscountType().fabrique());
 			DiscountFactory.getDiscountType().setDiscountValue(discountValue);
 			DiscountFactory.getDiscountType().setMinPurchaseAmount(minPurchaseAmountDiscount);
+			break;
 		case "PercentType":
 			promotion.setPromotionType(PercentTypeFactory.getPercentTypeType().fabrique());
 			PercentTypeFactory.getPercentTypeType().setPercentValue(percentValue);
-			PercentTypeFactory.getPercentTypeType().setMinPurchaseAmount(minPurchaseAmountPercent);		
+			PercentTypeFactory.getPercentTypeType().setMinPurchaseAmount(minPurchaseAmountPercent);
+			break;
 		default:
 			break;
 		}

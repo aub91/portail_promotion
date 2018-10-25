@@ -3,8 +3,6 @@ package fr.afcepf.al32.groupe2.service.factory;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.persistence.Inheritance;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -31,7 +29,6 @@ public class PromotionTypeFactory {
 
 	public PromotionTypeFactory() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	private void initFactory(){
@@ -43,7 +40,7 @@ public class PromotionTypeFactory {
 	}
 	
 	public PromotionType fabrique(String action) throws InstantiationException, IllegalAccessException{
-		System.out.println(map);
+
 	return (PromotionType) map.get(action).newInstance();
 	}
 }

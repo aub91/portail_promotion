@@ -10,5 +10,5 @@ public interface IServiceBaseProduct {
 	List<BaseProduct> findAll();
 	List<BaseProduct> findAllValid();
 	BaseProduct rechercheBaseProductParIdentifiant(Long idUnite);
-	BaseProduct AjouterBaseProduct(BaseProduct baseProduct);
+	BaseProduct ajouterBaseProduct(BaseProduct baseProduct);
 }

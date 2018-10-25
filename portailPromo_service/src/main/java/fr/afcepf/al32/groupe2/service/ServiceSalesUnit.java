@@ -36,7 +36,6 @@ public class ServiceSalesUnit implements IserviceSalesUnit {
 
 	@Override
 	public List<SalesUnit> findAll() {
-		// TODO Auto-generated method stub
 		return salesUnitDao.findAll();
 	}
 	

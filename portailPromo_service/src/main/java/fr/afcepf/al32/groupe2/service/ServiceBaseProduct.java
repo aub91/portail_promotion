@@ -24,20 +24,18 @@ public class ServiceBaseProduct implements IServiceBaseProduct {
 	}
 
 	@Override
-	public BaseProduct AjouterBaseProduct(BaseProduct baseProduct) {
+	public BaseProduct ajouterBaseProduct(BaseProduct baseProduct) {
 		baseproductdao.createOne(baseProduct);
 		return baseProduct;
 	}
 
 	@Override
 	public List<BaseProduct> findAll() {
-		// TODO Auto-generated method stub
 		return baseproductdao.findAll();
 	}
 
 	@Override
 	public List<BaseProduct> findAllValid() {
-		// TODO Auto-generated method stub
 		return baseproductdao.findAllValid();
 	}
 

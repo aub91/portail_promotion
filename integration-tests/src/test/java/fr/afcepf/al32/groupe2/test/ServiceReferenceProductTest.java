@@ -62,7 +62,7 @@ public void ajouterReferenceProducttest() {
 
 	//ReferenceProduct  rechercheReferenceProduitParIdentifiant(Long id);
 	//ReferenceProduct AjouterReferenceProduit(ReferenceProduct referenceproduct);
-	servicereferenceproduct.AjouterReferenceProduit(suc0);
+	servicereferenceproduct.ajouterReferenceProduit(suc0);
 	Assert.assertEquals(15L, suc0.getId(), 0.1);
 
 }

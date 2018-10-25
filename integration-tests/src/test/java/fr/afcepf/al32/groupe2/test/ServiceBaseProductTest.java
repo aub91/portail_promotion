@@ -48,7 +48,7 @@ public class ServiceBaseProductTest {
 		su0.setInitPrice(5.6);
 		su0.setDescription("buffet");
 		su0.setImage("www.buffet.fr");
-		servicebaseproduct.AjouterBaseProduct(su0);
+		servicebaseproduct.ajouterBaseProduct(su0);
 		
 		List<BaseProduct> result = servicebaseproduct.findAll();
 		Assert.assertEquals(16, result.size());

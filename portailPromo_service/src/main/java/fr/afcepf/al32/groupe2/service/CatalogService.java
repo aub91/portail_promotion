@@ -61,11 +61,7 @@ public class CatalogService implements ICatalogService {
 	public List<Promotion> searchByCategory(CategoryProduct category) {
 		List<Promotion> list = getAllDisplayablePromotion();
 		return list.stream().filter(promotion ->{
-			if(category.equals(promotion.getBaseProduct().getReferenceProduct().getCategoriesProduct())) {
-				return true;
-			} else {
-				return false;
-			}
+			return category.equals(promotion.getBaseProduct().getReferenceProduct().getCategoriesProduct());
 		}).collect(Collectors.toList());
 	}
 	

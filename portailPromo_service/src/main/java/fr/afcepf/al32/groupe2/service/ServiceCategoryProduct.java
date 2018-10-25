@@ -25,13 +25,11 @@ public class ServiceCategoryProduct implements IServiceCategoryProduct {
 
 	@Override
 	public List<CategoryProduct> getAllRootCategories() {
-		// TODO Auto-generated method stub
 		return categoryProductDao.findAllRootCategories();
 	}
 
 	@Override
 	public List<CategoryProduct> getAllRootCategoriesWithDaughters() {
-		// TODO Auto-generated method stub
 		return categoryProductDao.findAllRootCategoriesWithDaughters();
 	}
 

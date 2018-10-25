@@ -20,7 +20,7 @@ public class ServiceReferenceProduct implements IServiceReferenceProduct {
 	}
 
 	@Override
-	public ReferenceProduct AjouterReferenceProduit(ReferenceProduct referenceproduct) {
+	public ReferenceProduct ajouterReferenceProduit(ReferenceProduct referenceproduct) {
 		referenceproductDao.createOne(referenceproduct);
 	
 		
