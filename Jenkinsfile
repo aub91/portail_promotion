@@ -24,7 +24,7 @@ pipeline {
 				artifact {
 					artifactId('portailPromo_web')
 					type('war')
-					file('portailPromo_web\target\portailPromo_web-0.0.1-SNAPSHOT.war')
+					file('portailPromo_web/target/portailPromo_web-0.0.1-SNAPSHOT.war')
 				}
 			}
 		}
