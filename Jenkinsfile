@@ -1,12 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('RÈcupÈration des sources') {
+    stage('R√©cup√©ration des sources') {
       steps {
         git(branch: 'master', url: 'https://github.com/aub91/portail_promotion.git', credentialsId: '4abfae6d-c653-4cb3-8841-46a36185915b')
       }
     }
     stage('build maven') {
+      steps {
+        bat(script: 'runmaven.bat', encoding: 'UTF-8')
+      }
+    }
+	stage('qualim√©trie') {
       steps {
         bat(script: 'runmaven.bat', encoding: 'UTF-8')
       }
