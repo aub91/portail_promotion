@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Récupération des sources') {
+    stage('Recuperation des sources') {
       steps {
         git(branch: 'master', url: 'https://github.com/aub91/portail_promotion.git', credentialsId: '4abfae6d-c653-4cb3-8841-46a36185915b')
       }
@@ -11,10 +11,18 @@ pipeline {
         bat(script: 'runmaven.bat', encoding: 'UTF-8')
       }
     }
-    stage('qualimétrie') {
+    stage('qualimetrie') {
       steps {
-        bat(script: 'runqualimetrie.bat', encoding: 'UTF-8')
-        waitForQualityGate(abortPipeline: true)
+        withSonarQubeEnv('SonarQube') {
+			bat(script: 'runqualimetrie.bat', encoding: 'UTF-8')   
+		}
+      }
+    }
+	stage('quality gate') {
+      steps {
+        timeout(time:5, unit:'MINUTES'){
+			waitForQualityGate(abortPipeline: true)
+		}
       }
     }
     stage('Publication') {
