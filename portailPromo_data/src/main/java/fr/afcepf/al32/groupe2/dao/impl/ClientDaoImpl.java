@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 import fr.afcepf.al32.groupe2.dao.ClientDao;
 import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.IFollowableElement;
-import fr.afcepf.al32.groupe2.entity.SalesUnit;
 
 @Component
 @Transactional

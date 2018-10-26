@@ -19,13 +19,11 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public User findOneById(Long id) {
-		// TODO Auto-generated method stub
 		return em.find(User.class, id);
 	}
 
 	@Override
 	public User findOneByLoginAndPassword(String login, String password) {
-		// TODO Auto-generated method stub
 		try {
 			return em.createNamedQuery("User.findByLoginAndPassword", User.class).setParameter("login", login).setParameter("password", password).getSingleResult();
 		} catch (NoResultException e) {

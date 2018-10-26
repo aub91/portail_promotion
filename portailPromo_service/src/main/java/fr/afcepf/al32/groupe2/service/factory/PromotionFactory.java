@@ -29,14 +29,9 @@ public class PromotionFactory implements IPromotionFactory {
 	public static PromotionFactory getPromotionType() {
 		if(promotionFactory == null) {
 			promotionFactory = new PromotionFactory();
-			promotionFactory.initFactory();
 		}
 		
 		return promotionFactory;
-	}
-
-	private void initFactory() {
-		
 	}
 	
 	public Promotion fabrique() {

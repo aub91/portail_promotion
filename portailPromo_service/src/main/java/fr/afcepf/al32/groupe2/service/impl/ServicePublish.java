@@ -18,7 +18,6 @@ public class ServicePublish implements IServicePublish{
 	
 	@Override
 	public Publish create(Publish publish) {
-		// TODO Auto-generated method stub
 		return publishDao.save(publish);
 	}
 

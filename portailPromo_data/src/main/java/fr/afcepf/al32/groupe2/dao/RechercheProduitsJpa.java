@@ -29,8 +29,8 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 			+ "WHERE base_product.remove_date IS NULL";
 	
 	@Override
-	public BaseProduct findOne(Long id_product) {
-		return entityManager.find(BaseProduct.class, id_product);
+	public BaseProduct findOne(Long idProduct) {
+		return entityManager.find(BaseProduct.class, idProduct);
 	}
 	
 	@Override
@@ -42,8 +42,8 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 	}
 	
 	@Override
-	public void delete(Long id_product) {
-		Product c = entityManager.find(Product.class, id_product);
+	public void delete(Long idProduct) {
+		Product c = entityManager.find(Product.class, idProduct);
 		entityManager.remove(c);
 	}
 	
@@ -54,9 +54,9 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 	}
 	
 	@Override
-	public List<BaseProduct> rechercherProduitAvecReferenceId(Long id_product) {
+	public List<BaseProduct> rechercherProduitAvecReferenceId(Long idProduct) {
 		return entityManager.createNamedQuery("Product.id", BaseProduct.class)
-				.setParameter("id", id_product)
+				.setParameter("id", idProduct)
 	            .getResultList();
 	}
 	@SuppressWarnings("unchecked")
@@ -64,7 +64,7 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 	public List<BaseProduct> rechercherProduitSurMotsCles( List<String> rqdkeys)
 	{
 			String rqdFinale=baseRequest;
-			if(!(rqdkeys.size()==0)){
+			if(!rqdkeys.isEmpty()){
 				rqdFinale+=" AND ((upper(base_product.description) LIKE"+ " '%"+rqdkeys.get(0).toUpperCase()+"%')"
 						+" OR (upper(reference_product.name) LIKE"+ " '%"+rqdkeys.get(0).toUpperCase()+"%')";
 				for(int k=0;k<rqdkeys.size();k++ )
@@ -87,23 +87,25 @@ public class RechercheProduitsJpa implements IRechercheProduits {
 														Boolean rqIsCumulative,
 														List<String> rqListTags) {
 		String rqFinale=baseRequest;
-		List<String> rqwhere = new ArrayList<String>();
+		List<String> rqwhere = new ArrayList<>();
 		entityManager.clear(); //cleard'éventuelles contextes persistants
-		if(!(rqDateCreation==null))
+		if(rqDateCreation!=null)
 			rqwhere.add("(base_product.dateCreation LIKE"+" %"+rqDateCreation+"% "+")");
-		if(!(rqDateRemove==null))
+		if(rqDateRemove!=null)
 			rqwhere.add("(ProductWithPromotion.dateRemove LIKE"+" %"+rqDateRemove+"% "+")");
-		if(!(rqLimitTimePromotion==null))
+		if(rqLimitTimePromotion!=null)
 			rqwhere.add("(ProductWithPromotion.rqLimitTimePromotion LIKE"+" '%"+rqLimitTimePromotion+"%' "+")");
-		if(!(rqLimitTimePromotion==null))
+		if(rqLimitTimePromotion!=null)
 			rqwhere.add("(ProductWithPromotion.rqLimitTimeTakPromotion LIKE"+" '%"+rqLimitTimeTakePromotion+"%' "+")");
-		if(!(rqQuantityAvailable==0))
+		if(rqQuantityAvailable!=0)
 			rqwhere.add("(ProductWithPromotion.rqQuantityAvailable LIKE"+" '%"+rqQuantityAvailable+"%' "+")");
-		if(!(rqIsCumulative==null))
+		if(rqIsCumulative!=null)
 			rqwhere.add("(ProductWithPromotion.rqIsCumulative LIKE"+" '%"+rqIsCumulative+"%')");
 		// traitement des tags dans une liste de tags (table dans la base.
 
-		if(rqwhere.isEmpty()) rqFinale=rqFinale+";";
+		if(rqwhere.isEmpty()) {
+			rqFinale=rqFinale+";";
+		}
 		else {
 			rqFinale=rqFinale+" WHERE ("+rqwhere.get(0);
 			int i;

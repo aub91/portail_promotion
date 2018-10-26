@@ -54,7 +54,6 @@ public class FollowingElementDataDaoImpl implements FollowingElementDataDao{
 
 	@Override
 	public FollowingElementData getOne(Long id) {
-		// TODO Auto-generated method stub
 		return em.find(FollowingElementData.class, id);
 	}
 

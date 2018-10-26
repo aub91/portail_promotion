@@ -38,8 +38,8 @@ public class Pack extends PromotionType {
 	}
 	
 	@Override
-	public void type() {
-		System.out.println("promotion pack");
+	public String getType() {
+		return "promotion pack";
 		
 	}
 	

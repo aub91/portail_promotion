@@ -12,13 +12,8 @@ public class DiscountFactory implements IDiscountFactory {
 	public static DiscountFactory getDiscountType() {
 		if (discountFactory == null) {
 			discountFactory = new DiscountFactory();
-			discountFactory.initFactory();
 		}
 		return discountFactory;
-	}
-
-	private void initFactory() {
-
 	}
 
 	@Override

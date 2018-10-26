@@ -17,10 +17,6 @@ import fr.afcepf.al32.groupe2.entity.Promotion;
 public class ServicePromotion implements IServicePromotion {
 	@Autowired
 	private IPromotionDao promotiondao;
-	
-	public ServicePromotion() {
-	
-	}
 
 	@Override
 	public List<Promotion> findAll() {

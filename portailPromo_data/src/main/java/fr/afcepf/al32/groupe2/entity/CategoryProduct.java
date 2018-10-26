@@ -78,7 +78,6 @@ public class CategoryProduct implements IFollowableElement {
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
 		return FollowableElementType.CATEGORY;
 	}
 

@@ -8,16 +8,16 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name="discount")
+@Table(name = "discount")
 @PrimaryKeyJoinColumn(name = "id")
 public class Discount extends PromotionType {
 
-	@Column(name="discount_value")
+	@Column(name = "discount_value")
 	@NotNull
 	@Min(0)
 	private Double discountValue;
 
-	@Column(name="min_purchase_amount")
+	@Column(name = "min_purchase_amount")
 	private Double minPurchaseAmount;
 
 	public Double getDiscountValue() {
@@ -35,15 +35,16 @@ public class Discount extends PromotionType {
 	public void setMinPurchaseAmount(Double minPurchaseAmount) {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
-		@Override
-	public void type() {
-		System.out.println("promotion discount");
 
-	
+	@Override
+	public String getType() {
+		return "promotion discount";
+
 	}
+
 	@Override
 	public Double getPriceAfterPromotion(Double initPrice) {
 		return initPrice - discountValue;
 	}
-	
+
 }

@@ -40,7 +40,6 @@ public class BaseProductDao implements IBaseProductDao {
 
 	@Override
 	public List<BaseProduct> findAllValid() {
-		// TODO Auto-generated method stub
 		return entityManager.createNamedQuery("BaseProduct.findAllValid",BaseProduct.class).getResultList();
 	}
 	

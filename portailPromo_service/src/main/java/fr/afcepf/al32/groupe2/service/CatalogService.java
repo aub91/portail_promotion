@@ -60,9 +60,7 @@ public class CatalogService implements ICatalogService {
 	@Override
 	public List<Promotion> searchByCategory(CategoryProduct category) {
 		List<Promotion> list = getAllDisplayablePromotion();
-		return list.stream().filter(promotion ->{
-			return category.equals(promotion.getBaseProduct().getReferenceProduct().getCategoriesProduct());
-		}).collect(Collectors.toList());
+		return list.stream().filter(promotion -> category.equals(promotion.getBaseProduct().getReferenceProduct().getCategoriesProduct())).collect(Collectors.toList());
 	}
 	
 	

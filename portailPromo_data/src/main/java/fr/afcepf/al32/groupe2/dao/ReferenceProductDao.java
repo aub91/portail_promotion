@@ -1,7 +1,5 @@
 package fr.afcepf.al32.groupe2.dao;
 
-import java.util.Map;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;

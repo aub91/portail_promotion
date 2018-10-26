@@ -179,7 +179,6 @@ public class Shop implements IFollowableElement{
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
 		return FollowableElementType.SHOP;
 	}
 	

@@ -8,7 +8,7 @@ import fr.afcepf.al32.groupe2.entity.ISubscriber;
 
 public interface FollowingElementDataDao {
 	
-	FollowingElementData getOne(Long Id);
+	FollowingElementData getOne(Long id);
 	
 	List<FollowingElementData> getAllByUser(ISubscriber subscriber);
 	

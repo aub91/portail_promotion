@@ -40,14 +40,13 @@ public class PromotionDao implements IPromotionDao {
 
 	@Override
 	public void save(Promotion p) {
-		// TODO Auto-generated method stub
-		
+		entityManager.persist(p);
 	}
 
 	@Override
 	public void delete(Long numero) {
-		// TODO Auto-generated method stub
-		
+		Promotion p = entityManager.find(Promotion.class, numero);
+		entityManager.remove(p);
 	}
 
 }

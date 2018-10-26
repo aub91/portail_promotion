@@ -35,8 +35,8 @@ public class PercentType extends PromotionType {
 	}
 
 	@Override
-	public void type() {
-		System.out.println("promotion en percentage");
+	public String getType() {
+		return "promotion en percentage";
 	}
 
 

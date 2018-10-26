@@ -12,13 +12,8 @@ public class PercentTypeFactory implements IPercentTypeFactory {
 	public static PercentTypeFactory getPercentTypeType(){
 		 if(percentTypeFactory == null) {
 			 percentTypeFactory = new PercentTypeFactory();
-			 percentTypeFactory.initFactory();
 		 }
 		return percentTypeFactory;
-	}
-	
-	private void initFactory() {
-		
 	}
 
 	@Override

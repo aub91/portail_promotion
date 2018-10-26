@@ -12,15 +12,10 @@ public class PackFactory implements IPackFactory {
 	public static PackFactory getPackType() {
 		if(packFactory == null) {
 			packFactory = new PackFactory();
-			packFactory.initFactory();
 			
 		}
 		
 		return packFactory;
-	}
-	
-	private void initFactory() {
-
 	}
 	
 	@Override

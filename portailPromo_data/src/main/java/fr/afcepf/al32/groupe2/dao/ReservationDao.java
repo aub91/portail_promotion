@@ -41,7 +41,6 @@ public class ReservationDao implements IReservationDao {
 
 	@Override
 	public List<Reservation> findAllByClient(Client client) {
-		// TODO Auto-generated method stub
 		return entityManager.createNamedQuery("Reservation.findAllByClient",Reservation.class).setParameter("clientId", client.getId()).getResultList();
 	}
 

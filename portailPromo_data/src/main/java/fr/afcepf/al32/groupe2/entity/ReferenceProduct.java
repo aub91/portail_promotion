@@ -84,7 +84,6 @@ public class ReferenceProduct implements IFollowableElement {
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
 		return FollowableElementType.REFERENCE;
 	}
 
@@ -94,14 +93,6 @@ public class ReferenceProduct implements IFollowableElement {
 
 	public void setSalesUnit(SalesUnit salesUnit) {
 		this.salesUnit = salesUnit;
-	}
-
-	public Date getDateDerefencing() {
-		return dateDerefencing;
-	}
-
-	public void setDateDerefencing(Date dateDerefencing) {
-		this.dateDerefencing = dateDerefencing;
 	}
 
 	public CategoryProduct getCategoriesProduct() {

@@ -31,7 +31,7 @@ public class Evaluation {
 	private String noteInteraction;
 	
 	@Column(name="overall_rating")
-	private Integer overall_rating;
+	private Integer overallRating;
 	
 	@OneToOne(cascade= {CascadeType.PERSIST})
 	@PrimaryKeyJoinColumn
@@ -57,11 +57,12 @@ public class Evaluation {
 		this.noteInteraction = noteInteraction;
 	}
 
-	public Integer getOverall_rating() {
-		return overall_rating;
+
+	public Integer getOverallRating() {
+		return overallRating;
 	}
-	public void setOverall_rating(Integer overall_rating) {
-		this.overall_rating = overall_rating;
+	public void setOverallRating(Integer overallRating) {
+		this.overallRating = overallRating;
 	}
 	public Reservation getReservation() {
 		return reservation;
