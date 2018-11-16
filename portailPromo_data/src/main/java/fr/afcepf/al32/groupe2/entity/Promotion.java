@@ -193,7 +193,6 @@ public class Promotion extends Product {
 
 	@Override
 	public BaseProduct getBaseProduct() {
-		// TODO Auto-generated method stub
 		return getProduct().getBaseProduct();
 	}
 	
