@@ -27,5 +27,6 @@
 		<module>portailPromo_data</module>
 		<module>portailPromo_service</module>
 		<module>portailPromo_web</module>
+		<module>portailPromo_ws_rechercheGeographiqueItf</module>
 	</modules>
 </project>
