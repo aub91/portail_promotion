@@ -24,12 +24,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>fr.afcepf.al32.groupe2</groupId>
-			<artifactId>portail_promotion_ws_recherche_geographique</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
