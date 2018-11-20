@@ -23,14 +23,14 @@
 
 	<header class="w3-col s12">
 	<div class="navbar">
-		<div class="topnav w3-mobile w3-purple w3-row-padding" id="myTopNav">
-			<div class="w3-bar w3-purple w3-mobile">
-				<div class="w3-purple w3-mobile w3-col s2 ">
-					<a  href="../../index.xhtml" class="w3-bar-item w3-mobile w3-purple"><img
+		<div class="topnav w3-mobile w3-teal w3-row-padding" id="myTopNav">
+			<div class="w3-bar w3-teal w3-mobile">
+				<div class="w3-teal w3-mobile w3-col s2 ">
+					<a  href="../../index.xhtml" class="w3-bar-item w3-mobile w3-teal"><img
 						style="width: 70%; height: 70%;"
 						src="../../Ressources/Images/Logos/promo32_logo.png" alt="Logo de promo 32"/></a>
 				</div>
-				<div class="w3-purple w3-mobile w3-row w3-col s7 w3-padding-24">
+				<div class="w3-teal w3-mobile w3-row w3-col s7 w3-padding-24">
 					<h:form>
 						<h:selectOneMenu id="escape02"
 							value="#{catalogBean.selectedCategory}"
@@ -43,23 +43,23 @@
 							<h:inputText class="w3-bar-item w3-input w3-col s9"
 								placeholder="Search.." value="#{catalogBean.searchField}" />
 							<h:commandButton action="#{catalogBean.search}"
-								class="w3-bar-item w3-btn w3-light-gray w3-medium w3-text-purple w3-col s1"
+								class="w3-bar-item w3-btn w3-light-gray w3-medium w3-text-teal w3-col s1"
 								value="Go"/>
 						</div>
 					</h:form>
 				</div>
-				<div class="w3-purple w3-mobile w3-col s3">
-					<div class="w3-bar-item w3-purple"><img
+				<div class="w3-teal w3-mobile w3-col s3">
+					<div class="w3-bar-item w3-teal"><img
 						style="width: 70%; height: 70%;"
 						src="../../Ressources/Images/slogan/Promo_slogan.png" alt="Texte disant Vie une promo !"/></div>
 				</div>
 			</div>
 			<div
-				class="bottomnavrr w3-bar w3-purple w3-row w3-mobile w3-padding-small"
+				class="bottomnavrr w3-bar w3-teal w3-row w3-mobile w3-padding-small"
 				id="myBottomnav">
-				<div class="w3-bar w3-bar-item w3-purple w3-mobile w3-col s7">
+				<div class="w3-bar w3-bar-item w3-teal w3-mobile w3-col s7">
 					<div class="w3-dropdown-hover w3-mobile">
-						<button class="w3-btn w3-purple w3-padding-16">
+						<button class="w3-btn w3-teal w3-padding-16">
 							Localisation <i class="fa fa-caret-down"/>
 						</button>
 						<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
@@ -68,7 +68,7 @@
 								href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 						</div>
 					</div>
-					<div class="w3-dropdown-hover w3-purple w3-mobile">
+					<div class="w3-dropdown-hover w3-teal w3-mobile">
 						<a href=""></a>
 						<div class="w3-center">
 							<label id="lblDistanceKm" value=""></label>
@@ -76,7 +76,7 @@
 						<span>1km</span> <input type="range" min="1" max="20" step="1"
 							class="slider" id="myRange" list="tickmarks" /> <span>20km</span>
 					</div>
-					<div class="w3-dropdown-hover w3-purple w3-mobile">
+					<div class="w3-dropdown-hover w3-teal w3-mobile">
 						<button class="w3-btn w3-padding-16">
 							Toutes les catégories <i class="fa fa-caret-down"></i>
 						</button>
@@ -85,7 +85,7 @@
 								<h:panelGroup layout="block" class="w3-bar-item w3-mobile" >
 									<h:commandButton action="#{catalogBean.searchByCategory(cat)}"
 										value="#{cat.name}"
-										class="w3-button w3-dark-grey w3-hover-dark-grey w3-hover-text-purple"/>
+										class="w3-button w3-dark-grey w3-hover-dark-grey w3-hover-text-teal"/>
 										<h:panelGroup class="fa fa-caret-down" onclick="show(this)"/>
 									<h:panelGroup layout="block" class="w3-light-grey w3-hide">
 										<ui:repeat var="subcat" value="#{cat.categoryDaughter}">
@@ -102,19 +102,19 @@
 					</div>
 				</div>
 
-				<div class="w3-bar w3-purple w3-mobile w3-col s5 w3-padding-small">
-					<div class="w3-right w3-purple">
+				<div class="w3-bar w3-teal w3-mobile w3-col s5 w3-padding-small">
+					<div class="w3-right w3-teal">
 
 						<!-- Client section -->
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser and connectionBean.loggedUser['class'].simpleName eq 'Client'}" layout="block">
-							<a href="../../client/reservationClient/gererReservationClient.xhtml" class="w3-btn w3-purple w3-padding-16">
+							<a href="../../client/reservationClient/gererReservationClient.xhtml" class="w3-btn w3-teal w3-padding-16">
 								Réservations
 							</a>
 						</h:panelGroup>
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser and connectionBean.loggedUser['class'].simpleName eq 'Client'}}" layout="block">
-							<a href="../../client/suiviClient/suiviClient.xhtml" class="w3-btn w3-purple w3-padding-16">
+							<a href="../../client/suiviClient/suiviClient.xhtml" class="w3-btn w3-teal w3-padding-16">
 								Suivi
 							</a>
 						</h:panelGroup>
@@ -123,7 +123,7 @@
 						<!-- ShopKeeper section -->
 						<h:panelGroup class="w3-mobile w3-bar-item"
 									  rendered="#{not empty connectionBean.loggedUser and connectionBean.loggedUser['class'].simpleName eq 'Shopkeeper'}" layout="block">
-							<a href="../../commercant/fichePromotionDetailleeCommercant/formulaireAjoutPromotion.xhtml" class="w3-btn w3-purple w3-padding-16">
+							<a href="../../commercant/fichePromotionDetailleeCommercant/formulaireAjoutPromotion.xhtml" class="w3-btn w3-teal w3-padding-16">
 								Créer promotion
 							</a>
 						</h:panelGroup>
@@ -132,20 +132,20 @@
 						<!-- Global section -->
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
-							<a href="" class="w3-btn w3-purple w3-padding-16">
+							<a href="" class="w3-btn w3-teal w3-padding-16">
 								Profil
 							</a>
 						</h:panelGroup>
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{empty connectionBean.loggedUser}" layout="block">
-							<a href="../../invite/connexion/connexion.xhtml" class="w3-btn w3-purple w3-padding-16">
+							<a href="../../invite/connexion/connexion.xhtml" class="w3-btn w3-teal w3-padding-16">
 								Connexion
 							</a>
 						</h:panelGroup>
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
 							<h:form>
-								<h:commandButton action="#{connectionBean.logout}" value="Déconnexion" class="w3-btn w3-purple w3-padding-16"/>
+								<h:commandButton action="#{connectionBean.logout}" value="Déconnexion" class="w3-btn w3-teal w3-padding-16"/>
 							</h:form>
 						</h:panelGroup>
 						<!-- /Global section -->
@@ -160,7 +160,7 @@
 		<ui:insert name="content"></ui:insert>
 	</div>
 
-	<footer id="realfooter" class=" w3-purple w3-col s12">
+	<footer id="realfooter" class=" w3-teal w3-col s12">
 	<div id="apropos" class="footer">
 		<ul>
 			<li>

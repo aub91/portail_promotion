@@ -20,21 +20,21 @@
 	<ui:define name="content">
 		<h:panelGroup id="addPromotionPanel" class="w3-content w3-padding-24" layout="block">
 			<h:form class="w3-container">
-				<h2 class="w3-text-purple w3-padding-24">Formulaire de création d'une
+				<h2 class="w3-text-teal w3-padding-24">Formulaire de création d'une
 					promotion</h2>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Nom de la promotion</b></label>
+					<label class="w3-text-teal"><b>Nom de la promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="nom"
 						value="#{addPromotionBean.promotion.name}" />
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Description de la
+					<label class="w3-text-teal"><b>Description de la
 							promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="description"
 						value="#{addPromotionBean.promotion.description}" />
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Type de la promotion</b></label>
+					<label class="w3-text-teal"><b>Type de la promotion</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.typePromotion}"
 						class="w3-select w3-dark-grey w3-mobile">
 						<f:selectItem itemLabel="Pourcentage" itemValue="percentage"></f:selectItem>
@@ -43,21 +43,21 @@
 					</h:selectOneMenu>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Valeur du pourcentage de remise</b></label>
+					<label class="w3-text-teal"><b>Valeur du pourcentage de remise</b></label>
 					<h:inputText class="w3-input w3-border" id="percent"
 						value="#{addPromotionBean.percentValue}">
 						<f:convertNumber></f:convertNumber>
 					</h:inputText>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Montant minimum d'achat</b></label>
+					<label class="w3-text-teal"><b>Montant minimum d'achat</b></label>
 					<h:inputText class="w3-input w3-border" id="montant"
 						value="#{addPromotionBean.minPurchaseAmount}">
 						<f:convertNumber></f:convertNumber>
 					</h:inputText>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Produit</b></label>
+					<label class="w3-text-teal"><b>Produit</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.productId}"
 						class="w3-select w3-dark-grey w3-mobile">
 						<f:selectItem itemLabel="Choisissez un produit..." itemValue="#{null}"></f:selectItem>
@@ -67,14 +67,14 @@
 					</h:selectOneMenu>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Quantité mise en promotion</b></label>
+					<label class="w3-text-teal"><b>Quantité mise en promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="quantite"
 						value="#{addPromotionBean.promotion.quantityInitAvailable}">
 						<f:convertNumber></f:convertNumber>
 					</h:inputText>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Commerce</b></label>
+					<label class="w3-text-teal"><b>Commerce</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.commerceId}"
 						class="w3-select w3-dark-grey w3-mobile">
 						<f:selectItem itemLabel="Choisissez un commerce..." itemValue="#{null}"></f:selectItem>
@@ -83,7 +83,7 @@
 					</h:selectOneMenu>
 				</p>
 				<p class="w3-padding-24">
-					<h:commandButton class="w3-btn w3-purple"
+					<h:commandButton class="w3-btn w3-teal"
 						action="#{addPromotionBean.create}" value="Créer" />
 				</p>
 				<h:outputText style="color: red" value="#{connectionBean.message}" />

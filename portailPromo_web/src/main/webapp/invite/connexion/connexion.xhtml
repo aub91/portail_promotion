@@ -20,24 +20,24 @@
 	<ui:define name="content">
 		<h:panelGroup id="loginPanel" class="w3-content w3-padding-24" layout="block">
 			<h:form class="w3-container">
-				<h2 class="w3-text-purple w3-padding-24">Formulaire de connexion</h2>
+				<h2 class="w3-text-teal w3-padding-24">Formulaire de connexion</h2>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Login</b></label> 
+					<label class="w3-text-teal"><b>Login</b></label> 
 					<h:inputText class="w3-input w3-border" id="password" value="#{connectionBean.login}"/>
 				</p>
 				<p class="w3-padding-24">
-					<label class="w3-text-purple"><b>Password</b></label>
+					<label class="w3-text-teal"><b>Password</b></label>
 					<h:inputSecret class="w3-input w3-border" id="login" value="#{connectionBean.password}"/>
 				</p>
 				<p class="w3-padding-24">
-					<h:commandButton class="w3-btn w3-purple" action="#{connectionBean.connect}" value="Connexion"/>
+					<h:commandButton class="w3-btn w3-teal" action="#{connectionBean.connect}" value="Connexion"/>
 				</p>
 				<h:outputText style="color: red" value="#{connectionBean.message}"/>
 			</h:form>
 		</h:panelGroup>
 
 
-		<script
+		<script type="text/javascript"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../jsHamburger/main.js"></script>
 		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
