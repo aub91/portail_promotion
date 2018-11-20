@@ -27,7 +27,7 @@ public class CatalogBean {
 	
 	private List<CategoryProduct> categories;
 	
-	private CategoryProduct selectedCategory;
+	private String selectedCategory;
 	
 	private String searchField;
 	
@@ -37,10 +37,11 @@ public class CatalogBean {
 	
 	public String search() {
 		List<String> keyWords = Arrays.asList(searchField.split(" "));
+		CategoryProduct category = categories.stream().filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
 		if(!keyWords.isEmpty()) {
-			promotions = catalogService.searchByCategoryAndKeyWords(selectedCategory, keyWords);
-		} else if (selectedCategory != null) {
-			searchByCategory(selectedCategory);
+			promotions = catalogService.searchByCategoryAndKeyWords(category, keyWords);
+		} else if (category != null) {
+			searchByCategory(category);
 		}
 		return "/invite/fichesPromotion/pageAffichagePromotions";
 	}
@@ -87,11 +88,11 @@ public class CatalogBean {
 		return categories;
 	}
 
-	public CategoryProduct getSelectedCategory() {
+	public String getSelectedCategory() {
 		return selectedCategory;
 	}
 
-	public void setSelectedCategory(CategoryProduct selectedCategory) {
+	public void setSelectedCategory(String selectedCategory) {
 		this.selectedCategory = selectedCategory;
 	}
 
