@@ -28,8 +28,21 @@ public class CatalogBean {
 	private List<CategoryProduct> categories;
 	
 	private String selectedCategory;
-	
+
+	/**
+	 * Attribut pour recherche par mot-clé. Suite de mots clés séparés par des espaces.
+	 */
 	private String searchField;
+
+	/**
+	 * Attribut pour la recherche par lieu. Adresse servant de point central.
+	 */
+	private String searchSourceAddress;
+
+	/**
+	 * Attribut pour la recherche par lieu. Périmètre de recherche en km.
+	 */
+	private Integer searchPerimeter = 11;
 	
 	public CatalogBean() {
 		
@@ -43,14 +56,14 @@ public class CatalogBean {
 		} else if (category != null) {
 			searchByCategory(category);
 		}
-		return "/invite/fichesPromotion/pageAffichagePromotions";
+		return "index";
 	}
 	
 	public String searchByCategory(CategoryProduct category) {
 		if(category != null) {
 			promotions = catalogService.searchByCategory(category);
 		}
-		return "/invite/fichesPromotion/pageAffichagePromotions";
+		return "index";
 	}
 	
 	@PostConstruct
@@ -103,7 +116,20 @@ public class CatalogBean {
 	public void setSearchField(String searchField) {
 		this.searchField = searchField;
 	}
-	
-	
-	
+
+	public String getSearchSourceAddress() {
+		return searchSourceAddress;
+	}
+
+	public void setSearchSourceAddress(String searchSourceAddress) {
+		this.searchSourceAddress = searchSourceAddress;
+	}
+
+	public Integer getSearchPerimeter() {
+		return searchPerimeter;
+	}
+
+	public void setSearchPerimeter(Integer searchPerimeter) {
+		this.searchPerimeter = searchPerimeter;
+	}
 }
