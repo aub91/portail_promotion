@@ -59,6 +59,16 @@ public class AddPromotionBean {
 	private Double numberPurchase;
 
 	private Double numberOffered;
+
+	/**
+	 * Durée de la promotion en jours.
+	 */
+	private Long promotionDuration;
+
+	/**
+	 * Durée de retrait en heures.
+	 */
+	private Long productTakeAwayDuration;
 	
 	private Long commerceId;
 	
@@ -192,5 +202,21 @@ public class AddPromotionBean {
 
 	public void setNumberOffered(Double numberOffered) {
 		this.numberOffered = numberOffered;
+	}
+
+	public Long getPromotionDuration() {
+		return promotionDuration;
+	}
+
+	public void setPromotionDuration(Long promotionDuration) {
+		this.promotionDuration = promotionDuration;
+	}
+
+	public Long getProductTakeAwayDuration() {
+		return productTakeAwayDuration;
+	}
+
+	public void setProductTakeAwayDuration(Long productTakeAwayDuration) {
+		this.productTakeAwayDuration = productTakeAwayDuration;
 	}
 }

@@ -43,6 +43,7 @@
 						<f:ajax event="change" execute="promotionType" render="promotionDetailPanel"/>
 					</h:selectOneMenu>
 				</h:panelGroup>
+				<!-- Promotion specific field -->
 				<h:panelGroup class="w3-padding-24" layout="block" id="promotionDetailPanel">
 					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "percentage"}'>
 						<label class="w3-text-teal"><b>Valeur du pourcentage de remise</b></label>
@@ -80,7 +81,21 @@
 						</h:inputText>
 					</h:panelGroup>
 				</h:panelGroup>
-
+				<!-- /Promotion specific field -->
+				<h:panelGroup class="w3-padding-24" layout="block">
+					<label class="w3-text-teal"><b>Durée de la promotion (jours)</b></label>
+					<h:inputText class="w3-input w3-border" id="promotion_duration"
+								 value="#{addPromotionBean.promotionDuration}">
+						<f:convertNumber></f:convertNumber>
+					</h:inputText>
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
+					<label class="w3-text-teal"><b>Durée de retrait du produit (heure)</b></label>
+					<h:inputText class="w3-input w3-border" id="product_take_away_duration"
+								 value="#{addPromotionBean.productTakeAwayDuration}">
+						<f:convertNumber></f:convertNumber>
+					</h:inputText>
+				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Produit</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.productId}"
