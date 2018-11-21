@@ -48,11 +48,17 @@ public class AddPromotionBean {
 	
 	private Long productId;
 	
-	private String typePromotion;
+	private String typePromotion = "percentage";
 	
 	private Double percentValue;
+
+	private Double discountValue;
 	
 	private Double minPurchaseAmount;
+
+	private Double numberPurchase;
+
+	private Double numberOffered;
 	
 	private Long commerceId;
 	
@@ -163,7 +169,28 @@ public class AddPromotionBean {
 	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
-	
-	
-	
+
+	public Double getDiscountValue() {
+		return discountValue;
+	}
+
+	public void setDiscountValue(Double discountValue) {
+		this.discountValue = discountValue;
+	}
+
+	public Double getNumberPurchase() {
+		return numberPurchase;
+	}
+
+	public void setNumberPurchase(Double numberPurchase) {
+		this.numberPurchase = numberPurchase;
+	}
+
+	public Double getNumberOffered() {
+		return numberOffered;
+	}
+
+	public void setNumberOffered(Double numberOffered) {
+		this.numberOffered = numberOffered;
+	}
 }

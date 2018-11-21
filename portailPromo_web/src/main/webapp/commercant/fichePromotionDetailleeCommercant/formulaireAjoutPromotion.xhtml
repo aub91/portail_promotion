@@ -22,58 +22,83 @@
 			<h:form class="w3-container">
 				<h2 class="w3-text-teal w3-padding-24">Formulaire de création d'une
 					promotion</h2>
-				<p class="w3-padding-24">
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Nom de la promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="nom"
 						value="#{addPromotionBean.promotion.name}" />
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Description de la
 							promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="description"
 						value="#{addPromotionBean.promotion.description}" />
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Type de la promotion</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.typePromotion}"
-						class="w3-select w3-dark-grey w3-mobile">
-						<f:selectItem itemLabel="Pourcentage" itemValue="percentage"></f:selectItem>
-						<f:selectItem itemLabel="Remise" itemValue="value"></f:selectItem>
-						<f:selectItem itemLabel="Pack" itemValue="pack"></f:selectItem>
+						class="w3-select w3-dark-grey w3-mobile" id="promotionType">
+						<f:selectItem itemLabel="Pourcentage" itemValue="percentage"/>
+						<f:selectItem itemLabel="Remise" itemValue="value"/>
+						<f:selectItem itemLabel="Pack" itemValue="pack"/>
+						<f:ajax event="change" execute="promotionType" render="promotionDetailPanel"/>
 					</h:selectOneMenu>
-				</p>
-				<p class="w3-padding-24">
-					<label class="w3-text-teal"><b>Valeur du pourcentage de remise</b></label>
-					<h:inputText class="w3-input w3-border" id="percent"
-						value="#{addPromotionBean.percentValue}">
-						<f:convertNumber></f:convertNumber>
-					</h:inputText>
-				</p>
-				<p class="w3-padding-24">
-					<label class="w3-text-teal"><b>Montant minimum d'achat</b></label>
-					<h:inputText class="w3-input w3-border" id="montant"
-						value="#{addPromotionBean.minPurchaseAmount}">
-						<f:convertNumber></f:convertNumber>
-					</h:inputText>
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block" id="promotionDetailPanel">
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "percentage"}'>
+						<label class="w3-text-teal"><b>Valeur du pourcentage de remise</b></label>
+						<h:inputText class="w3-input w3-border" id="percent"
+									 value="#{addPromotionBean.percentValue}">
+							<f:convertNumber></f:convertNumber>
+						</h:inputText>
+					</h:panelGroup>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "value"}'>
+						<label class="w3-text-teal"><b>Valeur de la remise</b></label>
+						<h:inputText class="w3-input w3-border" id="discount_value"
+									 value="#{addPromotionBean.discountValue}">
+							<f:convertNumber></f:convertNumber>
+						</h:inputText>
+					</h:panelGroup>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion != "pack"}'>
+						<label class="w3-text-teal"><b>Montant minimum d'achat</b></label>
+						<h:inputText class="w3-input w3-border" id="montant"
+									 value="#{addPromotionBean.minPurchaseAmount}">
+							<f:convertNumber></f:convertNumber>
+						</h:inputText>
+					</h:panelGroup>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
+						<label class="w3-text-teal"><b>Nombre acheté</b></label>
+						<h:inputText class="w3-input w3-border" id="purchase_number"
+									 value="#{addPromotionBean.numberPurchase}">
+							<f:convertNumber></f:convertNumber>
+						</h:inputText>
+					</h:panelGroup>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
+						<label class="w3-text-teal"><b>Nombre offert</b></label>
+						<h:inputText class="w3-input w3-border" id="given_number"
+									 value="#{addPromotionBean.numberOffered}">
+							<f:convertNumber></f:convertNumber>
+						</h:inputText>
+					</h:panelGroup>
+				</h:panelGroup>
+
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Produit</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.productId}"
 						class="w3-select w3-dark-grey w3-mobile">
-						<f:selectItem itemLabel="Choisissez un produit..." itemValue="#{null}"></f:selectItem>
+						<f:selectItem itemLabel="Choisissez un produit..." itemValue="#{null}"/>
 						<f:selectItems value="#{addPromotionBean.products}" var="product"
 							itemValue="#{product.id}"
 							itemLabel="#{product.referenceProduct.name}" />
 					</h:selectOneMenu>
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Quantité mise en promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="quantite"
 						value="#{addPromotionBean.promotion.quantityInitAvailable}">
 						<f:convertNumber></f:convertNumber>
 					</h:inputText>
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Commerce</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.commerceId}"
 						class="w3-select w3-dark-grey w3-mobile">
@@ -81,17 +106,16 @@
 						<f:selectItems value="#{addPromotionBean.shops}" var="shop"
 							itemValue="#{shop.id}" itemLabel="#{shop.name}" />
 					</h:selectOneMenu>
-				</p>
-				<p class="w3-padding-24">
+				</h:panelGroup>
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<h:commandButton class="w3-btn w3-teal"
 						action="#{addPromotionBean.create}" value="Créer" />
-				</p>
-				<h:outputText style="color: red" value="#{connectionBean.message}" />
+				</h:panelGroup>
 			</h:form>
 		</h:panelGroup>
 
 
-		<script
+		<script type="text/javascript"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../jsHamburger/main.js"></script>
 		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
