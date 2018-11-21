@@ -30,6 +30,7 @@ public class ConnectionBean {
 		if(newUser != null) {
 			loggedUser = newUser;
 			suite = "/invite/fichesPromotion/pageAffichagePromotions";
+			message = null;
 		} else {
 			message = "Informations de connexion incorrectes";
 		}
@@ -40,7 +41,7 @@ public class ConnectionBean {
 	public String logout() {
 		loggedUser = null;
 		
-		return "/invite/fichesPromotion/pageAffichagePromotions";
+		return "index";
 	}
 
 	public String getLogin() {

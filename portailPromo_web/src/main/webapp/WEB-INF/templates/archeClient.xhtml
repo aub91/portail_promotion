@@ -67,8 +67,7 @@
 								href="#" class="w3-bar-item w3-btn w3-mobile">Link 3</a>
 						</div>
 					</div>
-					<div class="w3-dropdown-hover w3-teal w3-mobile">
-						<a href=""></a>
+					<div class="w3-bar-item w3-dropdown-hover w3-teal w3-mobile">
 						<div class="w3-center">
 							<h:outputLabel id="lblDistanceKm" value="#{catalogBean.searchPerimeter} km"/>
 						</div>
@@ -79,7 +78,7 @@
 							</h:inputText>
 						<span>20km</span>
 					</div>
-					<div class="w3-dropdown-hover w3-teal w3-mobile">
+					<div class="w3-bar-item w3-dropdown-hover w3-teal w3-mobile">
 						<button class="w3-btn w3-padding-16">
 							Toutes les catégories <i class="fa fa-caret-down"></i>
 						</button>
@@ -147,9 +146,7 @@
 						</h:panelGroup>
 						<h:panelGroup class="w3-mobile w3-bar-item"
 							rendered="#{not empty connectionBean.loggedUser}" layout="block">
-							<h:form>
-								<h:commandButton action="#{connectionBean.logout}" value="Déconnexion" class="w3-btn w3-teal w3-padding-16"/>
-							</h:form>
+							<h:commandButton action="#{connectionBean.logout}" value="Déconnexion" class="w3-btn w3-teal w3-padding-16"/>
 						</h:panelGroup>
 						<!-- /Global section -->
 					</div>

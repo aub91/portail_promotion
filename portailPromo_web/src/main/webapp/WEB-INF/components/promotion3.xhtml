@@ -72,11 +72,13 @@
 			</h:selectOneMenu>
 			<h:outputText class="w3-col s3 w3-padding-16"
 				value="#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
-			<h:commandButton action="#{bookBean.book(promotion)}"
+			<h:commandButton action="#{bookBean.book(promotion)}" disabled="#{empty connectionBean.loggedUser}"
 				value="Réserver"
 				class="w3-button w3-teal w3-hover-dark-grey w3-col s6 w3-padding-16" />
 		</h:form>
 	</div>
+	<h:outputText class="w3-col s12 w3-padding-16 w3-text-teal w3-center" id="connectionWarningMessage" rendered="#{empty connectionBean.loggedUser}"
+				  value="Veuillez vous connecter pour réserver un produit"/>
 
 	<div id="id_#{promotion.id}" class="w3-modal">
 		<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-row">
@@ -146,7 +148,7 @@
 							</h:selectOneMenu>
 							<h:outputText class="w3-col s3 w3-padding-16"
 								value="#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
-							<h:commandButton action="#{bookBean.book(promotion)}"
+							<h:commandButton action="#{bookBean.book(promotion)}" disabled="#{empty connectionBean.loggedUser}"
 								value="Réserver"
 								class="w3-button w3-teal w3-hover-dark-grey w3-col s6 w3-padding-16" />
 						</h:form>
@@ -169,11 +171,13 @@
 								value="#{promotion.getShopList().get(0).address.city.name} " />
 						</div>
 						<h:form class="w3-col s12 w3-center">
-							<h:commandButton action="#{followBean.follow(promotion.getShopList().get(0))}"
+							<h:commandButton action="#{followBean.follow(promotion.getShopList().get(0))}" disabled="#{empty connectionBean.loggedUser}"
 								value="Suivre commerce"
 								class="w3-button w3-teal w3-hover-dark-grey w3-padding-16 w3-mobile" />
 						</h:form>
 					</div>
+					<h:outputText class="w3-col s12 w3-padding-16 w3-text-teal w3-center" id="modalConnectionWarningMessage" rendered="#{empty connectionBean.loggedUser}"
+								  value="Veuillez vous connecter pour réserver un produit ou suivre un commerce"/>
 				</div>
 			</div>
 			<div class="w3-bar w3-border-bottom w3-col s12">
