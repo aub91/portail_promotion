@@ -20,7 +20,7 @@ INSERT INTO category_product(id,name,category_mum_id)VALUES(19,'Cordonniers, cl�
 INSERT INTO category_product(id,name,category_mum_id)VALUES(20,'Parapharmacie',null)
 INSERT INTO category_product(id,name,category_mum_id)VALUES(21,'Décoration, arts de la table, cadeaux',null)
 INSERT INTO category_product(id,name,category_mum_id)VALUES(22,'Electroménager, TV, Son',null)
-INSERT INTO category_product(id,name,category_mum_id)VALUES(23,'Prête-à-porter',null)
+INSERT INTO category_product(id,name,category_mum_id)VALUES(23,'Prêt-à-porter',null)
 INSERT INTO category_product(id,name,category_mum_id)VALUES(24,'Articles de sport',null)
 INSERT INTO category_product(id,name,category_mum_id)VALUES(25,'Encadrement',null)
 INSERT INTO category_product(id,name,category_mum_id)VALUES(26,'Fêtes et déguisements',null)

@@ -1,26 +1,18 @@
 package fr.afcepf.al32.groupe2.web.addpromotion;
 
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import fr.afcepf.al32.groupe2.entity.*;
+import fr.afcepf.al32.groupe2.service.IFollowableElementService;
+import fr.afcepf.al32.groupe2.service.IServiceBaseProduct;
+import fr.afcepf.al32.groupe2.service.IServicePublish;
+import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
-
-import fr.afcepf.al32.groupe2.entity.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.web.context.annotation.RequestScope;
-
-import fr.afcepf.al32.groupe2.service.IFollowableElementService;
-import fr.afcepf.al32.groupe2.service.IServiceBaseProduct;
-import fr.afcepf.al32.groupe2.service.IServicePromotion;
-import fr.afcepf.al32.groupe2.service.IServicePublish;
-import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
-import org.springframework.web.context.annotation.SessionScope;
+import java.time.Duration;
+import java.util.*;
 
 @Component
 @SessionScope
@@ -45,7 +37,7 @@ public class AddPromotionBean {
 	private Long productId;
 
 	/**
-	 * type of the promotion.
+	 * Type of the promotion.
 	 */
 	private String typePromotion = "percentage";
 
