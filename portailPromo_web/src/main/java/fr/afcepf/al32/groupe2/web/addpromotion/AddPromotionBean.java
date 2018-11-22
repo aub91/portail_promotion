@@ -10,25 +10,20 @@ import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 
+import fr.afcepf.al32.groupe2.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
-import fr.afcepf.al32.groupe2.entity.BaseProduct;
-import fr.afcepf.al32.groupe2.entity.PercentType;
-import fr.afcepf.al32.groupe2.entity.Product;
-import fr.afcepf.al32.groupe2.entity.Promotion;
-import fr.afcepf.al32.groupe2.entity.Publish;
-import fr.afcepf.al32.groupe2.entity.Shop;
-import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 import fr.afcepf.al32.groupe2.service.IFollowableElementService;
 import fr.afcepf.al32.groupe2.service.IServiceBaseProduct;
 import fr.afcepf.al32.groupe2.service.IServicePromotion;
 import fr.afcepf.al32.groupe2.service.IServicePublish;
 import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
+import org.springframework.web.context.annotation.SessionScope;
 
 @Component
-@RequestScope
+@SessionScope
 @Transactional
 public class AddPromotionBean {
 
@@ -43,22 +38,50 @@ public class AddPromotionBean {
 	
 	@Autowired
 	private IFollowableElementService followableElementService;
-	
-	private Promotion promotion = new Promotion();
-	
+
+	/**
+	 * Id of the product link to the created promotion
+	 */
 	private Long productId;
-	
+
+	/**
+	 * type of the promotion.
+	 */
 	private String typePromotion = "percentage";
-	
+
+	/**
+	 * For percent type promotion, value of the percentage of reduction.
+	 */
 	private Double percentValue;
 
+	/**
+	 * For discount type promotion, value of the discount in €.
+	 */
 	private Double discountValue;
-	
+
+	/**
+	 * For discount and percent type promotion, minimum of purchase needed to enjoy the promotion, in €.
+	 */
 	private Double minPurchaseAmount;
 
-	private Double numberPurchase;
+	/**
+	 * Initial quantity of product available for the promotion.
+	 */
+	private Double initQuantityAvailable;
 
-	private Double numberOffered;
+	/**
+	 * Name of the promotion.
+	 */
+	private String promotionName;
+
+	/**
+	 * Description of the promotion.
+	 */
+	private String promotionDescription;
+
+	private Long numberPurchase;
+
+	private Long numberOffered;
 
 	/**
 	 * Durée de la promotion en jours.
@@ -77,13 +100,17 @@ public class AddPromotionBean {
 	private List<BaseProduct> products;
 	
 	public void create() {
+		Promotion promotion = new Promotion();
+		promotion.setName(promotionName);
+		promotion.setDescription(promotionDescription);
+		promotion.setQuantityInitAvailable(initQuantityAvailable);
 		BaseProduct baseProduct = serviceBaseProduct.rechercheBaseProductParIdentifiant(productId);
 		Product product = baseProduct.getLastProduct();
 		promotion.setProduct(product);
 		promotion.setDateCreation(new Date());
 		promotion.setIsCumulative(false);
-		promotion.setLimitTimePromotion(Duration.ofDays(2));
-		promotion.setLimitTimeTakePromotion(Duration.ofHours(2));
+		promotion.setLimitTimePromotion(Duration.ofDays(promotionDuration));
+		promotion.setLimitTimeTakePromotion(Duration.ofHours(productTakeAwayDuration));
 		promotion.setQuantityRemaining(promotion.getQuantityInitAvailable());
 		
 		Map<Long, Shop> shopMap = new HashMap<>();
@@ -91,13 +118,19 @@ public class AddPromotionBean {
 		Shop shop = shopkeeper.getShops().get(commerceId);
 		shopMap.put(shop.getId(), shop);
 		promotion.setShops(shopMap);
-		
-		PercentType percentType = new PercentType();
-		percentType.setMinPurchaseAmount(minPurchaseAmount);
-		percentType.setPercentValue(percentValue);
-		
-		promotion.setPromotionType(percentType);
-		
+
+		switch (typePromotion){
+			case "percentage":
+				createPercentagePromotion(promotion);
+				break;
+			case "value":
+				createDiscountPromotion(promotion);
+				break;
+			case "pack":
+				createPackPromotion(promotion);
+				break;
+		}
+
 		Publish publish = new Publish();
 		publish.setPublishDate(new Date());
 		publish.setPromotion(promotion);
@@ -107,21 +140,34 @@ public class AddPromotionBean {
 		followableElementService.notifySubscribers(shop);
 		
 	}
-	
+
+	private void createPackPromotion(Promotion promotion) {
+		Pack packType = new Pack();
+		packType.setNumberPurchased(numberPurchase.intValue());
+		packType.setNumberOffered(numberOffered.intValue());
+		promotion.setPromotionType(packType);
+	}
+
+	private void createDiscountPromotion(Promotion promotion) {
+		Discount discountType = new Discount();
+		discountType.setDiscountValue(discountValue);
+		discountType.setMinPurchaseAmount(minPurchaseAmount);
+		promotion.setPromotionType(discountType);
+	}
+
+	private void createPercentagePromotion(Promotion promotion) {
+		PercentType percentType = new PercentType();
+		percentType.setMinPurchaseAmount(minPurchaseAmount);
+		percentType.setPercentValue(percentValue);
+		promotion.setPromotionType(percentType);
+	}
+
 	@PostConstruct
 	public void init() {
 		Shopkeeper shopkeeper = (Shopkeeper) connectionBean.getLoggedUser();
 		shops = new ArrayList<>(shopkeeper.getShops().values());
 		
 		products = serviceBaseProduct.findAll();
-	}
-
-	public Promotion getPromotion() {
-		return promotion;
-	}
-
-	public void setPromotion(Promotion promotion) {
-		this.promotion = promotion;
 	}
 
 	public String getTypePromotion() {
@@ -188,19 +234,19 @@ public class AddPromotionBean {
 		this.discountValue = discountValue;
 	}
 
-	public Double getNumberPurchase() {
+	public Long getNumberPurchase() {
 		return numberPurchase;
 	}
 
-	public void setNumberPurchase(Double numberPurchase) {
+	public void setNumberPurchase(Long numberPurchase) {
 		this.numberPurchase = numberPurchase;
 	}
 
-	public Double getNumberOffered() {
+	public Long getNumberOffered() {
 		return numberOffered;
 	}
 
-	public void setNumberOffered(Double numberOffered) {
+	public void setNumberOffered(Long numberOffered) {
 		this.numberOffered = numberOffered;
 	}
 
@@ -218,5 +264,29 @@ public class AddPromotionBean {
 
 	public void setProductTakeAwayDuration(Long productTakeAwayDuration) {
 		this.productTakeAwayDuration = productTakeAwayDuration;
+	}
+
+	public Double getInitQuantityAvailable() {
+		return initQuantityAvailable;
+	}
+
+	public void setInitQuantityAvailable(Double initQuantityAvailable) {
+		this.initQuantityAvailable = initQuantityAvailable;
+	}
+
+	public String getPromotionName() {
+		return promotionName;
+	}
+
+	public void setPromotionName(String promotionName) {
+		this.promotionName = promotionName;
+	}
+
+	public String getPromotionDescription() {
+		return promotionDescription;
+	}
+
+	public void setPromotionDescription(String promotionDescription) {
+		this.promotionDescription = promotionDescription;
 	}
 }

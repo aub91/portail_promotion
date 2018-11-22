@@ -25,13 +25,13 @@
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Nom de la promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="nom"
-						value="#{addPromotionBean.promotion.name}" />
+						value="#{addPromotionBean.promotionName}" />
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Description de la
 							promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="description"
-						value="#{addPromotionBean.promotion.description}" />
+						value="#{addPromotionBean.promotionDescription}" />
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Type de la promotion</b></label>
@@ -54,30 +54,30 @@
 					</h:panelGroup>
 					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "value"}'>
 						<label class="w3-text-teal"><b>Valeur de la remise</b></label>
-						<h:inputText class="w3-input w3-border" id="discount_value"
+						<h:inputText class="w3-input w3-border" id="discountValue"
 									 value="#{addPromotionBean.discountValue}">
-							<f:convertNumber></f:convertNumber>
+							<f:convertNumber minFractionDigits="1"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
 					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion != "pack"}'>
 						<label class="w3-text-teal"><b>Montant minimum d'achat</b></label>
 						<h:inputText class="w3-input w3-border" id="montant"
 									 value="#{addPromotionBean.minPurchaseAmount}">
-							<f:convertNumber></f:convertNumber>
+							<f:convertNumber minFractionDigits="1"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
 					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
 						<label class="w3-text-teal"><b>Nombre acheté</b></label>
-						<h:inputText class="w3-input w3-border" id="purchase_number"
+						<h:inputText class="w3-input w3-border" id="purchaseNumber"
 									 value="#{addPromotionBean.numberPurchase}">
-							<f:convertNumber></f:convertNumber>
+							<f:convertNumber integerOnly="true"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
 					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
 						<label class="w3-text-teal"><b>Nombre offert</b></label>
-						<h:inputText class="w3-input w3-border" id="given_number"
+						<h:inputText class="w3-input w3-border" id="givenNumber"
 									 value="#{addPromotionBean.numberOffered}">
-							<f:convertNumber></f:convertNumber>
+							<f:convertNumber integerOnly="true"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
 				</h:panelGroup>
@@ -86,14 +86,14 @@
 					<label class="w3-text-teal"><b>Durée de la promotion (jours)</b></label>
 					<h:inputText class="w3-input w3-border" id="promotion_duration"
 								 value="#{addPromotionBean.promotionDuration}">
-						<f:convertNumber></f:convertNumber>
+						<f:convertNumber integerOnly="true"></f:convertNumber>
 					</h:inputText>
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Durée de retrait du produit (heure)</b></label>
 					<h:inputText class="w3-input w3-border" id="product_take_away_duration"
 								 value="#{addPromotionBean.productTakeAwayDuration}">
-						<f:convertNumber></f:convertNumber>
+						<f:convertNumber integerOnly="true"></f:convertNumber>
 					</h:inputText>
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
@@ -109,7 +109,7 @@
 				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Quantité mise en promotion</b></label>
 					<h:inputText class="w3-input w3-border" id="quantite"
-						value="#{addPromotionBean.promotion.quantityInitAvailable}">
+						value="#{addPromotionBean.initQuantityAvailable}">
 						<f:convertNumber></f:convertNumber>
 					</h:inputText>
 				</h:panelGroup>
