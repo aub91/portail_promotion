@@ -43,6 +43,11 @@ public class CatalogBean {
 	 * Attribut pour la recherche par lieu. Périmètre de recherche en km.
 	 */
 	private Integer searchPerimeter = 11;
+
+	/**
+	 * Message d'avertissement si l'adresse n'existe pas.
+	 */
+	private String addressWarning;
 	
 	public CatalogBean() {
 		
@@ -131,5 +136,13 @@ public class CatalogBean {
 
 	public void setSearchPerimeter(Integer searchPerimeter) {
 		this.searchPerimeter = searchPerimeter;
+	}
+
+	public String getAddressWarning() {
+		return addressWarning;
+	}
+
+	public void setAddressWarning(String addressWarning) {
+		this.addressWarning = addressWarning;
 	}
 }
