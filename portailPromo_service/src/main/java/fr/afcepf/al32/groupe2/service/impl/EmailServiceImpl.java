@@ -1,15 +1,11 @@
 package fr.afcepf.al32.groupe2.service.impl;
 
+import fr.afcepf.al32.groupe2.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
-import fr.afcepf.al32.groupe2.entity.CategoryProduct;
-import fr.afcepf.al32.groupe2.entity.Client;
-import fr.afcepf.al32.groupe2.entity.IFollowableElement;
-import fr.afcepf.al32.groupe2.entity.ReferenceProduct;
-import fr.afcepf.al32.groupe2.entity.Shop;
 import fr.afcepf.al32.groupe2.service.EmailService;
 
 @Component
@@ -37,6 +33,19 @@ public class EmailServiceImpl implements EmailService {
 
         emailSender.send(message);
 		
+	}
+
+	@Override
+	public void sendEmailReservation(Client destinataire, Reservation reservation) {
+		SimpleMailMessage mail = new SimpleMailMessage();
+		mail.setTo(destinataire.getEmail());
+		mail.setSubject("Confirmation de réservation");
+
+		String message = String.format("Promo 32 vous confirme la réservation n° %d du %tD concernant le produit %s.\nVotre code de retrait est %s.",
+				reservation.getId(), reservation.getDateCreation(), reservation.getReservationProduct().getPromotion().getBaseProduct().getReferenceProduct().getName(), reservation.getWithdrawalCode());
+
+		mail.setText(message);
+		emailSender.send(mail);
 	}
 
 }

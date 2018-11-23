@@ -205,5 +205,9 @@ public class Promotion extends Product {
 		return Date.from(beginDate.plus(limitTimePromotion).toInstant(ZoneOffset.UTC));
 	}
 
+	public void decreaseAvailableQuantity(Double quantity){
+		quantityRemaining -= quantity;
+	}
+
 
 }

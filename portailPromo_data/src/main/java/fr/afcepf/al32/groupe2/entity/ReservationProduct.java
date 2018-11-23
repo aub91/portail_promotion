@@ -39,8 +39,8 @@ public class ReservationProduct {
 	private Reservation reservation;
 
 	@ManyToOne(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
-	@JoinColumn(name = "base_product_id")
-	private BaseProduct baseProducts;
+	@JoinColumn(name = "promotion_id")
+	private Promotion promotion;
 
 	public Double getQuantityRequested() {
 		return quantityRequested;
@@ -78,12 +78,11 @@ public class ReservationProduct {
 		this.reservation = reservation;
 	}
 
-	public BaseProduct getBaseProducts() {
-		return baseProducts;
+	public Promotion getPromotion() {
+		return promotion;
 	}
 
-	public void setBaseProducts(BaseProduct baseProducts) {
-		this.baseProducts = baseProducts;
+	public void setPromotion(Promotion promotion) {
+		this.promotion = promotion;
 	}
-
 }

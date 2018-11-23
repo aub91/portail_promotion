@@ -46,10 +46,6 @@ public class BaseProduct extends Product implements IFollowableElement {
 	@NotNull
 	private ReferenceProduct referenceProduct;
 	
-	@OneToMany(mappedBy="baseProducts",cascade=CascadeType.ALL)
-	@MapKey(name="id")
-	private Map<Long, ReservationProduct> reservationProducts;
-	
 	@Override
 	public Double getInitPrice() {
 		return initPrice;
