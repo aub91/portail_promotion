@@ -44,4 +44,10 @@ public class ReservationDao implements IReservationDao {
 		return entityManager.createNamedQuery("Reservation.findAllByClient",Reservation.class).setParameter("clientId", client.getId()).getResultList();
 	}
 
+	@Override
+	public Reservation update(Reservation reservation) {
+
+		return entityManager.merge(reservation);
+	}
+
 }

@@ -10,4 +10,6 @@ public interface IReservationDao {
 	Reservation createOne(Reservation reservation);
 	List<Reservation> findAll();
 	List<Reservation> findAllByClient(Client client);
+
+	Reservation update(Reservation reservation);
 }

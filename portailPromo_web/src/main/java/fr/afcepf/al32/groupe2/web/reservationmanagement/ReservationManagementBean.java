@@ -1,6 +1,5 @@
 package fr.afcepf.al32.groupe2.web.reservationmanagement;
 
-import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.Reservation;
 import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 import fr.afcepf.al32.groupe2.service.IServiceReservation;
@@ -10,7 +9,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
 import javax.transaction.Transactional;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 @Transactional
@@ -22,16 +24,33 @@ public class ReservationManagementBean {
     @Autowired
     private IServiceReservation serviceReservation;
 
-    private List<Reservation> bookList;
+    private List<Reservation> reservationList;
 
-    public List<Reservation> getBookList() {
-        Shopkeeper shopkeeper = (Shopkeeper) connectionBean.getLoggedUser();
+    private String withDrawalCode;
 
-//        return serviceReservation.findAllByShopKeeper(shopkeeper);
-        return null;
+    public String validateReservation(Reservation reservation){
+        if(reservation.getWithdrawalCode().equals(withDrawalCode)){
+            reservation.getReservationProduct().setWithdrawalDate(new Date());
+            serviceReservation.update(reservation);
+        }
+        return "commercant/gererReservationCommercant/gererReservation";
     }
 
-    public void setBookList(List<Reservation> bookList) {
-        this.bookList = bookList;
+    public List<Reservation> getReservationList() {
+        Shopkeeper shopkeeper = (Shopkeeper) connectionBean.getLoggedUser();
+
+        return serviceReservation.findAllByShopKeeper(shopkeeper).stream().sorted(Comparator.comparing(Reservation::getDateCreation)).collect(Collectors.toList());
+    }
+
+    public void setReservationList(List<Reservation> reservationList) {
+        this.reservationList = reservationList;
+    }
+
+    public String getWithDrawalCode() {
+        return withDrawalCode;
+    }
+
+    public void setWithDrawalCode(String withDrawalCode) {
+        this.withDrawalCode = withDrawalCode;
     }
 }

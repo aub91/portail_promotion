@@ -12,32 +12,133 @@
 		<link type="text/css" rel="stylesheet" href="css/archeCommercant.css" />
 		<link type="text/css" rel="stylesheet"
 			  href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-
 	</ui:define>
 	<ui:define name="content">
-		<h:dataTable value="#{clientBean.bookList}" var="book"
-					 styleClass="w3-table-all w3-centered w3-padding-24" headerClass="w3-purple">
+		<table class="w3-table-all w3-centered w3-padding-24">
+
+		<tr class="w3-teal">
+			<th>Id</th>
+			<th>Date de réservation</th>
+			<th>Promotion</th>
+			<th>Produit réservé</th>
+			<th>Quantité réservée</th>
+			<th>Quantité retirée</th>
+			<th>Code de retrait</th>
+			<th>Confirmer retrait</th>
+		</tr>
+
+		<ui:repeat value="#{reservationManagementBean.reservationList}" var="reservation">
+			<tr>
+			<h:form>
+				<td>#{reservation.id}</td>
+				<td>
+					<h:outputText value="#{reservation.dateCreation}">
+						<f:convertDateTime pattern="dd/MM/yyyy HH:mm"/>
+					</h:outputText>
+				</td>
+				<td>#{reservation.reservationProduct.promotion.name}</td>
+				<td>#{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.name}</td>
+				<td>#{reservation.reservationProduct.quantityRequested}</td>
+				<td>
+					<h:inputText class="w3-input w3-border" id="withdrawalQuantity"
+								 value="#{reservation.reservationProduct.quantityWithdrawal}" rendered="#{empty reservation.reservationProduct.withdrawalDate}">
+						<f:convertNumber/>
+					</h:inputText>
+					<h:outputText value="#{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.salesUnit.name}" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+					<h:outputText id="quantityWithDrawnMessage"
+								  value="#{reservation.reservationProduct.quantityWithdrawal} #{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.salesUnit.name}"
+								  rendered="#{not empty reservation.reservationProduct.withdrawalDate}"/>
+				</td>
+				<td>
+					<h:inputText class="w3-input w3-border" id="withdrawalCode"
+								 value="#{reservationManagementBean.withDrawalCode}" required="true" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+					<h:outputText id="withDrawalMessage" styleClass="w3-green"
+								  value="Réservation récupérée le " rendered="#{not empty reservation.reservationProduct.withdrawalDate}">
+					</h:outputText>
+					<h:outputText id="withDrawalMessagePart2" styleClass="w3-green"
+								  value="#{reservation.reservationProduct.withdrawalDate}" rendered="#{not empty reservation.reservationProduct.withdrawalDate}">
+						<f:convertDateTime pattern="dd/MM/yyyy HH:mm"/>
+					</h:outputText>
+				</td>
+				<td>
+					<h:commandButton class="w3-btn w3-teal"
+									 action="#{reservationManagementBean.validateReservation(reservation)}" value="Confirmer retrait" id="confirmButton" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+					<h:outputText id="withDrawalMessage2"
+								  value="/" rendered="#{not empty reservation.reservationProduct.withdrawalDate}"/>
+				</td>
+
+			</h:form>
+			</tr>
+		</ui:repeat>
+		</table>
+		<!--
+		<h:form class="w3-container">
+		<h:dataTable value="#{reservationManagementBean.reservationList}" var="reservation"
+					 styleClass="w3-table-all w3-centered w3-padding-24" headerClass="w3-teal">
 
 			<h:column>
 				<f:facet name="header">Id</f:facet>
-				#{book.id}
-			</h:column>
-
-			<h:column>
-				<f:facet name="header">Produit</f:facet>
-				#{book.reservationProduct.baseProducts.referenceProduct.name}
-			</h:column>
-
-			<h:column>
-				<f:facet name="header">Quantité réservée</f:facet>
-				#{book.reservationProduct.quantityRequested}
+				#{reservation.id}
 			</h:column>
 
 			<h:column>
 				<f:facet name="header">Date de réservation</f:facet>
-				#{book.dateCreation}
+				<h:outputText value="#{reservation.dateCreation}">
+					<f:convertDateTime pattern="dd/MM/yyyy HH:mm"/>
+				</h:outputText>
 			</h:column>
+
+			<h:column>
+				<f:facet name="header">Promotion</f:facet>
+				#{reservation.reservationProduct.promotion.name}
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">Produit réservé</f:facet>
+				#{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.name}
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">Quantité réservée</f:facet>
+				#{reservation.reservationProduct.quantityRequested}
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">Quantité retirée</f:facet>
+				<h:inputText class="w3-input w3-border" id="withdrawalQuantity"
+							 value="#{reservation.reservationProduct.quantityWithdrawal}" rendered="#{empty reservation.reservationProduct.withdrawalDate}">
+					<f:convertNumber/>
+				</h:inputText>
+				<h:outputText value="#{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.salesUnit.name}" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+				<h:outputText id="quantityWithDrawnMessage"
+							  value="#{reservation.reservationProduct.quantityWithdrawal} #{reservation.reservationProduct.promotion.getBaseProduct().referenceProduct.salesUnit.name}"
+							  rendered="#{not empty reservation.reservationProduct.withdrawalDate}"/>
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">Code de retrait</f:facet>
+				<h:inputText class="w3-input w3-border" id="withdrawalCode"
+							 value="#{reservationManagementBean.withDrawalCode}" required="true" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+				<h:outputText id="withDrawalMessage" styleClass="w3-green"
+							 value="Réservation récupérée le " rendered="#{not empty reservation.reservationProduct.withdrawalDate}">
+				</h:outputText>
+				<h:outputText id="withDrawalMessagePart2" styleClass="w3-green"
+							  value="#{reservation.reservationProduct.withdrawalDate}" rendered="#{not empty reservation.reservationProduct.withdrawalDate}">
+					<f:convertDateTime pattern="dd/MM/yyyy HH:mm"/>
+				</h:outputText>
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">Confirmer retrait</f:facet>
+				<h:commandButton class="w3-btn w3-teal"
+								 action="#{reservationManagementBean.validateReservation(reservation)}" value="Confirmer retrait" id="confirmButton" rendered="#{empty reservation.reservationProduct.withdrawalDate}"/>
+				<h:outputText id="withDrawalMessage2"
+							  value="/" rendered="#{not empty reservation.reservationProduct.withdrawalDate}"/>
+			</h:column>
+
 		</h:dataTable>
+		</h:form>
+		-->
 	</ui:define>
 </ui:composition>
 </html>

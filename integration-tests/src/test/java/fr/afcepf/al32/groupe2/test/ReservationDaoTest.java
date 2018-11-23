@@ -62,27 +62,13 @@ public class ReservationDaoTest {
 		List<Reservation> su2 = dao1.findAll();
 		Assert.assertEquals(4L, su2.size(), 0.1);
 	}
-//			@Id
-//			@GeneratedValue(strategy=GenerationType.IDENTITY)
-//			private Long id;
 
-//			@Column(name="creation_date")
-//			@NotBlank
-//			private String dateCreation;
-
-//			@Column(name="retrait_code")
-//			@NotBlank
-//			private String codeRetrait;
-
-//			@ManyToOne(cascade= {CascadeType.PERSIST})
-//			@JoinColumn(name="client_id")
-//			@NotNull
-//			private Client client;
-
-//			@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
-//			private Evaluation evaluation;
-
-//			@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
-//			private ReservationProduct reservationProduct;
+    @Test
+    public void updateTest() {
+        Reservation su = dao1.findOne(1L);
+        su.getReservationProduct().setWithdrawalDate(new Date());
+        Reservation result = dao1.update(su);
+        Assert.assertNotNull(result.getReservationProduct().getWithdrawalDate());
+    }
 
 }

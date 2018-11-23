@@ -720,10 +720,10 @@ INSERT INTO following_element_data(id, element_type, element_id, subscriber_type
 
 INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(1,1,SYSDATE(),'456789')
 INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(2,1,SYSDATE(),'soleil')
-INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(3,2,SYSDATE(),null)
+INSERT INTO reservation(id,client_id,creation_date,withdrawal_code)VALUES(3,2,SYSDATE(),'toto')
 
 INSERT INTO reservation_product(id,promotion_id,quantity_requested,withdrawal_date)VALUES(1,15,10,null)
-INSERT INTO reservation_product(id,promotion_id,quantity_requested,withdrawal_date)VALUES(2,15,5,SYSDATE())
+INSERT INTO reservation_product(id,promotion_id,quantity_requested,withdrawal_date, quantity_withdrawal)VALUES(2,15,5,SYSDATE(), 5)
 INSERT INTO reservation_product(id,promotion_id,quantity_requested,withdrawal_date)VALUES(3,16,1,null)
 
 INSERT INTO evaluation(id,date_creation,note_product,overall_rating)VALUES(1,null,null,null)

@@ -22,7 +22,8 @@ import javax.validation.constraints.NotNull;
 @Table(name="reservation")
 @NamedQueries({
 	@NamedQuery(name="Reservation.findAll" , query="select r From Reservation r" ),
-	@NamedQuery(name="Reservation.findAllByClient" , query="select r From Reservation r INNER JOIN r.client cli WHERE cli.id = :clientId" )
+	@NamedQuery(name="Reservation.findAllByClient" , query="select r From Reservation r INNER JOIN r.client cli WHERE cli.id = :clientId" ),
+	@NamedQuery(name="Reservation.findAllByShopKeeper" , query="select r From Reservation r INNER JOIN r.reservationProduct rp INNER JOIN rp.promotion p WHERE some indices(p.shops) IN :shopkeeperShopsId")
 })
 public class Reservation {
 	
@@ -46,7 +47,7 @@ public class Reservation {
 	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation")
 	private Evaluation evaluation;
 	
-	@OneToOne(cascade= {CascadeType.PERSIST},mappedBy="reservation", fetch=FetchType.EAGER)
+	@OneToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE},mappedBy="reservation", fetch=FetchType.EAGER)
 	private ReservationProduct reservationProduct;
 	
 	public Date getDateCreation() {

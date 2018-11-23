@@ -128,6 +128,12 @@
 								Créer promotion
 							</a>
 						</h:panelGroup>
+						<h:panelGroup class="w3-mobile w3-bar-item"
+									  rendered="#{not empty connectionBean.loggedUser and connectionBean.loggedUser['class'].simpleName eq 'Shopkeeper'}" layout="block">
+							<a href="../../commercant/gererReservationCommercant/gererReservation.xhtml" class="w3-btn w3-teal w3-padding-16">
+								Gérer réservations
+							</a>
+						</h:panelGroup>
 						<!-- /ShopKeeper section -->
 
 						<!-- Global section -->
