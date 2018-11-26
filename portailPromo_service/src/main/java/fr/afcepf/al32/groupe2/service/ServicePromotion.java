@@ -29,6 +29,11 @@ public class ServicePromotion implements IServicePromotion {
 	}
 
 	@Override
+	public List<Promotion> findAllValidByIds(List<Long> ids) {
+		return promotiondao.findAllValidByIds(ids);
+	}
+
+	@Override
 	public Promotion recherchePromotionParIdentifiant(Long idUnite) {
 	
 		return promotiondao.findOne(idUnite);

@@ -8,6 +8,11 @@ import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
+import fr.afcepf.al32.groupe2.service.IServicePromotion;
+import fr.afcepf.al32.groupe2.web.delegate.WsRechercheDelegateImpl;
+import fr.afcepf.al32.groupe2.ws.dto.CategoryProductDto;
+import fr.afcepf.al32.groupe2.ws.dto.PromotionDto;
+import fr.afcepf.al32.groupe2.ws.itf.IWsRecherche;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
@@ -23,6 +28,12 @@ public class CatalogBean {
 	@Autowired
 	private ICatalogService catalogService;
 
+	@Autowired
+	private IServicePromotion servicePromotion;
+
+	@Autowired
+	private IWsRecherche rechercheDelegate;
+
 	private List<Promotion> promotions = new ArrayList<>();
 	
 	private List<CategoryProduct> categories;
@@ -37,7 +48,7 @@ public class CatalogBean {
 	/**
 	 * Attribut pour la recherche par lieu. Adresse servant de point central.
 	 */
-	private String searchSourceAddress;
+	private String searchSourceAddress="";
 
 	/**
 	 * Attribut pour la recherche par lieu. Périmètre de recherche en km.
@@ -56,11 +67,8 @@ public class CatalogBean {
 	public String search() {
 		List<String> keyWords = Arrays.asList(searchField.split(" "));
 		CategoryProduct category = categories.stream().filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
-		if(!keyWords.isEmpty()) {
-			promotions = catalogService.searchByCategoryAndKeyWords(category, keyWords);
-		} else if (category != null) {
-			searchByCategory(category);
-		}
+		List<PromotionDto> promotionDtos =  rechercheDelegate.searchListPromotion(searchSourceAddress, searchPerimeter, keyWords, category == null? null : new CategoryProductDto(category.getId()));
+		promotions = servicePromotion.findAllValidByIds(promotionDtos.stream().map(PromotionDto::getId).collect(Collectors.toList()));
 		return "index";
 	}
 	

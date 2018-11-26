@@ -39,6 +39,11 @@ public class PromotionDao implements IPromotionDao {
 	}
 
 	@Override
+	public List<Promotion> findAllValidByIds(List<Long> ids) {
+		return entityManager.createNamedQuery("Promotion.findAllValidByIds",Promotion.class).setParameter("promoIds", ids).getResultList();
+	}
+
+	@Override
 	public void save(Promotion p) {
 		entityManager.persist(p);
 	}
