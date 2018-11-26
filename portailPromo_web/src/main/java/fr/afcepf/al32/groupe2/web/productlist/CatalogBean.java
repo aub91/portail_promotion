@@ -1,16 +1,13 @@
 package fr.afcepf.al32.groupe2.web.productlist;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
 import fr.afcepf.al32.groupe2.service.IServicePromotion;
-import fr.afcepf.al32.groupe2.web.delegate.WsRechercheDelegateImpl;
 import fr.afcepf.al32.groupe2.ws.dto.CategoryProductDto;
+import fr.afcepf.al32.groupe2.ws.dto.OrchestratorResearchDtoResponse;
 import fr.afcepf.al32.groupe2.ws.dto.PromotionDto;
 import fr.afcepf.al32.groupe2.ws.itf.IWsRecherche;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,14 +64,23 @@ public class CatalogBean {
 	public String search() {
 		List<String> keyWords = Arrays.asList(searchField.split(" "));
 		CategoryProduct category = categories.stream().filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
-		List<PromotionDto> promotionDtos =  rechercheDelegate.searchListPromotion(searchSourceAddress, searchPerimeter, keyWords, category == null? null : new CategoryProductDto(category.getId()));
-		promotions = servicePromotion.findAllValidByIds(promotionDtos.stream().map(PromotionDto::getId).collect(Collectors.toList()));
+		OrchestratorResearchDtoResponse orchestratorResponse =  rechercheDelegate.searchListPromotion(searchSourceAddress, searchPerimeter, keyWords, category == null? null : new CategoryProductDto(category.getId()));
+		if(!orchestratorResponse.getPromotions().isEmpty()){
+			promotions = servicePromotion.findAllValidByIds(orchestratorResponse.getPromotions().stream().map(PromotionDto::getId).collect(Collectors.toList()));
+		} else {
+			promotions = Collections.emptyList();
+		}
+		if(!orchestratorResponse.getAddressValid()){
+			addressWarning = "Adresse non trouvée";
+		} else {
+			addressWarning="";
+		}
 		return "index";
 	}
 	
 	public String searchByCategory(CategoryProduct category) {
 		if(category != null) {
-			promotions = catalogService.searchByCategory(category);
+			catalogService.searchByCategory(category);
 		}
 		return "index";
 	}
