@@ -20,6 +20,8 @@ import fr.afcepf.al32.groupe2.entity.SalesUnit;
 import fr.afcepf.al32.groupe2.service.IServiceReferenceProduct;
 import fr.afcepf.al32.groupe2.test.config.TestConfig;
 
+import javax.transaction.Transactional;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TestConfig.class)
 @AutoConfigureTestDatabase
@@ -40,6 +42,7 @@ public void rechercheReferenceProductParIdentifiantTest () {
 	//ReferenceProduct su3= servicereferenceproduct.rechercheReferenceProduitParIdentifiant(2L);
 }
 @Test
+@Transactional
 public void ajouterReferenceProducttest() {
 	ReferenceProduct suc0=new ReferenceProduct();
 	SalesUnit suc1=new SalesUnit();
