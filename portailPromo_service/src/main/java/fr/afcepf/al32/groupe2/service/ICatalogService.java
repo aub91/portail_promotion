@@ -11,8 +11,6 @@ public interface ICatalogService {
 	
 	List<CategoryProduct> getAllRootCategories();
 
-	List<Promotion> searchByCategoryAndKeyWords(CategoryProduct selectedCategory, List<String> keyWords);
-
 	List<Promotion> searchByCategory(CategoryProduct category);
 
 }

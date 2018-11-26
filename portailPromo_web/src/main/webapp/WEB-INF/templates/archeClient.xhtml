@@ -35,7 +35,7 @@
 						<h:selectOneMenu id="escape02"
 							value="#{catalogBean.selectedCategory}"
 							class="w3-select w3-dark-grey w3-mobile w3-col s2">
-							<f:selectItem itemLabel="Catégorie" itemValue="#{null}"/>
+							<f:selectItem itemLabel="Toutes les catégories" itemValue="#{null}"/>
 							<f:selectItems value="#{catalogBean.categories}" var="category"
 								itemValue="#{category.name}" itemLabel="#{category.name}" />
 						</h:selectOneMenu>
@@ -58,9 +58,9 @@
 				id="myBottomnav">
 				<div class="w3-bar w3-bar-item w3-teal w3-mobile w3-col s7">
 					<div class="w3-dropdown-hover w3-mobile">
-						<button class="w3-btn w3-teal w3-padding-16">
+						<div class="w3-btn w3-teal w3-padding-16">
 							Localisation <i class="fa fa-caret-down"/>
-						</button>
+						</div>
 						<h:panelGroup class="w3-dropdown-content w3-bar-block w3-dark-grey w3-container w3-padding-16" layout="block">
 							<h:inputText id="searchAdress" value="#{catalogBean.searchSourceAddress}" class="w3-bar-item"/>
 							<h:outputText id="addressWarning" value="#{catalogBean.addressWarning}" class="w3-bar-item w3-text-red"/>

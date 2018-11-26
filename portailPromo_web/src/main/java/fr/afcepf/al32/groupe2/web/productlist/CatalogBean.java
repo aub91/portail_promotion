@@ -65,11 +65,13 @@ public class CatalogBean {
 		List<String> keyWords = Arrays.asList(searchField.split(" "));
 		CategoryProduct category = categories.stream().filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
 		OrchestratorResearchDtoResponse orchestratorResponse =  rechercheDelegate.searchListPromotion(searchSourceAddress, searchPerimeter, keyWords, category == null? null : new CategoryProductDto(category.getId()));
+
 		if(!orchestratorResponse.getPromotions().isEmpty()){
 			promotions = servicePromotion.findAllValidByIds(orchestratorResponse.getPromotions().stream().map(PromotionDto::getId).collect(Collectors.toList()));
 		} else {
 			promotions = Collections.emptyList();
 		}
+
 		if(!orchestratorResponse.getAddressValid()){
 			addressWarning = "Adresse non trouvée";
 		} else {
@@ -80,7 +82,7 @@ public class CatalogBean {
 	
 	public String searchByCategory(CategoryProduct category) {
 		if(category != null) {
-			catalogService.searchByCategory(category);
+			promotions = catalogService.searchByCategory(category);
 		}
 		return "index";
 	}
