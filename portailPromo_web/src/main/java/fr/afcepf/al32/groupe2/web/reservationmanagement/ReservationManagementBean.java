@@ -33,6 +33,7 @@ public class ReservationManagementBean {
             reservation.getReservationProduct().setWithdrawalDate(new Date());
             serviceReservation.update(reservation);
         }
+        withDrawalCode = null;
         return "commercant/gererReservationCommercant/gererReservation";
     }
 
