@@ -2,7 +2,6 @@ package fr.afcepf.al32.groupe2.web.delegate;
 
 import fr.afcepf.al32.groupe2.ws.dto.CategoryProductDto;
 import fr.afcepf.al32.groupe2.ws.dto.OrchestratorResearchDtoResponse;
-import fr.afcepf.al32.groupe2.ws.dto.PromotionDto;
 import fr.afcepf.al32.groupe2.ws.itf.IWsRecherche;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -23,7 +22,7 @@ public class WsRechercheDelegateImpl implements IWsRecherche {
         try {
             Properties props = new Properties();
             InputStream inputStream = Thread.currentThread().getContextClassLoader()
-                    .getResourceAsStream("orchestrateur_recherche.properties");
+                    .getResourceAsStream("web_services.properties");
             props.load(inputStream);
             inputStream.close();
 

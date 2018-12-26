@@ -34,46 +34,94 @@
 						value="#{addPromotionBean.promotionDescription}" />
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
+					<label class="w3-text-teal"><b>Commerce</b></label>
+					<h:selectOneMenu value="#{addPromotionBean.commerceId}"
+									 class="w3-select w3-dark-grey w3-mobile" id="shop">
+						<f:selectItem itemLabel="Choisissez un commerce..." itemValue="#{null}"></f:selectItem>
+						<f:selectItems value="#{addPromotionBean.shops}" var="shop"
+									   itemValue="#{shop.id}" itemLabel="#{shop.name}" />
+						<f:ajax event="change" execute="shop" render="topPromoSlideshow"/>
+					</h:selectOneMenu>
+				</h:panelGroup>
+				<h:panelGroup id="topPromoSlideshow" class="w3-padding-24" layout="block">
+					<h:panelGroup layout="block" rendered='#{addPromotionBean.commerceId != null}'>
+						<label class="w3-text-teal"><b>Nous vous proposons les recommandations suivantes pour votre magasin:</b></label>
+						<h:panelGroup  class="w3-content w3-display-container" layout="block">
+							<ui:repeat value="#{addPromotionBean.promoTemplates}" var="promoTemplate">
+								<h:panelGroup class="topPromo w3-row" layout="block">
+									<h:panelGroup value="w3-col s6 w3-border-right" layout="block">
+										<h:outputText value="Type de la promotion: #{promoTemplate.promotionType.name}"/>
+										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Pack'}">
+											<h:outputText value="Nombre acheté: #{promoTemplate.promotionType.numberPurchased}"/>
+											<h:outputText value="Nombre offert: #{promoTemplate.promotionType.numberOffered}"/>
+										</h:panelGroup>
+										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Pourcentage'}">
+											<h:outputText value="Pourcentage de réduction: #{promoTemplate.promotionType.percentValue}"/>
+											<h:outputText value="Montant minimum d'achat: #{promoTemplate.promotionType.minPurchaseAmount}"/>
+										</h:panelGroup>
+										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Remise'}">
+											<h:outputText value="Valeur de la remise: #{promoTemplate.promotionType.discountValue} €"/>
+											<h:outputText value="Montant minimum d'achat: #{promoTemplate.promotionType.minPurchaseAmount}"/>
+										</h:panelGroup>
+									</h:panelGroup>
+									<h:panelGroup value="w3-col s6" layout="block">
+										<h:outputText value="Durée de la promotion: #{promoTemplate.limitTimePromotion} €"/>
+										<h:outputText value="Durée de limite de retrait: #{promoTemplate.limitTimeTakePromotion}"/>
+									</h:panelGroup>
+									<h:panelGroup class="w3-col s6" layout="block">
+										<h:commandButton class="w3-btn w3-teal"
+														 action="#{addPromotionBean.chooseTemplate}" value="Choisir" />
+									</h:panelGroup>
+								</h:panelGroup>
+							</ui:repeat>
+							<p>Toto</p>
+							<a class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+							<a class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+						</h:panelGroup>
+					</h:panelGroup>
+				</h:panelGroup>
+
+				<h:panelGroup class="w3-padding-24" layout="block">
 					<label class="w3-text-teal"><b>Type de la promotion</b></label>
 					<h:selectOneMenu value="#{addPromotionBean.typePromotion}"
 						class="w3-select w3-dark-grey w3-mobile" id="promotionType">
-						<f:selectItem itemLabel="Pourcentage" itemValue="percentage"/>
-						<f:selectItem itemLabel="Remise" itemValue="value"/>
-						<f:selectItem itemLabel="Pack" itemValue="pack"/>
+						<f:selectItem itemLabel="Pourcentage" itemValue="Pourcentage"/>
+						<f:selectItem itemLabel="Remise" itemValue="Remise"/>
+						<f:selectItem itemLabel="Pack" itemValue="Pack"/>
 						<f:ajax event="change" execute="promotionType" render="promotionDetailPanel"/>
 					</h:selectOneMenu>
 				</h:panelGroup>
 				<!-- Promotion specific field -->
 				<h:panelGroup class="w3-padding-24" layout="block" id="promotionDetailPanel">
-					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "percentage"}'>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "Pourcentage"}'>
 						<label class="w3-text-teal"><b>Valeur du pourcentage de remise</b></label>
 						<h:inputText class="w3-input w3-border" id="percent"
 									 value="#{addPromotionBean.percentValue}">
 							<f:convertNumber></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
-					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "value"}'>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "Remise"}'>
 						<label class="w3-text-teal"><b>Valeur de la remise</b></label>
 						<h:inputText class="w3-input w3-border" id="discountValue"
 									 value="#{addPromotionBean.discountValue}">
 							<f:convertNumber minFractionDigits="1"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
-					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion != "pack"}'>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion != "Pack"}'>
 						<label class="w3-text-teal"><b>Montant minimum d'achat</b></label>
 						<h:inputText class="w3-input w3-border" id="montant"
 									 value="#{addPromotionBean.minPurchaseAmount}">
 							<f:convertNumber minFractionDigits="1"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
-					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "Pack"}'>
 						<label class="w3-text-teal"><b>Nombre acheté</b></label>
 						<h:inputText class="w3-input w3-border" id="purchaseNumber"
 									 value="#{addPromotionBean.numberPurchase}">
 							<f:convertNumber integerOnly="true"></f:convertNumber>
 						</h:inputText>
 					</h:panelGroup>
-					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "pack"}'>
+					<h:panelGroup class="w3-padding-24" layout="block" rendered='#{addPromotionBean.typePromotion == "Pack"}'>
 						<label class="w3-text-teal"><b>Nombre offert</b></label>
 						<h:inputText class="w3-input w3-border" id="givenNumber"
 									 value="#{addPromotionBean.numberOffered}">
@@ -114,15 +162,6 @@
 					</h:inputText>
 				</h:panelGroup>
 				<h:panelGroup class="w3-padding-24" layout="block">
-					<label class="w3-text-teal"><b>Commerce</b></label>
-					<h:selectOneMenu value="#{addPromotionBean.commerceId}"
-						class="w3-select w3-dark-grey w3-mobile">
-						<f:selectItem itemLabel="Choisissez un commerce..." itemValue="#{null}"></f:selectItem>
-						<f:selectItems value="#{addPromotionBean.shops}" var="shop"
-							itemValue="#{shop.id}" itemLabel="#{shop.name}" />
-					</h:selectOneMenu>
-				</h:panelGroup>
-				<h:panelGroup class="w3-padding-24" layout="block">
 					<h:commandButton class="w3-btn w3-teal"
 						action="#{addPromotionBean.create}" value="Créer" />
 				</h:panelGroup>
@@ -132,8 +171,7 @@
 
 		<script type="text/javascript"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script type="text/javascript" src="../jsHamburger/main.js"></script>
-		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
+		<script type="text/javascript" src="./js/slideshow.js"></script>
 
 	</ui:define>
 </ui:composition>

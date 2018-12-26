@@ -5,6 +5,9 @@ import fr.afcepf.al32.groupe2.service.IFollowableElementService;
 import fr.afcepf.al32.groupe2.service.IServiceBaseProduct;
 import fr.afcepf.al32.groupe2.service.IServicePublish;
 import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
+import fr.afcepf.al32.groupe2.ws.itf.IWsPromoTemplate;
+import fr.afcepf.al32.groupe2.ws.wsPromoTemplate.dto.PromotionTemplateResultDto;
+import fr.afcepf.al32.groupe2.ws.wsPromoTemplate.dto.TopPromotionTemplateResultDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
@@ -13,6 +16,7 @@ import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 import java.time.Duration;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 @SessionScope
@@ -31,6 +35,11 @@ public class AddPromotionBean {
 	@Autowired
 	private IFollowableElementService followableElementService;
 
+	@Autowired
+	private IWsPromoTemplate topPromoDelegate;
+
+	private List<PromotionTemplateResultDto> topPromoTemplates;
+
 	/**
 	 * Id of the product link to the created promotion
 	 */
@@ -39,7 +48,7 @@ public class AddPromotionBean {
 	/**
 	 * Type of the promotion.
 	 */
-	private String typePromotion = "percentage";
+	private String typePromotion = "Pourcentage";
 
 	/**
 	 * For percent type promotion, value of the percentage of reduction.
@@ -112,13 +121,13 @@ public class AddPromotionBean {
 		promotion.setShops(shopMap);
 
 		switch (typePromotion){
-			case "percentage":
+			case "Pourcentage":
 				createPercentagePromotion(promotion);
 				break;
-			case "value":
+			case "Remise":
 				createDiscountPromotion(promotion);
 				break;
-			case "pack":
+			case "Pack":
 				createPackPromotion(promotion);
 				break;
 		}
@@ -154,12 +163,34 @@ public class AddPromotionBean {
 		promotion.setPromotionType(percentType);
 	}
 
+	public String chooseTemplate(String promotionType, Long numberPurchase, Long numberOffered, Double percentValue, Double discountValue, Double minPurchaseAmount, Long promotionDuration, Long productTakeAwayDuration){
+		this.typePromotion = promotionType;
+		this.numberPurchase = numberPurchase;
+		this.numberOffered = numberOffered;
+		this.percentValue = percentValue;
+		this.discountValue = discountValue;
+		this.minPurchaseAmount = minPurchaseAmount;
+		this.productTakeAwayDuration = productTakeAwayDuration;
+		this.promotionDuration = promotionDuration;
+
+		return "commercant/fichePromotionDetailledCommercant/formulaireAjoutPromotion";
+	}
+
 	@PostConstruct
 	public void init() {
 		Shopkeeper shopkeeper = (Shopkeeper) connectionBean.getLoggedUser();
 		shops = new ArrayList<>(shopkeeper.getShops().values());
 		
 		products = serviceBaseProduct.findAll();
+	}
+
+	public List<PromotionTemplateResultDto> getPromoTemplates(){
+		Shopkeeper shopkeeper = (Shopkeeper) connectionBean.getLoggedUser();
+		Shop shop = shopkeeper.getShops().get(commerceId);
+		List<String> categoriesList = shop.getCategoryProducts().values().stream().map(CategoryProduct::getName).collect(Collectors.toList());
+		TopPromotionTemplateResultDto resultDto = 	topPromoDelegate.searchTopTemplatePromoForShopKeeper(Double.parseDouble(shop.getAddress().getCoordinates().getLongitude()), Double.parseDouble(shop.getAddress().getCoordinates().getLatitude()),categoriesList);
+
+		return resultDto.getTemplates();
 	}
 
 	public String getTypePromotion() {
@@ -280,5 +311,13 @@ public class AddPromotionBean {
 
 	public void setPromotionDescription(String promotionDescription) {
 		this.promotionDescription = promotionDescription;
+	}
+
+	public List<PromotionTemplateResultDto> getTopPromoTemplates() {
+		return topPromoTemplates;
+	}
+
+	public void setTopPromoTemplates(List<PromotionTemplateResultDto> topPromoTemplates) {
+		this.topPromoTemplates = topPromoTemplates;
 	}
 }

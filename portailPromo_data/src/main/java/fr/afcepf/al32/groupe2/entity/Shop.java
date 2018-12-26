@@ -80,7 +80,7 @@ public class Shop implements IFollowableElement{
 	@MapKey(name="id")
 	private Map<Long, Promotion> promotions;
 	
-	@ManyToMany(cascade=CascadeType.ALL)
+	@ManyToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinTable(name="shop_category_product", joinColumns=@JoinColumn(name="shop_id"), inverseJoinColumns=@JoinColumn(name="category_product_id"))
 	@MapKey(name="id")
 	private Map<Long, CategoryProduct> categoryProducts;
@@ -181,5 +181,12 @@ public class Shop implements IFollowableElement{
 	public String getType() {
 		return FollowableElementType.SHOP;
 	}
-	
+
+	public Map<Long, CategoryProduct> getCategoryProducts() {
+		return categoryProducts;
+	}
+
+	public void setCategoryProducts(Map<Long, CategoryProduct> categoryProducts) {
+		this.categoryProducts = categoryProducts;
+	}
 }

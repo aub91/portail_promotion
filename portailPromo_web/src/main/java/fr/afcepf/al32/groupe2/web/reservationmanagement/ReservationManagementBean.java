@@ -4,6 +4,8 @@ import fr.afcepf.al32.groupe2.entity.Reservation;
 import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 import fr.afcepf.al32.groupe2.service.IServiceReservation;
 import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
+import fr.afcepf.al32.groupe2.ws.itf.IWsPromoTemplate;
+import fr.afcepf.al32.groupe2.ws.wsPromoTemplate.dto.PromotionTemplateResultDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;

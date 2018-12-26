@@ -569,6 +569,8 @@ INSERT INTO shop_address(shop_id,address_id)VALUES(7,10)
 INSERT INTO shop_address(shop_id,address_id)VALUES(8,11)
 INSERT INTO shop_address(shop_id,address_id)VALUES(9,12)
 
+INSERT INTO shop_category_product(shop_id, category_product_id) VALUES (1, 23)
+
 INSERT INTO shopkeeper_shop(shopkeeper_id,shop_id)VALUES(4,1)
 INSERT INTO shopkeeper_shop(shopkeeper_id,shop_id)VALUES(4,2)
 INSERT INTO shopkeeper_shop(shopkeeper_id,shop_id)VALUES(5,3)
