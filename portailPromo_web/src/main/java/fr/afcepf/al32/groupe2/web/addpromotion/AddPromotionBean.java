@@ -163,15 +163,28 @@ public class AddPromotionBean {
 		promotion.setPromotionType(percentType);
 	}
 
-	public String chooseTemplate(String promotionType, Long numberPurchase, Long numberOffered, Double percentValue, Double discountValue, Double minPurchaseAmount, Long promotionDuration, Long productTakeAwayDuration){
-		this.typePromotion = promotionType;
-		this.numberPurchase = numberPurchase;
-		this.numberOffered = numberOffered;
-		this.percentValue = percentValue;
-		this.discountValue = discountValue;
-		this.minPurchaseAmount = minPurchaseAmount;
-		this.productTakeAwayDuration = productTakeAwayDuration;
-		this.promotionDuration = promotionDuration;
+	public String chooseTemplate(PromotionTemplateResultDto promoTemplate){
+		this.typePromotion = promoTemplate.getPromotionType().getName();
+		switch (typePromotion){
+			case "Pourcentage":
+				fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.PercentType percentType = (fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.PercentType) promoTemplate.getPromotionType();
+				this.percentValue = percentType.getPercentValue();
+				this.minPurchaseAmount = percentType.getMinPurchaseAmount();
+				break;
+			case "Remise":
+				fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Discount discountType = (fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Discount) promoTemplate.getPromotionType();
+				this.discountValue = discountType.getDiscountValue();
+				this.minPurchaseAmount = discountType.getMinPurchaseAmount();
+				break;
+			case "Pack":
+				fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Pack packType = (fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Pack) promoTemplate.getPromotionType();
+				this.numberPurchase = packType.getNumberPurchased().longValue();
+				this.numberOffered = packType.getNumberOffered().longValue();
+				break;
+		}
+
+		this.productTakeAwayDuration = promoTemplate.getLimitTimeTakePromotion().toHours();
+		this.promotionDuration = promoTemplate.getLimitTimePromotion().toDays();
 
 		return "commercant/fichePromotionDetailledCommercant/formulaireAjoutPromotion";
 	}

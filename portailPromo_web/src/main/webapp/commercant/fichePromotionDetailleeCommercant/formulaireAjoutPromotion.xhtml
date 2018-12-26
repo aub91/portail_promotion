@@ -11,10 +11,7 @@
 	<ui:define name="headcssscript">
 		<link type="text/css" rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-		<link type="text/css" rel="stylesheet" href="../css/main.css" />
-		<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
-		<link type="text/css" rel="stylesheet" href="styleTest.css" />
-		<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
+		<link type="text/css" rel="stylesheet" href="./css/slideshow.css" />
 	</ui:define>
 
 	<ui:define name="content">
@@ -40,41 +37,41 @@
 						<f:selectItem itemLabel="Choisissez un commerce..." itemValue="#{null}"></f:selectItem>
 						<f:selectItems value="#{addPromotionBean.shops}" var="shop"
 									   itemValue="#{shop.id}" itemLabel="#{shop.name}" />
-						<f:ajax event="change" execute="shop" render="topPromoSlideshow"/>
+						<f:ajax event="change" execute="shop" render="topPromoSlideshow"
+								onevent="function(data) { if (data.status === 'success') {
+    										showDivs(slideIndex) } }"/>
 					</h:selectOneMenu>
 				</h:panelGroup>
 				<h:panelGroup id="topPromoSlideshow" class="w3-padding-24" layout="block">
 					<h:panelGroup layout="block" rendered='#{addPromotionBean.commerceId != null}'>
-						<label class="w3-text-teal"><b>Nous vous proposons les recommandations suivantes pour votre magasin:</b></label>
-						<h:panelGroup  class="w3-content w3-display-container" layout="block">
+						<label class="w3-text-teal"><b>Promotions les plus efficaces pour les produits de ce commerce :</b></label>
+						<h:panelGroup  class="w3-content w3-display-container w3-margin-top" layout="block">
 							<ui:repeat value="#{addPromotionBean.promoTemplates}" var="promoTemplate">
-								<h:panelGroup class="topPromo w3-row" layout="block">
-									<h:panelGroup value="w3-col s6 w3-border-right" layout="block">
-										<h:outputText value="Type de la promotion: #{promoTemplate.promotionType.name}"/>
+								<h:panelGroup styleClass="topPromo w3-row" layout="block">
+									<h:panelGroup styleClass="w3-col s6 w3-border-right" layout="block">
+										<h:outputText styleClass="w3-show w3-margin-bottom" value="Type de la promotion: #{promoTemplate.promotionType.name}"/>
 										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Pack'}">
-											<h:outputText value="Nombre acheté: #{promoTemplate.promotionType.numberPurchased}"/>
-											<h:outputText value="Nombre offert: #{promoTemplate.promotionType.numberOffered}"/>
+											<h:outputText styleClass="w3-show w3-margin-bottom" value="Nombre acheté: #{promoTemplate.promotionType.numberPurchased}"/>
+											<h:outputText styleClass="w3-show w3-margin-bottom" value="Nombre offert: #{promoTemplate.promotionType.numberOffered}"/>
 										</h:panelGroup>
 										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Pourcentage'}">
-											<h:outputText value="Pourcentage de réduction: #{promoTemplate.promotionType.percentValue}"/>
-											<h:outputText value="Montant minimum d'achat: #{promoTemplate.promotionType.minPurchaseAmount}"/>
+											<h:outputText styleClass="w3-show w3-margin-bottom" value="Pourcentage de réduction: #{promoTemplate.promotionType.percentValue} %"/>
 										</h:panelGroup>
 										<h:panelGroup layout="block" rendered="#{promoTemplate.promotionType.name == 'Remise'}">
-											<h:outputText value="Valeur de la remise: #{promoTemplate.promotionType.discountValue} €"/>
-											<h:outputText value="Montant minimum d'achat: #{promoTemplate.promotionType.minPurchaseAmount}"/>
+											<h:outputText styleClass="w3-show" value="Valeur de la remise: #{promoTemplate.promotionType.discountValue} €"/>
 										</h:panelGroup>
 									</h:panelGroup>
-									<h:panelGroup value="w3-col s6" layout="block">
-										<h:outputText value="Durée de la promotion: #{promoTemplate.limitTimePromotion} €"/>
-										<h:outputText value="Durée de limite de retrait: #{promoTemplate.limitTimeTakePromotion}"/>
+									<h:panelGroup styleClass="w3-col s6" layout="block">
+										<h:outputText styleClass="w3-show w3-margin-bottom" value="Durée de la promotion: #{promoTemplate.limitTimePromotion.toDays()} jour(s)"/>
+										<h:outputText styleClass="w3-show w3-margin-bottom" value="Durée de limite de retrait: #{promoTemplate.limitTimeTakePromotion.toHours()} heure(s)"/>
 									</h:panelGroup>
-									<h:panelGroup class="w3-col s6" layout="block">
+									<h:panelGroup styleClass="w3-col s12" layout="block">
 										<h:commandButton class="w3-btn w3-teal"
-														 action="#{addPromotionBean.chooseTemplate}" value="Choisir" />
+														 action="#{addPromotionBean.chooseTemplate(promoTemplate)}"
+														 value="Choisir" />
 									</h:panelGroup>
 								</h:panelGroup>
 							</ui:repeat>
-							<p>Toto</p>
 							<a class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 							<a class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 						</h:panelGroup>
