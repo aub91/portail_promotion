@@ -27,7 +27,6 @@ public class ReservationDao implements IReservationDao {
 	public Reservation createOne(Reservation reservation) {
 		entityManager.persist(reservation);
 		return reservation;
-		
 	
 	}
 
@@ -35,7 +34,7 @@ public class ReservationDao implements IReservationDao {
 	@Override
 	public List<Reservation> findAll() {
 		
-		return  entityManager.createNamedQuery("Reservation.findAll",Reservation.class).getResultList();
+		return entityManager.createNamedQuery("Reservation.findAll",Reservation.class).getResultList();
 	}
 
 
@@ -48,6 +47,14 @@ public class ReservationDao implements IReservationDao {
 	public Reservation update(Reservation reservation) {
 
 		return entityManager.merge(reservation);
+	}
+
+
+	@Override
+	public Reservation getLastReservation(Client client) {
+	 return entityManager.createNamedQuery("Reservation.findAllByClientOrderByDate",Reservation.class)
+			 .setParameter("clientId", client.getId()).getResultList().get(0);
+		
 	}
 
 }

@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.groupe2.dao.IReservationDao;
+import fr.afcepf.al32.groupe2.entity.CategoryProduct;
 import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.Reservation;
 import fr.afcepf.al32.groupe2.service.IServiceReservation;
@@ -32,7 +33,7 @@ public class ServiceReservation implements IServiceReservation {
 	public Reservation rechercheReservationParIdentifiant(Long idUnite) {
 		return null;
 	}
-
+	
 	@Override
 	public Reservation ajouterReservation(Reservation reservation) {
 		return reservationDao.createOne(reservation);
@@ -63,4 +64,9 @@ public class ServiceReservation implements IServiceReservation {
 		return false;
 	}
 
+	
+		
+	
+	
+	
 }

@@ -9,7 +9,6 @@ import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 
 public interface IServiceReservation {
 
-
 List<Reservation> findAll();
 Reservation rechercheReservationParIdentifiant(Long idUnite);
 Reservation ajouterReservation(Reservation reservation);

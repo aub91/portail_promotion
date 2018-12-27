@@ -23,7 +23,8 @@ import javax.validation.constraints.NotNull;
 @NamedQueries({
 	@NamedQuery(name="Reservation.findAll" , query="select r From Reservation r" ),
 	@NamedQuery(name="Reservation.findAllByClient" , query="select r From Reservation r INNER JOIN r.client cli WHERE cli.id = :clientId" ),
-	@NamedQuery(name="Reservation.findAllByShopKeeper" , query="select r From Reservation r INNER JOIN r.reservationProduct rp INNER JOIN rp.promotion p WHERE some indices(p.shops) IN :shopkeeperShopsId")
+	@NamedQuery(name="Reservation.findAllByShopKeeper" , query="select r From Reservation r INNER JOIN r.reservationProduct rp INNER JOIN rp.promotion p WHERE some indices(p.shops) IN :shopkeeperShopsId"),
+	@NamedQuery(name="Reservation.findAllByClientOrderByDate" , query="select r From Reservation r INNER JOIN r.client cli WHERE cli.id = :clientId ORDER BY r.dateCreation DESC" )
 })
 public class Reservation {
 	
