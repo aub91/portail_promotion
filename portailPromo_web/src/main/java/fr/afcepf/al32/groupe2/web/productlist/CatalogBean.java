@@ -52,6 +52,8 @@ public class CatalogBean {
 
 	private List<Promotion> promotions = new ArrayList<>();
 
+	private List<PromotionTemplateResultDto> topPromotionsClient;
+
 	private List<CategoryProduct> categories;
 
 	private String selectedCategory;
@@ -254,6 +256,14 @@ public class CatalogBean {
 
 	public void setCategories(List<CategoryProduct> categories) {
 		this.categories = categories;
+	}
+
+	public List<PromotionTemplateResultDto> getTopPromotionsClient() {
+		return topPromotionsClient;
+	}
+
+	public void setTopPromotionsClient(List<PromotionTemplateResultDto> topPromotionsClient) {
+		this.topPromotionsClient = topPromotionsClient;
 	}
 
 }
