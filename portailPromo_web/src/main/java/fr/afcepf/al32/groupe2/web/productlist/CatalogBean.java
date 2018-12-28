@@ -1,27 +1,37 @@
 package fr.afcepf.al32.groupe2.web.productlist;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
-import fr.afcepf.al32.groupe2.service.IServicePromotion;
-import fr.afcepf.al32.groupe2.ws.dto.CategoryProductDto;
-import fr.afcepf.al32.groupe2.ws.dto.OrchestratorResearchDtoResponse;
-import fr.afcepf.al32.groupe2.ws.dto.PromotionDto;
-import fr.afcepf.al32.groupe2.ws.itf.IWsRecherche;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
 import fr.afcepf.al32.groupe2.entity.CategoryProduct;
+import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.Promotion;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
+import fr.afcepf.al32.groupe2.service.IServiceCategoryProduct;
+import fr.afcepf.al32.groupe2.service.IServicePromotion;
+import fr.afcepf.al32.groupe2.web.connexion.ConnectionBean;
+import fr.afcepf.al32.groupe2.ws.dto.CategoryProductDto;
+import fr.afcepf.al32.groupe2.ws.dto.OrchestratorResearchDtoResponse;
+import fr.afcepf.al32.groupe2.ws.dto.PromotionDto;
+import fr.afcepf.al32.groupe2.ws.itf.IWsPromoTemplate;
+import fr.afcepf.al32.groupe2.ws.itf.IWsRecherche;
+import fr.afcepf.al32.groupe2.ws.wsPromoTemplate.dto.PromotionTemplateResultDto;
+import fr.afcepf.al32.groupe2.ws.wsPromoTemplate.dto.TopPromotionTemplateResultDto;
 
 @Component
 @RequestScope
 public class CatalogBean {
-	
+
 	@Autowired
 	private ICatalogService catalogService;
 
@@ -29,23 +39,34 @@ public class CatalogBean {
 	private IServicePromotion servicePromotion;
 
 	@Autowired
+	private IServiceCategoryProduct serviceCategoryProduct;
+
+	@Autowired
 	private IWsRecherche rechercheDelegate;
 
+	@Autowired
+	private ConnectionBean connectionBean;
+
+	@Autowired
+	private IWsPromoTemplate promoClientService;
+
 	private List<Promotion> promotions = new ArrayList<>();
-	
+
 	private List<CategoryProduct> categories;
-	
+
 	private String selectedCategory;
 
+	private Long clientId;
 	/**
-	 * Attribut pour recherche par mot-clé. Suite de mots clés séparés par des espaces.
+	 * Attribut pour recherche par mot-clé. Suite de mots clés séparés par des
+	 * espaces.
 	 */
 	private String searchField;
 
 	/**
 	 * Attribut pour la recherche par lieu. Adresse servant de point central.
 	 */
-	private String searchSourceAddress="";
+	private String searchSourceAddress = "";
 
 	/**
 	 * Attribut pour la recherche par lieu. Périmètre de recherche en km.
@@ -56,45 +77,65 @@ public class CatalogBean {
 	 * Message d'avertissement si l'adresse n'existe pas.
 	 */
 	private String addressWarning;
-	
+
 	public CatalogBean() {
-		
+
 	}
-	
+
+	public List<PromotionTemplateResultDto> trouverLesPromoPreferees() {
+		Client client = (Client) connectionBean.getLoggedUser();
+		CategoryProduct categoryProduct = serviceCategoryProduct.getCategoryOfLastReservation(client);
+		String category = null;
+		if (categoryProduct != null) {
+			category = categoryProduct.getName();
+		}
+
+		TopPromotionTemplateResultDto resultDto = promoClientService.searchByClientsFavoriteCategory(
+				Double.parseDouble(client.getAddress().getCoordinates().getLongitude()),
+				Double.parseDouble(client.getAddress().getCoordinates().getLatitude()), category);
+
+		return resultDto.getTemplates();
+	}
+
 	public String search() {
 		List<String> keyWords = Arrays.asList(searchField.split(" "));
-		CategoryProduct category = categories.stream().filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
-		OrchestratorResearchDtoResponse orchestratorResponse =  rechercheDelegate.searchListPromotion(searchSourceAddress, searchPerimeter, keyWords, category == null? null : new CategoryProductDto(category.getId()));
+		CategoryProduct category = categories.stream()
+				.filter(categoryProduct -> categoryProduct.getName().equals(selectedCategory)).findFirst().orElse(null);
+		OrchestratorResearchDtoResponse orchestratorResponse = rechercheDelegate.searchListPromotion(
+				searchSourceAddress, searchPerimeter, keyWords,
+				category == null ? null : new CategoryProductDto(category.getId()));
 
-		if(!orchestratorResponse.getPromotions().isEmpty()){
-			promotions = servicePromotion.findAllValidByIds(orchestratorResponse.getPromotions().stream().map(PromotionDto::getId).collect(Collectors.toList()));
+		if (!orchestratorResponse.getPromotions().isEmpty()) {
+			promotions = servicePromotion.findAllValidByIds(orchestratorResponse.getPromotions().stream()
+					.map(PromotionDto::getId).collect(Collectors.toList()));
 		} else {
 			promotions = Collections.emptyList();
 		}
 
-		if(!orchestratorResponse.getAddressValid()){
+		if (!orchestratorResponse.getAddressValid()) {
 			addressWarning = "Adresse non trouvée";
 		} else {
-			addressWarning="";
+			addressWarning = "";
 		}
 		return "index";
 	}
-	
+
 	public String searchByCategory(CategoryProduct category) {
-		if(category != null) {
+		if (category != null) {
 			promotions = catalogService.searchByCategory(category);
 		}
 		return "index";
 	}
-	
+
 	@PostConstruct
 	public void initCatalogProduits() {
-		
+
 		promotions = getAllPromotions();
-		
-		categories = getAllRootCategories().stream().sorted(Comparator.comparing(CategoryProduct::getName)).collect(Collectors.toList());
+
+		categories = getAllRootCategories().stream().sorted(Comparator.comparing(CategoryProduct::getName))
+				.collect(Collectors.toList());
 	}
-	 
+
 	public ICatalogService getCatalogService() {
 		return catalogService;
 	}
@@ -110,11 +151,12 @@ public class CatalogBean {
 	public void setPromotions(List<Promotion> promotions) {
 		this.promotions = promotions;
 	}
-	public List<Promotion> getAllPromotions(){
+
+	public List<Promotion> getAllPromotions() {
 		return catalogService.getAllDisplayablePromotion();
 	}
-	
-	public List<CategoryProduct> getAllRootCategories(){
+
+	public List<CategoryProduct> getAllRootCategories() {
 		return catalogService.getAllRootCategories();
 	}
 
@@ -161,4 +203,57 @@ public class CatalogBean {
 	public void setAddressWarning(String addressWarning) {
 		this.addressWarning = addressWarning;
 	}
+
+	public IServicePromotion getServicePromotion() {
+		return servicePromotion;
+	}
+
+	public void setServicePromotion(IServicePromotion servicePromotion) {
+		this.servicePromotion = servicePromotion;
+	}
+
+	public IServiceCategoryProduct getServiceCategoryProduct() {
+		return serviceCategoryProduct;
+	}
+
+	public void setServiceCategoryProduct(IServiceCategoryProduct serviceCategoryProduct) {
+		this.serviceCategoryProduct = serviceCategoryProduct;
+	}
+
+	public IWsRecherche getRechercheDelegate() {
+		return rechercheDelegate;
+	}
+
+	public void setRechercheDelegate(IWsRecherche rechercheDelegate) {
+		this.rechercheDelegate = rechercheDelegate;
+	}
+
+	public ConnectionBean getConnectionBean() {
+		return connectionBean;
+	}
+
+	public void setConnectionBean(ConnectionBean connectionBean) {
+		this.connectionBean = connectionBean;
+	}
+
+	public IWsPromoTemplate getPromoClientService() {
+		return promoClientService;
+	}
+
+	public void setPromoClientService(IWsPromoTemplate promoClientService) {
+		this.promoClientService = promoClientService;
+	}
+
+	public Long getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(Long clientId) {
+		this.clientId = clientId;
+	}
+
+	public void setCategories(List<CategoryProduct> categories) {
+		this.categories = categories;
+	}
+
 }
