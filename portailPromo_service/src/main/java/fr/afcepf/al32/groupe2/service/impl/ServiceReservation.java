@@ -6,21 +6,19 @@ import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
-import fr.afcepf.al32.groupe2.entity.Shop;
-import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.groupe2.dao.IReservationDao;
-import fr.afcepf.al32.groupe2.entity.CategoryProduct;
 import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.Reservation;
+import fr.afcepf.al32.groupe2.entity.Shopkeeper;
 import fr.afcepf.al32.groupe2.service.IServiceReservation;
 
 @Component
 @Transactional
 public class ServiceReservation implements IServiceReservation {
-	
+
 	@Autowired
 	private IReservationDao reservationDao;
 
@@ -33,7 +31,7 @@ public class ServiceReservation implements IServiceReservation {
 	public Reservation rechercheReservationParIdentifiant(Long idUnite) {
 		return null;
 	}
-	
+
 	@Override
 	public Reservation ajouterReservation(Reservation reservation) {
 		return reservationDao.createOne(reservation);
@@ -47,7 +45,9 @@ public class ServiceReservation implements IServiceReservation {
 	@Override
 	public List<Reservation> findAllByShopKeeper(Shopkeeper shopkeeper) {
 		List<Reservation> reservations = reservationDao.findAll();
-		return reservations.stream().filter(reservation -> filterByShopKeeper(reservation, shopkeeper)).collect(Collectors.toList());
+		return reservations.stream()
+				.filter(reservation -> filterByShopKeeper(reservation, shopkeeper))
+				.collect(Collectors.toList());
 	}
 
 	@Override
@@ -62,11 +62,5 @@ public class ServiceReservation implements IServiceReservation {
 			}
 		}
 		return false;
-	}
-
-	
-		
-	
-	
-	
+	} 	
 }
