@@ -242,7 +242,7 @@ INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_un
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(3,'Pyjama rayés homme taille 42',SYSDATE(),null,1,220)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(4,'T-shirt sports Nike taille L',SYSDATE(),null,1,221)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(5,'Maillot de bain isotherme',SYSDATE(),null,1,222)
-INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(6,' Polo Lacoste Bleu pervenche',SYSDATE(),null,1,223)
+INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(6,'Polo Lacoste Bleu pervenche',SYSDATE(),null,1,223)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(7,'Chemise hawaïenne rétro taille 50',SYSDATE(),null,1,224)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(8,'Pull en cachemire',SYSDATE(),null,1,225)
 INSERT INTO reference_product(id,name,date_referencing,date_derefencing,sales_unit_id,category_produit_id)VALUES(9,'Veste en cuir taille M',SYSDATE(),null,1,226)
