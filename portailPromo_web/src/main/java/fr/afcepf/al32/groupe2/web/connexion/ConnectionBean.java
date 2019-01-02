@@ -34,14 +34,14 @@ public class ConnectionBean {
 		} else {
 			message = "Informations de connexion incorrectes";
 		}
-		
+
 		return suite;
 	}
 	
 	public String logout() {
 		loggedUser = null;
 		
-		return "/invite/fichesPromotion/pageAffichagePromotions";
+		return "index";
 	}
 
 	public String getLogin() {

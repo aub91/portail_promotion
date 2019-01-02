@@ -71,7 +71,7 @@
 							<h:outputLabel id="lblDistanceKm" value="#{catalogBean.searchPerimeter} km"/>
 						</div>
 						<span>1km</span>
-							<h:inputText styleClass="slider" id="myRange" value="#{catalogBean.searchPerimeter}">
+							<h:inputText id="myRange" value="#{catalogBean.searchPerimeter}">
 								<f:passThroughAttributes value="#{{'type':'range', 'min':'1', 'max':'20', 'step':'1'}}"/>
 								<f:ajax event="change" execute="myRange" render="lblDistanceKm"/>
 							</h:inputText>

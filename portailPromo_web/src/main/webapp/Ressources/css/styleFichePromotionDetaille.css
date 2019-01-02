@@ -97,6 +97,10 @@
 	margin: 0 0 13px;
 }
 
+.product-image img{
+	max-height: 218px;
+}
+
 .product-view .product-img-box .product-image-zoom {
 	position: relative;
 	width: 265px;
