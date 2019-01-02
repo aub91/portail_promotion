@@ -19,32 +19,65 @@
 	</ui:define>
 
 	<ui:define name="content">
-
-		
-			<h:panelGroup id="affichagePromotion"  layout="block">
-				<h:panelGroup class="slider" layout="block">
-					<h:outputLabel>Recommandations</h:outputLabel>
-					<h:panelGroup id="carousselRecoClient" class="slides" layout="block">
-							<ui:repeat var="promotion" value="#{catalogBean.promotions}">
+		<h:panelGroup id="affichagePromotion" class="w3-row" layout="block">
+			<h:panelGroup layout="block"
+				rendered='#{not empty connectionBean.loggedUser}'>
+				<h:panelGroup class="w3-row">
+					<h:panelGroup class="w3-col s1 l1" layout="block">
+						<button id="leftArrow" class="w3-button w3-display-left w3-black ">&#10094;</button>
+					</h:panelGroup>
+					<h:panelGroup id="carousselRecoClient"
+						class="slider w3-row w3-col s10 l10" layout="block">
+						<h:outputLabel class=" w3-col s12 l12 w3-left-align"
+							style="margin-left: 14vw;">Inspiré de vos réservations</h:outputLabel>
+						<h:panelGroup id="carousselRecoClientSlides"
+							class="slidesLeft w3-col s12 l12" layout="block">
+							<ui:repeat var="promoTemplate"
+								value="#{catalogBean.topPromotionsClient}">
 								<ui:include src="./WEB-INF/components/promotionRecoClient.xhtml" />
 							</ui:repeat>
-						
+						</h:panelGroup>
+					</h:panelGroup>
+					<h:panelGroup class="w3-col s1 l1" layout="block">
+						<button id="rightArrow"
+							class="w3-button w3-display-right w3-black ">&#10095;</button>
 					</h:panelGroup>
 				</h:panelGroup>
-		
-			<h:panelGroup style="margin-left: 14vw;" class="w3-row" layout="block">
+
+			</h:panelGroup>
+
+<!-- 			<h:panelGroup id="affichagePromotion" class="w3-row" layout="block"> -->
+<!-- 				<h:panelGroup class="w3-col s1 l1" layout="block"> -->
+<!-- 					<h:panelGroup layout="block" -->
+<!-- 						rendered='#{not empty connectionBean.loggedUser}'> -->
+<!-- 						<h:outputLabel>Recommandations</h:outputLabel> -->
+<!-- 						<h:panelGroup id="carousselRecoClient" class="slides" -->
+<!-- 							layout="block"> -->
+<!-- 							<ui:repeat var="promoTemplate" -->
+<!-- 								value="#{catalogBean.topPromotionsClient}"> -->
+<!-- 								<ui:include src="./WEB-INF/components/promotionRecoClient.xhtml" /> -->
+<!-- 							</ui:repeat> -->
+
+<!-- 						</h:panelGroup> -->
+<!-- 					</h:panelGroup> -->
+<!-- 				</h:panelGroup> -->
+<!-- 			</h:panelGroup> -->
+
+			<h:panelGroup style="margin-left: 14vw;" class="w3-row"
+				layout="block">
 				<ui:repeat var="promotion" value="#{catalogBean.promotions}">
 					<ui:include src="./WEB-INF/components/promotion3.xhtml" />
 				</ui:repeat>
 			</h:panelGroup>
 		</h:panelGroup>
-		
+
 
 		<script type="text/javascript"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../jsHamburger/main.js"></script>
 		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
-		<script type="text/javascript" src="./Ressources/js/carrouselRecoClient.js"></script>
+		<script type="text/javascript"
+			src="./Ressources/js/carrouselRecoClient.js"></script>
 	</ui:define>
 </ui:composition>
 

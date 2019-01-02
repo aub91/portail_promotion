@@ -1,47 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:ui="http://java.sun.com/jsf/facelets"
-	  xmlns:f="http://java.sun.com/jsf/core"
-	  xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
 
 <ui:composition template="/WEB-INF/templates/archeClient.xhtml">
 	<ui:define name="title">Nos produits - Promo32</ui:define>
 	<ui:define name="headcssscript">
 		<link type="text/css" rel="stylesheet"
-			  href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+			href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
 		<link type="text/css" rel="stylesheet" href="styleTest.css" />
 		<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
 		<link type="text/css" rel="stylesheet"
-			  href="../../Ressources/css/carrouselRecoClient.css" />
+			href="../../Ressources/css/carrouselRecoClient.css" />
 
 	</ui:define>
 
 	<ui:define name="content">
 
 		<div>
-			<h:panelGroup id="affichagePromotion" layout="block">
-				<h:panelGroup class="slider">
-					<h:outputLabel>Recommandations</h:outputLabel>
-					<h:panelGroup class="slides">
-						<h:panelGroup class="slide">
-							<ui:repeat var="promotion" class="slide" value="#{catalogBean.promotions}">
-								<ui:include src="/WEB-INF/components/promotion3.xhtml" />
-							</ui:repeat>
+			<h:panelGroup id="affichagePromotion" class="w3-row" layout="block">
+				<h:panelGroup layout="block"
+					rendered='#{not empty connectionBean.loggedUser}'>
+					<h:panelGroup class="w3-row">
+						<h:panelGroup class="w3-col s1 l1" layout="block">
+							<button id="leftArrow"
+								class="w3-button w3-display-left w3-black ">&#10094;</button>
 						</h:panelGroup>
-
+						<h:panelGroup id="carousselRecoClient"
+							class="slider w3-row w3-col s10 l10" layout="block">
+							<h:outputLabel class=" w3-col s12 l12 w3-left-align"
+								style="margin-left: 14vw;">Inspiré de vos réservations</h:outputLabel>
+							<h:panelGroup id="carousselRecoClientSlides"
+								class="slidesLeft w3-col s12 l12" layout="block">
+								<ui:repeat var="promoTemplate"
+									value="#{catalogBean.topPromotionsClient}">
+									<ui:include
+										src="../../WEB-INF/components/promotionRecoClient.xhtml" />
+								</ui:repeat>
+							</h:panelGroup>
+						</h:panelGroup>
+						<h:panelGroup class="w3-col s1 l1" layout="block">
+							<button id="rightArrow"
+								class="w3-button w3-display-right w3-black ">&#10095;</button>
+						</h:panelGroup>
 					</h:panelGroup>
+
 				</h:panelGroup>
-			</h:panelGroup>
-			<h:panelGroup style="margin-left: 14vw;">
-				<ui:repeat var="promotion" value="#{catalogBean.promotions}">
-					<ui:include src="../../WEB-INF/components/promotion3.xhtml" />
-				</ui:repeat>
+				<h:panelGroup style="margin-left: 14vw;">
+					<ui:repeat var="promotion" value="#{catalogBean.promotions}">
+						<ui:include src="../../WEB-INF/components/promotion3.xhtml" />
+					</ui:repeat>
+				</h:panelGroup>
 			</h:panelGroup>
 		</div>
 
 		<script type="text/javascript"
-				src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"/>
-		<script type="text/javascript" src="../../Ressources/js/carrouselRecoClient.js"/>
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" />
+		<script type="text/javascript"
+			src="../../Ressources/js/carrouselRecoClient.js" />
 	</ui:define>
 </ui:composition>
 

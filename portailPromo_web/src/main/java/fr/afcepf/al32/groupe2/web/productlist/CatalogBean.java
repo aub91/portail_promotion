@@ -17,6 +17,7 @@ import org.springframework.web.context.annotation.RequestScope;
 import fr.afcepf.al32.groupe2.entity.CategoryProduct;
 import fr.afcepf.al32.groupe2.entity.Client;
 import fr.afcepf.al32.groupe2.entity.Promotion;
+import fr.afcepf.al32.groupe2.entity.User;
 import fr.afcepf.al32.groupe2.service.ICatalogService;
 import fr.afcepf.al32.groupe2.service.IServiceCategoryProduct;
 import fr.afcepf.al32.groupe2.service.IServicePromotion;
@@ -124,7 +125,7 @@ public class CatalogBean {
 		return "index";
 	}
 
-	public String searchByCategory(CategoryProduct category) {
+	public String searchByCategory(CategoryProduct category) { 
 		if (category != null) {
 			promotions = catalogService.searchByCategory(category);
 		}
@@ -138,6 +139,14 @@ public class CatalogBean {
 
 		categories = getAllRootCategories().stream().sorted(Comparator.comparing(CategoryProduct::getName))
 				.collect(Collectors.toList());
+		
+		User user =  connectionBean.getLoggedUser();
+		if (clientId !=null) {
+			clientId=user.getId();
+			topPromotionsClient= trouverLesPromoPreferees();
+
+		}
+
 	}
 
 	public ICatalogService getCatalogService() {

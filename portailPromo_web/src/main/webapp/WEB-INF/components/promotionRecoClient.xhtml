@@ -5,9 +5,9 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 <ui:component>
-	<figure class="FichePromotion slideLeft w3-mobile w3-row w3-col s1 l1 " >
+	<figure id="slide" class="FichePromotion slideRight w3-mobile w3-row w3-col s1 l1 " >
 	<div class="w3-col s12"
-		onclick="document.getElementById('id_#{promotion.id}').style.display='block'">
+		onclick="document.getElementById('id_#{promotionTemplate.promotionId}').style.display='block'">
 		<div class="product-image">
 			<img class="w3-image"
 				src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"
@@ -17,41 +17,41 @@
 	<div class="w3-col s12 w3-row">
 		<div class="w3-col s12 w3-center w3-padding-16">
 			<h:outputText
-				class="w3-mobile w3-large" value="#{promotion.name}" />
+				class="w3-mobile w3-large" value="#{promotionTemplate.name}" />
 			<br />
-			<h:outputText id="lblTitreProduit_#{promotion.id}"
+			<h:outputText id="lblTitreProduit_#{promotionTemplate.product.baseProductId}"
 				class="w3-mobile w3-large"
-				value="#{promotion.getBaseProduct().referenceProduct.name}"/>
+				value="#{promotionTemplate.product.libelle}"/>
 		</div>
 
 		<div class="w3-col s12 w3-center">
 			<h:outputText
 				class="w3-mobile w3-large" style="text-decoration:line-through;"
-				value="#{promotion.getInitPrice()}">
+				value="#{promotionTemplate.product.initPrice}">
 				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
 			</h:outputText>
-			<h:outputText class="w3-mobile w3-large"
-				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"
-				style="text-decoration:line-through;" />
-			<br />
-			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
-				value="#{promotion.getPriceAfterPromotion()}">
-				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
-			</h:outputText>
-			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
-				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+<!-- 			<h:outputText class="w3-mobile w3-large" -->
+<!-- 				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" -->
+<!-- 				style="text-decoration:line-through;" /> -->
+<!-- 			<br /> -->
+<!-- 			<h:outputText class="w3-text-red w3-mobile w3-xlarge" -->
+<!-- 				value="#{promotion.getPriceAfterPromotion()}"> -->
+<!-- 				<f:convertNumber maxFractionDigits="2"></f:convertNumber> -->
+<!-- 			</h:outputText> -->
+<!-- 			<h:outputText class="w3-text-red w3-mobile w3-xlarge" -->
+<!-- 				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" /> -->
 		</div>
 		<div class="w3-col s12 w3-center w3-padding-16">
 			<label>Date de fin de la promotion: </label>
 			<h:outputText
-				value="#{promotion.getEndDate()}">
+				value="#{promotionTemplate.limitTimePromotion}">
 				<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
 			</h:outputText>
 		</div>
 		<div class="w3-col s12 w3-center">
 			<label>Délai de retrait pour le produit: </label>
 			<h:outputText
-				value="#{promotion.limitTimeTakePromotion.toHours()} heure(s)" />
+				value="#{promotionTemplate.limitTimeTakePromotion} heure(s)" />
 		</div>
 	</div>
 	<div class="w3-row w3-col s12 w3-padding-16">
