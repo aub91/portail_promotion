@@ -65,9 +65,15 @@ public class WsPromoTemplateDelegateImpl implements IWsPromoTemplate {
 	@Override
 	public TopPromotionTemplateResultDto searchByClientsFavoriteCategory(Double sourceLong, Double sourceLat,
 			String category) {
+		String categoryDecoded = null;
+		try {
+			categoryDecoded = URLEncoder.encode(category, "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		}
 
-		String url = String.format("%s/ByClient?sourceLong=%s&sourceLat=%s&categories=%s", base_url_client, sourceLong,
-				sourceLat, category);
+		String url = String.format("%s/ByClient?sourceLong=%s&sourceLat=%s&category=%s", base_url_client, sourceLong,
+				sourceLat, categoryDecoded);
 
 		TopPromotionTemplateResultDto result = null;
 
