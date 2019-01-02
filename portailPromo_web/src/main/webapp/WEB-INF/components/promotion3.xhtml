@@ -8,7 +8,7 @@
 	<figure class="FichePromotion w3-mobile w3-col s3 l3 w3-row">
 	<div class="w3-col s12"
 		onclick="document.getElementById('id_#{promotion.id}').style.display='block'">
-		<div class="product-image">
+		<div class="product-image w3-center">
 			<h:graphicImage class="w3-image" alt="Promotions" title="Promotion"
 							value='../../Ressources/Images/product/#{promotion.getBaseProduct().image == null ? "img_promo_product_by_default.png" : promotion.getBaseProduct().image}'/>
 		</div>
@@ -85,7 +85,7 @@
 				onclick="document.getElementById('id_#{promotion.id}').style.display='none'"
 				class="w3-button w3-red w3-xlarge w3-right">&#9747;</span> </header>
 			<div class="w3-col s12 w3-row">
-				<div class="product-image w3-col s6">
+				<div class="product-image w3-col s6 w3-center">
 					<h:graphicImage class="w3-image" alt="Promotions" title="Promotion"
 									value='../../Ressources/Images/product/#{promotion.getBaseProduct().image == null ? "img_promo_product_by_default.png" : promotion.getBaseProduct().image}'/>
 				</div>

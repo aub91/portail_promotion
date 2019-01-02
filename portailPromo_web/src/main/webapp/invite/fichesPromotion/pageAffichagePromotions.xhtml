@@ -1,43 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
- xmlns:h="http://java.sun.com/jsf/html">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html">
 
 <ui:composition template="/WEB-INF/templates/archeClient.xhtml">
 	<ui:define name="title">Nos produits - Promo32</ui:define>
 	<ui:define name="headcssscript">
-		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-		<link type="text/css" rel="stylesheet" href="../css/main.css" />
-		<link type="text/css" rel="stylesheet" href="../css/ownmain.css" />
+		<link type="text/css" rel="stylesheet"
+			  href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
 		<link type="text/css" rel="stylesheet" href="styleTest.css" />
 		<link type="text/css" rel="stylesheet" href="Fiche_promotion.css" />
+		<link type="text/css" rel="stylesheet"
+			  href="../../Ressources/css/carrouselRecoClient.css" />
 
 	</ui:define>
 
 	<ui:define name="content">
-	
-	
-		<div style="width:300px " >
-		<h:panelGroup id="affichagePromotion" layout="block">
-			<ui:repeat var="promotion" value="#{catalogBean.promotions}">
-				
-				<ui:include src="../../WEB-INF/components/promotion3.xhtml"/>
-			</ui:repeat>
-		</h:panelGroup>
-</div>
-	
-	
-	<div style="margin-left: 14vw; " >
-		<h:panelGroup id="affichagePromotion" layout="block">
-			<ui:repeat var="promotion" value="#{catalogBean.promotions}">
-				
-				<ui:include src="../../WEB-INF/components/promotion3.xhtml"/>
-			</ui:repeat>
-		</h:panelGroup>
-</div>
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script type="text/javascript" src="../jsHamburger/main.js"></script>
-		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
+		<div>
+			<h:panelGroup id="affichagePromotion" layout="block">
+				<h:panelGroup class="slider">
+					<h:outputLabel>Recommandations</h:outputLabel>
+					<h:panelGroup class="slides">
+						<h:panelGroup class="slide">
+							<ui:repeat var="promotion" class="slide" value="#{catalogBean.promotions}">
+								<ui:include src="/WEB-INF/components/promotion3.xhtml" />
+							</ui:repeat>
+						</h:panelGroup>
+
+					</h:panelGroup>
+				</h:panelGroup>
+			</h:panelGroup>
+			<h:panelGroup style="margin-left: 14vw;">
+				<ui:repeat var="promotion" value="#{catalogBean.promotions}">
+					<ui:include src="../../WEB-INF/components/promotion3.xhtml" />
+				</ui:repeat>
+			</h:panelGroup>
+		</div>
+
+		<script type="text/javascript"
+				src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"/>
+		<script type="text/javascript" src="../../Ressources/js/carrouselRecoClient.js"/>
 	</ui:define>
 </ui:composition>
 
