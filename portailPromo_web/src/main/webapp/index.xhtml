@@ -20,32 +20,31 @@
 
 	<ui:define name="content">
 
-		<div>
-			<h:panelGroup id="affichagePromotion" layout="block">
-				<h:panelGroup class="slider">
+		
+			<h:panelGroup id="affichagePromotion"  layout="block">
+				<h:panelGroup class="slider" layout="block">
 					<h:outputLabel>Recommandations</h:outputLabel>
-					<h:panelGroup class="slides">
-						<h:panelGroup class="slide">
-							<ui:repeat var="promotion" class="slide" value="#{catalogBean.promotions}">
-								<ui:include src="./WEB-INF/components/promotion3.xhtml" />
+					<h:panelGroup id="carousselRecoClient" class="slides" layout="block">
+							<ui:repeat var="promotion" value="#{catalogBean.promotions}">
+								<ui:include src="./WEB-INF/components/promotionRecoClient.xhtml" />
 							</ui:repeat>
-						</h:panelGroup>
 						
 					</h:panelGroup>
 				</h:panelGroup>
-			</h:panelGroup>
-			<h:panelGroup style="margin-left: 14vw;">
+		
+			<h:panelGroup style="margin-left: 14vw;" class="w3-row" layout="block">
 				<ui:repeat var="promotion" value="#{catalogBean.promotions}">
 					<ui:include src="./WEB-INF/components/promotion3.xhtml" />
 				</ui:repeat>
 			</h:panelGroup>
-		</div>
+		</h:panelGroup>
+		
 
 		<script type="text/javascript"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../jsHamburger/main.js"></script>
 		<script type="text/javascript" src="../jsAddToCart/add-to-cart.js"></script>
-		<script type="text/javascript" src="../js/carrouselRecoClient.js"></script>
+		<script type="text/javascript" src="./Ressources/js/carrouselRecoClient.js"></script>
 	</ui:define>
 </ui:composition>
 

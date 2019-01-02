@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:component>
+	<figure class="FichePromotion slideLeft w3-mobile w3-row w3-col s1 l1 " >
+	<div class="w3-col s12"
+		onclick="document.getElementById('id_#{promotion.id}').style.display='block'">
+		<div class="product-image">
+			<img class="w3-image"
+				src="../../Ressources/Images/Images_promotions/img_promo_product_by_default.png"
+				alt="Promotions" title="Promotion" />
+		</div>
+	</div>
+	<div class="w3-col s12 w3-row">
+		<div class="w3-col s12 w3-center w3-padding-16">
+			<h:outputText
+				class="w3-mobile w3-large" value="#{promotion.name}" />
+			<br />
+			<h:outputText id="lblTitreProduit_#{promotion.id}"
+				class="w3-mobile w3-large"
+				value="#{promotion.getBaseProduct().referenceProduct.name}"/>
+		</div>
+
+		<div class="w3-col s12 w3-center">
+			<h:outputText
+				class="w3-mobile w3-large" style="text-decoration:line-through;"
+				value="#{promotion.getInitPrice()}">
+				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
+			</h:outputText>
+			<h:outputText class="w3-mobile w3-large"
+				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}"
+				style="text-decoration:line-through;" />
+			<br />
+			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
+				value="#{promotion.getPriceAfterPromotion()}">
+				<f:convertNumber maxFractionDigits="2"></f:convertNumber>
+			</h:outputText>
+			<h:outputText class="w3-text-red w3-mobile w3-xlarge"
+				value="€/#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+		</div>
+		<div class="w3-col s12 w3-center w3-padding-16">
+			<label>Date de fin de la promotion: </label>
+			<h:outputText
+				value="#{promotion.getEndDate()}">
+				<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+			</h:outputText>
+		</div>
+		<div class="w3-col s12 w3-center">
+			<label>Délai de retrait pour le produit: </label>
+			<h:outputText
+				value="#{promotion.limitTimeTakePromotion.toHours()} heure(s)" />
+		</div>
+	</div>
+	<div class="w3-row w3-col s12 w3-padding-16">
+		<h:form class="w3-col s12 w3-row">
+			<h:selectOneMenu value="#{bookBean.quantityBooked}"
+				class="w3-select w3-col s3 w3-padding-16">
+				<f:convertNumber></f:convertNumber>
+				<f:selectItem itemValue="1" itemLabel="1" />
+				<f:selectItem itemValue="2" itemLabel="2" />
+				<f:selectItem itemValue="3" itemLabel="3" />
+				<f:selectItem itemValue="4" itemLabel="4" />
+				<f:selectItem itemValue="5" itemLabel="5" />
+				<f:selectItem itemValue="6" itemLabel="6" />
+				<f:selectItem itemValue="7" itemLabel="7" />
+				<f:selectItem itemValue="8" itemLabel="8" />
+				<f:selectItem itemValue="9" itemLabel="9" />
+				<f:selectItem itemValue="10" itemLabel="10" />
+			</h:selectOneMenu>
+			<h:outputText class="w3-col s3 w3-padding-16"
+				value="#{promotion.getBaseProduct().referenceProduct.salesUnit.name}" />
+			<h:commandButton action="#{bookBean.book(promotion)}" disabled="#{empty connectionBean.loggedUser}"
+				value="Réserver"
+				class="w3-button w3-teal w3-hover-dark-grey w3-col s6 w3-padding-16" />
+		</h:form>
+	</div>
+	<h:outputText class="w3-col s12 w3-padding-16 w3-text-teal w3-center" id="connectionWarningMessage" rendered="#{empty connectionBean.loggedUser}"
+				  value="Veuillez vous connecter pour réserver un produit"/>
+
+	
+
+	</figure>
+
+
+</ui:component>
+
+</html>
