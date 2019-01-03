@@ -61,7 +61,6 @@ public class CatalogBean {
 
 	private String selectedCategory;
 
-	private Long clientId;
 	/**
 	 * Attribut pour recherche par mot-clé. Suite de mots clés séparés par des
 	 * espaces.
@@ -87,8 +86,8 @@ public class CatalogBean {
 
 	}
 
-	public List<PromotionTemplateResultDto> trouverLesPromoPreferees() {
-		Client client = (Client) connectionBean.getLoggedUser();
+	public List<PromotionTemplateResultDto> trouverLesPromoPreferees(Client client) {
+
 		CategoryProduct categoryProduct = serviceCategoryProduct.getCategoryOfLastReservation(client);
 		String category = null;
 		if (categoryProduct != null) {
@@ -141,10 +140,8 @@ public class CatalogBean {
 				.collect(Collectors.toList());
 		
 		User user =  connectionBean.getLoggedUser();
-		if (clientId !=null) {
-			clientId=user.getId();
-			topPromotionsClient= trouverLesPromoPreferees();
-
+		if (user != null && user.getClass().equals(Client.class)) {
+			topPromotionsClient= trouverLesPromoPreferees((Client) user);
 		}
 
 	}
@@ -255,14 +252,6 @@ public class CatalogBean {
 
 	public void setPromoClientService(IWsPromoTemplate promoClientService) {
 		this.promoClientService = promoClientService;
-	}
-
-	public Long getClientId() {
-		return clientId;
-	}
-
-	public void setClientId(Long clientId) {
-		this.clientId = clientId;
 	}
 
 	public void setCategories(List<CategoryProduct> categories) {

@@ -41,7 +41,7 @@ public class ConnectionBean {
 	public String logout() {
 		loggedUser = null;
 		
-		return "index";
+		return "/invite/fichesPromotion/pageAffichagePromotions";
 	}
 
 	public String getLogin() {
